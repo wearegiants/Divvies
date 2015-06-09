@@ -1,4 +1,6 @@
-<?php
+<section id="page">
+
+  <?php
 
   if (isset($_GET['index'])) {
 
@@ -26,4 +28,6 @@
 
   }
 
-?>
+  ?>
+
+</section>
