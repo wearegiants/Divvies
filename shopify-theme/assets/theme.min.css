@@ -361,6 +361,21 @@ form textarea:focus {
   width: 1px;
   margin: auto;
 }
+img.align-right {
+  float: right;
+  margin-left: 25px;
+  margin-bottom: 12.5px;
+}
+img.align-left {
+  float: left;
+  margin-right: 25px;
+  margin-bottom: 12.5px;
+}
+img.align-middle {
+  float: none;
+  margin: auto;
+  margin-bottom: 12.5px;
+}
 .btn {
   cursor: pointer;
   display: inline-block;
@@ -810,4 +825,8 @@ p.emphasized {
 }
 .collection-grid--item_children .btn:hover:after {
   background: #0c3440;
+}
+#faq--points {
+  background: #f2f2f2;
+  padding: 25px 0;
 }
