@@ -1,0 +1,57 @@
+.collection-grid {
+
+  &--item {
+
+    margin-bottom: @spaced/1.5;
+
+    &_thumb {
+
+      background: @lighterGray;
+      position: relative;
+
+    }
+
+    &_children {
+
+      .cover();
+      opacity: 0;
+
+      .btn {
+
+        margin: 0;
+        display: block;
+        color: @white;
+        height: 25%;
+        position: relative;
+        text-align: left;
+
+        @media @min {
+          line-height: 47.5px;
+        }
+
+        span {
+          position: relative;
+          z-index: 1;
+        }
+
+        &:after {
+          content: '';
+          .cover();
+          background: @lightblue;
+          opacity: .8;
+          z-index: 0;
+        }
+
+        &:hover {
+          &:after {
+            background: darken(@lightblue, 60%);
+          }
+        }
+
+      }
+
+    }
+
+  }
+
+}

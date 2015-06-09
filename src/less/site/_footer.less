@@ -1,0 +1,75 @@
+#footer {
+
+  margin-top: @spaced;
+  .font_size(12);
+
+  &--social {
+
+    border-top: 1px solid @lightblue;
+    padding: @spaced/2+5 0;
+
+    .btn {
+
+      .font_size(34);
+      margin-bottom: 0;
+      color: @lightblue;
+      padding: 0;
+      margin: 0 5px;
+      height: 40px;
+      width: 40px;
+      line-height: 40px;
+
+      &:hover {
+        color: darken(@lightblue, 5%)
+      }
+
+      &:before {
+        position: relative;
+        top: .125em;
+      }
+
+      &.ss-facebook, &.ss-pinterest {
+        background: @lightblue;
+        color: @white;
+        &:hover {
+          background: darken(@lightblue, 5%);
+          color: @white;
+        }
+        &:before {
+          top: .25em;
+        }
+      }
+
+      &.ss-pinterest {
+        border-radius: 50%;
+        &:before {
+          .font_size(32);
+        }
+      }
+
+    }
+
+  }
+
+  &--tagline {
+
+    padding: @spaced/2+5 0 0;
+    border-top: 1px solid @lightblue;
+
+    .emphasized {
+      margin: 0;
+    }
+
+  }
+
+  &--legal {
+
+    padding: 8px 0;
+    color: @white;
+    background: @gray;
+
+    p {margin-bottom: 0;color: inherit;}
+
+  }
+
+}

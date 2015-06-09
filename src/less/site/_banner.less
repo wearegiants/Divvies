@@ -1,0 +1,40 @@
+.banner {
+
+  min-height: 375px;
+  background: @gray;
+  margin-bottom: @spaced/1.5;
+  position: relative;
+  color: @white;
+
+  h1,h2,h3,h4,h5,h6 {
+    color: inherit;
+  }
+
+  &--centered {
+    .center();
+    width: 100%;
+  }
+
+}
+
+#mailchimp {
+
+  position: relative;
+  z-index: 9;
+
+  button {
+
+    padding: 0 15px;
+    background: @orange;
+    color: @white;
+    border-radius: 0;
+    -webkit-font-smoothing: antialiased;
+
+    @media @tablet {
+      position: absolute;
+      transform: translate(-15px, -50%);
+    }
+
+  }
+
+}

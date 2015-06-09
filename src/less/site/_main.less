@@ -1,0 +1,45 @@
+@fs-grid-gutter: 1.0416666666666667%;
+
+p {
+
+  color: inherit;
+
+  &.emphasized {
+    .font_size(20);
+  }
+
+}
+
+.header {
+
+  &--title {
+    color: @orange;
+    margin-bottom: @spaced/1.5;
+    text-transform: capitalize;
+    .font_size(32);
+
+    &.more {
+      color: @gray;
+    }
+
+  }
+
+  &--icon {
+
+    background: lighten(@lightblue, 12%);
+    border-radius: 50%;
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    text-align: center;
+
+    &:before {
+      color: @white;
+      position: relative;
+      top: .125em;
+      text-shadow: 0 0 2px darken(@lightblue, 10%);
+    }
+
+  }
+
+}

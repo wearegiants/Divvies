@@ -1,0 +1,109 @@
+#product {
+
+  &--title {
+    color: @orange;
+  }
+
+  &--specs {
+    margin-top: @spaced;
+    padding: @spaced/2 0;
+    border-top: 2px solid @lighterGray;
+  }
+
+  @sharedHeight: 45px;
+
+  &--quantity {
+    background: @lighterGray;
+    color: @white;
+    margin-bottom: @spaced/2;
+    border-radius: 2px;
+    .pie();
+
+    @media @min {
+      text-align: center;
+    }
+
+    @media @tablet {
+      text-align: left;
+      padding-left: 20px;
+    }
+
+    > span, div {
+      height: @sharedHeight;
+      line-height: @sharedHeight;
+      display: inline-block;
+    }
+
+    > div {
+
+      float: right;
+      border-left: 1px solid @white50;
+
+      a {
+
+        color: @white;
+        width: @spaced*2;
+        display: block;
+        height: @sharedHeight/2;
+        line-height: @sharedHeight/2;
+        text-align: center;
+
+        &:hover {
+          background: darken(@lighterGray, 10%)
+        }
+
+        &.top {
+          border-bottom: 1px solid @white50;
+        }
+
+        &:before {
+          height: 1px;
+          display: block;
+          position: relative;
+          top: .165em;
+        }
+
+      }
+    }
+  }
+
+  &--price {
+    color: @orange;
+    height: @sharedHeight;
+    line-height: @sharedHeight;
+
+    @media @min {
+      .font_size(27);
+    }
+
+    @media @mobile {
+      .font_size(32);
+    }
+  }
+
+  &--add {
+
+    .btn {
+
+      height: @sharedHeight;
+      line-height: @sharedHeight;
+      display: block;
+      margin: 0;
+      background: @orange;
+      position: relative;
+      -webkit-font-smoothing: antialiased;
+
+      &:hover {
+        background: darken(@orange, 2%)
+      }
+
+      &:active {
+        top: 1px;
+        background: darken(@orange, 5%)
+      }
+
+    }
+
+  }
+
+}

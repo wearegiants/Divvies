@@ -1,0 +1,52 @@
+#header {
+
+  padding: @spaced+10 0 @spaced;
+  margin-bottom: @spaced/1.5;
+
+  &--logo {
+
+    display: block;
+    background: @pink;
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+    margin-top: -10px;
+
+  }
+
+  nav.lower {
+
+    .btn-link {
+
+      color: @orange;
+      margin: 0;
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+      border-radius: 0;
+      padding: 0;
+
+      @media @min {
+
+      }
+
+      @media @tablet {
+        margin: 0 5px;
+      }
+
+      @media @desktop {
+        margin: 0 8px;
+      }
+
+      &.btn-last {
+        margin-right: 0;
+      }
+
+      &:hover, &.current {
+        border-bottom: 2px solid @lightblue;
+      }
+
+    }
+
+  }
+
+}
