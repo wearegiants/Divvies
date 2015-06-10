@@ -38,10 +38,13 @@
     <div class="fs-row">
       <div class='fs-cell fs-xl-10 fs-lg-11 fs-md-6 fs-sm-3 fs-centered'>
         <header id="header" class="fs-row">
-          <div class="fs-cell fs-lg-4 fs-md-2 fs-sm-3">
+          <div class="fs-cell fs-lg-4 fs-md-2 fs-sm-2">
             <a href="<?php echo $themeurl; ?>?index"><span id="header--logo">Divvies</span></a>
           </div>
-          <div class="fs-cell fs-lg-8 fs-md-4 fs-sm-3 text-right">
+          <div class="fs-cell fs-lg-hide fs-md-hide fs-sm-1 text-right">
+            <a href="#" class="target .cart-toggle" data-swap-target=".toggle" data-swap-linked='.cart-toggle'><span class="cart-icon"></span> Menu</a>
+          </div>
+          <div class="fs-cell fs-lg-8 fs-md-4 fs-sm-hide text-right">
             <div class="upper">
               <a href="<?php echo $themeurl; ?>?account">Account</a>
               <a href="#" class="target .cart-toggle" data-swap-target=".toggle" data-swap-linked='.cart-toggle'><span class="cart-icon"></span> View Cart (0)</a>

@@ -568,6 +568,11 @@ p.emphasized {
   line-height: 80px;
   margin-top: -10px;
 }
+@media screen and (min-width: 300px) {
+  #header .text-right {
+    text-align: right;
+  }
+}
 #header nav.lower .btn-link {
   color: #ef6343;
   margin: 0;
