@@ -1,9 +1,5 @@
 .bg-color {
   background: #ef6343;
-  color: #ffffff;
-}
-.bg-color a {
-  color: #ffffff;
 }
 .bg-color-lightblue {
   background: #93d7eb;
@@ -30,6 +26,9 @@
 .bg-color-lightgray,
 .bg-color-lightgrey {
   background: #b4b4b4;
+}
+.bg-color-bggray {
+  background: #f2f2f2;
 }
 .left {
   float: left;
@@ -490,6 +489,42 @@ img.align-middle {
 .error404 #error-msg h3 a:visited {
   color: #cc1c4a;
 }
+@media screen and (min-width: 980px) {
+  body,
+  html {
+    background: #f2f2f2;
+    min-height: 100%;
+  }
+}
+#wrapper {
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  -webkit-transition: 300ms ease;
+          transition: 300ms ease;
+  background: #ffffff;
+}
+@media screen and (min-width: 300px) {
+  #wrapper.fs-swap-active {
+    -webkit-transform: translate(-85%, 0%);
+        -ms-transform: translate(-85%, 0%);
+            transform: translate(-85%, 0%);
+  }
+}
+@media screen and (min-width: 740px) {
+  #wrapper.fs-swap-active {
+    -webkit-transform: translate(-33%, 0%);
+        -ms-transform: translate(-33%, 0%);
+            transform: translate(-33%, 0%);
+  }
+}
+@media screen and (min-width: 980px) {
+  #wrapper.fs-swap-active {
+    -webkit-transform: translate(-25%, 0%);
+        -ms-transform: translate(-25%, 0%);
+            transform: translate(-25%, 0%);
+  }
+}
 p {
   color: inherit;
 }
@@ -627,11 +662,20 @@ p.emphasized {
   height: 100%;
   top: 0;
   right: 0;
+  z-index: 1;
   background: #f2f2f2;
   padding: 15px;
-  -webkit-transform: translate(100%, 0%);
-      -ms-transform: translate(100%, 0%);
-          transform: translate(100%, 0%);
+  -webkit-transform: translate(30%, 0%);
+      -ms-transform: translate(30%, 0%);
+          transform: translate(30%, 0%);
+  -webkit-transition: 300ms ease;
+          transition: 300ms ease;
+}
+#cart--slideout.fs-swap-active {
+  right: 0;
+  -webkit-transform: translate(0%, 0%);
+      -ms-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
 }
 @media screen and (min-width: 300px) {
   #cart--slideout {
@@ -671,6 +715,12 @@ p.emphasized {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 100%;
+}
+@media screen and (min-width: 300px) {
+  .banner--centered {
+    text-align: center;
+    padding: 0 25px;
+  }
 }
 #mailchimp {
   position: relative;
@@ -783,6 +833,9 @@ p.emphasized {
 .collection-grid--item {
   margin-bottom: 16.66666667px;
 }
+.collection-grid--item .btn-collection {
+  color: #ffffff;
+}
 .collection-grid--item_thumb {
   background: #b4b4b4;
   position: relative;
@@ -826,7 +879,46 @@ p.emphasized {
 .collection-grid--item_children .btn:hover:after {
   background: #0c3440;
 }
-#faq--points {
-  background: #f2f2f2;
+#faq--points,
+#faq--fresh {
   padding: 25px 0;
+}
+#faq--shipping .fs-row,
+#faq--info .fs-row {
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 300px) {
+  #faq--fresh header {
+    text-align: left;
+  }
+  #faq--fresh .fs-cell {
+    margin-bottom: 25px;
+  }
+  #faq--fresh .fs-cell:last-child {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 740px) {
+  #faq--fresh header {
+    text-align: center;
+  }
+  #faq--fresh .fs-cell {
+    margin-bottom: 0;
+  }
+}
+#faq--fresh img {
+  max-width: 100px;
+  margin: auto;
+}
+@media screen and (min-width: 300px) {
+  #faq--fresh img {
+    float: left;
+    margin-right: 16.66666667px;
+  }
+}
+@media screen and (min-width: 740px) {
+  #faq--fresh img {
+    float: none;
+    margin: 0 auto 12.5px;
+  }
 }

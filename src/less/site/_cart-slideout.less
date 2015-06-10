@@ -4,9 +4,16 @@
   height: 100%;
   top: 0;
   right: 0;
+  z-index: 1;
   background: @bgGray;
   padding: 15px;
-  transform: translate(100%, 0%);
+  transform: translate(30%, 0%);
+  transition: 300ms ease;
+
+  &.fs-swap-active {
+    right: 0;
+    transform: translate(0%, 0%);
+  }
 
   @media @min {
     width: 85%

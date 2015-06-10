@@ -97,6 +97,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/shopify-theme\/assets\/theme.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/shopify-theme\/assets\/theme.min.js",
+		"outputAbbreviatedPath": "\/shopify-theme\/assets\/min\/theme.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/shopify-theme\/layout\/theme.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -246,6 +257,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/shopify-theme\/templates\/list-collections.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/shopify-theme\/templates\/page.contact-us.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/shopify-theme\/templates\/page.contact-us.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -2322,7 +2342,7 @@
 		},
 	"\/src\/bower_components\/jquery\/dist\/jquery.min.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/src\/bower_components\/jquery\/dist\/jquery.min.js",
 		"outputAbbreviatedPath": "\/src\/bower_components\/jquery\/dist\/min\/jquery.min-min.js",

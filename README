@@ -1,1 +1,5 @@
 Building this in PHP during the templating process -- will migrate to Shopify once everything starts feeling pretty good.
+
+Todo:
+- Clean up the navigation so there aren't any link-gaps as you hover over each
+- Clean up the FAQ fresh/freeze section on mobile

@@ -1,8 +1,57 @@
 #faq {
 
-  &--points {
-    background: @bgGray;
+  &--points, &--fresh {
     padding: @spaced 0;
+  }
+
+  &--shipping, &--info {
+
+    .fs-row {
+      margin-bottom: @spaced;
+    }
+
+  }
+
+  &--fresh {
+
+    @media @min {
+      header {
+        text-align: left;
+      }
+      .fs-cell {
+        margin-bottom: @spaced;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    @media @tablet {
+      header {
+        text-align: center;
+      }
+      .fs-cell {
+        margin-bottom: 0;
+      }
+    }
+
+    img {
+
+      max-width: 100px;
+      margin: auto;
+
+      @media @min {
+        float: left;
+        margin-right: @spaced/1.5;
+      }
+
+      @media @tablet {
+        float: none;
+        margin: 0 auto @spaced/2;
+      }
+
+    }
+
   }
 
 }

@@ -11,8 +11,15 @@
   }
 
   &--centered {
+
     .center();
     width: 100%;
+
+    @media @min {
+      text-align: center;
+      padding: 0 @spaced;
+    }
+
   }
 
 }

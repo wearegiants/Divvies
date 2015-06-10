@@ -12,17 +12,23 @@
 
     <div class="collection-grid--item fs-cell fs-lg-4 fs-md-2 fs-sm-3">
       <a href="<?php echo $themeurl; ?>?list-collections" class="btn btn-collection bg-color bg-color-coral">Shop Treats</a>
-      <div class="collection-grid--item_thumb"></div>
+      <div class="collection-grid--item_thumb">
+        <img src="<?php echo $sitehome; ?>/assets/collection-default.jpg" class="img-responsive" alt="" />
+      </div>
     </div>
 
     <div class="collection-grid--item fs-cell fs-lg-4 fs-md-2 fs-sm-3">
       <a href="<?php echo $themeurl; ?>?page=locator" class="btn btn-collection bg-color bg-color-lightblue">Where to Find Us</a>
-      <div class="collection-grid--item_thumb"></div>
+      <div class="collection-grid--item_thumb">
+        <img src="<?php echo $sitehome; ?>/assets/collection-default.jpg" class="img-responsive" alt="" />
+      </div>
     </div>
 
     <div class="collection-grid--item fs-cell fs-lg-4 fs-md-2 fs-sm-3">
       <a href="<?php echo $themeurl; ?>?page=faq" class="btn btn-collection bg-color bg-color-grey">FAQ</a>
-      <div class="collection-grid--item_thumb"></div>
+      <div class="collection-grid--item_thumb">
+        <img src="<?php echo $sitehome; ?>/assets/collection-default.jpg" class="img-responsive" alt="" />
+      </div>
     </div>
 
   </div>

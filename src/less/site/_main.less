@@ -1,5 +1,40 @@
 @fs-grid-gutter: 1.0416666666666667%;
 
+body,html {
+
+  @media @desktop {
+    background: @bgGray;
+    min-height: 100%;
+  }
+
+}
+
+#wrapper {
+
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  transition: 300ms ease;
+  background: @white;
+
+  &.fs-swap-active {
+
+    @media @min {
+      transform: translate(-85%, 0%);
+    }
+
+    @media @tablet {
+      transform: translate(-33%, 0%);
+    }
+
+    @media @desktop {
+      transform: translate(-25%, 0%);
+    }
+
+  }
+
+}
+
 p {
 
   color: inherit;
