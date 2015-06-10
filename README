@@ -3,3 +3,4 @@ Building this in PHP during the templating process -- will migrate to Shopify on
 Todo:
 - Clean up the navigation so there aren't any link-gaps as you hover over each
 - Clean up the FAQ fresh/freeze section on mobile
+- Add alternate theme.php(liquid) file for sections that go all the way to the edge.
