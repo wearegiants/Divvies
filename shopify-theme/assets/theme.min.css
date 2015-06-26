@@ -645,7 +645,7 @@ p.emphasized {
 }
 #header {
   padding: 35px 0 25px;
-  margin-bottom: 16.66666667px;
+  margin-bottom: 25px;
 }
 #header--logo {
   display: block;
@@ -674,6 +674,25 @@ p.emphasized {
   #header .text-right {
     text-align: right;
   }
+}
+#header .upper a {
+  display: inline-block;
+  height: 24px;
+  line-height: 24px;
+  padding: 0 8px;
+  border-right: 1px solid #d9d9d9;
+  color: #b3b3b3;
+  font-weight: bold;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+#header .upper a.cart-toggle {
+  border: none;
+  padding-right: 0;
+  padding-left: 35px;
+  background: url(icon-cart.png) 8px -2px no-repeat;
+  background-size: auto 23px;
+  text-indent: -9999px;
 }
 #header nav.lower .btn-link {
   color: #ef6343;
@@ -804,7 +823,7 @@ p.emphasized {
 }
 .banner,
 .slider {
-  background: #686868;
+  background: #222222;
   margin-bottom: 16.66666667px;
   position: relative;
   color: #ffffff;
@@ -869,6 +888,17 @@ p.emphasized {
     min-height: 420px;
   }
 }
+.banner--background,
+.slider--background {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  opacity: .75;
+}
 .banner--centered,
 .slider--centered {
   left: 50%;
@@ -878,6 +908,7 @@ p.emphasized {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 100%;
+  z-index: 2;
 }
 @media screen and (min-width: 300px) {
   .banner--centered,

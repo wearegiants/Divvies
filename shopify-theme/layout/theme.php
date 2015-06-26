@@ -47,7 +47,7 @@
           <div class="fs-cell fs-lg-8 fs-md-4 fs-sm-hide text-right">
             <div class="upper">
               <a href="<?php echo $themeurl; ?>?account">Account</a>
-              <a href="#" class="target .cart-toggle" data-swap-target=".toggle" data-swap-linked='.cart-toggle'><span class="cart-icon"></span> Icon (0)</a>
+              <a href="#" class="target cart-toggle" data-swap-target=".toggle" data-swap-linked='.cart-toggle'>&nbsp;</a>
             </div>
             <nav class="lower">
               <a class="btn btn-link current" href="<?php echo $themeurl; ?>?list-collections">Shop Treats</a>

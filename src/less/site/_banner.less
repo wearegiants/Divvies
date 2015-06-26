@@ -1,6 +1,6 @@
 .banner, .slider {
 
-  background: @gray;
+  background: @black;
   margin-bottom: @spaced/1.5;
   position: relative;
   color: @white;
@@ -40,10 +40,18 @@
 
   }
 
+  &--background {
+    .cover();
+    background-size: cover;
+    background-position: center center;
+    opacity: .75;
+  }
+
   &--centered {
 
     .center();
     width: 100%;
+    z-index: 2;
 
     @media @min {
       text-align: center;

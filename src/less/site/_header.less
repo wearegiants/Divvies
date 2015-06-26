@@ -1,7 +1,7 @@
 #header {
 
   padding: @spaced+10 0 @spaced;
-  margin-bottom: @spaced/1.5;
+  margin-bottom: @spaced;
 
   &--logo {
 
@@ -29,6 +29,30 @@
   .text-right {
     @media @min {
       text-align: right;
+    }
+  }
+
+  .upper {
+    a {
+
+      display: inline-block;
+      height: 24px;
+      line-height: 24px;
+      padding: 0 8px;
+      border-right: 1px solid lighten(@lightGray, 15%);
+      color: @lightGray;
+      font-weight: bold;
+      .font_size(14);
+
+      &.cart-toggle {
+        border: none;
+        padding-right: 0;
+        padding-left: 35px;
+        background: url(icon-cart.png) 8px -2px no-repeat;
+        background-size: auto 23px;
+        text-indent: -9999px;
+      }
+
     }
   }
 

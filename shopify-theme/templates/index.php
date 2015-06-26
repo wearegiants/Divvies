@@ -9,6 +9,7 @@
       <div class="slider--content banner--centered">
         <h1>Divvies’ treats are safe, sweet, and delicious. No nuts, no eggs, no dairy – no leftovers.</h1>
       </div>
+      <div class="slider--background" style="background-image:url('http://i.imgur.com/37w80TG.jpg');"></div>
     </div>
 
     <div class="slider--slide">
@@ -16,6 +17,7 @@
       <div class="slider--content banner--centered">
         <h1>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h1>
       </div>
+      <div class="slider--background" style="background-image:url('http://i.imgur.com/37w80TG.jpg');"></div>
     </div>
     
     
