@@ -786,6 +786,18 @@ p.emphasized {
   color: #ffffff;
   background: #686868;
 }
+@media screen and (min-width: 300px) {
+  #footer--legal {
+    font-size: 11px;
+    font-size: 0.6875rem;
+  }
+}
+@media screen and (min-width: 500px) {
+  #footer--legal {
+    font-size: 13px;
+    font-size: 0.8125rem;
+  }
+}
 #footer--legal p {
   margin-bottom: 0;
   color: inherit;
