@@ -36,7 +36,7 @@
 <body class="fs-grid">
   <div id="wrapper" class="toggle">
     <div class="fs-row">
-      <div class='fs-cell fs-xl-10 fs-lg-11 fs-md-6 fs-sm-3 fs-centered'>
+      <div class='fs-cell fs-xl-12 fs-lg-12 fs-md-6 fs-sm-3 fs-centered'>
         <header id="header" class="fs-row">
           <div class="fs-cell fs-lg-4 fs-md-2 fs-sm-2">
             <a href="<?php echo $themeurl; ?>?index"><span id="header--logo">Divvies</span></a>
@@ -47,7 +47,7 @@
           <div class="fs-cell fs-lg-8 fs-md-4 fs-sm-hide text-right">
             <div class="upper">
               <a href="<?php echo $themeurl; ?>?account">Account</a>
-              <a href="#" class="target .cart-toggle" data-swap-target=".toggle" data-swap-linked='.cart-toggle'><span class="cart-icon"></span> View Cart (0)</a>
+              <a href="#" class="target .cart-toggle" data-swap-target=".toggle" data-swap-linked='.cart-toggle'><span class="cart-icon"></span> Icon (0)</a>
             </div>
             <nav class="lower">
               <a class="btn btn-link current" href="<?php echo $themeurl; ?>?list-collections">Shop Treats</a>

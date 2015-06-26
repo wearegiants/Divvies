@@ -6,11 +6,23 @@
   &--logo {
 
     display: block;
-    background: @pink;
     text-align: center;
-    height: 80px;
-    line-height: 80px;
+    height: 90px;
+    line-height: 90px;
     margin-top: -10px;
+    text-indent: -9999px;
+
+    @media @min {
+      background: url('logo-desktop.png') left center no-repeat;
+    }
+
+    @media @tablet {
+      background: url('logo-desktop.png') left center no-repeat;
+    }
+
+    @media @desktop {
+      background: url('logo-desktop.png') left center no-repeat;
+    }
 
   }
 
@@ -30,6 +42,8 @@
       border-bottom: 2px solid transparent;
       border-radius: 0;
       padding: 0;
+      text-transform: uppercase;
+      .font_size(14.5);
 
       @media @min {
 

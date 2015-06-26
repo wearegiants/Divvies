@@ -13,6 +13,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/shopify-theme\/assets\/divvies-logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 31148,
+		"inputAbbreviatedPath": "\/shopify-theme\/assets\/divvies-logo.png",
+		"outputAbbreviatedPath": "\/shopify-theme\/assets\/divvies-logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/shopify-theme\/assets\/faq--shipping_1.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -35,6 +46,50 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/shopify-theme\/assets\/icon-cart.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 739,
+		"inputAbbreviatedPath": "\/shopify-theme\/assets\/icon-cart.png",
+		"outputAbbreviatedPath": "\/shopify-theme\/assets\/icon-cart.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/shopify-theme\/assets\/icon-cart_full.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1194,
+		"inputAbbreviatedPath": "\/shopify-theme\/assets\/icon-cart_full.png",
+		"outputAbbreviatedPath": "\/shopify-theme\/assets\/icon-cart_full.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/shopify-theme\/assets\/icon-cookie-off.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 486,
+		"inputAbbreviatedPath": "\/shopify-theme\/assets\/icon-cookie-off.png",
+		"outputAbbreviatedPath": "\/shopify-theme\/assets\/icon-cookie-off.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/shopify-theme\/assets\/icon-cookie-on.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 486,
+		"inputAbbreviatedPath": "\/shopify-theme\/assets\/icon-cookie-on.png",
+		"outputAbbreviatedPath": "\/shopify-theme\/assets\/icon-cookie-on.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/shopify-theme\/assets\/icon-nuts.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -42,6 +97,17 @@
 		"initialSize": 8597,
 		"inputAbbreviatedPath": "\/shopify-theme\/assets\/icon-nuts.png",
 		"outputAbbreviatedPath": "\/shopify-theme\/assets\/icon-nuts.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/shopify-theme\/assets\/logo-desktop.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3983,
+		"inputAbbreviatedPath": "\/shopify-theme\/assets\/logo-desktop.png",
+		"outputAbbreviatedPath": "\/shopify-theme\/assets\/logo-desktop.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -496,7 +562,7 @@
 		},
 	"\/src\/bower_components\/Formstone\/dist\/js\/carousel.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/src\/bower_components\/Formstone\/dist\/js\/carousel.js",
 		"outputAbbreviatedPath": "\/src\/bower_components\/Formstone\/dist\/js\/min\/carousel-min.js",
@@ -1725,7 +1791,7 @@
 		"disableJavascript": 0,
 		"fileType": 1,
 		"ieCompatibility": 1,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/src\/bower_components\/Formstone\/src\/less\/carousel.less",
 		"outputAbbreviatedPath": "\/src\/bower_components\/Formstone\/src\/css\/carousel.css",
@@ -3598,6 +3664,26 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/src\/less\/site\/_faq.less",
 		"outputAbbreviatedPath": "\/src\/less\/css\/_faq.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/src\/less\/site\/_fonts.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/less\/site\/_fonts.less",
+		"outputAbbreviatedPath": "\/src\/less\/css\/_fonts.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,

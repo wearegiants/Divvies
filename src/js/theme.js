@@ -4,6 +4,13 @@ function cartMenu(){
 
 }
 
+function bannerSlider(){
+  $(".banner.slider").carousel({
+    controls: false,
+    infinite: true
+  });
+}
+
 function productHover(){
 
   $(".collection-grid--item").hover(
@@ -21,5 +28,6 @@ $(document).ready(function(){
 
   cartMenu();
   productHover();
+  bannerSlider();
 
 });

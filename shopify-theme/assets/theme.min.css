@@ -21,7 +21,7 @@
 }
 .bg-color-gray,
 .bg-color-grey {
-  background: #686868;
+  background: #b3b3b3;
 }
 .bg-color-lightgray,
 .bg-color-lightgrey {
@@ -72,6 +72,13 @@ img.rounded {
 .fs-row.nomargin {
   width: 100%;
   margin: auto;
+}
+.coverlink {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 *,
 *:link,
@@ -291,7 +298,7 @@ form textarea {
   font-size: 1.25rem;
   width: 100%;
   border-radius: 2px;
-  border: 1px solid #cbcbd2;
+  border: 1px solid #b3b3b3;
   box-shadow: none;
   margin: 0 0 10px;
   padding: 10px;
@@ -393,7 +400,7 @@ img.align-middle {
 }
 .btn.btn-default,
 .btn.epm-submit-chimp {
-  box-shadow: inset 0 0 0 1px #cbcbd2;
+  box-shadow: inset 0 0 0 1px #b3b3b3;
   background: none;
 }
 .btn.btn-default:hover,
@@ -433,7 +440,7 @@ img.align-middle {
 }
 .btn.disabled {
   background: #f2f2f2;
-  color: #cbcbd2;
+  color: #b3b3b3;
   box-shadow: inset 0 0 0 1px #b4b4b4;
   pointer-events: none;
 }
@@ -488,6 +495,10 @@ img.align-middle {
 .error404 #error-msg h3 a,
 .error404 #error-msg h3 a:visited {
   color: #cc1c4a;
+}
+body,
+html {
+  font-family: 'Lato';
 }
 @media screen and (min-width: 980px) {
   body,
@@ -556,17 +567,108 @@ p.emphasized {
   top: .125em;
   text-shadow: 0 0 2px #68c7e3;
 }
+/* Lato Bold */
+@font-face {
+  font-family: 'Lato';
+  src: url('lato-bol-webfont.eot');
+  src: url('lato-bol-webfont.eot?#iefix') format('embedded-opentype'), url('lato-bol-webfont.woff') format('woff'), url('lato-bol-webfont.ttf') format('truetype'), url('lato-bol-webfont.svg#latobold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+/* Lato Bold Italic */
+@font-face {
+  font-family: 'Lato';
+  src: url('lato-bolita-webfont.eot');
+  src: url('lato-bolita-webfont.eot?#iefix') format('embedded-opentype'), url('lato-bolita-webfont.woff') format('woff'), url('lato-bolita-webfont.ttf') format('truetype'), url('lato-bolita-webfont.svg#latobold_italic') format('svg');
+  font-weight: 700;
+  font-style: italic;
+}
+/* Lato Light */
+@font-face {
+  font-family: 'Lato';
+  src: url('lato-lig-webfont.eot');
+  src: url('lato-lig-webfont.eot?#iefix') format('embedded-opentype'), url('lato-lig-webfont.woff') format('woff'), url('lato-lig-webfont.ttf') format('truetype'), url('lato-lig-webfont.svg#latolight') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+/* Lato Light Italic */
+@font-face {
+  font-family: 'Lato';
+  src: url('lato-ligita-webfont.eot');
+  src: url('lato-ligita-webfont.eot?#iefix') format('embedded-opentype'), url('lato-ligita-webfont.woff') format('woff'), url('lato-ligita-webfont.ttf') format('truetype'), url('lato-ligita-webfont.svg#latolight_italic') format('svg');
+  font-weight: 300;
+  font-style: italic;
+}
+/* Lato */
+@font-face {
+  font-family: 'Lato';
+  src: url('lato-reg-webfont.eot');
+  src: url('lato-reg-webfont.eot?#iefix') format('embedded-opentype'), url('lato-reg-webfont.woff') format('woff'), url('lato-reg-webfont.ttf') format('truetype'), url('lato-reg-webfont.svg#latoregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Lato Italic */
+@font-face {
+  font-family: 'Lato';
+  src: url('lato-regita-webfont.eot');
+  src: url('lato-regita-webfont.eot?#iefix') format('embedded-opentype'), url('lato-regita-webfont.woff') format('woff'), url('lato-regita-webfont.ttf') format('truetype'), url('lato-regita-webfont.svg#latoitalic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('proximanovacond-light-webfont.eot');
+  src: url('proximanovacond-light-webfont.eot?#iefix') format('embedded-opentype'), url('proximanovacond-light-webfont.woff') format('woff'), url('proximanovacond-light-webfont.ttf') format('truetype'), url('proximanovacond-light-webfont.svg#proxima_nova_condensedlight') format('svg');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('proximanovacond-regular-webfont.eot');
+  src: url('proximanovacond-regular-webfont.eot?#iefix') format('embedded-opentype'), url('proximanovacond-regular-webfont.woff') format('woff'), url('proximanovacond-regular-webfont.ttf') format('truetype'), url('proximanovacond-regular-webfont.svg#proxima_nova_cn_rgregular') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('proximanovacond-semibold-webfont.eot');
+  src: url('proximanovacond-semibold-webfont.eot?#iefix') format('embedded-opentype'), url('proximanovacond-semibold-webfont.woff') format('woff'), url('proximanovacond-semibold-webfont.ttf') format('truetype'), url('proximanovacond-semibold-webfont.svg#proxima_nova_condensedSBd') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('proximanovacond-semiboldit-webfont.eot');
+  src: url('proximanovacond-semiboldit-webfont.eot?#iefix') format('embedded-opentype'), url('proximanovacond-semiboldit-webfont.woff') format('woff'), url('proximanovacond-semiboldit-webfont.ttf') format('truetype'), url('proximanovacond-semiboldit-webfont.svg#proxima_nova_condensedSBdIt') format('svg');
+  font-weight: 400;
+  font-style: italic;
+}
 #header {
   padding: 35px 0 25px;
   margin-bottom: 16.66666667px;
 }
 #header--logo {
   display: block;
-  background: #f4908e;
   text-align: center;
-  height: 80px;
-  line-height: 80px;
+  height: 90px;
+  line-height: 90px;
   margin-top: -10px;
+  text-indent: -9999px;
+}
+@media screen and (min-width: 300px) {
+  #header--logo {
+    background: url('logo-desktop.png') left center no-repeat;
+  }
+}
+@media screen and (min-width: 740px) {
+  #header--logo {
+    background: url('logo-desktop.png') left center no-repeat;
+  }
+}
+@media screen and (min-width: 980px) {
+  #header--logo {
+    background: url('logo-desktop.png') left center no-repeat;
+  }
 }
 @media screen and (min-width: 300px) {
   #header .text-right {
@@ -580,6 +682,9 @@ p.emphasized {
   border-bottom: 2px solid transparent;
   border-radius: 0;
   padding: 0;
+  text-transform: uppercase;
+  font-size: 14.5px;
+  font-size: 0.90625rem;
 }
 @media screen and (min-width: 740px) {
   #header nav.lower .btn-link {
@@ -697,22 +802,75 @@ p.emphasized {
     width: 25%;
   }
 }
-.banner {
-  min-height: 375px;
+.banner,
+.slider {
   background: #686868;
   margin-bottom: 16.66666667px;
   position: relative;
   color: #ffffff;
 }
 .banner h1,
+.slider h1,
 .banner h2,
+.slider h2,
 .banner h3,
+.slider h3,
 .banner h4,
+.slider h4,
 .banner h5,
-.banner h6 {
+.slider h5,
+.banner h6,
+.slider h6 {
   color: inherit;
+  font-family: 'Proxima Nova';
+  font-weight: 500;
+  line-height: 1.1;
 }
-.banner--centered {
+@media screen and (min-width: 300px) {
+  .banner h1,
+  .slider h1 {
+    font-size: 38px;
+    font-size: 2.375rem;
+  }
+}
+@media screen and (min-width: 740px) {
+  .banner h1,
+  .slider h1 {
+    font-size: 48px;
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 980px) {
+  .banner h1,
+  .slider h1 {
+    font-size: 58px;
+    font-size: 3.625rem;
+  }
+}
+.banner--slide,
+.slider--slide {
+  position: relative;
+}
+@media screen and (min-width: 300px) {
+  .banner--slide,
+  .slider--slide {
+    min-height: 350px;
+  }
+}
+@media screen and (min-width: 740px) {
+  .banner--slide,
+  .slider--slide {
+    min-height: 420px;
+  }
+}
+@media screen and (min-width: 980px) {
+  .banner--slide,
+  .slider--slide {
+    min-height: 420px;
+  }
+}
+.banner--centered,
+.slider--centered {
   left: 50%;
   position: absolute;
   top: 50%;
@@ -722,10 +880,42 @@ p.emphasized {
   width: 100%;
 }
 @media screen and (min-width: 300px) {
-  .banner--centered {
+  .banner--centered,
+  .slider--centered {
     text-align: center;
     padding: 0 25px;
   }
+}
+@media screen and (min-width: 740px) {
+  .banner--centered,
+  .slider--centered {
+    padding: 0 50px;
+  }
+}
+@media screen and (min-width: 980px) {
+  .banner--centered,
+  .slider--centered {
+    padding: 0 75px;
+  }
+}
+.banner .fs-carousel-pagination,
+.slider .fs-carousel-pagination {
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.banner .fs-carousel-page,
+.slider .fs-carousel-page {
+  background: transparent url('icon-cookie-off.png');
+  background-size: cover;
+  -webkit-transition: 300ms ease;
+          transition: 300ms ease;
+}
+.banner .fs-carousel-active,
+.slider .fs-carousel-active {
+  background: transparent url('icon-cookie-on.png');
+  background-size: cover;
 }
 #mailchimp {
   position: relative;
@@ -736,6 +926,8 @@ p.emphasized {
   background: #ef6343;
   color: #ffffff;
   border-radius: 0;
+  font-size: 16px;
+  font-size: 1rem;
   -webkit-font-smoothing: antialiased;
 }
 @media screen and (min-width: 740px) {
@@ -840,6 +1032,10 @@ p.emphasized {
 }
 .collection-grid--item .btn-collection {
   color: #ffffff;
+  font-family: 'Proxima Nova';
+  font-weight: 300;
+  font-size: 33px;
+  font-size: 2.0625rem;
 }
 .collection-grid--item_thumb {
   background: #b4b4b4;

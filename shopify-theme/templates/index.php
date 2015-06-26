@@ -3,9 +3,22 @@
   <?php include ('../snippets/mailchimp.php');?>
 
   <div id="index--slider" class="banner slider text-center">
-    <div class="slider--slide"></div>
-    <div class="slider--slide"></div>
-    <div class="slider--slide"></div>
+
+    <div class="slider--slide">
+      <a href="/" class="coverlink"></a>
+      <div class="slider--content banner--centered">
+        <h1>Divvies’ treats are safe, sweet, and delicious. No nuts, no eggs, no dairy – no leftovers.</h1>
+      </div>
+    </div>
+
+    <div class="slider--slide">
+      <a href="/" class="coverlink"></a>
+      <div class="slider--content banner--centered">
+        <h1>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h1>
+      </div>
+    </div>
+    
+    
   </div>
 
   <div id="index--collection-grid" class="collection-grid fs-row text-center">
