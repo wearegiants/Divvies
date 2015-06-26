@@ -499,7 +499,6 @@ img.align-middle {
 }
 body,
 html {
-  height: 100%;
   background: #ebebeb;
   font-family: 'Lato';
 }
@@ -515,7 +514,6 @@ html {
   -webkit-transition: 300ms ease;
           transition: 300ms ease;
   background: #ffffff;
-  height: 100%;
 }
 @media screen and (min-width: 300px) {
   #wrapper.fs-swap-active {
@@ -659,7 +657,8 @@ p.emphasized {
 }
 @media screen and (min-width: 300px) {
   #header--logo {
-    background: url('logo-desktop.png') left center no-repeat;
+    background: url('divvies-logo.png') left center no-repeat;
+    background-size: auto 100%;
   }
 }
 @media screen and (min-width: 740px) {
