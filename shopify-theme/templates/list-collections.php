@@ -1,11 +1,16 @@
-<section id="collection-listing" class="collection-grid">
+<section id="collection-listing" class="collection-grid fs-row">
+<div class="fs-cell fs-full-all">
 
   <?php include ('../snippets/mailchimp.php');?>
 
   <div id="collection-listing--slider" class="banner slider text-center">
-    <div class="slider--slide"></div>
-    <div class="slider--slide"></div>
-    <div class="slider--slide"></div>
+    <div class="slider--slide">
+      <div class="banner--centered">
+        <h1>New! Cookie Sandwiches</h1>
+        <h2>Chocolate Brownie Cookie Sandwiches with Vanilla Filling</h2>
+      </div>
+      <div class="slider--background" style="background-image:url('http://i.imgur.com/37w80TG.jpg');"></div>
+    </div>
   </div>
 
   <header id="collection-listing--header" class="header">
@@ -46,4 +51,5 @@
 
   </div>
 
+</div>
 </section>

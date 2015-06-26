@@ -2,10 +2,11 @@
 
 body,html {
 
+  height: 100%;
+  background: @gray;
   .lato();
 
   @media @desktop {
-    background: @bgGray;
     min-height: 100%;
   }
 
@@ -13,11 +14,11 @@ body,html {
 
 #wrapper {
 
-  height: 100%;
   position: relative;
   z-index: 2;
   transition: 300ms ease;
   background: @white;
+  height: 100%;
 
   &.fs-swap-active {
 

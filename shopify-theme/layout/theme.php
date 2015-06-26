@@ -35,33 +35,29 @@
 </head>
 <body class="fs-grid">
   <div id="wrapper" class="toggle">
-    <div class="fs-row">
-      <div class='fs-cell fs-xl-12 fs-lg-12 fs-md-6 fs-sm-3 fs-centered'>
-        <header id="header" class="fs-row">
-          <div class="fs-cell fs-lg-4 fs-md-2 fs-sm-2">
-            <a href="<?php echo $themeurl; ?>?index"><span id="header--logo">Divvies</span></a>
-          </div>
-          <div class="fs-cell fs-lg-hide fs-md-hide fs-sm-1 text-right">
-            <a href="#" class="target .cart-toggle" data-swap-target=".toggle" data-swap-linked='.cart-toggle'><span class="cart-icon"></span> Menu</a>
-          </div>
-          <div class="fs-cell fs-lg-8 fs-md-4 fs-sm-hide text-right">
-            <div class="upper">
-              <a href="<?php echo $themeurl; ?>?account">Account</a>
-              <a href="#" class="target cart-toggle" data-swap-target=".toggle" data-swap-linked='.cart-toggle'>&nbsp;</a>
-            </div>
-            <nav class="lower">
-              <a class="btn btn-link current" href="<?php echo $themeurl; ?>?list-collections">Shop Treats</a>
-              <a class="btn btn-link" href="<?php echo $themeurl; ?>?page=find-us">Where to Find Us</a>
-              <a class="btn btn-link" href="<?php echo $themeurl; ?>?page=about-us">About Us</a>
-              <a class="btn btn-link" href="<?php echo $themeurl; ?>?page=contact-us">Contact Us</a>
-              <a class="btn btn-link btn-last" href="<?php echo $themeurl; ?>?page=faq">FAQ</a>
-            </nav>
-          </div>
-        </header>
-        <div id="content">
-          <?php include('../../stage/content.php'); ?>
+    <header id="header" class="fs-row">
+      <div class="fs-cell fs-lg-4 fs-md-2 fs-sm-2">
+        <a href="<?php echo $themeurl; ?>?index"><span id="header--logo">Divvies</span></a>
+      </div>
+      <div class="fs-cell fs-lg-hide fs-md-3 fs-sm-1 text-right">
+        <a href="#" class="target cart-toggle" data-swap-target=".toggle" data-swap-linked='.cart-toggle'><span class="cart-icon"></span> Menu</a>
+      </div>
+      <div class="fs-cell fs-lg-8 fs-md-hide fs-sm-hide text-right">
+        <div class="upper">
+          <a href="<?php echo $themeurl; ?>?account">Account</a>
+          <a href="#" class="target cart-toggle" data-swap-target=".toggle" data-swap-linked='.cart-toggle'>&nbsp;</a>
         </div>
-      </div><!--Wrapper-->
+        <nav class="lower">
+          <a class="btn btn-link current" href="<?php echo $themeurl; ?>?list-collections">Shop Treats</a>
+          <a class="btn btn-link" href="<?php echo $themeurl; ?>?page=find-us">Where to Find Us</a>
+          <a class="btn btn-link" href="<?php echo $themeurl; ?>?page=about-us">About Us</a>
+          <a class="btn btn-link" href="<?php echo $themeurl; ?>?page=contact-us">Contact Us</a>
+          <a class="btn btn-link btn-last" href="<?php echo $themeurl; ?>?page=faq">FAQ</a>
+        </nav>
+      </div>
+    </header>
+    <div id="content">
+      <?php include('../../stage/content.php'); ?>
     </div>
     <footer id="footer" class="text-center">
       <div id="footer--social">

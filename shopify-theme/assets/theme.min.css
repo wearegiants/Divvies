@@ -28,7 +28,7 @@
   background: #b4b4b4;
 }
 .bg-color-bggray {
-  background: #f2f2f2;
+  background: #ebebeb;
 }
 .left {
   float: left;
@@ -79,6 +79,7 @@ img.rounded {
   position: absolute;
   top: 0;
   width: 100%;
+  z-index: 2;
 }
 *,
 *:link,
@@ -405,7 +406,7 @@ img.align-middle {
 }
 .btn.btn-default:hover,
 .btn.epm-submit-chimp:hover {
-  background: #f2f2f2;
+  background: #ebebeb;
 }
 .btn.btn-first {
   padding-left: 0!important;
@@ -425,8 +426,8 @@ img.align-middle {
   display: block;
   margin: 0;
   border-radius: 0;
-  height: 60px;
-  line-height: 60px;
+  height: 70px;
+  line-height: 70px;
   font-size: 26px;
   font-size: 1.625rem;
   text-align: inherit;
@@ -439,7 +440,7 @@ img.align-middle {
   line-height: 34px;
 }
 .btn.disabled {
-  background: #f2f2f2;
+  background: #ebebeb;
   color: #b3b3b3;
   box-shadow: inset 0 0 0 1px #b4b4b4;
   pointer-events: none;
@@ -498,22 +499,23 @@ img.align-middle {
 }
 body,
 html {
+  height: 100%;
+  background: #686868;
   font-family: 'Lato';
 }
 @media screen and (min-width: 980px) {
   body,
   html {
-    background: #f2f2f2;
     min-height: 100%;
   }
 }
 #wrapper {
-  height: 100%;
   position: relative;
   z-index: 2;
   -webkit-transition: 300ms ease;
           transition: 300ms ease;
   background: #ffffff;
+  height: 100%;
 }
 @media screen and (min-width: 300px) {
   #wrapper.fs-swap-active {
@@ -726,6 +728,9 @@ p.emphasized {
   margin-top: 25px;
   font-size: 12px;
   font-size: 0.75rem;
+  position: relative;
+  background: #ffffff;
+  z-index: 2;
 }
 #footer--social {
   border-top: 1px solid #93d7eb;
@@ -792,7 +797,7 @@ p.emphasized {
   top: 0;
   right: 0;
   z-index: 1;
-  background: #f2f2f2;
+  background: #ebebeb;
   padding: 15px;
   -webkit-transform: translate(30%, 0%);
       -ms-transform: translate(30%, 0%);
@@ -866,6 +871,31 @@ p.emphasized {
     font-size: 3.625rem;
   }
 }
+.banner h2,
+.slider h2 {
+  font-weight: 200;
+}
+@media screen and (min-width: 300px) {
+  .banner h2,
+  .slider h2 {
+    font-size: 28px;
+    font-size: 1.75rem;
+  }
+}
+@media screen and (min-width: 740px) {
+  .banner h2,
+  .slider h2 {
+    font-size: 24px;
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 980px) {
+  .banner h2,
+  .slider h2 {
+    font-size: 28px;
+    font-size: 1.75rem;
+  }
+}
 .banner--slide,
 .slider--slide {
   position: relative;
@@ -897,7 +927,6 @@ p.emphasized {
   width: 100%;
   background-size: cover;
   background-position: center center;
-  opacity: .75;
 }
 .banner--centered,
 .slider--centered {
@@ -909,24 +938,26 @@ p.emphasized {
           transform: translate(-50%, -50%);
   width: 100%;
   z-index: 2;
+  background: url('slider-bg.png') center center;
+  background-size: 100% 100%;
 }
 @media screen and (min-width: 300px) {
   .banner--centered,
   .slider--centered {
     text-align: center;
-    padding: 0 25px;
+    padding: 25px;
   }
 }
 @media screen and (min-width: 740px) {
   .banner--centered,
   .slider--centered {
-    padding: 0 50px;
+    padding: 25px 50px;
   }
 }
 @media screen and (min-width: 980px) {
   .banner--centered,
   .slider--centered {
-    padding: 0 75px;
+    padding: 25px 75px;
   }
 }
 .banner .fs-carousel-pagination,
@@ -952,6 +983,21 @@ p.emphasized {
   position: relative;
   z-index: 9;
 }
+@media screen and (min-width: 740px) {
+  #mailchimp:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -15px;
+    bottom: -23px;
+    z-index: 99;
+    border-style: solid;
+    border-width: 0 15px 6px 0;
+    border-color: transparent #8A4D40 transparent transparent;
+  }
+}
 #mailchimp button {
   padding: 0 15px;
   background: #ef6343;
@@ -959,7 +1005,32 @@ p.emphasized {
   border-radius: 0;
   font-size: 16px;
   font-size: 1rem;
+  position: relative;
   -webkit-font-smoothing: antialiased;
+}
+#mailchimp button:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: -12.5px;
+  width: 0;
+  height: 0;
+  top: 0;
+  border-style: solid;
+  border-width: 17.5px 12.5px 0 0;
+  border-color: #ef6343 transparent transparent transparent;
+}
+#mailchimp button:before {
+  content: '';
+  display: block;
+  position: absolute;
+  right: -12.5px;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  border-style: solid;
+  border-width: 17.5px 0 0 12.5px;
+  border-color: transparent transparent transparent #ef6343;
 }
 @media screen and (min-width: 740px) {
   #mailchimp button {
@@ -1060,6 +1131,7 @@ p.emphasized {
 }
 .collection-grid--item {
   margin-bottom: 16.66666667px;
+  position: relative;
 }
 .collection-grid--item .btn-collection {
   color: #ffffff;

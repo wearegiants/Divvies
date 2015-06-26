@@ -1,4 +1,6 @@
-<section id="index">
+<section id="index" class="fs-row">
+
+  <div class="fs-cell fs-all-full">
 
   <?php include ('../snippets/mailchimp.php');?>
 
@@ -26,7 +28,8 @@
   <div id="index--collection-grid" class="collection-grid fs-row text-center">
 
     <div class="collection-grid--item fs-cell fs-lg-4 fs-md-2 fs-sm-3">
-      <a href="<?php echo $themeurl; ?>?list-collections" class="btn btn-collection bg-color bg-color-coral">Shop Treats</a>
+      <a class="coverlink" href="<?php echo $themeurl; ?>?list-collections"></a>
+      <span class="btn btn-collection bg-color bg-color-coral">Shop Treats</span>
       <div class="collection-grid--item_thumb">
         <img src="<?php echo $sitehome; ?>/assets/collection-default.jpg" class="img-responsive" alt="" />
       </div>
@@ -45,6 +48,8 @@
         <img src="<?php echo $sitehome; ?>/assets/collection-default.jpg" class="img-responsive" alt="" />
       </div>
     </div>
+
+  </div>
 
   </div>
 

@@ -24,6 +24,19 @@
     }
   }
 
+  h2 {
+    font-weight: 200;
+    @media @min {
+      .font_size(28);
+    }
+    @media @tablet {
+      .font_size(24);
+    }
+    @media @desktop {
+      .font_size(28);
+    }
+  }
+
   &--slide {
     
     position: relative;
@@ -44,7 +57,6 @@
     .cover();
     background-size: cover;
     background-position: center center;
-    opacity: .75;
   }
 
   &--centered {
@@ -52,18 +64,20 @@
     .center();
     width: 100%;
     z-index: 2;
+    background: url('slider-bg.png') center center;
+    background-size: 100% 100%;
 
     @media @min {
       text-align: center;
-      padding: 0 @spaced;
+      padding: @spaced;
     }
 
     @media @tablet {
-      padding: 0 @spaced*2;
+      padding: @spaced @spaced*2;
     }
 
     @media @desktop {
-      padding: 0 @spaced*3;
+      padding:@spaced @spaced*3;
     }
 
   }
@@ -97,6 +111,22 @@
   position: relative;
   z-index: 9;
 
+  @media @tablet {
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 0;
+      left: -15px;
+      bottom: -23px;
+      z-index: 99;
+      border-style: solid;
+      border-width: 0 15px 6px 0;
+      border-color: transparent #8A4D40 transparent transparent;
+    }
+  }
+
   button {
 
     padding: 0 15px;
@@ -104,7 +134,34 @@
     color: @white;
     border-radius: 0;
     .font_size(16);
+    position: relative;
     -webkit-font-smoothing: antialiased;
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      right: -12.5px;
+      width: 0;
+      height: 0;
+      top: 0;
+      border-style: solid;
+      border-width: 17.5px 12.5px 0 0;
+      border-color: @orange transparent transparent transparent;
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      right: -12.5px;
+      width: 0;
+      height: 0;
+      bottom: 0;
+      border-style: solid;
+      border-width: 17.5px 0 0 12.5px;
+      border-color: transparent transparent transparent @orange;
+    }
 
     @media @tablet {
       position: absolute;
