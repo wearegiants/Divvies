@@ -426,11 +426,23 @@ img.align-middle {
   display: block;
   margin: 0;
   border-radius: 0;
-  height: 70px;
-  line-height: 70px;
-  font-size: 26px;
-  font-size: 1.625rem;
   text-align: inherit;
+}
+@media screen and (min-width: 300px) {
+  .btn-collection {
+    height: 50px;
+    line-height: 50px;
+    font-size: 26px;
+    font-size: 1.625rem;
+  }
+}
+@media screen and (min-width: 740px) {
+  .btn-collection {
+    height: 70px;
+    line-height: 70px;
+    font-size: 33px;
+    font-size: 2.0625rem;
+  }
 }
 .btn.btn-sm {
   font-size: 12px;
@@ -499,7 +511,6 @@ img.align-middle {
 }
 body,
 html {
-  background: #ebebeb;
   font-family: 'Lato';
 }
 @media screen and (min-width: 980px) {
@@ -514,6 +525,11 @@ html {
   -webkit-transition: 300ms ease;
           transition: 300ms ease;
   background: #ffffff;
+}
+@media screen and (min-width: 300px) {
+  #wrapper {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  }
 }
 @media screen and (min-width: 300px) {
   #wrapper.fs-swap-active {
@@ -650,8 +666,6 @@ p.emphasized {
 #header--logo {
   display: block;
   text-align: center;
-  height: 90px;
-  line-height: 90px;
   margin-top: -10px;
   text-indent: -9999px;
 }
@@ -659,11 +673,14 @@ p.emphasized {
   #header--logo {
     background: url('divvies-logo.png') left center no-repeat;
     background-size: auto 100%;
+    height: 90px;
   }
 }
 @media screen and (min-width: 740px) {
   #header--logo {
     background: url('logo-desktop.png') left center no-repeat;
+    height: 90px;
+    line-height: 90px;
   }
 }
 @media screen and (min-width: 980px) {
@@ -843,6 +860,8 @@ p.emphasized {
   margin-bottom: 16.66666667px;
   position: relative;
   color: #ffffff;
+  border-radius: 3px;
+  overflow: hidden;
 }
 .banner h1,
 .slider h1,
@@ -864,8 +883,9 @@ p.emphasized {
 @media screen and (min-width: 300px) {
   .banner h1,
   .slider h1 {
-    font-size: 38px;
-    font-size: 2.375rem;
+    font-size: 34px;
+    font-size: 2.125rem;
+    line-height: 1;
   }
 }
 @media screen and (min-width: 740px) {
@@ -914,7 +934,7 @@ p.emphasized {
 @media screen and (min-width: 300px) {
   .banner--slide,
   .slider--slide {
-    min-height: 350px;
+    min-height: 300px;
   }
 }
 @media screen and (min-width: 740px) {
@@ -1043,6 +1063,14 @@ p.emphasized {
   border-width: 17.5px 0 0 12.5px;
   border-color: transparent transparent transparent #ef6343;
 }
+@media screen and (min-width: 300px) {
+  #mailchimp button {
+    position: absolute;
+    -webkit-transform: translate(0px, -50%);
+        -ms-transform: translate(0px, -50%);
+            transform: translate(0px, -50%);
+  }
+}
 @media screen and (min-width: 740px) {
   #mailchimp button {
     position: absolute;
@@ -1143,13 +1171,13 @@ p.emphasized {
 .collection-grid--item {
   margin-bottom: 16.66666667px;
   position: relative;
+  border-radius: 3px;
+  overflow: hidden;
 }
 .collection-grid--item .btn-collection {
   color: #ffffff;
   font-family: 'Proxima Nova';
   font-weight: 300;
-  font-size: 33px;
-  font-size: 2.0625rem;
 }
 .collection-grid--item_thumb {
   background: #b4b4b4;

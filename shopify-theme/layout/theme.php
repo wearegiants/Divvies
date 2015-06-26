@@ -34,62 +34,63 @@
 
 </head>
 <body class="fs-grid">
-  <div id="wrapper" class="toggle">
-    <header id="header" class="fs-row">
-      <div class="fs-cell fs-lg-4 fs-md-2 fs-sm-2">
-        <a href="<?php echo $themeurl; ?>?index"><span id="header--logo">Divvies</span></a>
-      </div>
-      <div class="fs-cell fs-lg-hide fs-md-3 fs-sm-1 text-right">
-        <a href="#" class="target cart-toggle" data-swap-target=".toggle" data-swap-linked='.cart-toggle'><span class="cart-icon"></span> Menu</a>
-      </div>
-      <div class="fs-cell fs-lg-8 fs-md-hide fs-sm-hide text-right">
-        <div class="upper">
-          <a href="<?php echo $themeurl; ?>?account">Account</a>
-          <a href="#" class="target cart-toggle" data-swap-target=".toggle" data-swap-linked='.cart-toggle'>&nbsp;</a>
+  <div id="wrapper-wrapper">
+    <div id="wrapper" class="toggle">
+      <header id="header" class="fs-row">
+        <div class="fs-cell fs-lg-4 fs-md-2 fs-sm-2">
+          <a href="<?php echo $themeurl; ?>?index"><span id="header--logo">Divvies</span></a>
         </div>
-        <nav class="lower">
-          <a class="btn btn-link current" href="<?php echo $themeurl; ?>?list-collections">Shop Treats</a>
-          <a class="btn btn-link" href="<?php echo $themeurl; ?>?page=find-us">Where to Find Us</a>
-          <a class="btn btn-link" href="<?php echo $themeurl; ?>?page=about-us">About Us</a>
-          <a class="btn btn-link" href="<?php echo $themeurl; ?>?page=contact-us">Contact Us</a>
-          <a class="btn btn-link btn-last" href="<?php echo $themeurl; ?>?page=faq">FAQ</a>
-        </nav>
+        <div class="fs-cell fs-lg-hide fs-md-3 fs-sm-1 text-right">
+          <a href="#" class="target cart-toggle" data-swap-target=".toggle" data-swap-linked='.cart-toggle'><span class="cart-icon"></span> Menu</a>
+        </div>
+        <div class="fs-cell fs-lg-8 fs-md-hide fs-sm-hide text-right">
+          <div class="upper">
+            <a href="<?php echo $themeurl; ?>?account">Account</a>
+            <a href="#" class="target cart-toggle" data-swap-target=".toggle" data-swap-linked='.cart-toggle'>&nbsp;</a>
+          </div>
+          <nav class="lower">
+            <a class="btn btn-link current" href="<?php echo $themeurl; ?>?list-collections">Shop Treats</a>
+            <a class="btn btn-link" href="<?php echo $themeurl; ?>?page=find-us">Where to Find Us</a>
+            <a class="btn btn-link" href="<?php echo $themeurl; ?>?page=about-us">About Us</a>
+            <a class="btn btn-link" href="<?php echo $themeurl; ?>?page=contact-us">Contact Us</a>
+            <a class="btn btn-link btn-last" href="<?php echo $themeurl; ?>?page=faq">FAQ</a>
+          </nav>
+        </div>
+      </header>
+      <div id="content">
+        <?php include('../../stage/content.php'); ?>
       </div>
-    </header>
-    <div id="content">
-      <?php include('../../stage/content.php'); ?>
+      <footer id="footer" class="text-center">
+        <div id="footer--social">
+          <div class="fs-row">
+            <div class="fs-cell fs-all-full">
+              <a href="#" class="btn ss-social ss-facebook" title="facebook"></a>
+              <a href="#" class="btn ss-social ss-twitter" title="twitter"></a>
+              <a href="#" class="btn ss-social ss-instagram" title="instagram"></a>
+              <a href="#" class="btn ss-social ss-pinterest" title="pinterest"></a>
+            </div>
+          </div>
+        </div>
+        <div id="footer--tagline">
+          <div class="fs-row">
+            <div class='fs-cell fs-xl-10 fs-lg-11 fs-md-6 fs-sm-3 fs-centered'>
+              <p class="emphasized">Divies are made in small batches in our dedicated Nut, Egg, and Dairy Free Bakery.</p>
+              <a class="btn btn-link btn-first" href="<?php echo $themeurl; ?>?page=privacy">Privacy Policy</a>
+              <a class="btn btn-link btn-last" href="<?php echo $themeurl; ?>?page=terms">Terms and Conditions</a>
+            </div>
+          </div>
+        </div>
+        <div id="footer--legal">
+          <div class="fs-row">
+            <div class='fs-cell fs-xl-10 fs-lg-11 fs-md-6 fs-sm-3 fs-centered'>
+              <p>Divvies LLC © 2004-2011 — Divvies products are certified Kosher Parve</p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
-    <footer id="footer" class="text-center">
-      <div id="footer--social">
-        <div class="fs-row">
-          <div class="fs-cell fs-all-full">
-            <a href="#" class="btn ss-social ss-facebook" title="facebook"></a>
-            <a href="#" class="btn ss-social ss-twitter" title="twitter"></a>
-            <a href="#" class="btn ss-social ss-instagram" title="instagram"></a>
-            <a href="#" class="btn ss-social ss-pinterest" title="pinterest"></a>
-          </div>
-        </div>
-      </div>
-      <div id="footer--tagline">
-        <div class="fs-row">
-          <div class='fs-cell fs-xl-10 fs-lg-11 fs-md-6 fs-sm-3 fs-centered'>
-            <p class="emphasized">Divies are made in small batches in our dedicated Nut, Egg, and Dairy Free Bakery.</p>
-            <a class="btn btn-link btn-first" href="<?php echo $themeurl; ?>?page=privacy">Privacy Policy</a>
-            <a class="btn btn-link btn-last" href="<?php echo $themeurl; ?>?page=terms">Terms and Conditions</a>
-          </div>
-        </div>
-      </div>
-      <div id="footer--legal">
-        <div class="fs-row">
-          <div class='fs-cell fs-xl-10 fs-lg-11 fs-md-6 fs-sm-3 fs-centered'>
-            <p>Divvies LLC © 2004-2011 — Divvies products are certified Kosher Parve</p>
-          </div>
-        </div>
-      </div>
-    </footer>
   </div>
   <?php include('../snippets/cart-slideout.php'); ?>
-
   <script type='text/javascript' src='<?php echo $sitehome; ?>/assets/plugins.min.js'></script>
   <script type='text/javascript' src='<?php echo $sitehome; ?>/assets/theme.min.js'></script>
 </body>

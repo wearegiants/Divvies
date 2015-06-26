@@ -47,10 +47,17 @@
     display: block;
     margin: 0;
     border-radius: 0;
-    height: 70px;
-    line-height: 70px;
-    .font_size(26);
     text-align: inherit;
+    @media @min {
+      height: 50px;
+      line-height: 50px;
+      .font_size(26);
+    }
+    @media @tablet {
+      height: 70px;
+      line-height: 70px;
+      .font_size(33);
+    }
   }
 
   &.btn-sm {

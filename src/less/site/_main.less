@@ -2,7 +2,6 @@
 
 body,html {
 
-  background: @bgGray;
   .lato();
 
   @media @desktop {
@@ -17,6 +16,10 @@ body,html {
   z-index: 2;
   transition: 300ms ease;
   background: @white;
+
+  @media @min {
+    box-shadow: 0 0 15px @black25;
+  }
 
   &.fs-swap-active {
 
