@@ -41,7 +41,12 @@
           <a href="<?php echo $themeurl; ?>?index"><span id="header--logo">Divvies</span></a>
         </div>
         <div class="fs-cell fs-lg-hide fs-md-3 fs-sm-1 text-right">
-          <a href="#" class="target cart-toggle" data-swap-target=".toggle" data-swap-linked='.cart-toggle'><span class="cart-icon"></span> Menu</a>
+          <div class="upper">
+            <div class="menu-wrapper">
+              <a href="#" class="target menu-toggle" data-swap-target=".menu-wrapper">Menu</a>
+            </div>
+            <a href="#" class="target cart-toggle" data-swap-target=".toggle" data-swap-linked='.cart-toggle'><span class="cart-icon"></span>&nbsp;</a>
+          </div>
         </div>
         <div class="fs-cell fs-lg-8 fs-md-hide fs-sm-hide text-right">
           <div class="upper">

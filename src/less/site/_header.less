@@ -35,6 +35,29 @@
   }
 
   .upper {
+    position: relative;
+    .menu-wrapper {
+      display: inline-block;
+      transition: none;
+      text-transform: uppercase;
+      .mobile {
+        transition: none;
+      }
+      &.fs-swap-active {
+        background:darken(@orange, 5%);
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        a {
+          color: @white;
+          border: none;
+        }
+        .mobile {
+          opacity: 1;
+          pointer-events: auto;
+          box-shadow: 0 15px 15px 0 @black25;
+        }
+      }
+    }
     a {
 
       display: inline-block;
@@ -91,6 +114,31 @@
         border-bottom: 2px solid @lightblue;
       }
 
+    }
+
+    &.mobile {
+      position: absolute;
+      background: darken(@orange, 5%);
+      z-index: 99;
+      width: 185px;
+      right: 25px;
+      border-radius: 3px;
+      opacity: 0;
+      pointer-events: none;
+      padding: 10px 0;
+      .btn-link {
+        border: none;
+        color: @white;
+        display: block;
+        text-align: right;
+        margin: 0;
+        padding: 0 20px;
+        height: 30px;
+        line-height: 30px;
+        &.btn-last {
+          padding: 0 20px!important;
+        }
+      }
     }
 
   }

@@ -16,23 +16,24 @@ body,html {
   z-index: 2;
   transition: 300ms ease;
   background: @white;
+  -webkit-backface-visibility: hidden;
 
   @media @min {
-    box-shadow: 0 0 15px @black25;
+    box-shadow: 0 0 25px rgba(0,0,0,.1);
   }
 
   &.fs-swap-active {
 
     @media @min {
-      transform: translate(-85%, 0%);
+      transform: translate(-300px, 0%);
     }
 
     @media @tablet {
-      transform: translate(-33%, 0%);
+      transform: translate(-300px, 0%);
     }
 
     @media @desktop {
-      transform: translate(-25%, 0%);
+      transform: translate(-300px, 0%);
     }
 
   }

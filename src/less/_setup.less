@@ -234,3 +234,12 @@ img.rounded {
   .cover();
   z-index: 2;
 }
+
+.show-mobile {
+  @media @min {
+    display: inline-block;
+  }
+  @media @desktop {
+    display: none;
+  }
+}

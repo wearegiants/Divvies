@@ -1,6 +1,7 @@
 function cartMenu(){
 
   $(".target").swap();
+  $("nav.lower").clone().appendTo('.upper .menu-wrapper').addClass('mobile');
 
 }
 
