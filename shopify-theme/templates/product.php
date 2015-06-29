@@ -13,16 +13,16 @@
       </header>
       <p><?php include('../../stage/lipsum.php'); ?></p>
       <div id="product--specs" class="fs-row">
-        <span class="spec-icon strikeout fs-cell fs-lg-fifth fs-md-fifth fs-sm-fifth"><img src="/shopify-theme/assets/icon-nuts.png" class="img-responsive" /></span>
-        <span class="spec-icon fs-cell fs-lg-fifth fs-md-fifth fs-sm-fifth"><img src="/shopify-theme/assets/icon-nuts.png" class="img-responsive" /></span>
-        <span class="spec-icon fs-cell fs-lg-fifth fs-md-fifth fs-sm-fifth"><img src="/shopify-theme/assets/icon-nuts.png" class="img-responsive" /></span>
-        <span class="spec-icon fs-cell fs-lg-fifth fs-md-fifth fs-sm-fifth"><img src="/shopify-theme/assets/icon-nuts.png" class="img-responsive" /></span>
-        <span class="spec-icon fs-cell fs-lg-fifth fs-md-fifth fs-sm-fifth"><img src="/shopify-theme/assets/icon-nuts.png" class="img-responsive" /></span>
+        <span class="spec-icon contains fs-cell fs-lg-fifth fs-md-fifth fs-sm-fifth"><img src="/shopify-theme/assets/icon-v.svg" class="img-responsive" /></span>
+        <span class="spec-icon fs-cell fs-lg-fifth fs-md-fifth fs-sm-fifth"><img src="/shopify-theme/assets/icon-nuts.svg" class="img-responsive" /></span>
+        <span class="spec-icon fs-cell fs-lg-fifth fs-md-fifth fs-sm-fifth"><img src="/shopify-theme/assets/icon-acorn.svg" class="img-responsive" /></span>
+        <span class="spec-icon fs-cell fs-lg-fifth fs-md-fifth fs-sm-fifth"><img src="/shopify-theme/assets/icon-milk.svg" class="img-responsive" /></span>
+        <span class="spec-icon fs-cell fs-lg-fifth fs-md-fifth fs-sm-fifth"><img src="/shopify-theme/assets/icon-egg.svg" class="img-responsive" /></span>
       </div>
       <div id="product--purchase" class="fs-row">
         <div id="product--quantity" class="fs-cell fs-all-full text-center">
           <span>Quantity of Boxes:</span>
-          <input type="number" min="1" max="20" step="2">
+          <input type="number" min="1" max="20" step="1">
           <!--
           <span>Quantity of Boxes:</span>
           <span>1</span>

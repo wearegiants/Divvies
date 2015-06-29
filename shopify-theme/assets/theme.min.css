@@ -224,10 +224,12 @@ p {
   color: #666666;
   margin: 0 0 10px;
   line-height: 1.5;
+  font-size: 17px;
+  font-size: 1.0625rem;
 }
 p.emphasized {
-  font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 24px;
+  font-size: 1.5rem;
   margin: 15px 0;
 }
 p a {
@@ -510,6 +512,35 @@ img.align-middle {
   background: none;
   box-shadow: inset 0 0 0 1px #74c080;
 }
+.btn.bg-color-lightblue {
+  color: #ffffff;
+}
+.btn.bg-color-orange {
+  color: #ffffff;
+}
+.btn.bg-color-purple {
+  color: #ffffff;
+}
+.btn.bg-color-pink {
+  color: #ffffff;
+}
+.btn.bg-color-yellow {
+  color: #ffffff;
+}
+.btn.bg-color-lightgreen {
+  color: #ffffff;
+}
+.btn.bg-color-gray,
+.btn.bg-color-grey {
+  color: #ffffff;
+}
+.btn.bg-color-lightgray,
+.btn.bg-color-lightgrey {
+  color: #ffffff;
+}
+.btn.bg-color-bggray {
+  color: #ffffff;
+}
 .error404 #wrapper {
   height: 100%;
 }
@@ -586,13 +617,6 @@ h6 {
         -ms-transform: translate(-300px, 0%);
             transform: translate(-300px, 0%);
   }
-}
-p {
-  color: inherit;
-}
-p.emphasized {
-  font-size: 20px;
-  font-size: 1.25rem;
 }
 .header--title {
   color: #ef6343;
@@ -706,21 +730,21 @@ p.emphasized {
 }
 @media screen and (min-width: 300px) {
   #header--logo {
-    background: url('divvies-logo.png') left center no-repeat;
+    background: url('logo.svg') left center no-repeat;
     background-size: auto 100%;
     height: 90px;
   }
 }
 @media screen and (min-width: 740px) {
   #header--logo {
-    background: url('logo-desktop.png') left center no-repeat;
+    background: url('logo.svg') left center no-repeat;
     height: 90px;
     line-height: 90px;
   }
 }
 @media screen and (min-width: 980px) {
   #header--logo {
-    background: url('logo-desktop.png') left center no-repeat;
+    background: url('logo.svg') left center no-repeat;
   }
 }
 @media screen and (min-width: 300px) {
@@ -769,15 +793,15 @@ p.emphasized {
 #header .upper a.cart-toggle {
   border: none;
   padding-right: 0;
-  padding-left: 25px;
-  background: url(icon-cart-sprite.png) left 0 no-repeat;
+  padding-left: 24px;
+  background: url(icon-cart-sprite.svg) left 0 no-repeat;
   background-size: auto 100%;
   text-indent: -9999px;
   -webkit-transition: 300ms ease;
           transition: 300ms ease;
 }
 #header .upper a.cart-toggle.full {
-  background: url(icon-cart-sprite.png) right 0 no-repeat;
+  background: url(icon-cart-sprite.svg) right 0 no-repeat;
   background-size: auto 100%;
 }
 #header nav.lower .btn-link {
@@ -833,7 +857,6 @@ p.emphasized {
   padding: 0 20px!important;
 }
 #footer {
-  margin-top: 25px;
   font-size: 12px;
   font-size: 0.75rem;
   position: relative;
@@ -910,6 +933,64 @@ p.emphasized {
 #footer--legal p {
   margin-bottom: 0;
   color: inherit;
+}
+.page-header {
+  height: 66px;
+  line-height: 66px;
+}
+.page-header h1 {
+  height: 66px;
+  line-height: 66px;
+  margin: 0;
+  color: #ef6343;
+}
+.page-header-banner {
+  position: relative;
+}
+.page-header-banner:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 999px;
+  right: 100%;
+  height: 100%;
+  background: #ef6343;
+}
+.page-header-banner h1 span {
+  background: #ef6343;
+  color: #ffffff;
+  position: relative;
+  padding-right: 20px;
+  display: inline-block;
+  height: 66px;
+  line-height: 66px;
+}
+.page-header-banner h1 span:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: -20px;
+  width: 0;
+  height: 0;
+  top: 0;
+  border-style: solid;
+  border-width: 33px 20px 0 0;
+  border-color: #ef6343 transparent transparent transparent;
+}
+.page-header-banner h1 span:before {
+  content: '';
+  display: block;
+  position: absolute;
+  right: -20px;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  border-style: solid;
+  border-width: 33px 0 0 20px;
+  border-color: transparent transparent transparent #ef6343;
+}
+.page-section {
+  padding: 37.5px 0;
 }
 #cart--slideout {
   position: fixed;
@@ -1232,14 +1313,14 @@ p.emphasized {
 #product--title {
   color: #ef6343;
   font-family: 'Proxima Nova';
-  font-size: 67px;
-  font-size: 4.1875rem;
+  font-size: 60px;
+  font-size: 3.75rem;
   font-weight: 400;
   line-height: .9;
 }
 #product--info {
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 17px;
+  font-size: 1.0625rem;
 }
 #product--specs {
   margin-top: 25px;
@@ -1250,14 +1331,14 @@ p.emphasized {
   border-radius: 50%;
   overflow: hidden;
   position: relative;
+  background: url('icon-bg.svg') center center no-repeat;
+  background-size: cover;
+  border: 4px solid #ef6343;
 }
-#product--specs .spec-icon.strikeout {
-  border: 3px solid #ef6343;
-}
-#product--specs .spec-icon.strikeout:before {
+#product--specs .spec-icon:before {
   content: '';
   display: block;
-  height: 3px;
+  height: 4px;
   background: #ef6343;
   position: absolute;
   top: 50%;
@@ -1269,6 +1350,12 @@ p.emphasized {
   -webkit-transform-origin: center center;
       -ms-transform-origin: center center;
           transform-origin: center center;
+}
+#product--specs .spec-icon.contains {
+  border: none;
+}
+#product--specs .spec-icon.contains:before {
+  display: none;
 }
 #product--tabs .fs-tabs-active {
   background: #93d7eb;
@@ -1312,8 +1399,8 @@ p.emphasized {
   display: inline-block;
   font-family: 'Proxima Nova';
   font-weight: 300;
-  font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 20px;
+  font-size: 1.25rem;
 }
 #product--quantity .fs-number {
   margin: 0;
@@ -1342,8 +1429,8 @@ p.emphasized {
 #product--quantity .fs-number-element {
   font-family: 'Proxima Nova';
   font-weight: 200;
-  font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 20px;
+  font-size: 1.25rem;
 }
 #product--quantity .fs-number-arrow {
   color: #ffffff;
@@ -1412,8 +1499,8 @@ p.emphasized {
 #product--add .btn {
   font-family: 'Proxima Nova';
   font-weight: 300;
-  font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 22px;
+  font-size: 1.375rem;
   height: 45px;
   line-height: 45px;
   text-transform: uppercase;
@@ -1484,6 +1571,27 @@ p.emphasized {
 .collection-grid--item_children .btn:hover:after {
   background: #0c3440;
 }
+#faq h1,
+#faq h2,
+#faq h3,
+#faq h4,
+#faq h5,
+#faq h6 {
+  color: #ef6343;
+}
+#faq .item-title {
+  margin-top: 10px;
+}
+@media screen and (min-width: 980px) {
+  #faq .item-title {
+    font-size: 50px;
+    font-size: 3.125rem;
+  }
+}
+#faq .icon img {
+  width: 100%;
+  height: auto;
+}
 #faq--points,
 #faq--fresh {
   padding: 25px 0;
@@ -1526,4 +1634,8 @@ p.emphasized {
     float: none;
     margin: 0 auto 12.5px;
   }
+}
+#contact--map iframe {
+  display: block;
+  width: 100%;
 }
