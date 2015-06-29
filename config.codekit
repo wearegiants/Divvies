@@ -66,6 +66,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/shopify-theme\/assets\/icon-cart-sprite.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2344,
+		"inputAbbreviatedPath": "\/shopify-theme\/assets\/icon-cart-sprite.png",
+		"outputAbbreviatedPath": "\/shopify-theme\/assets\/icon-cart-sprite.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/shopify-theme\/assets\/icon-cart.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -615,7 +626,7 @@
 		},
 	"\/src\/bower_components\/Formstone\/dist\/js\/cookie.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/src\/bower_components\/Formstone\/dist\/js\/cookie.js",
 		"outputAbbreviatedPath": "\/src\/bower_components\/Formstone\/dist\/js\/min\/cookie-min.js",
@@ -692,7 +703,7 @@
 		},
 	"\/src\/bower_components\/Formstone\/dist\/js\/number.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/src\/bower_components\/Formstone\/dist\/js\/number.js",
 		"outputAbbreviatedPath": "\/src\/bower_components\/Formstone\/dist\/js\/min\/number-min.js",
@@ -2042,7 +2053,7 @@
 		"disableJavascript": 0,
 		"fileType": 1,
 		"ieCompatibility": 1,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/src\/bower_components\/Formstone\/src\/less\/number.less",
 		"outputAbbreviatedPath": "\/src\/bower_components\/Formstone\/src\/css\/number.css",

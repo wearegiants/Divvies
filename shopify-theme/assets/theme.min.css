@@ -425,12 +425,26 @@ img.align-middle {
   padding-right: 0!important;
 }
 .btn.btn-lg {
+  font-size: 24px;
+  font-size: 1.5rem;
+  height: 55px;
+  padding: 0 25px;
+  line-height: 58px;
+  text-transform: uppercase;
+  font-family: 'Proxima Nova';
+  font-weight: 300;
+}
+.btn.btn-tab {
   font-size: 20px;
   font-size: 1.25rem;
   font-weight: 400;
   height: 44px;
   padding: 0 25px;
-  line-height: 34px;
+  line-height: 44px;
+  border-radius: 1px;
+  color: #ffffff;
+  background: #b4b4b4;
+  margin: 3px 0px;
 }
 .btn-collection {
   display: block;
@@ -528,6 +542,16 @@ html {
   html {
     min-height: 100%;
   }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Proxima Nova';
+  font-weight: 400;
+  color: #686868;
 }
 #wrapper {
   position: relative;
@@ -745,10 +769,16 @@ p.emphasized {
 #header .upper a.cart-toggle {
   border: none;
   padding-right: 0;
-  padding-left: 35px;
-  background: url(icon-cart.png) 8px -2px no-repeat;
-  background-size: auto 23px;
+  padding-left: 25px;
+  background: url(icon-cart-sprite.png) left 0 no-repeat;
+  background-size: auto 100%;
   text-indent: -9999px;
+  -webkit-transition: 300ms ease;
+          transition: 300ms ease;
+}
+#header .upper a.cart-toggle.full {
+  background: url(icon-cart-sprite.png) right 0 no-repeat;
+  background-size: auto 100%;
 }
 #header nav.lower .btn-link {
   color: #ef6343;
@@ -1201,22 +1231,72 @@ p.emphasized {
 }
 #product--title {
   color: #ef6343;
+  font-family: 'Proxima Nova';
+  font-size: 67px;
+  font-size: 4.1875rem;
+  font-weight: 400;
+  line-height: .9;
+}
+#product--info {
+  font-size: 18px;
+  font-size: 1.125rem;
 }
 #product--specs {
   margin-top: 25px;
-  padding: 12.5px 0;
+  padding: 16.66666667px 0;
   border-top: 2px solid #b4b4b4;
+}
+#product--specs .spec-icon {
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+#product--specs .spec-icon.strikeout {
+  border: 3px solid #ef6343;
+}
+#product--specs .spec-icon.strikeout:before {
+  content: '';
+  display: block;
+  height: 3px;
+  background: #ef6343;
+  position: absolute;
+  top: 50%;
+  margin-top: -2px;
+  width: 110%;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: center center;
+      -ms-transform-origin: center center;
+          transform-origin: center center;
+}
+#product--tabs .fs-tabs-active {
+  background: #93d7eb;
+}
+#product--tabs .tab_content {
+  padding: 25px;
+  color: #ffffff;
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+#product--automatic h1 {
+  color: #ef6343;
+}
+#product--automatic .btn {
+  background: #93d7eb;
 }
 #product--quantity {
   background: #b4b4b4;
   color: #ffffff;
+  text-transform: uppercase;
   margin-bottom: 12.5px;
   border-radius: 2px;
   behavior: url(/assets/js/PIE.htc);
 }
 @media screen and (min-width: 300px) {
   #product--quantity {
-    text-align: center;
+    text-align: left;
+    padding-left: 20px;
   }
 }
 @media screen and (min-width: 740px) {
@@ -1230,6 +1310,55 @@ p.emphasized {
   height: 45px;
   line-height: 45px;
   display: inline-block;
+  font-family: 'Proxima Nova';
+  font-weight: 300;
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+#product--quantity .fs-number {
+  margin: 0;
+  border: none;
+}
+@media screen and (min-width: 300px) {
+  #product--quantity .fs-number {
+    min-width: 25%;
+  }
+}
+@media screen and (min-width: 740px) {
+  #product--quantity .fs-number {
+    min-width: 30%;
+  }
+}
+@media screen and (min-width: 980px) {
+  #product--quantity .fs-number {
+    min-width: 25%;
+  }
+}
+#product--quantity .fs-number > span {
+  display: inline-block;
+  height: 22.5px;
+  line-height: 22.5px;
+}
+#product--quantity .fs-number-element {
+  font-family: 'Proxima Nova';
+  font-weight: 200;
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+#product--quantity .fs-number-arrow {
+  color: #ffffff;
+  width: 50px;
+  display: block;
+  height: 22.5px;
+  line-height: 22.5px;
+  text-align: center;
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+#product--quantity .fs-number-arrow:hover {
+  background: #9b9b9b;
+}
+#product--quantity .fs-number-arrow.fs-number-up {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 #product--quantity > div {
   float: right;
@@ -1259,6 +1388,8 @@ p.emphasized {
   color: #ef6343;
   height: 45px;
   line-height: 45px;
+  font-weight: 300;
+  font-family: 'Proxima Nova';
 }
 @media screen and (min-width: 300px) {
   #product--price {
@@ -1272,9 +1403,20 @@ p.emphasized {
     font-size: 2rem;
   }
 }
+@media screen and (min-width: 740px) {
+  #product--price {
+    font-size: 46px;
+    font-size: 2.875rem;
+  }
+}
 #product--add .btn {
+  font-family: 'Proxima Nova';
+  font-weight: 300;
+  font-size: 24px;
+  font-size: 1.5rem;
   height: 45px;
   line-height: 45px;
+  text-transform: uppercase;
   display: block;
   margin: 0;
   background: #ef6343;

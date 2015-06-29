@@ -5,6 +5,15 @@ function cartMenu(){
 
 }
 
+function addtoCart(){
+
+  $("#product--add .btn").on('click', function(event){
+    event.preventDefault();
+    $("#header .cart-toggle").toggleClass('full');
+  });
+
+}
+
 function bannerSlider(){
   $(".banner.slider").carousel({
     controls: false,
@@ -28,7 +37,12 @@ function productHover(){
 $(document).ready(function(){
 
   cartMenu();
+  addtoCart();
   productHover();
   bannerSlider();
+  $("input[type=number]").number();
+  $(".tab").tabs({
+    mobileMaxWidth: '0'
+  });
 
 });

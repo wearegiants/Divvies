@@ -72,10 +72,15 @@
       &.cart-toggle {
         border: none;
         padding-right: 0;
-        padding-left: 35px;
-        background: url(icon-cart.png) 8px -2px no-repeat;
-        background-size: auto 23px;
+        padding-left: 25px;
+        background: url(icon-cart-sprite.png) left 0 no-repeat;
+        background-size: auto 100%;
         text-indent: -9999px;
+        transition: 300ms ease;
+        &.full {
+          background: url(icon-cart-sprite.png) right 0 no-repeat;
+          background-size: auto 100%;
+        }
       }
 
     }

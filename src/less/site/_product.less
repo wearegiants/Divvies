@@ -2,12 +2,68 @@
 
   &--title {
     color: @orange;
+    .proxima();
+    .font_size(67);
+    font-weight: 400;
+    line-height: .9;
+  }
+
+  &--info {
+    .font_size(18);
   }
 
   &--specs {
     margin-top: @spaced;
-    padding: @spaced/2 0;
+    padding: @spaced/1.5 0;
     border-top: 2px solid @lighterGray;
+
+    .spec-icon {
+    
+      border-radius: 50%;
+      overflow: hidden;
+      position: relative;
+
+      &.strikeout {
+        border: 3px solid @orange;
+        &:before {
+          content: '';
+          display: block;
+          height: 3px;
+          background: @orange;
+          position: absolute;
+          top: 50%;
+          margin-top: -2px;
+          width: 110%;
+          transform: rotate(-45deg);
+          transform-origin: center center;
+        }
+      }
+      
+    }
+
+  }
+
+  &--tabs {
+
+    .fs-tabs-active {
+      background: @lightblue;
+    }
+
+    .tab_content {
+      padding: @spaced;
+      color: @white;
+      .font_size(18);
+    }
+
+  }
+
+  &--automatic {
+    h1 {
+      color: @orange;
+    }
+    .btn {
+      background: @lightblue;
+    }
   }
 
   @sharedHeight: 45px;
@@ -15,12 +71,14 @@
   &--quantity {
     background: @lighterGray;
     color: @white;
+    text-transform: uppercase;
     margin-bottom: @spaced/2;
     border-radius: 2px;
     .pie();
 
     @media @min {
-      text-align: center;
+      text-align: left;
+      padding-left: 20px;
     }
 
     @media @tablet {
@@ -32,6 +90,59 @@
       height: @sharedHeight;
       line-height: @sharedHeight;
       display: inline-block;
+      .proxima();
+      font-weight: 300;
+      .font_size(24);
+    }
+
+    .fs-number {
+
+      margin: 0;
+      border: none;
+
+      @media @min {
+        min-width: 25%;  
+      }
+      @media @tablet {
+        min-width: 30%;
+      }
+      @media @desktop {
+        min-width: 25%;
+      }
+
+      > span {
+        display: inline-block;
+        height: @sharedHeight/2;
+        line-height: @sharedHeight/2;
+      }
+
+      &-element {
+        .proxima();
+        font-weight: 200;
+        .font_size(24);
+      }
+
+
+      &-arrow {
+        color: @white;
+        width: @spaced*2;
+        display: block;
+        height: @sharedHeight/2;
+        line-height: @sharedHeight/2;
+        text-align: center;
+        border-left: 1px solid @white50;
+        //float: right;
+
+        &:hover {
+          background: darken(@lighterGray, 10%)
+        }
+
+        &.fs-number-up {
+          border-bottom: 1px solid @white50;
+        }
+
+      }
+
     }
 
     > div {
@@ -71,6 +182,8 @@
     color: @orange;
     height: @sharedHeight;
     line-height: @sharedHeight;
+    font-weight: 300;
+    .proxima();
 
     @media @min {
       .font_size(27);
@@ -79,14 +192,22 @@
     @media @mobile {
       .font_size(32);
     }
+
+    @media @tablet {
+      .font_size(46);
+    }
   }
 
   &--add {
 
     .btn {
 
+      .proxima();
+      font-weight: 300;
+      .font_size(24);
       height: @sharedHeight;
       line-height: @sharedHeight;
+      text-transform: uppercase;
       display: block;
       margin: 0;
       background: @orange;

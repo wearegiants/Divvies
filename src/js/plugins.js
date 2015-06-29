@@ -5,7 +5,7 @@
 // @codekit-prepend "../bower_components/formstone/dist/js/mediaquery.js"
 // @codekit-prepend "../bower_components/formstone/dist/js/swap.js"
 // @codekit-prepend "../bower_components/formstone/dist/js/navigation.js"
-// @codekit-prepend "../bower_components/formstone/dist/js/cookie.js"
+// @codekit-prepend "../bower_components/formstone/dist/js/number.js"
 // @codekit-prepend "../bower_components/formstone/dist/js/tabs.js"
 // @codekit-prepend "../bower_components/formstone/dist/js/equalize.js"
 // @codekit-prepend "../bower_components/formstone/dist/js/carousel.js"
