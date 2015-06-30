@@ -1,7 +1,7 @@
 <section id="collection-listing" class="collection-grid fs-row">
 <div class="fs-cell fs-full-all">
 
-  <?php include ('../snippets/mailchimp.php');?>
+  {% include 'mailchimp' %}
 
   <div id="collection-listing--slider" class="banner slider text-center">
     <div class="slider--slide">

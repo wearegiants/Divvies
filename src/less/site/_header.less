@@ -71,15 +71,16 @@
 
       &.cart-toggle {
         border: none;
-        padding-right: 0;
-        padding-left: 24px;
-        background: url(icon-cart-sprite.svg) left 0 no-repeat;
-        background-size: auto 100%;
-        text-indent: -9999px;
         transition: 300ms ease;
-        &.full {
-          background: url(icon-cart-sprite.svg) right 0 no-repeat;
-          background-size: auto 100%;
+        .cart-icon {
+          display: inline-block;
+          height: 24px;
+          width: 24px;
+          background: url(icon-cart-sprite.svg) left 0 no-repeat;
+          &.full {
+            background: url(icon-cart-sprite.svg) right 0 no-repeat;
+            background-size: auto 100%;
+          }
         }
       }
 

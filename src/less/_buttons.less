@@ -49,15 +49,23 @@
 
   &.btn-tab {
 
-    .font_size(20);
     font-weight: 400;
     height: 44px;
-    padding: 0 25px;
     line-height: 44px;
     border-radius: 1px;
     color: @white;
     background: @lighterGray;
     margin: 3px 0px;
+
+    @media @min {
+      .font_size(15);
+      padding: 0 18px;
+    }
+
+    @media @tablet {
+      .font_size(20);
+      padding: 0 25px;
+    }
 
   }
 

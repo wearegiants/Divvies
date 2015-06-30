@@ -37,7 +37,7 @@ function productHover(){
 $(document).ready(function(){
 
   cartMenu();
-  addtoCart();
+  //addtoCart();
   productHover();
   bannerSlider();
   $("input[type=number]").number();

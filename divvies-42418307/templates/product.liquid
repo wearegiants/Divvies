@@ -1,0 +1,137 @@
+{% assign add_to_cart = 'Add to cart' %}
+{% assign sold_out = 'Sold Out' %}
+{% assign unavailable = 'Unavailable' %}
+
+<section id="product" itemscope itemtype="http://schema.org/Product">
+
+  <meta itemprop="url" content="{{ shop.url }}{{ product.url }}" />
+  <meta itemprop="image" content="{{ product | img_url: 'grande' }}" />
+
+  <div class="fs-row">
+
+    <header id="product--header" class="header fs-cell fs-all-full">
+      <span class="header--title"><a href="#" class="ss-gizmo ss-navigateleft header--icon"></a></span>
+    </header>
+
+    <header id="product--header" class="fs-cell fs-lg-5 fs-md-6 fs-sm-3 fs-right">
+      <h1 id="product--title" itemprop="name">{{ product.title }}</h1>
+    </header>
+
+    <hr class="fs-cell fs-lg-hide fs-md-full fs-sm-full spaced">
+
+    <div id="product--images" class="fs-cell fs-lg-7 fs-md-6 fs-sm-3">{% include 'product-images' %}</div>
+
+    <hr class="fs-cell fs-lg-hide fs-md-full fs-sm-full spaced">
+
+    <div id="product--info"   class="fs-cell fs-lg-5 fs-md-6 fs-sm-3 fs-right">
+      <form action="/cart/add" method="post" enctype="multipart/form-data">
+      <div id="product--description" itemprop="description">
+        {{ product.description }}
+      </div>
+      <div id="product--specs" class="fs-row">
+        <span class="spec-icon contains fs-cell fs-lg-fifth fs-md-fifth fs-sm-fifth"><img src="{{ 'icon-v.svg' | asset_url }}" class="img-responsive" /></span>
+        <span class="spec-icon fs-cell fs-lg-fifth fs-md-fifth fs-sm-fifth"><img src="{{ 'icon-nuts.svg' | asset_url }}"  class="img-responsive" /></span>
+        <span class="spec-icon fs-cell fs-lg-fifth fs-md-fifth fs-sm-fifth"><img src="{{ 'icon-acorn.svg' | asset_url }}" class="img-responsive" /></span>
+        <span class="spec-icon fs-cell fs-lg-fifth fs-md-fifth fs-sm-fifth"><img src="{{ 'icon-milk.svg' | asset_url }}"  class="img-responsive" /></span>
+        <span class="spec-icon fs-cell fs-lg-fifth fs-md-fifth fs-sm-fifth"><img src="{{ 'icon-egg.svg' | asset_url }}"   class="img-responsive" /></span>
+      </div>
+      <div id="product--purchase" class="fs-row">
+
+        {% assign hide_default_title = false %}
+        {% if product.variants.size == 1 and product.variants.first.title contains 'Default' %}
+        {% assign hide_default_title = true %}
+        {% endif %} 
+
+        <div id="product--variants" class="{% if hide_default_title %} hidden{% endif %}">
+          <select id="product-select" name="id">
+            {% for variant in product.variants %}
+            <option{% if variant == product.selected_or_first_available_variant %} selected{% endif %} value="{{ variant.id }}">
+              {{ variant.title }} - {{ variant.price | money }}
+            </option>
+            {% endfor %}
+          </select>
+        </div>  
+
+        <div id="product--quantity" class="fs-cell fs-all-full text-center">
+          <span>Quantity of Boxes:</span>
+          <input type="number" min="1" max="20" step="1">
+        </div>
+
+        <div id="product--price" class="fs-cell fs-lg-5 fs-md-2 fs-sm-1 {% if product.compare_at_price > product.price %}compared{% endif %}">
+
+          {% assign variant = product.selected_or_first_available_variant %}
+          {% if product.compare_at_price > product.price %}
+          <span class="product-price on-sale" itemprop="price">{{ variant.price | money }}</span>
+          <s class="product-compare-price">{{ variant.compare_at_price | money }}</s>
+          {% else %}
+          <span class="product-price" itemprop="price">{{ variant.price | money }}</span>
+          {% endif %}
+
+        </div>
+
+        <div id="product--add" class="fs-cell fs-lg-7 fs-md-4 fs-sm-2">
+          <input type="submit" name="add" id="add" class="btn btn-primary" value="Add to Cart" style="width:100%;">
+        </div>
+      </div>
+      </form>
+    </div>
+    
+    <hr class="fs-cell fs-all-full invisible">
+    <hr class="fs-cell fs-all-full invisible">
+
+    <div id="product--tabs" class="fs-cell fs-all-full">
+      <nav class="tabs text-center">
+        <a href="#tab-1" class="tab btn btn-tab" data-tabs-group="tab-1">Ingredients</a>
+        <a href="#tab-2" class="tab btn btn-tab" data-tabs-group="tab-1">Nutrition</a>
+        <a href="#tab-3" class="tab btn btn-tab" data-tabs-group="tab-1">Testimonials</a>
+      </nav>
+      <div class="tab_content" id="tab-1">Tab 1</div>
+      <div class="tab_content" id="tab-2">Tab 2</div>
+      <div class="tab_content" id="tab-3">Tab 3</div>
+    </div>
+
+    <hr class="fs-cell fs-all-full invisible">
+
+    <div id="product--automatic" class="fs-cell fs-all-full">
+      <h1>Automatic Divvies</h2>
+      <a href="#" class="btn btn-primary btn-lg bg-color-lightblue">Subscribe to Automatic Divvies</a>
+    </div>
+
+  </div>
+
+  <hr class="fs-cell fs-all-full invisible">
+
+  <header id="more--header" class="more header fs-row">
+    <div class="fs-cell fs-all-full">
+      <h1 class="header--title more">More to love</h1>
+    </div>
+  </header>
+
+  <div id="product--collection-grid" class="collection-grid fs-row">
+
+    <div class="collection-grid--item fs-cell fs-lg-4 fs-md-2 fs-sm-3 equal">
+      <a href="<?php echo $themeurl; ?>?collection=popcorn" class="btn btn-collection bg-color bg-color-purple">Popcorn</a>
+      <div class="collection-grid--item_thumb">
+        <img src="<?php echo $sitehome; ?>/assets/collection-default.jpg" class="img-responsive" alt="" />
+      </div>
+    </div>
+
+    <div class="collection-grid--item fs-cell fs-lg-4 fs-md-2 fs-sm-3 equal">
+      <a href="<?php echo $themeurl; ?>?collection=cupcakes" class="btn btn-collection bg-color bg-color-pink">Cupcakes</a>
+      <div class="collection-grid--item_thumb">
+        <img src="<?php echo $sitehome; ?>/assets/collection-default.jpg" class="img-responsive" alt="" />
+      </div>
+    </div>
+
+    <div class="collection-grid--item fs-cell fs-lg-4 fs-md-2 fs-sm-3 equal">
+      <a href="<?php echo $themeurl; ?>?collection=gifts" class="btn btn-collection bg-color bg-color-yellow">Gifts</a>
+      <div class="collection-grid--item_thumb">
+        <img src="<?php echo $sitehome; ?>/assets/collection-default.jpg" class="img-responsive" alt="" />
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+{% include 'product-scripts' %}

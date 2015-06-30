@@ -91,6 +91,9 @@ img.rounded {
     display: none;
   }
 }
+.hidden {
+  display: none;
+}
 *,
 *:link,
 *:visited,
@@ -437,16 +440,27 @@ img.align-middle {
   font-weight: 300;
 }
 .btn.btn-tab {
-  font-size: 20px;
-  font-size: 1.25rem;
   font-weight: 400;
   height: 44px;
-  padding: 0 25px;
   line-height: 44px;
   border-radius: 1px;
   color: #ffffff;
   background: #b4b4b4;
   margin: 3px 0px;
+}
+@media screen and (min-width: 300px) {
+  .btn.btn-tab {
+    font-size: 15px;
+    font-size: 0.9375rem;
+    padding: 0 18px;
+  }
+}
+@media screen and (min-width: 740px) {
+  .btn.btn-tab {
+    font-size: 20px;
+    font-size: 1.25rem;
+    padding: 0 25px;
+  }
 }
 .btn-collection {
   display: block;
@@ -1313,10 +1327,20 @@ h6 {
 #product--title {
   color: #ef6343;
   font-family: 'Proxima Nova';
-  font-size: 60px;
-  font-size: 3.75rem;
   font-weight: 400;
   line-height: .9;
+}
+@media screen and (min-width: 300px) {
+  #product--title {
+    font-size: 50px;
+    font-size: 3.125rem;
+  }
+}
+@media screen and (min-width: 740px) {
+  #product--title {
+    font-size: 60px;
+    font-size: 3.75rem;
+  }
 }
 #product--info {
   font-size: 17px;

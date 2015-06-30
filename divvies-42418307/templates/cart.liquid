@@ -1,0 +1,57 @@
+<section id="cart">
+
+  <div class="fs-row" id="cart-content">
+
+    <header class="header fs-cell fs-all-full">
+      <span class="header--title">Shopping Cart</span>
+    </header>
+
+    <hr class="invisible">
+
+    <!--
+    <div class="fs-cell fs-all-full cart-empty">
+      <p>Your cart is empty</p>
+    </div>
+    -->
+
+    <form action="/cart" method="post">
+    <div class="cart-contents fs-cell fs-all-full">
+
+      <div class="fs-row linehead">
+        <div class="lineitem--thumb fs-cell fs-lg-fifth fs-md-fifth fs-sm-3">Product</div>
+        <div class="lineitem--thumb fs-cell fs-lg-fifth fs-md-fifth fs-sm-2">&nbsp;</div>
+        <div class="lineitem--price fs-cell fs-lg-fifth fs-md-fifth fs-sm-1">Price</div>
+        <div class="lineitem--quant fs-cell fs-lg-fifth fs-md-fifth fs-sm-third text-center">Quantity</div>
+        <div class="lineitem--total fs-cell fs-lg-fifth fs-md-fifth fs-sm-third text-right">Total</div>
+      </div>
+
+      {% for item in cart.items %} 
+      <div class="fs-row lineitem">
+        <div class="lineitem--thumb lineitem--item fs-cell fs-lg-fifth fs-md-fifth fs-sm-half">
+          <img src="{{ item | img_url: 'compact' }}"  alt="{{ item.title | escape }}" />
+        </div>
+        <div class="lineitem--title lineitem--item fs-cell fs-lg-fifth fs-md-fifth fs-sm-half">
+          <span>{{ item.title }}</span><br>
+          <small class="remove"><a href="/cart/change?line={{ forloop.index }}&quantity=0">Remove</a></small>
+          <div class="fs-row show-mobile">
+            <hr class="divider fs-cell fs-sm-3">
+            <div class="lineitem--price lineitem--item fs-cell fs-sm-third">{{ item.price | money }}</div>
+            <div class="lineitem--quant lineitem--item fs-cell fs-sm-third text-center"><input type="number" name="updates[]" id="updates_{{ item.id }}" class="quantity" value="{{ item.quantity }}" /></div>
+            <div class="lineitem--total lineitem--item fs-cell fs-sm-third text-right">{{ item.line_price | money }}</div>
+          </div>
+        </div>
+        <div class="lineitem--price lineitem--item fs-cell fs-lg-fifth fs-md-fifth fs-sm-hide">{{ item.price | money }}</div>
+        <div class="lineitem--quant lineitem--item fs-cell fs-lg-fifth fs-md-fifth fs-sm-hide text-center">
+          {{ item.quantity }}
+          <input type="number" name="updates[]" id="updates_{{ item.id }}" class="quantity" value="{{ item.quantity }}" />
+        </div>
+        <div class="lineitem--total lineitem--item fs-cell fs-lg-fifth fs-md-fifth fs-sm-hide text-right">{{ item.line_price | money }}</div>
+      </div>
+      {% endfor %}
+      
+    </div>
+    </form>
+
+  </div>
+
+</section>
