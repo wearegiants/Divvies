@@ -1,3 +1,18 @@
+function header(){
+
+  var options = {
+      offset: '#content',
+      classes: {
+          clone:   'banner--clone fs-grid',
+          stick:   'banner--stick',
+          unstick: 'banner--unstick'
+      }
+  };
+
+  var banner = new Headhesive('#header', options);
+
+}
+
 function cartMenu(){
 
   $(".target").swap();
@@ -37,6 +52,7 @@ function productHover(){
 $(document).ready(function(){
 
   cartMenu();
+  header();
   //addtoCart();
   productHover();
   bannerSlider();

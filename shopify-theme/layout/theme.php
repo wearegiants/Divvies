@@ -16,8 +16,7 @@
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 
-<link rel="stylesheet" href="<?php echo $sitehome; ?>/assets/plugins.min.css">
-<link rel="stylesheet" href="<?php echo $sitehome; ?>/assets/theme.min.css">
+<link rel="stylesheet" href="../../divvies-42418307/assets/site.min.css">
 <script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js?ver=1.11.1'></script>
 
 <meta property="og:title" content="" />
@@ -36,7 +35,8 @@
 <body class="fs-grid">
   <div id="wrapper-wrapper">
     <div id="wrapper" class="toggle">
-      <header id="header" class="fs-row">
+      <header id="header">
+        <div class="fs-row">
         <div class="fs-cell fs-lg-4 fs-md-2 fs-sm-2">
           <a href="<?php echo $themeurl; ?>?index"><span id="header--logo">Divvies</span></a>
         </div>
@@ -60,6 +60,7 @@
             <a class="btn btn-link" href="<?php echo $themeurl; ?>?page=contact-us">Contact Us</a>
             <a class="btn btn-link btn-last" href="<?php echo $themeurl; ?>?page=faq">FAQ</a>
           </nav>
+        </div>
         </div>
       </header>
       <div id="content">
@@ -96,7 +97,6 @@
     </div>
   </div>
   <?php include('../snippets/cart-slideout.php'); ?>
-  <script type='text/javascript' src='<?php echo $sitehome; ?>/assets/plugins.min.js'></script>
-  <script type='text/javascript' src='<?php echo $sitehome; ?>/assets/theme.min.js'></script>
+  <script type='text/javascript' src='../../divvies-42418307/assets/divvies.min.js'></script>
 </body>
 </html>

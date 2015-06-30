@@ -28,24 +28,26 @@
   <div id="index--collection-grid" class="collection-grid fs-row text-center">
 
     <div class="collection-grid--item fs-cell fs-lg-4 fs-md-2 fs-sm-3">
-      <a class="coverlink" href="/products/test-thingy"></a>
+      <a class="coverlink" href="/collections"></a>
       <span class="btn btn-collection bg-color bg-color-coral">Shop Treats</span>
       <div class="collection-grid--item_thumb">
-        <img src="<?php echo $sitehome; ?>/assets/collection-default.jpg" class="img-responsive" alt="" />
+        <img src="{{ 'shop-treats.jpg' | asset_url }}" class="img-responsive" alt="" />
       </div>
     </div>
 
     <div class="collection-grid--item fs-cell fs-lg-4 fs-md-2 fs-sm-3">
-      <a href="/pages/locator" class="btn btn-collection bg-color bg-color-lightblue">Where to Find Us</a>
+      <a class="coverlink" href="/pages/locator"></a>
+      <span class="btn btn-collection bg-color bg-color-lightblue">Where to Find Us</span>
       <div class="collection-grid--item_thumb">
-        <img src="<?php echo $sitehome; ?>/assets/collection-default.jpg" class="img-responsive" alt="" />
+        <img src="{{ 'shop-locate.jpg' | asset_url }}" class="img-responsive" alt="" />
       </div>
     </div>
 
     <div class="collection-grid--item fs-cell fs-lg-4 fs-md-2 fs-sm-3">
-      <a href="/pages/faq" class="btn btn-collection bg-color bg-color-grey">FAQ</a>
+      <a class="coverlink" href="/pages/faq"></a>
+      <span class="btn btn-collection bg-color bg-color-grey">FAQ</span>
       <div class="collection-grid--item_thumb">
-        <img src="<?php echo $sitehome; ?>/assets/collection-default.jpg" class="img-responsive" alt="" />
+        <img src="{{ 'shop-faq.jpg' | asset_url }}" class="img-responsive" alt="" />
       </div>
     </div>
 

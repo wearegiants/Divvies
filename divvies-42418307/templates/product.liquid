@@ -57,7 +57,11 @@
           <input type="number" min="1" max="20" step="1">
         </div>
 
-        <div id="product--price" class="fs-cell fs-lg-5 fs-md-2 fs-sm-1 {% if product.compare_at_price > product.price %}compared{% endif %}">
+        {% if product.compare_at_price > product.price %}
+        <div id="product--price" class="fs-cell fs-lg-7 fs-md-3 fs-sm-half compared">
+        {% else %}
+        <div id="product--price" class="fs-cell fs-lg-5 fs-md-2 fs-sm-1">
+        {% endif %}
 
           {% assign variant = product.selected_or_first_available_variant %}
           {% if product.compare_at_price > product.price %}
@@ -69,7 +73,11 @@
 
         </div>
 
+        {% if product.compare_at_price > product.price %}
+        <div id="product--add" class="fs-cell fs-lg-5 fs-md-3 fs-sm-half">
+        {% else %}
         <div id="product--add" class="fs-cell fs-lg-7 fs-md-4 fs-sm-2">
+        {% endif %}
           <input type="submit" name="add" id="add" class="btn btn-primary" value="Add to Cart" style="width:100%;">
         </div>
       </div>

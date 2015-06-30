@@ -13,7 +13,7 @@
     @media @min {
       background: url('logo.svg') left center no-repeat;
       background-size: auto 100%;
-      height: 90px;
+      height: 60px;
     }
 
     @media @tablet {
@@ -26,6 +26,10 @@
       background: url('logo.svg') left center no-repeat;
     }
 
+  }
+
+  &--mobile {
+    padding-top: 8px;
   }
 
   .text-right {
@@ -153,5 +157,32 @@
     }
 
   }
+
+  &.banner--clone {
+    
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    background: rgba(255,255,255,.9);    
+    transform:translateY(-100%);
+    transition:all 300ms ease-in-out;
+    margin-bottom: 0;
+    padding: @spaced/2 0;
+
+    #header--logo {
+      height: 58px;
+      margin: 0;
+      background-size: auto 100%;
+    }
+
+  }
+
+  &.banner--stick {
+    z-index: 99;
+    -webkit-transform:translateY(0%);
+    -ms-transform:translateY(0%);
+    transform:translateY(0%)
+  } 
 
 }

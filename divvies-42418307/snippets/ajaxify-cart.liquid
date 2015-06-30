@@ -23,7 +23,7 @@ Shopify.AjaxifyCart = (function($) {
     addingToCartBtnLabel:          'Adding...',
     soldOutBtnLabel:               'Sold Out',
     howLongTillBtnReturnsToNormal: 1000, // in milliseconds.
-    cartCountSelector:             '#cart-count',
+    cartCountSelector:             '.item-count',
     cartTotalSelector:             '#cart-price',
     // 'aboveForm' for top of add to cart form, 
     // 'belowForm' for below the add to cart form, and 
@@ -56,6 +56,7 @@ Shopify.AjaxifyCart = (function($) {
     }
     // If you use animate.css
     $('.cart-icon').addClass('full');
+    $('.cart-toggle').click();
     //$('.ajaxified-cart-feedback').slideDown();
   };
   var _setText = function($button, label) {
@@ -88,7 +89,7 @@ Shopify.AjaxifyCart = (function($) {
             // Re-enable add to cart button.
             $addToCartBtn.addClass('inverted');
             _setText($addToCartBtn, _config.addedToCartBtnLabel);
-            _showFeedback('success','<i class="fa fa-check"></i> Added to cart! <a href="/cart">View cart</a> or <a href="/collections/all">continue shopping</a>.',$addToCartForm);
+            //_showFeedback('success','<i class="fa fa-check"></i> Added to cart! <a href="/cart">View cart</a> or <a href="/collections/all">continue shopping</a>.',$addToCartForm);
             window.setTimeout(function(){
               $addToCartBtn.prop('disabled', false).removeClass('disabled').removeClass('inverted');
               _setText($addToCartBtn,_config.addToCartBtnLabel);
