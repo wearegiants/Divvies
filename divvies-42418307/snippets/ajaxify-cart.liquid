@@ -56,7 +56,7 @@ Shopify.AjaxifyCart = (function($) {
     }
     // If you use animate.css
     $('.cart-icon').addClass('full');
-    $('.cart-toggle').click();
+    //$('.cart-toggle').click();
     //$('.ajaxified-cart-feedback').slideDown();
   };
   var _setText = function($button, label) {
@@ -89,7 +89,7 @@ Shopify.AjaxifyCart = (function($) {
             // Re-enable add to cart button.
             $addToCartBtn.addClass('inverted');
             _setText($addToCartBtn, _config.addedToCartBtnLabel);
-            //_showFeedback('success','<i class="fa fa-check"></i> Added to cart! <a href="/cart">View cart</a> or <a href="/collections/all">continue shopping</a>.',$addToCartForm);
+            _showFeedback('success','',$addToCartForm);
             window.setTimeout(function(){
               $addToCartBtn.prop('disabled', false).removeClass('disabled').removeClass('inverted');
               _setText($addToCartBtn,_config.addToCartBtnLabel);
