@@ -3993,6 +3993,18 @@ h6 {
   padding-top: 0;
 }
 @media screen and (min-width: 300px) {
+  #header--mobile {
+    height: 30px;
+    line-height: 30px;
+  }
+}
+@media screen and (min-width: 740px) {
+  #header--mobile {
+    height: 58px;
+    line-height: 58px;
+  }
+}
+@media screen and (min-width: 300px) {
   #header .text-right {
     text-align: right;
   }

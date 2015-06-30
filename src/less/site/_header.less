@@ -36,6 +36,17 @@
 
   &--mobile {
     padding-top: 0;
+    
+    @media @min {
+      height: 30px;
+      line-height: 30px;
+    }
+
+    @media @tablet {
+      height: 58px;
+      line-height: 58px;
+    }
+   
   }
 
   .text-right {
@@ -176,6 +187,7 @@
       opacity: 0;
       pointer-events: none;
       padding: 10px 0;
+
       .btn-link {
         border: none;
         color: @white;
@@ -185,9 +197,11 @@
         padding: 0 10px;
         height: 30px;
         line-height: 30px;
+
         &.btn-last {
           padding: 0 20px!important;
         }
+
       }
     }
 
