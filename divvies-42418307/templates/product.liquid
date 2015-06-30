@@ -56,7 +56,7 @@
 
         <div id="product--quantity" class="fs-cell fs-all-full text-center">
           <span>Quantity of Boxes:</span>
-          <input type="number" min="1" max="20" step="1">
+          <input min="1" type="number" id="quantity" name="quantity" value="1" />
         </div>
 
         {% if product.compare_at_price > product.price %}
