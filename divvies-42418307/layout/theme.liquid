@@ -53,13 +53,13 @@
           </div>
           <div id="header--mobile" class="fs-cell fs-lg-hide fs-md-3 fs-sm-half text-right">
             <div class="upper">
-              <div class="menu-wrapper">
-                <a href="#" class="target menu-toggle" data-swap-target=".menu-wrapper">Menu</a>
-              </div>
               <a href="#" class="target cart-toggle" data-swap-target=".toggle" data-swap-linked='.cart-toggle'>
                 <span class="cart-icon {% unless cart.item_count == 0 %}full{% endunless %}">&nbsp;</span>
                 <span id="cart-count" class="item-count">{{ cart.item_count }} {{ cart.item_count | pluralize: 'item', 'items' }}</span>
               </a>
+              <div class="menu-wrapper">
+                <a href="#" class="target menu-toggle" data-swap-target=".menu-wrapper">Menu</a>
+              </div>
             </div>
           </div>
           <div class="fs-cell fs-lg-8 fs-md-hide fs-sm-hide text-right">
@@ -67,7 +67,7 @@
 
               {% if shop.customer_accounts_enabled %}
               {% if customer %}
-              Logged in as <a href="/account">{{ customer.first_name }}</a> · {{ 'Log out' | customer_logout_link }}
+              Logged in as <a id="customer_login_link" href="/account">{{ customer.first_name }}</a> · {{ 'Log out' | customer_logout_link }}
               {% else %}
               {{ 'Log in' | customer_login_link }}
               {% if shop.customer_accounts_optional %}

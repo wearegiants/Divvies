@@ -6,7 +6,10 @@ function header(){
           clone:   'banner--clone fs-grid',
           stick:   'banner--stick',
           unstick: 'banner--unstick'
-      }
+      },
+      onInit:    function () {
+        cartMenu();
+      },
   };
 
   var banner = new Headhesive('#header', options);

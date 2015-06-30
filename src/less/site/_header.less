@@ -35,7 +35,7 @@
   }
 
   &--mobile {
-    padding-top: 8px;
+    padding-top: 0;
   }
 
   .text-right {
@@ -45,14 +45,20 @@
   }
 
   .upper {
+
     position: relative;
+    color: @lightGray;
+
     .menu-wrapper {
+
       display: inline-block;
       transition: none;
       text-transform: uppercase;
+
       .mobile {
         transition: none;
       }
+
       &.fs-swap-active {
         background:darken(@orange, 5%);
         border-top-left-radius: 3px;
@@ -63,11 +69,14 @@
         }
         .mobile {
           opacity: 1;
+          float: right;
           pointer-events: auto;
           box-shadow: 0 15px 15px 0 @black25;
         }
       }
+
     }
+
     a {
 
       display: inline-block;
@@ -78,10 +87,29 @@
       font-weight: bold;
       .font_size(14);
 
+      &#customer {
+        &_login_link {
+          padding: 0;
+          text-decoration: underline;
+        }
+        &_register_link, &_logout_link {
+          padding-left: 0;
+          text-decoration: underline;
+        }
+      }
+
       &.cart-toggle {
 
-        border-left: 1px solid lighten(@lightGray, 15%);
         transition: 300ms ease;
+
+        @media @min {
+          border-right: 1px solid lighten(@lightGray, 15%);
+        }
+        @media @desktop {
+          border-left: 1px solid lighten(@lightGray, 15%);
+          border-right: 0;
+          padding-right: 0;
+        }
 
         .cart-icon {
 
@@ -127,7 +155,7 @@
         margin: 0 8px;
       }
 
-      &.btn-last {
+      &.btn-last, &:last-child {
         margin-right: 0;
       }
 
@@ -142,8 +170,9 @@
       background: darken(@orange, 5%);
       z-index: 99;
       width: 185px;
-      right: 25px;
+      right: 0;
       border-radius: 3px;
+      border-top-right-radius: 0;
       opacity: 0;
       pointer-events: none;
       padding: 10px 0;
@@ -153,7 +182,7 @@
         display: block;
         text-align: right;
         margin: 0;
-        padding: 0 20px;
+        padding: 0 10px;
         height: 30px;
         line-height: 30px;
         &.btn-last {
@@ -170,22 +199,31 @@
     top:0;
     left:0;
     width: 100%;
-    background: rgba(255,255,255,.9);    
+    background: @white;
     transform:translateY(-100%);
     transition:all 300ms ease-in-out;
     margin-bottom: 0;
     padding: @spaced/2 0;
 
     #header--logo {
-      height: 58px;
       margin: 0;
       background-size: auto 100%;
+      @media @min {
+        height: 34px;
+        margin-top: -5px;
+        margin-bottom: -5px;
+      }
+      @media @tablet {
+        height: 58px;
+        margin: 0;
+      }
     }
 
   }
 
   &.banner--stick {
     z-index: 99;
+    box-shadow: 0 0 5px @black25;
     -webkit-transform:translateY(0%);
     -ms-transform:translateY(0%);
     transform:translateY(0%)
