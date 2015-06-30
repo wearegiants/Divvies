@@ -9,6 +9,12 @@
     text-align: center;
     margin-top: -10px;
     text-indent: -9999px;
+    transition: 300ms ease;
+    transform-origin: bottom left;
+
+    &:hover {
+      transform: rotate(-2deg);
+    }
 
     @media @min {
       background: url('logo.svg') left center no-repeat;

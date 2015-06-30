@@ -83,7 +83,7 @@
             </div>
             <nav class="lower">
               {% for link in linklists.main-menu.links %}
-              <a class="btn btn-link {% if link.active %}current{% endif %} {% if template == 'collection' and link.title == 'Shop Treats'  %}current{% endif %} " href="{{ link.url }}">{{ link.title }}</a>
+              <a class="btn btn-link {% if link.active %}current{% endif %} {% if template == 'collection' and link.title == 'Shop Treats' %}current{% endif %} {% if template == 'product' and link.title == 'Shop Treats' %}current{% endif %}" href="{{ link.url }}">{{ link.title }}</a>
               {% endfor %}
             </nav>
           </div>
