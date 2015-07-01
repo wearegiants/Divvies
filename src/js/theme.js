@@ -59,7 +59,7 @@ $(document).ready(function(){
   //addtoCart();
   productHover();
   bannerSlider();
-  $("input[type=number]").number();
+  //$("input[type=number]").number();
   $(".tab").tabs({
     mobileMaxWidth: '0'
   });

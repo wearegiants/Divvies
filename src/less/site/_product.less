@@ -92,16 +92,54 @@
     text-transform: uppercase;
     margin-bottom: @spaced/2;
     border-radius: 2px;
+    height: @sharedHeight;
     .pie();
 
     @media @min {
-      text-align: left;
+      text-align: right;
       padding-left: 20px;
     }
 
     @media @tablet {
-      text-align: left;
+      //text-align: left;
       padding-left: 20px;
+    }
+
+    .js-qty {
+
+      display: inline-block;
+      float: right;
+
+      input {
+        background: none;
+        border: none;
+        margin: 0;
+        width: auto;
+        max-width: 40px;
+        text-align: center;
+        display: inline-block;
+        float: left;
+      }
+
+      &__adjust {
+        height:  @sharedHeight/2;
+        line-height:  @sharedHeight/2;
+        width: @spaced*2;
+        clear: right;
+        float: right;
+        display: block;
+        border-left: 1px solid @white50;
+
+        &:active {
+          background: darken(@lighterGray, 10%)
+        }
+
+        &--plus {
+          border-bottom: 1px solid @white50;
+        }
+
+      }
+
     }
 
     > span, div {
@@ -111,6 +149,11 @@
       .proxima();
       font-weight: 300;
       .font_size(20);
+      width: auto;
+    }
+
+    > span {
+      float: left;
     }
 
     .fs-number {
@@ -165,8 +208,7 @@
 
     > div {
 
-      float: right;
-      border-left: 1px solid @white50;
+      //float: right;
 
       a {
 

@@ -26,7 +26,7 @@
     <hr class="fs-cell fs-lg-hide fs-md-full fs-sm-full spaced">
 
     <div id="product--info"   class="fs-cell fs-lg-5 fs-md-6 fs-sm-3 fs-right">
-      <form action="/cart/add" method="post" enctype="multipart/form-data">
+      <form action="/cart/add" method="post" id="AddToCartForm" enctype="multipart/form-data">
       <div id="product--description" itemprop="description">
         {{ product.description }}
       </div>
@@ -55,7 +55,6 @@
         </div>  
 
         <div id="product--quantity" class="fs-cell fs-all-full text-center">
-          <span>Quantity of Boxes:</span>
           <input min="1" type="number" id="quantity" name="quantity" value="1" />
         </div>
 

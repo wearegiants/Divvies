@@ -1,0 +1,32 @@
+{
+  "name": "shopify-cartjs",
+  "version": "0.3.0",
+  "authors": [
+    "Gavin Ballard <gavin@gavinballard.com>"
+  ],
+  "description": "A Javascript library to power cart management for Shopify themes.",
+  "main": "dist/cart.js",
+  "keywords": [
+    "shopify",
+    "ajax"
+  ],
+  "license": "MIT",
+  "homepage": "http://cartjs.org",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "0.3.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.3.0",
+    "commit": "84bf84ac4e578b544aa4523d8a69025bba23f0f3"
+  },
+  "_source": "git://github.com/discolabs/cartjs.git",
+  "_target": "~0.3.0",
+  "_originalSource": "shopify-cartjs",
+  "_direct": true
+}

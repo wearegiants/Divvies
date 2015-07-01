@@ -55,7 +55,7 @@
             <div class="upper">
               <a href="#" class="target cart-toggle" data-swap-target=".toggle" data-swap-linked='.cart-toggle'>
                 <span class="cart-icon {% unless cart.item_count == 0 %}full{% endunless %}">&nbsp;</span>
-                <span id="cart-count" class="item-count">{{ cart.item_count }} {{ cart.item_count | pluralize: 'item', 'items' }}</span>
+                <span id="cart-count" class="item-count">{{ cart.item_count }}</span>
               </a>
               <div class="menu-wrapper">
                 <a href="#" class="target menu-toggle" data-swap-target=".menu-wrapper">Menu</a>
@@ -78,7 +78,7 @@
               
               <a href="#" class="target cart cart-toggle" data-swap-target=".toggle" data-swap-linked='.cart-toggle'>
                 <span class="cart-icon {% unless cart.item_count == 0 %}full{% endunless %}">&nbsp;</span>
-                <span id="cart-count" class="item-count">{{ cart.item_count }} {{ cart.item_count | pluralize: 'item', 'items' }}</span>
+                <span id="cart-count" class="item-count">{{ cart.item_count }}</span>
               </a>
             </div>
             <nav class="lower">
@@ -106,7 +106,6 @@
         <div id="footer--tagline">
           <div class="fs-row">
             <div class='fs-cell fs-xl-10 fs-lg-11 fs-md-6 fs-sm-3 fs-centered'>
-              <p class="emphasized">Divies are made in small batches in our dedicated Nut, Egg, and Dairy Free Bakery.</p>
               <a class="btn btn-link btn-first" href="/pages/privacy">Privacy Policy</a>
               <a class="btn btn-link btn-last" href="/pages/terms">Terms and Conditions</a>
             </div>
@@ -125,6 +124,28 @@
   {% include 'cart-slideout' %}
   {{ 'shop.js'  | asset_url | script_tag }}
   <script type='text/javascript' src='{{ 'divvies.min.js' | asset_url }}'></script>
-  {% include 'ajaxify-cart' %}
+  {{ 'handlebars.min.js' | asset_url | script_tag }}
+  {{ 'ajax-cart.js'  | asset_url | script_tag }}
+  {% include 'ajax-cart-template' %}
+  <script>
+    jQuery(function($) {
+      ajaxCart.init({
+        formSelector: '#AddToCartForm',
+        cartContainer: '#CartContainer',
+        addToCartSelector: '#add',
+        cartCountSelector: '.item-count',
+        //cartCostSelector: '#CartCost',
+        moneyFormat: {{ shop.money_format | json }}
+      });
+      ajaxCart.load();
+    });
+
+    jQuery('body').on('ajaxCart.afterCartLoad', function(evt, cart) {
+      // Bind to 'ajaxCart.afterCartLoad' to run any javascript after the cart has loaded in the DOM
+      //timber.RightDrawer.open();
+      //alert('added!');
+    });
+
+  </script>
 </body>
 </html>
