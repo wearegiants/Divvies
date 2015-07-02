@@ -9,12 +9,35 @@
       .font_size(50);
     }
     @media @tablet {
+      .font_size(40);
+    }
+    @media @desktop {
       .font_size(60);
     }
   }
 
+  &--description, &--description p {
+    @media @min {
+      .font_size(17);  
+    }
+    @media @tablet {
+      .font_size(15);
+    }
+    @media @desktop {
+      .font_size(17);
+    }
+  }
+
   &--info {
-    .font_size(17);
+    @media @min {
+      .font_size(17);  
+    }
+    @media @tablet {
+      .font_size(17);
+    }
+    @media @desktop {
+      .font_size(17);
+    }
   }
 
   &--specs {

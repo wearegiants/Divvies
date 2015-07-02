@@ -1,0 +1,79 @@
+#shopify-product-reviews {
+
+  margin: 0!important;
+
+  .btn-primary {
+    background: @orange;
+    color: @white;
+  }
+
+  .spr {
+
+    &-container {
+      padding: 0!important;
+      border: 0!important;
+      h1,h2,h3,h4,h5 {
+        color: @white;
+      }
+      input,
+      textarea {
+        -webkit-font-smoothing: antialiased;
+        color: @textGray;
+        background: @white;
+
+      }
+    }
+
+    &-review {
+
+      &-header {
+
+        &-title {
+          .font_size(18);
+        }
+
+      }
+
+      &-content {
+
+        &-body {
+          .font_size(16);
+          color: @white;
+        }
+
+      }
+
+    }
+
+    &-summary {
+
+      color: @white;
+
+      a {
+        color: inherit;
+        height: 34px;
+        background: @orange;
+        line-height: 34px;
+        padding: 0 12px;
+        border-radius: 3px;
+        display: inline-block;
+        margin-top: -2px;
+      }
+
+    }
+
+    &-form-message {
+      border-radius: 3px;
+    }
+
+    &-icon {
+
+      &-star {
+        color: @orange
+      }
+
+    }
+
+  }
+
+}

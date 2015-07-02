@@ -3503,6 +3503,7 @@ textarea {
   border: none;
   border-radius: 0;
   padding: 0;
+  -webkit-font-smoothing: antialiased;
 }
 textarea {
   resize: vertical;
@@ -4693,13 +4694,54 @@ h6 {
 }
 @media screen and (min-width: 740px) {
   #product--title {
+    font-size: 40px;
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 980px) {
+  #product--title {
     font-size: 60px;
     font-size: 3.75rem;
   }
 }
-#product--info {
-  font-size: 17px;
-  font-size: 1.0625rem;
+@media screen and (min-width: 300px) {
+  #product--description,
+  #product--description p {
+    font-size: 17px;
+    font-size: 1.0625rem;
+  }
+}
+@media screen and (min-width: 740px) {
+  #product--description,
+  #product--description p {
+    font-size: 15px;
+    font-size: 0.9375rem;
+  }
+}
+@media screen and (min-width: 980px) {
+  #product--description,
+  #product--description p {
+    font-size: 17px;
+    font-size: 1.0625rem;
+  }
+}
+@media screen and (min-width: 300px) {
+  #product--info {
+    font-size: 17px;
+    font-size: 1.0625rem;
+  }
+}
+@media screen and (min-width: 740px) {
+  #product--info {
+    font-size: 17px;
+    font-size: 1.0625rem;
+  }
+}
+@media screen and (min-width: 980px) {
+  #product--info {
+    font-size: 17px;
+    font-size: 1.0625rem;
+  }
 }
 #product--specs {
   margin-top: 25px;
@@ -4939,6 +4981,58 @@ h6 {
 #product--add .btn:active {
   top: 1px;
   background: #ed4f2b;
+}
+#shopify-product-reviews {
+  margin: 0!important;
+}
+#shopify-product-reviews .btn-primary {
+  background: #ef6343;
+  color: #ffffff;
+}
+#shopify-product-reviews .spr-container {
+  padding: 0!important;
+  border: 0!important;
+}
+#shopify-product-reviews .spr-container h1,
+#shopify-product-reviews .spr-container h2,
+#shopify-product-reviews .spr-container h3,
+#shopify-product-reviews .spr-container h4,
+#shopify-product-reviews .spr-container h5 {
+  color: #ffffff;
+}
+#shopify-product-reviews .spr-container input,
+#shopify-product-reviews .spr-container textarea {
+  -webkit-font-smoothing: antialiased;
+  color: #666666;
+  background: #ffffff;
+}
+#shopify-product-reviews .spr-review-header-title {
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+#shopify-product-reviews .spr-review-content-body {
+  font-size: 16px;
+  font-size: 1rem;
+  color: #ffffff;
+}
+#shopify-product-reviews .spr-summary {
+  color: #ffffff;
+}
+#shopify-product-reviews .spr-summary a {
+  color: inherit;
+  height: 34px;
+  background: #ef6343;
+  line-height: 34px;
+  padding: 0 12px;
+  border-radius: 3px;
+  display: inline-block;
+  margin-top: -2px;
+}
+#shopify-product-reviews .spr-form-message {
+  border-radius: 3px;
+}
+#shopify-product-reviews .spr-icon-star {
+  color: #ef6343;
 }
 .collection-grid--item {
   margin-bottom: 2.08333333%;

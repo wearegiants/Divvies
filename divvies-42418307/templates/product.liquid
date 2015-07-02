@@ -15,17 +15,17 @@
     </header>
     -->
 
-    <header id="product--header" class="fs-cell fs-lg-5 fs-md-6 fs-sm-3 fs-right">
+    <header id="product--header" class="fs-cell fs-lg-5 fs-md-2 fs-sm-3 fs-right">
       <h1 id="product--title" itemprop="name">{{ product.title }}</h1>
     </header>
 
-    <hr class="fs-cell fs-lg-hide fs-md-full fs-sm-full spaced">
+    <hr class="fs-cell fs-lg-hide fs-md-hide fs-sm-full spaced">
 
-    <div id="product--images" class="fs-cell fs-lg-7 fs-md-6 fs-sm-3">{% include 'product-images' %}</div>
+    <div id="product--images" class="fs-cell fs-lg-7 fs-md-4 fs-sm-3">{% include 'product-images' %}</div>
 
-    <hr class="fs-cell fs-lg-hide fs-md-full fs-sm-full spaced">
+    <hr class="fs-cell fs-lg-hide fs-md-hide fs-sm-full spaced">
 
-    <div id="product--info"   class="fs-cell fs-lg-5 fs-md-6 fs-sm-3 fs-right">
+    <div id="product--info"   class="fs-cell fs-lg-5 fs-md-2 fs-sm-3 fs-right">
       <form action="/cart/add" method="post" id="AddToCartForm" enctype="multipart/form-data">
       <div id="product--description" itemprop="description">
         {{ product.description }}
@@ -59,9 +59,9 @@
         </div>
 
         {% if product.compare_at_price > product.price %}
-        <div id="product--price" class="fs-cell fs-lg-7 fs-md-3 fs-sm-half compared">
+        <div id="product--price" class="fs-cell fs-lg-7 fs-md-6 fs-sm-half compared">
         {% else %}
-        <div id="product--price" class="fs-cell fs-lg-5 fs-md-2 fs-sm-1">
+        <div id="product--price" class="fs-cell fs-lg-5 fs-md-3 fs-sm-1">
         {% endif %}
 
           {% assign variant = product.selected_or_first_available_variant %}
@@ -75,7 +75,7 @@
         </div>
 
         {% if product.compare_at_price > product.price %}
-        <div id="product--add" class="fs-cell fs-lg-5 fs-md-3 fs-sm-half">
+        <div id="product--add" class="fs-cell fs-lg-5 fs-md-6 fs-sm-half">
         {% else %}
         <div id="product--add" class="fs-cell fs-lg-7 fs-md-4 fs-sm-2">
         {% endif %}
@@ -96,7 +96,9 @@
       </nav>
       <div class="tab_content" id="tab-1">Tab 1</div>
       <div class="tab_content" id="tab-2">Tab 2</div>
-      <div class="tab_content" id="tab-3">Tab 3</div>
+      <div class="tab_content" id="tab-3">
+        <div id="shopify-product-reviews" data-id="{{product.id}}">{{ product.metafields.spr.reviews }}</div>
+      </div>
     </div>
 
     <hr class="fs-cell fs-all-full invisible">
