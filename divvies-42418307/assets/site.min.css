@@ -3309,6 +3309,9 @@ img.rounded {
 .hidden {
   display: none;
 }
+.wrapper {
+  padding: 16.66666667px;
+}
 *,
 *:link,
 *:visited,
@@ -4320,6 +4323,10 @@ h6 {
 .page-section {
   padding: 37.5px 0;
 }
+.cart-contents {
+  border: 1px solid #93d7eb;
+  margin-bottom: 25px;
+}
 #cart--slideout {
   position: fixed;
   height: 100%;
@@ -5055,20 +5062,16 @@ h6 {
   position: absolute;
   top: 0;
   width: 100%;
-  opacity: 0;
+  opacity: .5;
 }
 .collection-grid--item_children .btn {
   margin: 0;
   display: block;
   color: #ffffff;
-  height: 25%;
   position: relative;
   text-align: left;
-}
-@media screen and (min-width: 300px) {
-  .collection-grid--item_children .btn {
-    line-height: 47.5px;
-  }
+  height: 40px;
+  line-height: 40px;
 }
 .collection-grid--item_children .btn span {
   position: relative;

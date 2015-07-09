@@ -15,10 +15,34 @@
     </div>
 
     <header id="collection--header" class="header">
-      <h1 class="header--title">Treats</h1>
+      <h1 class="header--title">{{ collection.title }}</h1>
     </header>
 
-    {% include 'collections-all' %}
+    
+    <div id="collection-listing--collection-grid" class="collection-grid fs-row text-center">
+    {% assign sorted_by_type = collection.products | sort: 'type' %}
+    {% for product_type in collection.all_types %}
+      
+    <div class="collection-grid--item fs-cell fs-lg-4 fs-md-2 fs-sm-half equal">
+      {% assign the_type = product_type %}
+      <span class="btn btn-collection bg-color bg-color-blue">{{ the_type }}</span>
+      {% paginate collection.products by 5000 %}
+      <div class="collection-grid--item_thumb">
+        <div class="collection-grid--item_children">
+          {% for product in collection.products %}
+          {% if product.type == the_type %}
+          <a href="{{ product.url }}" class="btn"><span>{{ product.title }}</span></a>
+          {% endif %}
+          {% endfor %}
+        </div>
+        {% assign img = the_type| handleize | append: '.jpg' | prepend: 'type-' %} 
+        <img src="{{ img | asset_url }}" alt="{{ product.image.alt }}" class="img-responsive" />
+      </div>
+      {% endpaginate %}
+    </div>
+    {% endfor %}
+    </div>
+
 
   </div>
 </section>

@@ -2,6 +2,9 @@
 {% assign sold_out = 'Sold Out' %}
 {% assign unavailable = 'Unavailable' %}
 
+{% assign subtitle = product.metafields.subtitle %}
+{% assign tabs = product.metafields.tabs %}
+
 <section id="product" itemscope itemtype="http://schema.org/Product">
 
   <meta itemprop="url" content="{{ shop.url }}{{ product.url }}" />
@@ -9,14 +12,9 @@
 
   <div class="fs-row">
 
-    <!--
-    <header id="product--header" class="header fs-cell fs-all-full">
-      <span class="header--title"><a href="#" class="ss-gizmo ss-navigateleft header--icon"></a></span>
-    </header>
-    -->
-
     <header id="product--header" class="fs-cell fs-lg-5 fs-md-2 fs-sm-3 fs-right">
       <h1 id="product--title" itemprop="name">{{ product.title }}</h1>
+      <h4 id="product--subtitle">{{ subtitle['subtitle'] }}</h4>
     </header>
 
     <hr class="fs-cell fs-lg-hide fs-md-hide fs-sm-full spaced">
@@ -94,8 +92,13 @@
         <a href="#tab-2" class="tab btn btn-tab" data-tabs-group="tab-1">Nutrition</a>
         <a href="#tab-3" class="tab btn btn-tab" data-tabs-group="tab-1">Testimonials</a>
       </nav>
-      <div class="tab_content" id="tab-1">Tab 1</div>
-      <div class="tab_content" id="tab-2">Tab 2</div>
+
+      <div class="tab_content" id="tab-1">  
+        {{ tabs['ingredients'] }}
+      </div>
+      <div class="tab_content" id="tab-2">
+        {{ tabs['nutrition'] }}
+      </div>
       <div class="tab_content" id="tab-3">
         <div id="shopify-product-reviews" data-id="{{product.id}}">{{ product.metafields.spr.reviews }}</div>
       </div>
