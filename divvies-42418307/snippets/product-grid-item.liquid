@@ -1,6 +1,11 @@
-<div class="product-grid--item fs-cell fs-lg-4 fs-md-2 fs-sm-half equal">
+<div class="collection-grid--item fs-cell fs-lg-4 fs-md-2 fs-sm-half equal">
+   <a class="coverlink" href="{{ product.url }}"></a>
    <span class="btn btn-collection bg-color bg-color-{{ bgColor }}">{{ product.title }}</span>
-   <div class="product-grid--item_thumb">
-   <img src="{{ product | img_url: 'large' }}" alt="{{ product.image.alt }}" class="img-responsive" />
+   <div class="collection-grid--item_thumb">
+      {% if product.images.size > 1 %}
+      <img src="{{ product.featured_image.src | img_url: 'large' }}" class="img-responsive" alt="{{ product.featured_image.alt | escape }}">
+      {% else %}
+      <img src="{{ 'type-chocolate-chip.jpg' | asset_url }}" class="img-responsive">
+      {% endif %}
    </div>
 </div>
