@@ -1,15 +1,15 @@
-<div id="faq">
+<div id="faq" class="page--faq">
 
   <div id="faq--points" class="bg-color bg-color-bggray">
 
     <div id="faq--specs" class="fs-row">
       <div class="fs-cell fs-lg-10 fs-md-5 fs-sm-3 fs-centered">
         <div class="fs-row">
-          <span class="spec-icon contains fs-cell fs-lg-fifth fs-md-fifth fs-sm-fifth"><img src="{{ 'icon-v.svg' | asset_url }}" class="img-responsive" /></span>
-          <span class="spec-icon fs-cell fs-lg-fifth fs-md-fifth fs-sm-fifth"><img src="{{ 'icon-nuts.svg' | asset_url }}"  class="img-responsive" /></span>
-          <span class="spec-icon fs-cell fs-lg-fifth fs-md-fifth fs-sm-fifth"><img src="{{ 'icon-acorn.svg' | asset_url }}" class="img-responsive" /></span>
-          <span class="spec-icon fs-cell fs-lg-fifth fs-md-fifth fs-sm-fifth"><img src="{{ 'icon-milk.svg' | asset_url }}"  class="img-responsive" /></span>
-          <span class="spec-icon fs-cell fs-lg-fifth fs-md-fifth fs-sm-fifth"><img src="{{ 'icon-egg.svg' | asset_url }}"   class="img-responsive" /></span>
+          <span class="spec-icon fs-cell fs-lg-fifth fs-md-fifth fs-sm-fifth"><img src="{{ 'icon-specs-1.svg' | asset_url }}" class="img-responsive" /></span>
+          <span class="spec-icon fs-cell fs-lg-fifth fs-md-fifth fs-sm-fifth"><img src="{{ 'icon-specs-2.svg' | asset_url }}"  class="img-responsive" /></span>
+          <span class="spec-icon fs-cell fs-lg-fifth fs-md-fifth fs-sm-fifth"><img src="{{ 'icon-specs-3.svg' | asset_url }}" class="img-responsive" /></span>
+          <span class="spec-icon fs-cell fs-lg-fifth fs-md-fifth fs-sm-fifth"><img src="{{ 'icon-specs-4.svg' | asset_url }}"  class="img-responsive" /></span>
+          <span class="spec-icon fs-cell fs-lg-fifth fs-md-fifth fs-sm-fifth"><img src="{{ 'icon-specs-5.svg' | asset_url }}"   class="img-responsive" /></span>
         </div>
       </div>
     </div>
@@ -17,7 +17,9 @@
 
     <div id="faq--explain" class="fs-row">
       <div class="fs-cell fs-lg-10 fs-md-5 fs-sm-3 fs-centered">
-        {{ page.content }}
+        <div class="page--content">
+          {{ page.content }}
+        </div>
       </div>
     </div>
 
@@ -25,9 +27,9 @@
 
   <hr class="invisible">
 
-  <div id="faq--shipping">
+  <div id="faq--shipping" class="page--content">
     <div class="fs-row">
-      <div class="fs-cell fs-lg-11 fs-md-6 fs-sm-3 fs-centered">
+      <div class="fs-cell fs-lg-10 fs-md-6 fs-sm-3 fs-centered">
         <div class="fs-row item">
           <div class="fs-cell fs-lg-3 fs-md-1 fs-sm-fourth icon"><img src="{{ 'icon-shipping.svg' | asset_url }}" class="img-responsive" /></div>
           <div class="fs-cell fs-lg-9 fs-md-4 fs-sm-2">
@@ -67,11 +69,11 @@
 
   <hr class="invisible">
 
-  <div id="faq--info" class="bg-color-bggray page-section">
+  <div id="faq--info" class="bg-color-bggray page-section page--content">
     <div class="fs-row">
       <div class="fs-cell fs-lg-10 fs-md-6 fs-sm-3 fs-centered">
 
-        <div class="fs-row item">
+        <div class="fs-row item page--content-main">
           <div class="fs-cell fs-all-full text-center">
             <header><h2 class="item-title">{{ pages.product-information.title }}</h2></header>
             {{ pages.product-information.content }}
@@ -122,10 +124,10 @@
     </div>
   </div>
 
-   <div class="quote">
+   <div class="quote text-center">
       <div class="fs-row">
          <div class="fs-cell fs-lg-8 fs-md-5 fs-sm-3 fs-centered">
-            <header>{{ pages.any-questions.title }}</header>
+            <header><h1>{{ pages.any-questions.title }}</h1></header>
             {{ pages.any-questions.content }}
          </div>
       </div>
