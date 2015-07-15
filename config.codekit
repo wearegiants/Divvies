@@ -373,8 +373,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-<<<<<<< HEAD
-=======
 	"\/divvies-42418307\/assets\/type-oatmeal-raisin.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -397,7 +395,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
->>>>>>> 7ac88c5c3c8cdcd5a8aa6af3cc3aca270b2882c5
 	"\/divvies-42418307\/config\/settings_data.json": {
 		"fileType": 524288,
 		"ignore": 1,
@@ -8032,13 +8029,13 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/src\/less\/theme.less",
-		"outputAbbreviatedPath": "\/shopify-theme\/assets\/theme.min.css",
+		"outputAbbreviatedPath": "\/src\/css\/theme.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1,
+		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"relativeURLS": 0,
-		"shouldRunAutoprefixer": 1,
-		"shouldRunBless": 1,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
 		"strictImports": 0,
 		"strictMath": 0,
 		"strictUnits": 0
