@@ -1,0 +1,26 @@
+.quote {
+
+   background-color: @lightblue;
+   padding: @spaced*2 0;
+
+   @media @min {
+      .font_size(19);   
+   }
+
+   @media @tablet {
+      .font_size(22);   
+   }
+
+   @media @desktop {
+      .font_size(28);   
+   }
+   
+   blockquote {
+      color: @white;
+      line-height: 1.5;
+      margin: 0;
+      margin-bottom: @spaced;
+      text-align: center;
+   }  
+
+}

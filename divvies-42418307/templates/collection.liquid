@@ -18,8 +18,14 @@
       <h1 class="header--title">{{ collection.title }}</h1>
     </header>
 
-    
     <div id="collection-listing--collection-grid" class="collection-grid fs-row text-center">
+    {% if collection.handle == 'cookies' %}
+
+    {% comment %}
+      Cookies are displayed a bit different than the rest of the items, for some reason. 
+      Below, I'm trying to organize it in a category/subcategory type relationship. 
+    {% endcomment %}
+
     {% assign sorted_by_type = collection.products | sort: 'type' %}
     {% for product_type in collection.all_types %}
       
@@ -41,6 +47,19 @@
       {% endpaginate %}
     </div>
     {% endfor %}
+    
+    {% else %}
+
+    {% comment %}
+      Here's where it becomes your typical collection display.
+    {% endcomment %}
+
+    {% for product in collection.products %}
+    {% include 'product-grid-item' %}
+    {% endfor %}
+
+    {% endif %}
+
     </div>
 
 

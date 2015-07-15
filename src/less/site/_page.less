@@ -74,6 +74,38 @@
 
    }
 
+   &--about {
+
+      .page--content {
+
+         line-height: 1.6;
+
+         @media @min {
+            .font_size(16);   
+         }
+
+         @media @tablet {
+            .font_size(20);   
+         }
+
+         @media @desktop {
+            .font_size(20);   
+         }
+
+         p {
+            font-size: inherit;
+            line-height: inherit;
+         }
+
+         .fs-right {
+            @media @tablet {
+               margin-left: @spaced!important;
+            }
+         }
+
+      }
+   }
+
    &-section {
       padding: @spaced*1.5 0;
    }

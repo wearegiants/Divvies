@@ -362,6 +362,39 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/divvies-42418307\/assets\/type-molasses-ginger.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 60927,
+		"inputAbbreviatedPath": "\/divvies-42418307\/assets\/type-molasses-ginger.jpg",
+		"outputAbbreviatedPath": "\/divvies-42418307\/assets\/type-molasses-ginger.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/divvies-42418307\/assets\/type-oatmeal-raisin.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 60927,
+		"inputAbbreviatedPath": "\/divvies-42418307\/assets\/type-oatmeal-raisin.jpg",
+		"outputAbbreviatedPath": "\/divvies-42418307\/assets\/type-oatmeal-raisin.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/divvies-42418307\/assets\/type-sugar-cookies.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 60927,
+		"inputAbbreviatedPath": "\/divvies-42418307\/assets\/type-sugar-cookies.jpg",
+		"outputAbbreviatedPath": "\/divvies-42418307\/assets\/type-sugar-cookies.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/divvies-42418307\/config\/settings_data.json": {
 		"fileType": 524288,
 		"ignore": 1,
@@ -785,6 +818,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/shopify-theme\/templates\/about.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/shopify-theme\/templates\/about.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/shopify-theme\/templates\/article.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -844,6 +886,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/shopify-theme\/templates\/list-collections.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/shopify-theme\/templates\/page.about-us.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/shopify-theme\/templates\/page.about-us.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -7908,6 +7959,26 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/src\/less\/site\/_product.less",
 		"outputAbbreviatedPath": "\/src\/less\/css\/_product.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/src\/less\/site\/_quote.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/less\/site\/_quote.less",
+		"outputAbbreviatedPath": "\/src\/less\/css\/_quote.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,

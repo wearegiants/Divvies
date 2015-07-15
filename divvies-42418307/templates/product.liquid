@@ -107,8 +107,18 @@
     <hr class="fs-cell fs-all-full invisible">
 
     <div id="product--automatic" class="fs-cell fs-all-full">
-      <h1>Automatic Divvies</h2>
-      <a href="#" class="btn btn-primary btn-lg bg-color-lightblue">Subscribe to Automatic Divvies</a>
+
+      {% for product in collections.all.products %}
+      {% if product.handle == 'automatic-divvies' %}
+      <h1>{{ product.title }}</h2>
+      {{ product.description }}
+      <a href="{{ product.url }}" class="btn btn-primary btn-lg bg-color-lightblue">Subscribe to {{ product.title }}</a>
+      {% endif %}
+      {% endfor %}
+
+      {% assign someProduct = all_products.automatic-divvies %}
+
+
     </div>
 
   </div>

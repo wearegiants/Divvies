@@ -3862,8 +3862,8 @@ h6 {
   color: #ef6343;
   margin-bottom: 16.66666667px;
   text-transform: capitalize;
-  font-size: 32px;
-  font-size: 2rem;
+  font-size: 52px;
+  font-size: 3.25rem;
 }
 .header--title.more {
   color: #686868;
@@ -4319,6 +4319,36 @@ h6 {
   border-style: solid;
   border-width: 33px 0 0 20px;
   border-color: transparent transparent transparent #ef6343;
+}
+.page--about .page--content {
+  line-height: 1.6;
+}
+@media screen and (min-width: 300px) {
+  .page--about .page--content {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 740px) {
+  .page--about .page--content {
+    font-size: 20px;
+    font-size: 1.25rem;
+  }
+}
+@media screen and (min-width: 980px) {
+  .page--about .page--content {
+    font-size: 20px;
+    font-size: 1.25rem;
+  }
+}
+.page--about .page--content p {
+  font-size: inherit;
+  line-height: inherit;
+}
+@media screen and (min-width: 740px) {
+  .page--about .page--content .fs-right {
+    margin-left: 25px !important;
+  }
 }
 .page-section {
   padding: 37.5px 0;
@@ -5158,4 +5188,33 @@ h6 {
 #contact--map iframe {
   display: block;
   width: 100%;
+}
+.quote {
+  background-color: #93d7eb;
+  padding: 50px 0;
+}
+@media screen and (min-width: 300px) {
+  .quote {
+    font-size: 19px;
+    font-size: 1.1875rem;
+  }
+}
+@media screen and (min-width: 740px) {
+  .quote {
+    font-size: 22px;
+    font-size: 1.375rem;
+  }
+}
+@media screen and (min-width: 980px) {
+  .quote {
+    font-size: 28px;
+    font-size: 1.75rem;
+  }
+}
+.quote blockquote {
+  color: #ffffff;
+  line-height: 1.5;
+  margin: 0;
+  margin-bottom: 25px;
+  text-align: center;
 }
