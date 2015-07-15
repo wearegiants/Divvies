@@ -64,4 +64,6 @@ $(document).ready(function(){
     mobileMaxWidth: '0'
   });
 
+  $('.accordion').accordion();
+
 });
