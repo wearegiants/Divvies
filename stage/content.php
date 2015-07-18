@@ -40,6 +40,10 @@
 
     include ('../templates/search.php');
 
+  } elseif (isset($_GET['account'])) {
+
+    include ('../templates/account.php');
+
   } else {
 
     include ('../templates/index.php');

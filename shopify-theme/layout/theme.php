@@ -50,7 +50,8 @@
         </div>
         <div class="fs-cell fs-lg-8 fs-md-hide fs-sm-hide text-right">
           <div class="upper">
-            <a href="<?php echo $themeurl; ?>?account">Account</a>
+            <a href="<?php echo $themeurl; ?>?account=login">Log in</a> or 
+            <a href="<?php echo $themeurl; ?>?account=create">Create an Account</a>
             <a href="#" class="target cart-toggle" data-swap-target=".toggle" data-swap-linked='.cart-toggle'>&nbsp;</a>
           </div>
           <nav class="lower">

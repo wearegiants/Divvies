@@ -3549,6 +3549,51 @@ form input[type=tel]:focus,
 form textarea:focus {
   border: 1px solid #666666;
 }
+form input[type=text].simple,
+form input[type=email].simple,
+form input[type=password].simple,
+form input[type=tel].simple,
+form textarea.simple {
+  border-radius: 1px;
+  -webkit-transition: 300ms ease;
+          transition: 300ms ease;
+}
+form input[type=text].simple:focus,
+form input[type=email].simple:focus,
+form input[type=password].simple:focus,
+form input[type=tel].simple:focus,
+form textarea.simple:focus {
+  border-color: #b3b3b3;
+  box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.25);
+}
+form input[type=text].simple.bg-color-gray,
+form input[type=email].simple.bg-color-gray,
+form input[type=password].simple.bg-color-gray,
+form input[type=tel].simple.bg-color-gray,
+form textarea.simple.bg-color-gray {
+  color: #ffffff;
+}
+form input[type=text].simple.bg-color-gray:-moz-placeholder,
+form input[type=email].simple.bg-color-gray:-moz-placeholder,
+form input[type=password].simple.bg-color-gray:-moz-placeholder,
+form input[type=tel].simple.bg-color-gray:-moz-placeholder,
+form textarea.simple.bg-color-gray:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+form input[type=text].simple.bg-color-gray:-ms-input-placeholder,
+form input[type=email].simple.bg-color-gray:-ms-input-placeholder,
+form input[type=password].simple.bg-color-gray:-ms-input-placeholder,
+form input[type=tel].simple.bg-color-gray:-ms-input-placeholder,
+form textarea.simple.bg-color-gray:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+form input[type=text].simple.bg-color-gray::-webkit-input-placeholder,
+form input[type=email].simple.bg-color-gray::-webkit-input-placeholder,
+form input[type=password].simple.bg-color-gray::-webkit-input-placeholder,
+form input[type=tel].simple.bg-color-gray::-webkit-input-placeholder,
+form textarea.simple.bg-color-gray::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
 .alert {
   font-size: 15px;
   font-size: 0.9375rem;
