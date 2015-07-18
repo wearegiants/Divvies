@@ -3312,6 +3312,16 @@ img.rounded {
 .wrapper {
   padding: 16.66666667px;
 }
+.notification {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 10px 15px;
+  border-radius: 3px;
+  margin-bottom: 16.66666667px;
+}
+.notification-error {
+  background: #d64242;
+  color: #ffffff;
+}
 *,
 *:link,
 *:visited,
@@ -3369,8 +3379,8 @@ h1 {
 }
 @media screen and (min-width: 500px) {
   h1 {
-    font-size: 50px;
-    font-size: 3.125rem;
+    font-size: 36px;
+    font-size: 2.25rem;
   }
 }
 h2 {
@@ -3554,44 +3564,41 @@ form input[type=email].simple,
 form input[type=password].simple,
 form input[type=tel].simple,
 form textarea.simple {
-  border-radius: 1px;
-  -webkit-transition: 300ms ease;
-          transition: 300ms ease;
+  border: 0;
 }
 form input[type=text].simple:focus,
 form input[type=email].simple:focus,
 form input[type=password].simple:focus,
 form input[type=tel].simple:focus,
 form textarea.simple:focus {
-  border-color: #b3b3b3;
-  box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.25);
+  border: 0;
 }
-form input[type=text].simple.bg-color-gray,
-form input[type=email].simple.bg-color-gray,
-form input[type=password].simple.bg-color-gray,
-form input[type=tel].simple.bg-color-gray,
-form textarea.simple.bg-color-gray {
+form input[type=text].bg-color-gray,
+form input[type=email].bg-color-gray,
+form input[type=password].bg-color-gray,
+form input[type=tel].bg-color-gray,
+form textarea.bg-color-gray {
   color: #ffffff;
 }
-form input[type=text].simple.bg-color-gray:-moz-placeholder,
-form input[type=email].simple.bg-color-gray:-moz-placeholder,
-form input[type=password].simple.bg-color-gray:-moz-placeholder,
-form input[type=tel].simple.bg-color-gray:-moz-placeholder,
-form textarea.simple.bg-color-gray:-moz-placeholder {
+form input[type=text].bg-color-gray:-moz-placeholder,
+form input[type=email].bg-color-gray:-moz-placeholder,
+form input[type=password].bg-color-gray:-moz-placeholder,
+form input[type=tel].bg-color-gray:-moz-placeholder,
+form textarea.bg-color-gray:-moz-placeholder {
   color: rgba(255, 255, 255, 0.75);
 }
-form input[type=text].simple.bg-color-gray:-ms-input-placeholder,
-form input[type=email].simple.bg-color-gray:-ms-input-placeholder,
-form input[type=password].simple.bg-color-gray:-ms-input-placeholder,
-form input[type=tel].simple.bg-color-gray:-ms-input-placeholder,
-form textarea.simple.bg-color-gray:-ms-input-placeholder {
+form input[type=text].bg-color-gray:-ms-input-placeholder,
+form input[type=email].bg-color-gray:-ms-input-placeholder,
+form input[type=password].bg-color-gray:-ms-input-placeholder,
+form input[type=tel].bg-color-gray:-ms-input-placeholder,
+form textarea.bg-color-gray:-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.75);
 }
-form input[type=text].simple.bg-color-gray::-webkit-input-placeholder,
-form input[type=email].simple.bg-color-gray::-webkit-input-placeholder,
-form input[type=password].simple.bg-color-gray::-webkit-input-placeholder,
-form input[type=tel].simple.bg-color-gray::-webkit-input-placeholder,
-form textarea.simple.bg-color-gray::-webkit-input-placeholder {
+form input[type=text].bg-color-gray::-webkit-input-placeholder,
+form input[type=email].bg-color-gray::-webkit-input-placeholder,
+form input[type=password].bg-color-gray::-webkit-input-placeholder,
+form input[type=tel].bg-color-gray::-webkit-input-placeholder,
+form textarea.bg-color-gray::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.75);
 }
 .alert {
@@ -5365,4 +5372,65 @@ h6 {
   left: 3px;
   top: 12px;
   position: absolute;
+}
+#account {
+  font-size: 19px;
+  font-size: 1.1875rem;
+  font-weight: 300;
+  line-height: 1.6;
+  font-family: 'Proxima Nova';
+}
+#account .form p {
+  font-size: inherit;
+}
+#account .form-title {
+  color: #ef6343;
+  line-height: 1.3;
+}
+#account .form-entry {
+  margin-bottom: 25px;
+}
+#account .form-subnav p a {
+  text-decoration: none;
+  border: none;
+}
+#account .form-subnav p a:before {
+  position: relative;
+  top: .175em;
+  margin-right: 2px;
+  -webkit-transition: 300ms ease;
+          transition: 300ms ease;
+}
+#account .form-subnav p a:hover:before {
+  margin-left: -2px;
+  margin-right: 4px;
+}
+#account--history-title {
+  color: #ef6343;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #b3b3b3;
+}
+#account--history .empty {
+  min-height: 450px;
+  position: relative;
+}
+#account--history .empty .centered {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  margin-top: -25px;
+}
+#account--history .history-item {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #b3b3b3;
+}
+#account--history .history-item:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: 0;
 }

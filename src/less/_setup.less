@@ -37,6 +37,7 @@
 @error:       #D64242;
 
 @black0:      rgba(0, 0, 0, 0);
+@black10:     rgba(0, 0, 0, 0.1);
 @black25:     rgba(0, 0, 0, 0.25);
 @black50:     rgba(0, 0, 0, 0.5);
 @black75:     rgba(0, 0, 0, 0.75);
@@ -250,4 +251,17 @@ img.rounded {
 
 .wrapper {
   padding: @spaced/1.5;
+}
+
+.notification {
+  
+  border: 1px solid @black10;
+  padding: 10px 15px;
+  border-radius: 3px;
+  margin-bottom: @spaced/1.5;
+
+  &-error {
+    background: @error;
+    color: @white;
+  }
 }
