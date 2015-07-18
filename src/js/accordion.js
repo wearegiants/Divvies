@@ -10,6 +10,7 @@
         });
         $.each($(this).find('a:not(.foo)'), function(){
           $(this).click(function(e){
+            e.preventDefault();
             activate(e.target);
             return void(0);
           });

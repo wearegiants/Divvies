@@ -3369,8 +3369,8 @@ h1 {
 }
 @media screen and (min-width: 500px) {
   h1 {
-    font-size: 36px;
-    font-size: 2.25rem;
+    font-size: 50px;
+    font-size: 3.125rem;
   }
 }
 h2 {
@@ -4310,6 +4310,16 @@ h6 {
   margin-bottom: 0;
   color: inherit;
 }
+.page--content {
+  font-family: 'Proxima Nova';
+  font-weight: 300;
+  line-height: 1.4;
+}
+.page--content p {
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
 .page-header {
   height: 66px;
   line-height: 66px;
@@ -4365,33 +4375,78 @@ h6 {
   border-width: 33px 0 0 20px;
   border-color: transparent transparent transparent #ef6343;
 }
-.page--about .page--content {
+.page--about .page--content,
+.page--faq .page--content {
   line-height: 1.6;
 }
 @media screen and (min-width: 300px) {
-  .page--about .page--content {
+  .page--about .page--content,
+  .page--faq .page--content {
     font-size: 16px;
     font-size: 1rem;
   }
 }
 @media screen and (min-width: 740px) {
-  .page--about .page--content {
+  .page--about .page--content,
+  .page--faq .page--content {
     font-size: 20px;
     font-size: 1.25rem;
   }
 }
 @media screen and (min-width: 980px) {
-  .page--about .page--content {
+  .page--about .page--content,
+  .page--faq .page--content {
     font-size: 20px;
     font-size: 1.25rem;
   }
 }
-.page--about .page--content p {
+.page--about .page--content p,
+.page--faq .page--content p {
   font-size: inherit;
   line-height: inherit;
 }
+.page--about .page--content h1,
+.page--faq .page--content h1,
+.page--about .page--content h2,
+.page--faq .page--content h2,
+.page--about .page--content h3,
+.page--faq .page--content h3,
+.page--about .page--content h4,
+.page--faq .page--content h4,
+.page--about .page--content h5,
+.page--faq .page--content h5,
+.page--about .page--content h6,
+.page--faq .page--content h6 {
+  color: #686868;
+}
+@media screen and (min-width: 300px) {
+  .page--about .page--content-main,
+  .page--faq .page--content-main {
+    font-size: 18px;
+    font-size: 1.125rem;
+  }
+}
 @media screen and (min-width: 740px) {
-  .page--about .page--content .fs-right {
+  .page--about .page--content-main,
+  .page--faq .page--content-main {
+    font-size: 26px;
+    font-size: 1.625rem;
+  }
+}
+@media screen and (min-width: 980px) {
+  .page--about .page--content-main,
+  .page--faq .page--content-main {
+    font-size: 26px;
+    font-size: 1.625rem;
+  }
+}
+.page--about .page--content-main header,
+.page--faq .page--content-main header {
+  margin-bottom: 16.66666667px;
+}
+@media screen and (min-width: 740px) {
+  .page--about .page--content .fs-right,
+  .page--faq .page--content .fs-right {
     margin-left: 25px !important;
   }
 }
@@ -5166,16 +5221,22 @@ h6 {
 .collection-grid--item_children .btn:hover:after {
   background: #0c3440;
 }
-#faq h1,
-#faq h2,
-#faq h3,
-#faq h4,
-#faq h5,
-#faq h6 {
+#faq .item {
+  font-family: 'Proxima Nova';
+  font-weight: 300;
+  line-height: 1.4;
+}
+#faq .item h1,
+#faq .item h2,
+#faq .item h3,
+#faq .item h4,
+#faq .item h5,
+#faq .item h6 {
   color: #ef6343;
 }
 #faq .item-title {
-  margin-top: 10px;
+  line-height: 1;
+  margin-bottom: 0;
 }
 @media screen and (min-width: 980px) {
   #faq .item-title {
@@ -5189,7 +5250,7 @@ h6 {
 }
 #faq--points,
 #faq--fresh {
-  padding: 25px 0;
+  padding: 37.5px 0;
 }
 #faq--shipping .fs-row,
 #faq--info .fs-row {
@@ -5237,6 +5298,8 @@ h6 {
 .quote {
   background-color: #93d7eb;
   padding: 50px 0;
+  color: #ffffff;
+  font-family: 'Proxima Nova';
 }
 @media screen and (min-width: 300px) {
   .quote {
@@ -5262,4 +5325,44 @@ h6 {
   margin: 0;
   margin-bottom: 25px;
   text-align: center;
+}
+.quote p {
+  color: inherit;
+}
+.quote a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.quote h1,
+.quote h2,
+.quote h3,
+.quote h4,
+.quote h5 {
+  color: #ffffff;
+}
+.accordion {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.accordion-items {
+  position: relative;
+  padding-left: 15px;
+  margin: 0;
+}
+.accordion-items > div {
+  color: #b3b3b3;
+}
+.accordion-items > div p {
+  color: inherit;
+}
+.accordion-items:before {
+  content: '';
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #828282;
+  left: 3px;
+  top: 12px;
+  position: absolute;
 }
