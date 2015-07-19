@@ -3318,6 +3318,13 @@ img.rounded {
   border-radius: 3px;
   margin-bottom: 16.66666667px;
 }
+.notification ul {
+  margin: 0;
+  padding: 0;
+}
+.notification ul li {
+  margin: 0;
+}
 .notification-error {
   background: #d64242;
   color: #ffffff;
@@ -5433,4 +5440,23 @@ h6 {
   padding-bottom: 0;
   margin-bottom: 0;
   border-bottom: 0;
+}
+#account .errors {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 10px 15px;
+  border-radius: 3px;
+  margin-bottom: 16.66666667px;
+  background: #d64242;
+  color: #ffffff;
+}
+#account .errors ul {
+  margin: 0;
+  padding: 0;
+}
+#account .errors ul li {
+  margin: 0;
+}
+#account .errors-error {
+  background: #d64242;
+  color: #ffffff;
 }
