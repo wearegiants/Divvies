@@ -5,7 +5,7 @@ body,html {
   .lato();
 
   @media @desktop {
-    min-height: 100%;
+    height: 100%;
   }
 
 }
@@ -18,14 +18,19 @@ h1,h2,h3,h4,h5,h6 {
 
 #wrapper {
 
+  min-height: 100vh;
   position: relative;
   z-index: 2;
-  transition: 300ms ease;
+  transition: transform 300ms ease;
   background: @white;
   -webkit-backface-visibility: hidden;
 
   @media @min {
     box-shadow: 0 0 25px rgba(0,0,0,.1);
+  }
+
+  &-wrapper {
+    min-height: 100vh;
   }
 
   &.fs-swap-active {

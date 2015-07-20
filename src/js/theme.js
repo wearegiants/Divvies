@@ -65,5 +65,7 @@ $(document).ready(function(){
   });
 
   $('.accordion').accordion();
+  //$("#account select").dropdown();
+
 
 });

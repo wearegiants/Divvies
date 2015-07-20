@@ -3,15 +3,20 @@
 	{% if customer.orders.size != 0 %}
 	<div class="wrapper">
 		<h2 id="account--history-title">Order History</h2>
+
+		{% for order in customer.orders %}
 		<div class="history-item">
 			<div class="fs-row">
-			<div class="fs-cell fs-lg-2 fs-md-2 fs-sm-1">
-				<a href="#"><img class="img-responsive" src="http://placehold.it/250x250"></a>
+			<div class="fs-cell fs-lg-12 fs-md-4 fs-sm-3">
+				<span>Order: {{ order.name | link_to: order.customer_url }}</span>
+				<span>{{ order.created_at | date: format: 'month_day_year' }}</span>
+				<span class="right">
+					<span>{{ order.fulfillment_status_label }}</span>
+				</span>
 			</div>
-			<div class="fs-cell fs-lg-10 fs-md-4 fs-sm-3">
-				<p>Chocolate Chip Bakery Box x1</p>
 			</div>
-			</div>
+		{% endfor %}
+
 		</div>
 	</div>
 	{% else %}
