@@ -3965,6 +3965,11 @@ form select.bg-color-gray::-webkit-input-placeholder,
 form textarea.bg-color-gray::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.75);
 }
+form label.inline {
+  display: inline;
+  margin: 0 4px;
+  font-weight: 400;
+}
 .alert {
   font-size: 15px;
   font-size: 0.9375rem;
@@ -4607,7 +4612,12 @@ h6 {
   -ms-transform: translateY(0%);
   transform: translateY(0%);
 }
-@media screen and (min-width: 980px) {
+@media screen and (min-width: 300px) {
+  #wrapper {
+    padding-bottom: 200px;
+  }
+}
+@media screen and (min-width: 500px) {
   #wrapper {
     padding-bottom: 180px;
   }
@@ -5785,9 +5795,18 @@ h6 {
   padding-bottom: 6px;
   border-bottom: 1px solid #b3b3b3;
 }
+@media screen and (min-width: 740px) {
+  #account--history .wrapper {
+    min-height: 550px;
+  }
+}
 #account--history .empty {
-  min-height: 450px;
   position: relative;
+}
+@media screen and (min-width: 740px) {
+  #account--history .empty {
+    min-height: 550px;
+  }
 }
 #account--history .empty .centered {
   left: 50%;
@@ -5803,6 +5822,9 @@ h6 {
   padding-bottom: 10px;
   margin-bottom: 10px;
   border-bottom: 1px solid #b3b3b3;
+}
+#account--history .history-item a {
+  text-decoration: underline;
 }
 #account--history .history-item:last-child {
   padding-bottom: 0;
