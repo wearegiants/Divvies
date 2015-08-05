@@ -1,32 +1,38 @@
-.error404 {
+#error {
 
-  #wrapper {
-    height: 100%;
+  @media @desktop {
+    //height: 500px;
+    position: relative;
   }
 
-  #error-msg {
+  @media @desktop {
+    //height: 500px;
+    position: relative;
+  }
 
-    .center();
+  &-centered {
+    //.center();
+  }
 
-    h1 {
+  @media @min {
+    text-align: center;
+  }
 
-      .font_size(100);
-      margin-bottom: 0;
-
+  h1 {
+    color: @orange;
+    text-transform: uppercase;
+    .proxima();
+    font-weight: 400;
+    @media @min {
+      .font_size(36);
     }
-
-    h3 {
-
-      color: @white;
-
-      a, a:visited {
-
-        color: @rb-red;
-
-      }
-
+    @media @tablet {
+      .font_size(50);
     }
+  }
 
+  a {
+    text-decoration: underline;
   }
 
 }
