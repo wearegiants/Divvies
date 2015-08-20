@@ -3996,29 +3996,35 @@ form label.inline {
   background: #74c080;
   color: #ffffff;
 }
-.text-center {
+.text-center,
+.text_center {
   text-align: center;
 }
 @media screen and (min-width: 300px) {
-  .text-center {
+  .text-center,
+  .text_center {
     text-align: left;
   }
 }
 @media screen and (min-width: 740px) {
-  .text-center {
+  .text-center,
+  .text_center {
     text-align: center;
   }
 }
-.text-right {
+.text-right,
+.text_right {
   text-align: right;
 }
 @media screen and (min-width: 300px) {
-  .text-right {
+  .text-right,
+  .text_right {
     text-align: left;
   }
 }
 @media screen and (min-width: 740px) {
-  .text-right {
+  .text-right,
+  .text_right {
     text-align: right;
   }
 }
@@ -4858,8 +4864,8 @@ h6 {
   padding: 37.5px 0;
 }
 .cart-contents {
-  border: 1px solid #93d7eb;
   margin-bottom: 25px;
+  background: #ebebeb;
 }
 .cart .lineitem {
   font-family: 'Proxima Nova';
@@ -4869,6 +4875,9 @@ h6 {
   font-size: 20px;
   font-size: 1.25rem;
   color: #ef6343;
+}
+.cart .lineitem--quant > span {
+  display: none;
 }
 .cart .lineitem--thumb {
   position: relative;
@@ -4906,8 +4915,11 @@ h6 {
 }
 .cart .js-qty {
   position: relative;
-  float: right;
-  height: 20px;
+  max-width: 110px;
+  margin: auto;
+  float: none;
+  height: 40px;
+  background: #ebebeb;
 }
 @media screen and (min-width: 300px) {
   .cart .js-qty {
@@ -4934,8 +4946,8 @@ h6 {
   font-size: 14px;
   font-size: 0.875rem;
   color: #686868;
-  height: 20px;
-  line-height: 20px;
+  height: 40px;
+  line-height: 40px;
 }
 .cart .js-qty__adjust {
   position: absolute;
@@ -5310,6 +5322,30 @@ h6 {
         -ms-transform: translate(-15px, -50%);
             transform: translate(-15px, -50%);
   }
+}
+#mailchimp-popup {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+}
+#mailchimp-popup-wrapper {
+  background-color: #ffffff;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 25px;
+  top: 35%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+}
+#mailchimp-popup-wrapper .btn {
+  margin-bottom: 0;
 }
 #product--title {
   color: #ef6343;

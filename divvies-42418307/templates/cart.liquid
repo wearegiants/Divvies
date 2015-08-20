@@ -3,16 +3,20 @@
   <div class="fs-row" id="cart-content">
 
     <header class="header fs-cell fs-all-full">
-      <h1 class="header--title">Shopping Cart</h1>
+      <h1 class="header--title">Your Cart</h1>
     </header>
 
     {% if cart.item_count > 0 %}
+
+    <div class="fs-cell fs-all-full fs-centered">
+    <div class="fs-row">
 
     <form action="/cart" method="post" novalidate class="cart table-wrap">
     <div class="cart-contents fs-cell fs-all-full">
 
       <div class="wrapper">
 
+        <!--
         <div class="fs-row cart-linehead">
           <div class="cart-lineitem--item cart-lineitem--thumb fs-cell fs-lg-fifth fs-md-fifth fs-sm-hide">Product</div>
           <div class="cart-lineitem--item cart-lineitem--thumb fs-cell fs-lg-fifth fs-md-fifth fs-sm-hide">&nbsp;</div>
@@ -22,12 +26,13 @@
         </div>
 
         <hr class="divider fs-sm-hide">
+        -->
 
-        {% assign imageW = "fs-cell fs-lg-fifth fs-md-fifth fs-sm-1" %}
-        {% assign titleW = "fs-cell fs-lg-fifth fs-md-fifth fs-sm-2" %}
-        {% assign priceW = "fs-cell fs-lg-fifth fs-md-fifth fs-sm-2" %}
-        {% assign quantW = "fs-cell fs-lg-fifth fs-md-fifth fs-sm-hide" %}
-        {% assign totalW = "fs-cell fs-lg-fifth fs-md-fifth fs-sm-hide" %}
+        {% assign imageW = "fs-cell fs-lg-2 fs-md-fifth fs-sm-1" %}
+        {% assign titleW = "fs-cell fs-lg-7 fs-md-fifth fs-sm-2" %}
+        {% assign priceW = "fs-cell fs-lg-fourth fs-md-fifth fs-sm-2" %}
+        {% assign quantW = "fs-cell fs-lg-2 fs-md-fifth fs-sm-hide fs-right text_center" %}
+        {% assign totalW = "fs-cell fs-lg-1 fs-md-fifth fs-sm-hide fs-right text_right" %}
         {% assign mobile = "fs-lg-hide fs-md-hide" %}
 
         {% for item in cart.items %} 
@@ -51,31 +56,33 @@
 
           {% comment %}Line Item Price{% endcomment %}
 
-          <div class="lineitem--price lineitem--item {{ priceW }} fs-sm-hide">{{ item.price | money }}</div>
+          <!--<div class="lineitem--price lineitem--item {{ priceW }} fs-sm-hide">{{ item.price | money }}</div>-->
 
           <div class="lineitem--price lineitem--item {{ priceW }} {{ mobile }}">
             
+            <!--
             <hr class="divider compact fs-lg-hide fs-md-hide">
             <span>Price:</span><span class="value fl-right">{{ item.price | money }}</span>
+            -->
 
             <hr class="divider compact fs-lg-hide fs-md-hide">
-            <input type="number" name="updates[]" id="updates_{{ item.id }}_mobile" class="quantity" value="{{ item.quantity }}" />
+            <input type="number" name="updates[]" id="updates_{{ item.id }}" class="quantity" value="{{ item.quantity }}" />
 
             <hr class="divider compact fs-lg-hide fs-md-hide">
             <span>Total:</span><span class="value fl-right">{{ item.line_price | money }}</span>
 
           </div>
 
+          <div class="lineitem--total lineitem--item {{ totalW }}">{{ item.line_price | money }}</div>
+
           {% comment %}  Quantity  {% endcomment %}
 
           <div class="lineitem--quant lineitem--item {{ quantW }}">
-            {{ item.quantity }}
             <input type="number" name="updates[]" id="updates_{{ item.id }}" class="quantity" value="{{ item.quantity }}" />
           </div>
 
           {% comment %}  Total Price  {% endcomment %}
 
-          <div class="lineitem--total lineitem--item {{ totalW }}">{{ item.line_price | money }}</div>
 
         </div>
         <hr class="divider">
@@ -107,6 +114,9 @@
       
     </div>
     </form>
+
+    </div>
+    </div>
 
     {% else %}
 

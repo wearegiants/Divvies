@@ -178,4 +178,23 @@
 
   }
 
+  &-popup {
+
+    .cover();
+    position: fixed;
+    z-index: 99;
+
+    &-wrapper {
+      background-color: @white;
+      .center();
+      padding: @spaced;
+      top: 35%;
+      box-shadow: 0 0 15px @black25;
+      .btn {
+        margin-bottom: 0;
+      }
+    }
+
+  }
+
 }
