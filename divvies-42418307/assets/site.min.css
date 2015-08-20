@@ -5323,6 +5323,20 @@ h6 {
             transform: translate(-15px, -50%);
   }
 }
+#mailchimp-close {
+  color: #ef6343;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  display: block;
+  right: 0;
+  top: 0;
+  margin-top: 15px;
+  margin-right: 20px;
+  position: absolute;
+  font-size: 18px;
+  font-size: 1.125rem;
+}
 #mailchimp-popup {
   height: 100%;
   left: 0;
@@ -5331,6 +5345,21 @@ h6 {
   width: 100%;
   position: fixed;
   z-index: 99;
+  opacity: 0;
+  pointer-events: none;
+  top: 10px;
+  -webkit-transition: 300ms ease;
+          transition: 300ms ease;
+}
+#mailchimp-popup label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+#mailchimp-popup.visible,
+#mailchimp-popup.fs-swap-active {
+  opacity: 1;
+  top: 0;
+  pointer-events: auto;
 }
 #mailchimp-popup-wrapper {
   background-color: #ffffff;
@@ -5346,6 +5375,10 @@ h6 {
 }
 #mailchimp-popup-wrapper .btn {
   margin-bottom: 0;
+}
+#mailchimp-popup input.email {
+  border: 1px solid #b3b3b3;
+  box-shadow: none;
 }
 #product--title {
   color: #ef6343;

@@ -63,7 +63,7 @@ $(document).ready(function(){
   $(".tab").tabs({
     mobileMaxWidth: '0'
   });
-
+  $(".toggle").swap();
   $('.accordion').accordion();
   //$("#account select").dropdown();
 
