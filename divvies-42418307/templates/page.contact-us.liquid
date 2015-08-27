@@ -6,6 +6,10 @@
 				<header class="page-header page-header-banner">
 					<h1><span>Keep in Touch</span></h1>
 				</header>
+				<br><br>
+				<div class="text-center">
+					{% include 'mailchimp-form' %}
+				</div>
 			</div>
 			<div class="fs-cell fs-lg-6 fs-md--3 fs-sm-3">
 				<header class="page-header">
@@ -14,16 +18,18 @@
 				<p>
 					Divvies are too good not to share. Tell a friend, a relative or a colleague, and we'll send an email letting them know about our company and products. 
 				</p>
+				<form id="create-email" class="text-center">
+					<input type="text" placeholder="friendsemail@gmail.com" />
+					<input type="submit" class="btn btn-lg bg-color-gray">
+				</form>
 			</div>
 		</div>
-		
-		<br><br><br><br>
-		<br><br><br><br>
+		<hr class="invisible">
 	</section>
 
 	<section id="contact--middle" class="bg-color-bggray page-section">
 		<div class="fs-row">
-			<div class="fs-cell fs-lg-4 fs-md-6 fs-sm-3 text-center">
+			<div class="fs-cell fs-lg-4 fs-md-2 fs-sm-3 text-center">
 				<h2>Call or Write</h2>
 				<p>
 					(914) 533-0333<br>
@@ -32,7 +38,8 @@
 					<a href="mailto:madetoshare@divvies.com">madetoshare@divvies.com</a>
 				</p>
 			</div>
-			<div class="fs-cell fs-lg-4 fs-md-6 fs-sm-3 text-center">
+			<hr class="thin fs-cell fs-lg-hide fs-md-hide fs-sm-3">
+			<div class="fs-cell fs-lg-4 fs-md-2 fs-sm-3 text-center">
 				<h2>Press or Media</h2>
 				<p>
 					Divvies Press<br>
@@ -41,7 +48,8 @@
 					(914) 533-0333
 				</p>
 			</div>
-			<div class="fs-cell fs-lg-4 fs-md-6 fs-sm-3 text-center">
+			<hr class="thin fs-cell fs-lg-hide fs-md-hide fs-sm-3">
+			<div class="fs-cell fs-lg-4 fs-md-2 fs-sm-3 text-center">
 				<h2>Wholesale Inquiries</h2>
 				<p><a href="mailto:sales@divvies.com">sales@divvies.com</a></p>
 				<a href="#" class="btn btn-lg bg-color-lightgray">Suggest a Retailer</a>

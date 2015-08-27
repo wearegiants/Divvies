@@ -4316,8 +4316,8 @@ h6 {
   color: #ef6343;
   margin-bottom: 16.66666667px;
   text-transform: capitalize;
-  font-size: 52px;
-  font-size: 3.25rem;
+  font-size: 48px;
+  font-size: 3rem;
 }
 .header--title.more {
   color: #686868;
@@ -4695,9 +4695,24 @@ h6 {
 #footer--tagline {
   padding: 17.5px 0 0;
   border-top: 1px solid #93d7eb;
+  color: #b4b4b4;
+  font-size: 13px;
+  font-size: 0.8125rem;
 }
 #footer--tagline .emphasized {
   margin: 0;
+  font-size: 21px;
+  font-size: 1.3125rem;
+  font-weight: 600;
+  color: inherit;
+}
+#footer--tagline a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 400;
+}
+#footer--tagline a:hover {
+  color: #9b9b9b;
 }
 #footer--legal {
   padding: 8px 0;
@@ -4716,9 +4731,16 @@ h6 {
     font-size: 0.8125rem;
   }
 }
+@media screen and (min-width: 740px) {
+  #footer--legal {
+    font-size: 13px;
+    font-size: 0.8125rem;
+  }
+}
 #footer--legal p {
   margin-bottom: 0;
   color: inherit;
+  font-size: inherit;
 }
 .page--content {
   font-family: 'Proxima Nova';
@@ -5756,22 +5778,24 @@ h6 {
   position: absolute;
   top: 0;
   width: 100%;
-  opacity: .5;
+  opacity: 0;
 }
-.collection-grid--item_children .btn {
+.collection-grid--item_children .btn,
+.collection-grid--item_children .item {
   margin: 0;
   display: block;
   color: #ffffff;
   position: relative;
   text-align: left;
-  height: 40px;
-  line-height: 40px;
+  padding: 12px 15px;
 }
-.collection-grid--item_children .btn span {
+.collection-grid--item_children .btn span,
+.collection-grid--item_children .item span {
   position: relative;
   z-index: 1;
 }
-.collection-grid--item_children .btn:after {
+.collection-grid--item_children .btn:after,
+.collection-grid--item_children .item:after {
   content: '';
   height: 100%;
   left: 0;
@@ -5782,7 +5806,8 @@ h6 {
   opacity: .8;
   z-index: 0;
 }
-.collection-grid--item_children .btn:hover:after {
+.collection-grid--item_children .btn:hover:after,
+.collection-grid--item_children .item:hover:after {
   background: #0c3440;
 }
 #faq .item {
@@ -5858,6 +5883,48 @@ h6 {
 #contact--map iframe {
   display: block;
   width: 100%;
+}
+@media screen and (min-width: 500px) {
+  #contact h2 {
+    font-size: 30px;
+    font-size: 1.875rem;
+  }
+}
+@media screen and (min-width: 740px) {
+  #contact h2 {
+    font-size: 28px;
+    font-size: 1.75rem;
+  }
+}
+@media screen and (min-width: 980px) {
+  #contact h2 {
+    font-size: 36px;
+    font-size: 2.25rem;
+  }
+}
+@media screen and (min-width: 1220px) {
+  #contact h2 {
+    font-size: 36px;
+    font-size: 2.25rem;
+  }
+}
+@media screen and (min-width: 300px) {
+  #contact .btn-lg {
+    font-size: 24px;
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 740px) {
+  #contact .btn-lg {
+    font-size: 20px;
+    font-size: 1.25rem;
+  }
+}
+@media screen and (min-width: 980px) {
+  #contact .btn-lg {
+    font-size: 24px;
+    font-size: 1.5rem;
+  }
 }
 .quote {
   background-color: #93d7eb;

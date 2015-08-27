@@ -37,7 +37,7 @@
         <div class="collection-grid--item_children">
           {% for product in collection.products %}
           {% if product.type == the_type %}
-          <a href="{{ product.url }}" class="btn"><span>{{ product.title }}</span></a>
+          <a href="{{ product.url }}" class="item"><span>{{ product.title }}</span></a>
           {% endif %}
           {% endfor %}
         </div>

@@ -68,9 +68,23 @@
 
     padding: @spaced/2+5 0 0;
     border-top: 1px solid @lightblue;
+    color: @lighterGray;
+    .font_size(13);
 
     .emphasized {
       margin: 0;
+      .font_size(21);
+      font-weight: 600;
+      color: inherit;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      font-weight: 400;
+      &:hover {
+        color: darken(@lighterGray, 10%);
+      }
     }
 
   }
@@ -87,9 +101,11 @@
     @media @mobile {
       .font_size(13);
     }
-    
+    @media @tablet {
+      .font_size(13);
+    }
 
-    p {margin-bottom: 0;color: inherit;}
+    p {margin-bottom: 0;color: inherit; font-size: inherit;}
 
   }
 

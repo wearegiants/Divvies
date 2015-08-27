@@ -132,30 +132,11 @@
   </header>
 
   <div id="product--collection-grid" class="collection-grid fs-row">
-
-    <div class="collection-grid--item fs-cell fs-lg-4 fs-md-2 fs-sm-3 equal">
-      <a href="<?php echo $themeurl; ?>?collection=popcorn" class="btn btn-collection bg-color bg-color-purple">Popcorn</a>
-      <div class="collection-grid--item_thumb">
-        <img src="<?php echo $sitehome; ?>/assets/collection-default.jpg" class="img-responsive" alt="" />
-      </div>
-    </div>
-
-    <div class="collection-grid--item fs-cell fs-lg-4 fs-md-2 fs-sm-3 equal">
-      <a href="<?php echo $themeurl; ?>?collection=cupcakes" class="btn btn-collection bg-color bg-color-pink">Cupcakes</a>
-      <div class="collection-grid--item_thumb">
-        <img src="<?php echo $sitehome; ?>/assets/collection-default.jpg" class="img-responsive" alt="" />
-      </div>
-    </div>
-
-    <div class="collection-grid--item fs-cell fs-lg-4 fs-md-2 fs-sm-3 equal">
-      <a href="<?php echo $themeurl; ?>?collection=gifts" class="btn btn-collection bg-color bg-color-yellow">Gifts</a>
-      <div class="collection-grid--item_thumb">
-        <img src="<?php echo $sitehome; ?>/assets/collection-default.jpg" class="img-responsive" alt="" />
-      </div>
-    </div>
-
+    {% include 'related-products' %}
   </div>
 
+
 </section>
+<hr class="invisible">
 
 {% include 'product-scripts' %}

@@ -24,10 +24,10 @@
       <div class="collection-grid--item_thumb">
         <img src="<?php echo $sitehome; ?>/assets/collection-default.jpg" class="img-responsive" alt="" />
         <div class="collection-grid--item_children">
-          <a href="<?php echo $themeurl; ?>?product" class="btn"><span>Cookies Singleserve</span></a>
-          <a href="<?php echo $themeurl; ?>?product" class="btn"><span>Divvies Multipack</span></a>
-          <a href="<?php echo $themeurl; ?>?product" class="btn"><span>Divvies Go-packs</span></a>
-          <a href="<?php echo $themeurl; ?>?product" class="btn"><span>Divvies Convenience Pack</span></a>
+          <a href="<?php echo $themeurl; ?>?product" class="item"><span>Cookies Singleserve and now we're on a second line.</span></a>
+          <a href="<?php echo $themeurl; ?>?product" class="item"><span>Divvies Multipack</span></a>
+          <a href="<?php echo $themeurl; ?>?product" class="item"><span>Divvies Go-packs</span></a>
+          <a href="<?php echo $themeurl; ?>?product" class="item"><span>Divvies Convenience Pack</span></a>
         </div>
       </div>
     </div>

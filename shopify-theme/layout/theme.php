@@ -34,7 +34,7 @@
 </head>
 <body class="fs-grid">
   <div id="wrapper-wrapper">
-    <div id="wrapper" class="toggle">
+    <div id="wrapper">
       <header id="header">
         <div class="fs-row">
         <div class="fs-cell fs-lg-4 fs-md-2 fs-sm-2">
@@ -81,7 +81,7 @@
         <div id="footer--tagline">
           <div class="fs-row">
             <div class='fs-cell fs-xl-10 fs-lg-11 fs-md-6 fs-sm-3 fs-centered'>
-              <p class="emphasized">Divies are made in small batches in our dedicated Nut, Egg, and Dairy Free Bakery.</p>
+              <p class="emphasized">Divvies are made in small batches in our dedicated Nut, Egg, and Dairy Free Bakery.</p>
               <a class="btn btn-link btn-first" href="<?php echo $themeurl; ?>?page=privacy">Privacy Policy</a>
               <a class="btn btn-link btn-last" href="<?php echo $themeurl; ?>?page=terms">Terms and Conditions</a>
             </div>
