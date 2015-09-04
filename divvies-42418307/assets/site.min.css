@@ -5782,6 +5782,36 @@ h6 {
 #shopify-product-reviews .spr-icon-star {
   color: #ef6343;
 }
+#collection--hero {
+  height: 200px;
+  background: url('//cdn.shopify.com/s/files/1/0865/5610/t/3/assets/hero_slide_1.jpg') center center no-repeat;
+  position: relative;
+  background-size: cover;
+}
+#collection--hero .wrapper {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+#collection--hero a {
+  color: #ffffff;
+  font-family: 'Proxima Nova';
+}
+#collection--hero a:before {
+  position: relative;
+  top: .125em;
+  margin-right: 5px;
+}
+#collection--hero h1 {
+  margin: 0;
+  color: #ffffff;
+  text-transform: capitalize;
+  font-size: 64px;
+  font-size: 4rem;
+}
 .collection-grid--item {
   margin-bottom: 2.08333333%;
   position: relative;

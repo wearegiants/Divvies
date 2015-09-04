@@ -1,0 +1,33 @@
+#collection {
+
+  &--hero {
+
+    height: 200px;
+    background: url('//cdn.shopify.com/s/files/1/0865/5610/t/3/assets/hero_slide_1.jpg') center center no-repeat;
+    position: relative;
+    background-size: cover;
+
+    .wrapper {
+      .center();
+    }
+
+    a {
+      color: @white;
+      .proxima();
+      &:before {
+        position: relative;
+        top: .125em;
+        margin-right: 5px;
+      }
+    }
+
+    h1 {
+      margin: 0;
+      color: @white;
+      text-transform: capitalize;
+      .font_size(64);
+    }
+
+  }
+
+}

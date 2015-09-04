@@ -2,7 +2,19 @@
 
 <section id="collection" class="collection-grid">
 
-  <?php include ('../snippets/mailchimp.php');?>
+  <div class='fs-row'>
+    <div class="fs-cell fs-all-full">
+      <?php include ('../snippets/mailchimp.php');?>
+      <div id="collection--hero">
+        <div class="wrapper fs-cell fs-all-full fs-contained">
+          <a href="/shopify-theme/layout/theme.php?list-collections" class="ss-gizmo ss-navigateleft">Back to Treats</a>
+          <h1><?php echo $variable; ?></h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="invisible">
 
   <div id="collection--slider" class="banner text-center">
     <div class="banner--centered">
@@ -10,12 +22,6 @@
       <p>Chocolate Brownie Cookie Sandwiches with Vanilla Filling</p>
     </div>
   </div>
-
-  <header id="collection--header" class="header">
-    <h1 class="header--title">
-      <a href="#" class="ss-gizmo ss-navigateleft header--icon"></a><span class="invisible"><?php echo $variable; ?></span>
-    </h1>
-  </header>
 
   <div id="collection--collection-grid" class="collection-grid fs-row text-left">
 
