@@ -35,7 +35,8 @@ function addtoCart(){
 function bannerSlider(){
   $(".banner.slider").carousel({
     controls: false,
-    infinite: true
+    infinite: true,
+    autoAdvance: true,
   });
 }
 

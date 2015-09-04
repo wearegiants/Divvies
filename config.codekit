@@ -172,11 +172,22 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/divvies-42418307\/assets\/icon-cookie-off-copy.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3128,
+		"inputAbbreviatedPath": "\/divvies-42418307\/assets\/icon-cookie-off-copy.png",
+		"outputAbbreviatedPath": "\/divvies-42418307\/assets\/icon-cookie-off-copy.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/divvies-42418307\/assets\/icon-cookie-off.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 486,
+		"initialSize": 3128,
 		"inputAbbreviatedPath": "\/divvies-42418307\/assets\/icon-cookie-off.png",
 		"outputAbbreviatedPath": "\/divvies-42418307\/assets\/icon-cookie-off.png",
 		"outputPathIsOutsideProject": 0,
@@ -416,6 +427,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
+		},
+	"\/divvies-42418307\/config\/settings.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/divvies-42418307\/config\/settings.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/divvies-42418307\/config\/settings_data.json": {
 		"fileType": 524288,

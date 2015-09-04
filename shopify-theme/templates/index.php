@@ -7,9 +7,8 @@
   <div id="index--slider" class="banner slider text-center">
 
     <div class="slider--slide">
-      <a href="/" class="coverlink"></a>
       <div class="slider--content banner--centered">
-        <h1>Divvies’ treats are safe, sweet, and delicious. No nuts, no eggs, no dairy – no leftovers.</h1>
+        <h1 class="light">Divvies’ treats are safe, sweet, and delicious. No nuts, no eggs, no dairy – no leftovers.</h1>
       </div>
       <div class="slider--background" style="background-image:url('http://i.imgur.com/37w80TG.jpg');"></div>
     </div>

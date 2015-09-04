@@ -1,6 +1,5 @@
 .banner, .slider {
 
-  background: @black;
   margin-bottom: @spaced/1.5;
   position: relative;
   color: @white;
@@ -12,11 +11,18 @@
     .proxima();
     font-weight: 500;
     line-height: 1.1;
+
+    &[data-color="is-dark"], &.dark {
+
+      color: @orange
+
+    }
+
   }
 
   h1 {
     @media @min {
-      .font_size(34);
+      .font_size(26);
       line-height: 1;
     }
     @media @tablet {
@@ -30,7 +36,7 @@
   h2 {
     font-weight: 200;
     @media @min {
-      .font_size(28);
+      .font_size(24);
     }
     @media @tablet {
       .font_size(24);
@@ -45,13 +51,13 @@
     position: relative;
 
     @media @min {
-      min-height: 300px;
+      min-height: 240px;
     }
     @media @tablet {
-      min-height: 420px;
+      min-height: 360px;
     }
     @media @desktop {
-      min-height: 420px;
+      min-height: 360px;
     }
 
   }
@@ -95,7 +101,7 @@
     }
 
     &-page {
-      background: transparent url('icon-cookie-off.png');
+      background: transparent url('icon-cookie-off-copy.png');
       background-size: cover;
       transition: 300ms ease;
     }

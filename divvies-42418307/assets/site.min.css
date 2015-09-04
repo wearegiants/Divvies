@@ -5122,7 +5122,6 @@ h6 {
 }
 .banner,
 .slider {
-  background: #222222;
   margin-bottom: 16.66666667px;
   position: relative;
   color: #ffffff;
@@ -5146,11 +5145,37 @@ h6 {
   font-weight: 500;
   line-height: 1.1;
 }
+.banner h1[data-color="is-dark"],
+.slider h1[data-color="is-dark"],
+.banner h2[data-color="is-dark"],
+.slider h2[data-color="is-dark"],
+.banner h3[data-color="is-dark"],
+.slider h3[data-color="is-dark"],
+.banner h4[data-color="is-dark"],
+.slider h4[data-color="is-dark"],
+.banner h5[data-color="is-dark"],
+.slider h5[data-color="is-dark"],
+.banner h6[data-color="is-dark"],
+.slider h6[data-color="is-dark"],
+.banner h1.dark,
+.slider h1.dark,
+.banner h2.dark,
+.slider h2.dark,
+.banner h3.dark,
+.slider h3.dark,
+.banner h4.dark,
+.slider h4.dark,
+.banner h5.dark,
+.slider h5.dark,
+.banner h6.dark,
+.slider h6.dark {
+  color: #ef6343;
+}
 @media screen and (min-width: 300px) {
   .banner h1,
   .slider h1 {
-    font-size: 34px;
-    font-size: 2.125rem;
+    font-size: 26px;
+    font-size: 1.625rem;
     line-height: 1;
   }
 }
@@ -5175,8 +5200,8 @@ h6 {
 @media screen and (min-width: 300px) {
   .banner h2,
   .slider h2 {
-    font-size: 28px;
-    font-size: 1.75rem;
+    font-size: 24px;
+    font-size: 1.5rem;
   }
 }
 @media screen and (min-width: 740px) {
@@ -5200,19 +5225,19 @@ h6 {
 @media screen and (min-width: 300px) {
   .banner--slide,
   .slider--slide {
-    min-height: 300px;
+    min-height: 240px;
   }
 }
 @media screen and (min-width: 740px) {
   .banner--slide,
   .slider--slide {
-    min-height: 420px;
+    min-height: 360px;
   }
 }
 @media screen and (min-width: 980px) {
   .banner--slide,
   .slider--slide {
-    min-height: 420px;
+    min-height: 360px;
   }
 }
 .banner--background,
@@ -5266,7 +5291,7 @@ h6 {
 }
 .banner .fs-carousel-page,
 .slider .fs-carousel-page {
-  background: transparent url('icon-cookie-off.png');
+  background: transparent url('icon-cookie-off-copy.png');
   background-size: cover;
   -webkit-transition: 300ms ease;
           transition: 300ms ease;
