@@ -21,13 +21,22 @@ function cartMenu(){
   $(".target").swap();
   $("nav.lower").clone().appendTo('.upper .menu-wrapper').addClass('mobile');
 
+  $('#wrapper').click(function(event){
+    if ( $('#wrapper').hasClass('fs-swap-active')){
+      $('.target').swap('disable');
+    }
+  });
+
 }
 
 function addtoCart(){
 
   $("#product--add .btn").on('click', function(event){
-    event.preventDefault();
-    $("#header .cart-toggle").toggleClass('full');
+    //event.preventDefault();
+    console.log('activated');
+    //$(".cart.toggle").swap('activate');
+    //$(".cart-toggle").swap("deactivate");
+    //$("#header .cart-toggle").toggleClass('full');
   });
 
 }
@@ -57,14 +66,14 @@ $(document).ready(function(){
 
   cartMenu();
   header();
-  //addtoCart();
+  addtoCart();
   productHover();
   bannerSlider();
   //$("input[type=number]").number();
   $(".tab").tabs({
     mobileMaxWidth: '0'
   });
-  // $(".toggle").swap();
+  $(".mailchimp-toggle").swap();
   $('.accordion').accordion();
   //$("#account select").dropdown();
 

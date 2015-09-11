@@ -34,7 +34,7 @@
 </head>
 <body class="fs-grid">
   <div id="wrapper-wrapper">
-    <div id="wrapper">
+    <div id="wrapper" class="toggle">
       <header id="header">
         <div class="fs-row">
         <div class="fs-cell fs-lg-4 fs-md-2 fs-sm-2">

@@ -219,6 +219,12 @@ var ajaxCart = (function(module, $) {
       // Add class to be styled if desired
       $addToCart.removeClass('is-added').addClass('is-adding');
 
+      $('.target').swap('activate');
+
+      setTimeout(function(){
+        $('.target').swap('disable');
+      },2000);
+
       // Remove any previous quantity errors
       $('.qty-error').remove();
 
