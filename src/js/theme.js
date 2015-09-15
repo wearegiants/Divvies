@@ -77,6 +77,9 @@ $(document).ready(function(){
   $(".target-mobile").swap();
   $('.accordion').accordion();
   //$("#account select").dropdown();
+  $(".cart-item").equalize({
+    target: ".cart-item-cell"
+  });
 
 
 });

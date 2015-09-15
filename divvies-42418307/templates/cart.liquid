@@ -1,133 +1,36 @@
-<section id="cart">
+<div id="cart" class="fs-grid">
+  <div class="fs-row">
+    <div class="fs-cell fs-all-full">
 
-  <div class="fs-row" id="cart-content">
-
-    <header class="header fs-cell fs-all-full">
-      <h1 class="header--title">Your Cart</h1>
-    </header>
-
-    {% if cart.item_count > 0 %}
-
-    <div class="fs-cell fs-all-full fs-centered">
-    <div class="fs-row">
-
-    <form action="/cart" method="post" novalidate class="cart table-wrap">
-    <div class="cart-contents fs-cell fs-all-full">
-
-      <div class="wrapper">
-
-        <!--
-        <div class="fs-row cart-linehead">
-          <div class="cart-lineitem--item cart-lineitem--thumb fs-cell fs-lg-fifth fs-md-fifth fs-sm-hide">Product</div>
-          <div class="cart-lineitem--item cart-lineitem--thumb fs-cell fs-lg-fifth fs-md-fifth fs-sm-hide">&nbsp;</div>
-          <div class="cart-lineitem--item cart-lineitem--price fs-cell fs-lg-fifth fs-md-fifth fs-sm-hide">Price</div>
-          <div class="cart-lineitem--item cart-lineitem--quant fs-cell fs-lg-fifth fs-md-fifth fs-sm-hide text-center">Quantity</div>
-          <div class="cart-lineitem--item cart-lineitem--total fs-cell fs-lg-fifth fs-md-fifth fs-sm-hide text-right">Total</div>
+      <form action="/cart" method="post" novalidate class="cart table-wrap">
+        <header class="fs-row">
+          <hr class="fs-cell fs-all-full divider">
+          <div class="fs-cell fs-lg-4 fs-md-3 fs-sm-half fs-lg-push-2 text-left">Product</div>
+          <div class="fs-cell fs-lg-2 fs-md-1 fs-sm-hide text-center">Price</div>
+          <div class="fs-cell fs-lg-2 fs-md-1 fs-sm-fourth text-center">Quantity</div>
+          <div class="fs-cell fs-lg-2 fs-md-1 fs-sm-fourth text-right">Total</div>
+          <hr class="fs-cell fs-all-full divider">
+        </header>
+        <div class="cart-content fs-row">
+          {% for item in cart.items %} 
+          {% include 'cart-item' %}
+          {% endfor %}
         </div>
-
-        <hr class="divider fs-sm-hide">
-        -->
-
-        {% assign imageW = "fs-cell fs-lg-2 fs-md-fifth fs-sm-1" %}
-        {% assign titleW = "fs-cell fs-lg-7 fs-md-fifth fs-sm-2" %}
-        {% assign priceW = "fs-cell fs-lg-fourth fs-md-fifth fs-sm-2" %}
-        {% assign quantW = "fs-cell fs-lg-2 fs-md-fifth fs-sm-hide fs-right text_center" %}
-        {% assign totalW = "fs-cell fs-lg-1 fs-md-fifth fs-sm-hide fs-right text_right" %}
-        {% assign mobile = "fs-lg-hide fs-md-hide" %}
-
-        {% for item in cart.items %} 
-        <div class="fs-row lineitem">
-          <div class="lineitem--thumb lineitem--item {{ imageW }}">
-            <small class="remove fs-lg-hide fs-md-hide"><a href="/cart/change?line={{ forloop.index }}&quantity=0"><span class="ss-gizmo ss-plus rotate-45"></span></a></small>
-            <img src="{{ item | img_url: 'medium' }}"  alt="{{ item.title | escape }}" class="img-responsive" />
-          </div>
-          <div class="lineitem--title lineitem--item {{ titleW }}">
-            <span>{{ item.title }}</span><br>
-            <small class="remove fs-sm-hide"><a href="/cart/change?line={{ forloop.index }}&quantity=0">Remove</a></small>
-            <!--
-            <div class="fs-row show-mobile">
-              <hr class="divider fs-cell fs-sm-3">
-              <div class="lineitem--price lineitem--item fs-cell fs-sm-third">{{ item.price | money }}</div>
-              <div class="lineitem--quant lineitem--item fs-cell fs-sm-third text-center"><input type="number" name="updates[]" id="updates_{{ item.id }}" class="quantity" value="{{ item.quantity }}" /></div>
-              <div class="lineitem--total lineitem--item fs-cell fs-sm-third text-right">{{ item.line_price | money }}</div>
-            </div>
-            -->
-          </div>
-
-          {% comment %}Line Item Price{% endcomment %}
-
-          <!--<div class="lineitem--price lineitem--item {{ priceW }} fs-sm-hide">{{ item.price | money }}</div>-->
-
-          <div class="lineitem--price lineitem--item {{ priceW }} {{ mobile }}">
-            
-            <!--
-            <hr class="divider compact fs-lg-hide fs-md-hide">
-            <span>Price:</span><span class="value fl-right">{{ item.price | money }}</span>
-            -->
-
-            <hr class="divider compact fs-lg-hide fs-md-hide">
-            <input type="number" name="updates[]" id="updates_{{ item.id }}" class="quantity" value="{{ item.quantity }}" />
-
-            <hr class="divider compact fs-lg-hide fs-md-hide">
-            <span>Total:</span><span class="value fl-right">{{ item.line_price | money }}</span>
-
-          </div>
-
-          <div class="lineitem--total lineitem--item {{ totalW }}">{{ item.line_price | money }}</div>
-
-          {% comment %}  Quantity  {% endcomment %}
-
-          <div class="lineitem--quant lineitem--item {{ quantW }}">
-            <input type="number" name="updates[]" id="updates_{{ item.id }}" class="quantity" value="{{ item.quantity }}" />
-          </div>
-
-          {% comment %}  Total Price  {% endcomment %}
-
-
-        </div>
-        <hr class="divider">
-        {% endfor %}
-
-      </div>
-
-      {% comment %}
-      Notes and such.
-      {% endcomment %}
-
-      <div class="wrapper">
-        <div class="fs-row">
-          <div class="fs-cell fs-lg-8 fs-md-3 fs-sm-3">
+        <div class="cart-info fs-row">
+          <div class="fs-cell fs-lg-7 fs-md-3 fs-sm-3">
             <label for="CartSpecialInstructions">{{ 'cart.general.note' | t }}</label>
             <textarea name="note" class="input-full" id="CartSpecialInstructions">{{ cart.note }}</textarea>
           </div>
-          <div class="fs-cell fs-lg-4 fs-md-3 fs-sm-3 text-right">
-            <p>
-              <span class="cart__subtotal-title">{{ 'cart.general.subtotal' | t }}</span>
-              <span class="h3 cart__subtotal">{{ cart.total_price | money }}</span>
-            </p>
-            <p><em>{{ 'cart.general.shipping_at_checkout' | t }}</em></p>
-            <input type="submit" name="update" class="btn btn-secondary" value="{{ 'cart.general.update' | t }}">
-            <input type="submit" name="checkout" class="btn btn-primary" value="{{ 'cart.general.checkout' | t }}">
+          <div class="cart-total fs-cell fs-lg-4 fs-md-3 fs-sm-3 fs-right text-right">
+            <span class="cart-total-price"><small>SUBTOTAL</small> <strong><?php echo $cart_Total; ?></strong></span><br>
+            <span class="cart-total-shipping"><small>Shipping and taxes calculated at checkout.</small></span><br><br>
+            <input type="submit" name="update" class="cart-total-update btn btn-secondary" value="{{ 'cart.general.update' | t }}">
+            <button type="submit" name="checkout" class="cart-total-update btn btn-primary">{{ 'cart.general.checkout' | t }} &rarr;</button>
+            <hr class="invisible">
           </div>
         </div>
-      </div>
-      
-    </div>
-    </form>
+      </form>
 
     </div>
-    </div>
-
-    {% else %}
-
-    <div class="fs-cell fs-all-full cart-empty">
-      <p>Your cart is empty</p>
-    </div>
-
-    {% endif %}
-
   </div>
-
-</section>
-
-<hr class="invisible">
+</div>

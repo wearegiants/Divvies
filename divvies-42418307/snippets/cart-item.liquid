@@ -1,0 +1,18 @@
+<!--<div class="fs-cell fs-lg-7 fs-md-6 fs-sm-3 fs-contained">-->
+  <div class="cart-item clearfix">
+    <div class="cart-item-cell fs-cell fs-lg-2 fs-md-1 fs-sm-fourth text-left"><img src="{{ item | img_url: 'medium' }}" class="img-responsive"/></div>
+    <div class="cart-item-cell fs-cell fs-lg-4 fs-md-2 fs-sm-fourth text-left">
+      <span class="info">
+         <a class="cart-item-title" href="{{ item.url }}">{{ item.title }}</a><br>
+         <span class="cart-item-variant"><small>S</small></span> — 
+         <a href="/cart/change?line={{ forloop.index }}&quantity=0" class="cart-item-remove"><small>REMOVE</small></a>
+      </span>
+    </div>
+    <div class="cart-item-cell fs-cell fs-lg-2 fs-md-1 fs-sm-hide text-center"><span class="info">{{ item.price | money }}</span></div>
+    <div class="cart-item-cell cart-item-qty fs-cell fs-lg-2 fs-md-1 fs-sm-fourth text-center">
+      <div class="info"><input type="number" name="updates[]" id="updates_{{ item.id }}" value="{{ item.quantity }}" min="0"></div>
+    </div>
+    <div class="cart-item-cell fs-cell fs-lg-2 fs-md-1 fs-sm-fourth text-right"><span class="info">{{ item.line_price | money }}</span></div>
+    <hr class="fs-cell fs-all-full divider">
+  </div>
+<!--</div>-->
