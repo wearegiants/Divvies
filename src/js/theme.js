@@ -74,6 +74,7 @@ $(document).ready(function(){
     mobileMaxWidth: '0'
   });
   $(".mailchimp-toggle").swap();
+  $(".target-mobile").swap();
   $('.accordion').accordion();
   //$("#account select").dropdown();
 

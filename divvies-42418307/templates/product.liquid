@@ -12,18 +12,18 @@
 
   <div class="fs-row">
 
-    <header id="product--header" class="fs-cell fs-lg-5 fs-md-2 fs-sm-3 fs-right">
+    <header id="product--header" class="fs-cell fs-lg-5 fs-md-3 fs-sm-3 fs-right">
       <h1 id="product--title" itemprop="name">{{ product.title }}</h1>
       <h4 id="product--subtitle">{{ subtitle['subtitle'] }}</h4>
     </header>
 
     <hr class="fs-cell fs-lg-hide fs-md-hide fs-sm-full spaced">
 
-    <div id="product--images" class="fs-cell fs-lg-7 fs-md-4 fs-sm-3">{% include 'product-images' %}</div>
+    <div id="product--images" class="fs-cell fs-lg-7 fs-md-3 fs-sm-3">{% include 'product-images' %}</div>
 
     <hr class="fs-cell fs-lg-hide fs-md-hide fs-sm-full spaced">
 
-    <div id="product--info"   class="fs-cell fs-lg-5 fs-md-2 fs-sm-3 fs-right">
+    <div id="product--info"   class="fs-cell fs-lg-5 fs-md-3 fs-sm-3 fs-right">
       <form action="/cart/add" method="post" id="AddToCartForm" enctype="multipart/form-data">
       <div id="product--description" itemprop="description">
         {{ product.description }}
@@ -59,7 +59,7 @@
         {% if product.compare_at_price > product.price %}
         <div id="product--price" class="fs-cell fs-lg-7 fs-md-6 fs-sm-half compared">
         {% else %}
-        <div id="product--price" class="fs-cell fs-lg-5 fs-md-3 fs-sm-1">
+        <div id="product--price" class="fs-cell fs-lg-5 fs-md-6 fs-sm-1">
         {% endif %}
 
           {% assign variant = product.selected_or_first_available_variant %}
@@ -75,7 +75,7 @@
         {% if product.compare_at_price > product.price %}
         <div id="product--add" class="fs-cell fs-lg-5 fs-md-6 fs-sm-half">
         {% else %}
-        <div id="product--add" class="fs-cell fs-lg-7 fs-md-4 fs-sm-2">
+        <div id="product--add" class="fs-cell fs-lg-7 fs-md-6 fs-sm-2">
         {% endif %}
           <input type="submit" name="add" id="add" class="btn btn-primary" value="Add to Cart" style="width:100%;">
         </div>

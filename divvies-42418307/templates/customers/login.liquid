@@ -8,6 +8,7 @@
 <div id="CustomerLoginForm">
 <div id="account-login" class="text-center">
 {% form 'customer_login' %}
+<input type="hidden" name="checkout_url" value="/" /> 
 {{ form.errors | default_errors }}
 <!--<label for="CustomerEmail" class="hidden-label">{{ 'customer.login.email' | t }}</label>-->
 <input type="email" name="customer[email]" id="CustomerEmail" class="form-entry text-center simple bg-color bg-color-gray input-full{% if form.errors contains 'email' %} error{% endif %}" placeholder="{{ 'customer.login.email' | t }}" autocorrect="off" autocapitalize="off" autofocus>
