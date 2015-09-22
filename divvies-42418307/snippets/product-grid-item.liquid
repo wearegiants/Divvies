@@ -2,7 +2,7 @@
    <a class="coverlink" href="{{ product.url }}"></a>
    <span class="btn btn-collection bg-color bg-color-{{ bgColor }}">{{ product.title }}</span>
    <div class="collection-grid--item_thumb">
-      {% if product.images.size > 1 %}
+      {% if product.images.size > 0 %}
       <img src="{{ product.featured_image.src | img_url: 'large' }}" class="img-responsive" alt="{{ product.featured_image.alt | escape }}">
       {% else %}
       <img src="{{ 'type-chocolate-chip.jpg' | asset_url }}" class="img-responsive">
