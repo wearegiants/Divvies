@@ -1,22 +1,19 @@
 <section id="collection" class="collection-grid fs-row">
   <div class="fs-cell fs-full-all">
 
-    {% include 'mailchimp' %}
-
-    <div id="collection--slider" class="banner slider text-center">
-      <div class="slider--slide">
-        <a href="/products/test-thingy" class="coverlink"></a>
-        <div class="banner--centered">
-          <h1>New! Cookie Sandwiches</h1>
-          <h2>Chocolate Brownie Cookie Sandwiches with Vanilla Filling</h2>
+    <div class='fs-row'>
+      <div class="fs-cell fs-all-full">
+        {% include 'mailchimp' %}
+        <div id="collection--hero" style="background-image:url('{{ collection.image.src | img_url: '1024x1024' }}');">
+          <div class="wrapper fs-cell fs-all-full fs-contained">
+            <a href="/collections" class="ss-gizmo ss-navigateleft">Back to Treats</a>
+            <h1>{{ collection.title }}</h1>
+          </div>
         </div>
-        <div class="slider--background" style="background-image:url('http://i.imgur.com/37w80TG.jpg');"></div>
       </div>
     </div>
 
-    <header id="collection--header" class="header">
-      <h1 class="header--title">{{ collection.title }}</h1>
-    </header>
+    <hr class="invisible">
 
     <div id="collection-listing--collection-grid" class="collection-grid fs-row text-center">
     {% if collection.handle == 'cookies' %}
