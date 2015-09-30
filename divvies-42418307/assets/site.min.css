@@ -6208,3 +6208,126 @@ h6 {
   background-repeat: no-repeat;
   cursor: pointer;
 }
+#storemapper > small,
+#list > small {
+  display: none;
+}
+#storemapper-list li.tier,
+#list-list li.tier,
+#storemapper-list .item,
+#list-list .item {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+#storemapper-list li.tier h4,
+#list-list li.tier h4,
+#storemapper-list .item h4,
+#list-list .item h4 {
+  color: #ef6343;
+  line-height: 1;
+}
+#storemapper-list li.tier a,
+#list-list li.tier a,
+#storemapper-list .item a,
+#list-list .item a {
+  color: #666666;
+}
+#storemapper-list li.tier p,
+#list-list li.tier p,
+#storemapper-list .item p,
+#list-list .item p {
+  font-size: inherit;
+  margin-bottom: 3px;
+}
+#storemapper-list li.tier.equal,
+#list-list li.tier.equal,
+#storemapper-list .item.equal,
+#list-list .item.equal {
+  margin-bottom: 25px;
+}
+#storemapper .gm-style,
+#list .gm-style {
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+#storemapper .gm-style p,
+#list .gm-style p {
+  font-size: inherit;
+}
+#storemapper .gm-style a,
+#list .gm-style a {
+  color: #666666;
+}
+#storemapper .gm-style h4,
+#list .gm-style h4 {
+  color: #ef6343;
+}
+#storemapper .gm-style .btn,
+#list .gm-style .btn {
+  background: #ef6343;
+  border: none;
+  color: #ffffff;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+#storemapper.full,
+#list.full {
+  position: relative;
+}
+#storemapper.full #storemapper-left,
+#list.full #storemapper-left,
+#storemapper.full #storemapper-right,
+#list.full #storemapper-right {
+  width: 100%;
+}
+#storemapper.full #storemapper-right,
+#list.full #storemapper-right {
+  height: 250px;
+  position: absolute;
+  top: 0;
+  width: 200%;
+  left: -50%;
+  display: none;
+}
+#storemapper.full #storemapper-left,
+#list.full #storemapper-left {
+  height: auto!important;
+  overflow: visible;
+}
+#locate-map {
+  height: 250px;
+  background: #93d7eb;
+  position: relative;
+}
+#locate-map_centered {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+#locate-content #storemapper-form {
+  padding: 0;
+  text-align: center;
+}
+#locate-content #storemapper-form label {
+  display: none;
+}
+#locate-content #storemapper-go.btn {
+  background-color: #b3b3b3;
+  color: #ffffff;
+  margin-bottom: 0;
+  -webkit-font-smoothing: antialiased;
+}
+#locate-content #storemapper-zip {
+  background: #ffffff;
+  border: none;
+  text-align: center;
+  box-shadow: none;
+  border-radius: 0;
+  margin-top: 20px;
+  margin-bottom: 0;
+}

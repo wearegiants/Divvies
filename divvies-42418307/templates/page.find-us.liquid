@@ -1,0 +1,40 @@
+<section id="page">
+
+   <header id="page--header" class="header" style="display:none;">
+      <div class="fs-row">
+         <div class="fs-cell fs-all-full">
+            <h1 class="header--title">{{ page.title }}</h1>
+         </div>
+      </div>
+   </header>
+
+   <div class="page--content">
+      <div class="fs-row">
+         <div class="fs-cell fs-all-full">
+            {{ page.content }}
+         </div>
+      </div>
+   </div>
+
+</section>
+
+<script>
+   $(window).load(function(){
+      $('#storemapper-list').addClass('fs-row');
+      function yolo(){
+         //$('#storemapper-list li').addClass('fs-cell fs-lg-3 fs-md-2 fs-sm-3 fs-padded');
+         $("#storemapper-list").equalize({
+            target: ".tier"
+         });
+      }
+      //yolo();
+      $(document).on("change", "#storemapper-list", function(){
+        setTimeout(function(){
+         yolo(); 
+         },1000);
+         
+        
+        
+      });
+   });
+</script>
