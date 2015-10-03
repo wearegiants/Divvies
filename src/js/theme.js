@@ -18,7 +18,7 @@ function header(){
 
 function cartMenu(){
 
-  $(".target").swap();
+  //$(".target").swap();
   $("nav.lower").clone().appendTo('.upper .menu-wrapper').addClass('mobile');
 
   $('#wrapper').click(function(event){
@@ -65,7 +65,7 @@ function productHover(){
 $(document).ready(function(){
 
   cartMenu();
-  header();
+  //header();
   addtoCart();
   productHover();
   bannerSlider();
@@ -74,7 +74,7 @@ $(document).ready(function(){
     mobileMaxWidth: '0'
   });
   $(".mailchimp-toggle").swap();
-  $(".target-mobile").swap();
+  $(".cart-toggle").swap();
   $('.accordion').accordion();
   //$("#account select").dropdown();
   $(".cart-item").equalize({

@@ -1,5 +1,30 @@
 #product {
 
+  &--thing {
+
+    > div {
+      
+      table {
+        margin-bottom: @spaced;
+        border: 1px solid #ddd;
+        width: 100%;
+        .font_size(13);
+        text-align: center;
+        thead {
+          border-bottom: 1px solid #ddd;
+          background: @bgGray;
+          text-transform: uppercase;
+          .font_size(11);
+        }
+        th,td {
+          padding: 5px;
+        }
+      }
+
+    }
+
+  }
+
   &--title {
     color: @orange;
     .proxima();
@@ -12,31 +37,34 @@
       .font_size(40);
     }
     @media @desktop {
-      .font_size(60);
+      .font_size(48);
     }
   }
 
   &--description, &--description p {
     @media @min {
-      .font_size(17);  
+      .font_size(16);  
     }
     @media @tablet {
-      .font_size(15);
+      .font_size(16);
     }
     @media @desktop {
-      .font_size(17);
+      .font_size(16);
     }
   }
 
   &--info {
     @media @min {
-      .font_size(17);  
+      .font_size(16);  
     }
     @media @tablet {
-      .font_size(17);
+      .font_size(16);
     }
     @media @desktop {
-      .font_size(17);
+      .font_size(16);
+    }
+    p {
+      font-size: inherit;
     }
   }
 
@@ -304,6 +332,7 @@
       background: @orange;
       position: relative;
       width: 100%;
+      color: @white!important;
       -webkit-font-smoothing: antialiased;
 
       &:hover {
@@ -316,6 +345,17 @@
       }
 
     }
+
+    .recurring_title {
+      display: none;
+    }
+
+    .product_rp_div {
+      margin-top: 10px;
+      label {
+        margin-bottom: 0;
+      }
+    }    
 
   }
 

@@ -1,3 +1,8 @@
+
+<!-- Bold: QB - Step 1-1 -->
+{% include 'shappify-qb-no-select' %}
+<!-- // end Bold code -->
+
 {% assign add_to_cart = 'Add to cart' %}
 {% assign sold_out = 'Sold Out' %}
 {% assign unavailable = 'Unavailable' %}
@@ -38,16 +43,18 @@
       <div id="product--purchase" class="fs-row">
 
         {% assign hide_default_title = false %}
-        {% if product.variants.size == 1 and product.variants.first.title contains 'Default' %}
+        {% if shappify_qb_options_count == 1 and product.variants.first.title contains 'Default' %}
         {% assign hide_default_title = true %}
         {% endif %} 
 
-        <div id="product--variants" class="{% if hide_default_title %} hidden{% endif %}">
+        <div id="product--variants" class="hidden {% if hide_default_title %} hidden{% endif %}">
           <select id="product-select" name="id">
             {% for variant in product.variants %}
-            <option{% if variant == product.selected_or_first_available_variant %} selected{% endif %} value="{{ variant.id }}">
+            {% if variant.metafields.shappify_qb.qb_hide == "1" %}{% else %}
+            <option{% if variant == product.selected_or_first_available_variant %} selected{% endif %} value="{{ variant.id }}" data-price="{{ variant.price | money_without_currency | remove: ','}}">
               {{ variant.title }} - {{ variant.price | money }}
             </option>
+            {% endif %}
             {% endfor %}
           </select>
         </div>  
@@ -56,10 +63,34 @@
           <input min="1" type="number" id="quantity" name="quantity" value="1" />
         </div>
 
+        <div id="product--thing" class="fs-cell fs-all-full text-center">
+          <div id="shappify-qty-msg"></div>
+        </div>
+
+
+
         {% if product.compare_at_price > product.price %}
+        
+        <!-- Display this string if we're comparing prices --> 
+        <!-- This will make the #product-price div a bit more than half width --> 
         <div id="product--price" class="fs-cell fs-lg-7 fs-md-6 fs-sm-half compared">
+        
         {% else %}
-        <div id="product--price" class="fs-cell fs-lg-5 fs-md-6 fs-sm-1">
+
+          {% if shop.metafields.bold_rp.recurring_type != 0 %}
+
+          <!-- Display this string if a product is a subscription --> 
+          <!-- This will make the #product-price div full width --> 
+          <div id="product--price" class="recurring fs-cell fs-lg-12 fs-md-6 fs-sm-3">
+
+          {% else %}
+
+          <!-- Display this string as default (no 'comapre at price' or subscrption) --> 
+          <!-- This will make the #product-price div a bit less than half width --> 
+          <div id="product--price" class="fs-cell fs-lg-5 fs-md-6 fs-sm-1">
+
+          {% endif %}
+
         {% endif %}
 
           {% assign variant = product.selected_or_first_available_variant %}
@@ -72,12 +103,37 @@
 
         </div>
 
-        {% if product.compare_at_price > product.price %}
+        <!--
         <div id="product--add" class="fs-cell fs-lg-5 fs-md-6 fs-sm-half">
-        {% else %}
         <div id="product--add" class="fs-cell fs-lg-7 fs-md-6 fs-sm-2">
+        -->
+
+        {% if product.compare_at_price > product.price %}
+        <div id="product--add" class="fs-cell fs-all-full">
+        {% else %}
+        <div id="product--add" class="fs-cell fs-all-full">
         {% endif %}
-          <input type="submit" name="add" id="add" class="btn btn-primary" value="Add to Cart" style="width:100%;">
+
+          <!-- Recurring Step: 1 -->
+
+          <input name="shopify_customer_id" type="hidden" value="{{ customer.id }}" > 
+          <input name="email" type="hidden" value="{{ customer.email }}" > 
+          <input name="address1" type="hidden" value="{{ customer.default_address.address1 }}" > 
+          <input name="address2" type="hidden" value="{{ customer.default_address.address2 }}" > 
+          <input name="city" type="hidden" value="{{ customer.default_address.city }}" > 
+          <input name="company" type="hidden" value="{{ customer.default_address.company }}" > 
+          <input name="country" type="hidden" value="{{ customer.default_address.country }}" > 
+          <input name="first_name" type="hidden" value="{{ customer.default_address.first_name }}" > 
+          <input name="last_name" type="hidden" value="{{ customer.default_address.last_name }}" > 
+          <input name="phone" type="hidden" value="{{ customer.default_address.phone }}" > 
+          <input name="province" type="hidden" value="{{ customer.default_address.province }}" > 
+          <input name="zip" type="hidden" value="{{ customer.default_address.zip }}" >
+          {% include 'bold-ro' with product %}
+
+          <input type="submit" name="add" id="add" class="btn btn-primary addtocart" value="Add to Cart" style="width:100%;">
+          <!-- bold-ro-liquid --> 
+          <div class="bold_add_to_orders" style="display: inline-block;"> </div> 
+          <!-- bold-ro-liquid -->
         </div>
       </div>
       </form>
@@ -89,23 +145,26 @@
     <div id="product--tabs" class="fs-cell fs-all-full">
       <nav class="tabs text-center">
         <a href="#tab-1" class="tab btn btn-tab" data-tabs-group="tab-1">Ingredients</a>
-        <a href="#tab-2" class="tab btn btn-tab" data-tabs-group="tab-1">Nutrition</a>
+        <!--<a href="#tab-2" class="tab btn btn-tab" data-tabs-group="tab-1">Nutrition</a>-->
         <a href="#tab-3" class="tab btn btn-tab" data-tabs-group="tab-1">Testimonials</a>
       </nav>
 
       <div class="tab_content" id="tab-1">  
         {{ tabs['ingredients'] }}
       </div>
+      <!--
       <div class="tab_content" id="tab-2">
         {{ tabs['nutrition'] }}
       </div>
+      -->
       <div class="tab_content" id="tab-3">
         <div id="shopify-product-reviews" data-id="{{product.id}}">{{ product.metafields.spr.reviews }}</div>
       </div>
     </div>
 
+    <!--
     <hr class="fs-cell fs-all-full invisible">
-
+    
     <div id="product--automatic" class="fs-cell fs-all-full">
 
       {% for product in collections.all.products %}
@@ -120,7 +179,7 @@
 
 
     </div>
-
+    -->
   </div>
 
   <hr class="fs-cell fs-all-full invisible">

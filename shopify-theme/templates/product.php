@@ -32,10 +32,9 @@
           </div>
           -->
         </div>
+        <?php include ('../snippets/quantity.php'); ?>
         <div id="product--price" class="fs-cell fs-lg-5 fs-md-2 fs-sm-1">$19.00</div>
-        <div id="product--add" class="fs-cell fs-lg-7 fs-md-4 fs-sm-2">
-          <a class='btn btn-primary' href="#">Add to Cart</a>
-        </div>
+        <?php include ('../snippets/product.add.php'); ?>
       </div>
     </div>
     
