@@ -47,7 +47,7 @@
         {% assign hide_default_title = true %}
         {% endif %} 
 
-        <div id="product--variants" class="hidden {% if hide_default_title %} hidden{% endif %}">
+        <div id="product--variants" class="fs-cell fs-all-full {% if hide_default_title %} hidden{% endif %}">
           <select id="product-select" name="id">
             {% for variant in product.variants %}
             {% if variant.metafields.shappify_qb.qb_hide == "1" %}{% else %}
@@ -145,18 +145,16 @@
     <div id="product--tabs" class="fs-cell fs-all-full">
       <nav class="tabs text-center">
         <a href="#tab-1" class="tab btn btn-tab" data-tabs-group="tab-1">Ingredients</a>
-        <!--<a href="#tab-2" class="tab btn btn-tab" data-tabs-group="tab-1">Nutrition</a>-->
+        <a href="#tab-2" class="tab btn btn-tab" data-tabs-group="tab-1">Nutrition</a>
         <a href="#tab-3" class="tab btn btn-tab" data-tabs-group="tab-1">Testimonials</a>
       </nav>
 
       <div class="tab_content" id="tab-1">  
         {{ tabs['ingredients'] }}
       </div>
-      <!--
       <div class="tab_content" id="tab-2">
         {{ tabs['nutrition'] }}
       </div>
-      -->
       <div class="tab_content" id="tab-3">
         <div id="shopify-product-reviews" data-id="{{product.id}}">{{ product.metafields.spr.reviews }}</div>
       </div>
