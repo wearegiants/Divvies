@@ -38,10 +38,17 @@
               </div>
             </div>
           </div>
+        </div>        
+      </div>
+      <div class="ajaxcart__instructions">
+         <hr class="divider">
+        <div id="is-a-gift" style="clear: left;" class="clearfix rte">
+          <label style="display:block" for="gift-note">Gift message (free and optional):</label>
+          <textarea name="attributes[gift-note]" id="gift-note">{{ cart.attributes.gift-note }}</textarea>
         </div>
-        
-
-        
+         <hr class="divider">
+        <label for="CartSpecialInstructions">Special instructions for seller</label>
+        <textarea name="note" class="input-full" id="CartSpecialInstructions"></textarea>
       </div>
       <div class="ajaxcart__footer">
         <div class="grid--full">

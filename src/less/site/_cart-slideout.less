@@ -14,7 +14,7 @@
   }
 
   @media @desktop {
-    padding: 65px 0 15px;
+    padding: 45px 0 15px;
   }
 
   > .fs-row {
@@ -42,19 +42,23 @@
     -webkit-font-smoothing: antialiased;
   }
 
+  .content {
+    border-top: 1px solid #ddd;
+    padding-top: @spaced;
+  }
+
   .cart-toggle {
     transform: rotate(45deg);
     position: relative;
     height: 30px;
     width: 30px;
-    top: 0;
     line-height: 30px;
     text-align: center;
     position: absolute;
     .font_size(22);
     right: 0;
     color: @lightGray;
-    top: -45px;
+    top: -35px;
     &:hover {
       color: @gray;
     }
@@ -230,6 +234,19 @@
 
 .ajaxcart {
 
+  &__instructions {
+    padding-top: 20px;
+    textarea {
+      background: @white;
+      box-shadow: none;
+      border: none;
+      margin-bottom: 0;
+      .font_size(15);
+      &:focus {
+        border: none;
+      }
+    }
+  }
 
 
   &__footer {
