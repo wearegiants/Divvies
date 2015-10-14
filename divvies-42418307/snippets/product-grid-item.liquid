@@ -1,5 +1,5 @@
 <div class="collection-grid--item fs-cell fs-lg-4 fs-md-2 fs-sm-half equal">
-   <a class="coverlink" href="{{ product.url }}"></a>
+   <a class="coverlink" href="{{ product.url | within: collection }}"></a>
    <span class="btn btn-collection bg-color bg-color-{{ bgColor }}">{{ product.title }}</span>
    <div class="collection-grid--item_thumb">
       {% if product.images.size > 0 %}

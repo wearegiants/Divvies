@@ -1,18 +1,19 @@
-  <div id="index--slider" class="banner slider text-center">
+  <div id="collection-listing--slider" class="banner slider text-center">
     {% for i in (1..6) %}
-      {% capture slide %}hero_slide_{{ i }}_enable{% endcapture %}
-      {% capture slide_img %}hero_slide_{{ i }}.jpg{% endcapture %}
-      {% capture slide_text_color %}hero_slide_{{ i }}_text_color{% endcapture %}
-      {% capture slide_heading %}hero_slide_{{ i }}_heading{% endcapture %}
-      {% capture slide_subheading %}hero_slide_{{ i }}_subheading{% endcapture %}
-      {% capture slide_cta %}hero_slide_{{ i }}_cta{% endcapture %}
-      {% capture slide_link %}hero_slide_{{ i }}_link{% endcapture %}
+      {% capture slide %}collection_slide_{{ i }}_enable{% endcapture %}
+      {% capture slide_img %}collection_slide_{{ i }}.jpg{% endcapture %}
+      {% capture slide_text_color %}collection_slide_{{ i }}_text_color{% endcapture %}
+      {% capture slide_heading %}collection_slide_{{ i }}_heading{% endcapture %}
+      {% capture slide_subheading %}collection_slide_{{ i }}_subheading{% endcapture %}
+      {% capture slide_cta %}collection_slide_{{ i }}_cta{% endcapture %}
+      {% capture slide_link %}collection_slide_{{ i }}_link{% endcapture %}
       {% if settings[slide] %}
 
         <div class="slider--slide">
           <a href="{{ settings[slide_link] }}" class="coverlink"></a>
           <div class="slider--content banner--centered">
             <h1 data-color="{{ settings[slide_text_color] }}">{{ settings[slide_heading] }}</h1>
+            <h2 data-color="{{ settings[slide_text_color] }}">{{ settings[slide_subheading] }}</h2>
           </div>
           <div class="slider--background" style="background-image:url('{{ slide_img | asset_url }}');"></div>
         </div>

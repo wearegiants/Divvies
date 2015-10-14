@@ -8,6 +8,13 @@
 
     <div id="product--images" class="fs-cell fs-all-half fs-sm-3">Picture</div>
     <div id="product--info"   class="fs-cell fs-all-half fs-sm-3 fs-right">
+      <nav class="breadcrumb" role="navigation" aria-label="breadcrumbs">
+        <a href="/" title="Back to the frontpage">Home</a>
+        <span aria-hidden="true">›</span>
+        <a href="/collections/chocolate" title="">Chocolate</a>
+        <span aria-hidden="true">›</span>
+        <span>4 Bejamint Crunch Chocolate Bars</span>
+      </nav>
       <header id="product--header">
         <h1 id="product--title">Chocolate Chip Bakery Box</h1>
       </header>

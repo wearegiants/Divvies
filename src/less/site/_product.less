@@ -25,6 +25,23 @@
 
   }
 
+  &--header {
+    .breadcrumb {
+      padding-bottom: @spaced/1.25;
+      a,span {
+        color: @lightGray;
+        .proxima();
+        font-weight: 300;
+        &:hover {
+          color: darken( @lightGray, 20%);  
+        }
+      }
+      span {
+        color: darken( @lightGray, 20%);
+      }
+    }
+  }
+
   &--title {
     color: @orange;
     .proxima();
