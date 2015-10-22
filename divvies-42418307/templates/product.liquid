@@ -38,26 +38,25 @@
         <span class="spec-icon contains fs-cell fs-lg-fifth fs-md-fifth fs-sm-fifth"><img src="{{ 'icon-v.svg' | asset_url }}" class="img-responsive" /></span>
         <span class="spec-icon fs-cell fs-lg-fifth fs-md-fifth fs-sm-fifth"><img src="{{ 'icon-nuts.svg' | asset_url }}"  class="img-responsive" /></span>
         <span class="spec-icon fs-cell fs-lg-fifth fs-md-fifth fs-sm-fifth"><img src="{{ 'icon-acorn.svg' | asset_url }}" class="img-responsive" /></span>
-        <span class="spec-icon fs-cell fs-lg-fifth fs-md-fifth fs-sm-fifth"><img src="{{ 'icon-milk.svg' | asset_url }}"  class="img-responsive" /></span>
         <span class="spec-icon fs-cell fs-lg-fifth fs-md-fifth fs-sm-fifth"><img src="{{ 'icon-egg.svg' | asset_url }}"   class="img-responsive" /></span>
+        <span class="spec-icon fs-cell fs-lg-fifth fs-md-fifth fs-sm-fifth"><img src="{{ 'icon-milk.svg' | asset_url }}"  class="img-responsive" /></span>
       </div>
       <div id="product--purchase" class="fs-row">
 
         {% assign hide_default_title = false %}
-        {% if shappify_qb_options_count == 1 and product.variants.first.title contains 'Default' %}
+        {% if product.variants.size== 1 and product.variants.first.title contains 'Default' %}
         {% assign hide_default_title = true %}
         {% endif %} 
 
         <div id="product--variants" class="fs-cell fs-all-full {% if hide_default_title %} hidden{% endif %}">
-          <select id="product-select" name="id">
-            {% for variant in product.variants %}
-            {% if variant.metafields.shappify_qb.qb_hide == "1" %}{% else %}
-            <option{% if variant == product.selected_or_first_available_variant %} selected{% endif %} value="{{ variant.id }}" data-price="{{ variant.price | money_without_currency | remove: ','}}">
-              {{ variant.title }} - {{ variant.price | money }}
-            </option>
-            {% endif %}
-            {% endfor %}
-          </select>
+          <div class="select-wrappers{% if hide_default_title %} hidden{% endif %}">
+            <select id="product-select" name="id" class="hidden">
+              {% for variant in product.variants %}
+              {% if variant.metafields.shappify_qb.qb_hide == "1" %}{% continue %}{% endif %}
+              <option{% if variant == product.selected_or_first_available_variant %} selected{% endif %} data-sku="{{ variant.sku }}" value="{{ variant.id }}">{{ variant.title }} - {{ variant.price | money }}</option>
+              {% endfor %}
+            </select>
+          </div>
         </div>  
 
         <div id="product--quantity" class="fs-cell fs-all-full text-center">
@@ -196,5 +195,6 @@
 
 </section>
 <hr class="invisible">
-
+{% comment %}
 {% include 'product-scripts' %}
+  {% endcomment %}
