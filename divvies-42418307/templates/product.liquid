@@ -160,24 +160,22 @@
       </div>
     </div>
 
-    <!--
+    
     <hr class="fs-cell fs-all-full invisible">
     
     <div id="product--automatic" class="fs-cell fs-all-full">
-
-      {% for product in collections.all.products %}
-      {% if product.handle == 'automatic-divvies' %}
-      <h1>{{ product.title }}</h2>
-      {{ product.description }}
-      <a href="{{ product.url }}" class="btn btn-primary btn-lg bg-color-lightblue">Subscribe to {{ product.title }}</a>
-      {% endif %}
-      {% endfor %}
-
-      {% assign someProduct = all_products.automatic-divvies %}
-
-
+      
+      <h1>Automatic Divvies</h2>
+      <p>
+        Divvies delivered to your door every month? What a great idea!  Just sign up for Automatic 
+        Divvies and you'll recieve 15% off your monthly shipment. Convenience , savings, and one 
+        thing off of your "to do" list.  Automatic Divvies also makes a wonderful gift and lets 
+        someone know you are always thinking of them.  Need to cancel your Automatic Divvies? Just 
+        call us and we'll be happy to take care of this for you.
+      </p>
+      
     </div>
-    -->
+   
   </div>
 
   <hr class="fs-cell fs-all-full invisible">
@@ -189,6 +187,7 @@
   </header>
 
   <div id="product--collection-grid" class="collection-grid related-items fs-row">
+    {% include 'related-products-manual' %}
     {% include 'related-products' %}
   </div>
 
