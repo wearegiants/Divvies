@@ -19,9 +19,19 @@
 					Divvies are too good not to share. Tell a friend, a relative or a colleague, and we'll send an email letting them know about our company and products. 
 				</p>
 				<form id="create-email" class="text-center">
-					<input type="text" placeholder="friendsemail@gmail.com" />
-					<input type="submit" class="btn btn-lg bg-color-gray">
+					<input type="text" placeholder="friendsemail@gmail.com" id="emailInput" />
+					<a href="mailto:emailaddress?&subject=Divvies is great!&body=Hey,%20give%20this%20a%20look.%20" class="btn btn-lg bg-color-orange" id="emailSubmit">Submit</a>
 				</form>
+				<script>
+					//$(document).ready(function(){
+						$("#emailSubmit").on('click', function(){
+							var input = $("#emailInput").val();
+							$("#emailSubmit").attr('href', function(i, val) {
+  								return val.replace('emailaddress', input);
+							});
+						});
+					//});
+				</script>
 			</div>
 		</div>
 		<hr class="invisible">
@@ -52,7 +62,8 @@
 			<div class="fs-cell fs-lg-4 fs-md-2 fs-sm-3 text-center">
 				<h2>Wholesale Inquiries</h2>
 				<p><a href="mailto:sales@divvies.com">sales@divvies.com</a></p>
-				<a href="#" class="btn btn-lg bg-color-lightgray">Suggest a Retailer</a>
+				<a href="#" class="btn btn-primary bg-color-orange mailchimp-toggle suggested" data-swap-target="#contact--suggest" data-swap-linked=".suggested">Suggest a Retailer</a>
+				<a href="#suggestform" class="btn bg-color-transgray">Download Form</a>
 			</div>
 		</div>
 	</section>
@@ -61,4 +72,18 @@
 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001.3200595138333!2d-73.51697079999997!3d41.214795200000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2a88bfd1273ad%3A0x9d6fbed9cd3eadba!2s700+Oakridge+Dr%2C+South+Salem%2C+NY+10590!5e0!3m2!1sen!2sus!4v1435618917611" width="800" height="265" frameborder="0" style="border:0" allowfullscreen></iframe>
 	</section>
 
+</div>
+
+<div id="contact--suggest">
+	<div class="fs-row">
+		<div class="fs-cell fs-lg-7 fs-md-4 fs-sm-3 fs-centered">
+			<hr class="invisible">
+			<div id="contact--suggest_wrapper" class="wrapper">
+				<div class="text-right">
+					<a href="#" class="ss-gizmo ss-delete mailchimp-toggle suggested color-orange" data-swap-target="#contact--suggest" data-swap-linked=".suggested"></a>
+				</div>
+				{% include 'suggest' %}
+			</div>
+		</div>
+	</div>
 </div>

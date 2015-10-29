@@ -11,7 +11,9 @@
   border-radius: 2px;
   height: 34px;
   padding: 0 10px;
-  line-height: 34px;
+  line-height: 36px;
+  .proxima();
+  font-weight: 500;
   .pie();
 
   
@@ -37,13 +39,22 @@
 
   &.btn-lg {
 
-    .font_size(24);
     height: 55px;
     padding: 0 25px;
     line-height: 58px;
     text-transform: uppercase;
     .proxima();
     font-weight: 300;
+
+    @media @min {
+       .font_size(22);
+    }
+    @media @tablet {
+       .font_size(20);
+    }
+    @media @desktop {
+       .font_size(20);
+    }
 
   }
 
@@ -93,10 +104,12 @@
 
   &.btn-sm {
 
-    .font_size(12);
-    height: 44px;
-    padding: 0 25px;
+    .font_size(14);
+    height: 34px;
+    padding: 0 15px;
     line-height: 34px;
+    .proxima();
+    font-weight: 500;
 
   }
 
@@ -122,7 +135,7 @@
     background: @orange;
 
     &:hover {
-      background: darken(@orange, 10%);
+      background: darken(@orange, 5%);
     }
 
   }

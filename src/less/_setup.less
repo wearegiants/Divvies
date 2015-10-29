@@ -54,6 +54,11 @@
 
 @spaced:      25px;
 
+.color {
+  &-orange {
+    color: @orange;
+  }
+}
 
 .bg-color {
 
@@ -63,8 +68,17 @@
     background: @lightblue;
   }
 
+  &-transgray {
+    background: fade(@gray, 20%)
+  }
+
   &-orange {
     background: @orange;
+    &.btn {
+      &:hover {
+        background: darken(@orange, 5%)
+      }
+    }
   }
 
   &-purple {
