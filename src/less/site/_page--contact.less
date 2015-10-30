@@ -2,9 +2,10 @@
 
   &--suggest {
     .cover();
-    //opacity: 0;
-    //pointer-events: none;
+    opacity: 0;
+    pointer-events: none;
     .pie();
+    z-index: 999;
     //background: @white50;
     &_wrapper {
       background: @white;
@@ -12,6 +13,34 @@
       box-shadow: 0 0 @spaced @black25;
       margin-top: 5px;
       transition: margin-top 300ms ease;
+      position: relative;
+    }
+    input:not(.btn), textarea {
+      text-align: left;
+      background: @bgGray;
+      color: @textGray;
+      box-shadow: none;
+      border: none;
+      font-weight: 300;
+      .proxima();
+      -webkit-font-smoothing: antialiased;
+      &::placeholder {
+        color: @lightGray;
+      }
+    }
+    header {
+      text-align: right;
+      padding: 0;
+      @media @tablet {
+        position: absolute;  
+        padding: 25px;
+      }
+      top: 0;
+      left: 0;
+      width: 100%;
+      a {
+        .font_size(18);
+      }
     }
     &.fs-swap {
       &-active {

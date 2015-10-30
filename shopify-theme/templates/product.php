@@ -27,19 +27,48 @@
         <span class="spec-icon fs-cell fs-lg-fifth fs-md-fifth fs-sm-fifth"><img src="/shopify-theme/assets/icon-egg.svg" class="img-responsive" /></span>
       </div>
       <div id="product--purchase" class="fs-row">
+        <div id="product--variants" class="fs-cell fs-all-full ">
+          <div class="select-wrappers">
+            <select id="product-select" name="id" class="">
+              
+              
+              <option selected="" data-sku="CHCH" value="8733248963">Chocolate with chocolate - $ 28.00</option>
+              
+              
+              <option data-sku="CHPNK" value="8733249027">Chocolate with pink - $ 28.00</option>
+              
+              
+              <option data-sku="CHRED" value="8733249219">Chocolate with red - $ 28.00</option>
+              
+              
+              <option data-sku="CHGRN" value="8733249283">Chocolate with green - $ 28.00</option>
+              
+              
+              <option data-sku="CHORG" value="8733249347">Chocolate with orange - $ 28.00</option>
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+            </select>
+          </div>
+        </div>
         <div id="product--quantity" class="fs-cell fs-all-full text-center">
           <span>Quantity of Boxes:</span>
           <input type="number" min="1" max="20" step="1">
-          <!--
-          <span>Quantity of Boxes:</span>
-          <span>1</span>
-          <div>
-            <a href="#" class="ss-gizmo ss-navigateup top"></a>
-            <a href="#" class="ss-gizmo ss-navigatedown bottom"></a>
-          </div>
-          -->
         </div>
-        <?php include ('../snippets/quantity.php'); ?>
+        <?php // include ('../snippets/quantity.php'); ?>
         <div id="product--price" class="fs-cell fs-lg-5 fs-md-2 fs-sm-1">$19.00</div>
         <?php include ('../snippets/product.add.php'); ?>
       </div>

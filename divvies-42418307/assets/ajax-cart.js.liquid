@@ -222,7 +222,7 @@ var ajaxCart = (function(module, $) {
       $('.target').swap('activate');
 
       setTimeout(function(){
-        $('.target').swap('disable');
+        $('.target').swap('deactivate');
       },2000);
 
       // Remove any previous quantity errors
@@ -504,6 +504,13 @@ var ajaxCart = (function(module, $) {
     load: loadCart
   };
 
+  $('.cart-toggle').on('click', function(){
+    //alert('building cart');
+    ShopifyAPI.getCart(cartUpdateCallback);
+  });
+
   return module;
+
+
 
 }(ajaxCart || {}, jQuery));

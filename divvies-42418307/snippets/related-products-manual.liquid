@@ -1,12 +1,12 @@
 <!-- Solution brought to you by Caroline Schnapp -->
 <!-- See this: http://wiki.shopify.com/Related_Products -->
 
-{% assign image_size = 'compact' %}
+{% assign image_size = 'large' %}
 {% assign heading = 'Other fine products' %}
 
 {% if product.tags.size > 0 %}
 
-<div class="related-products fs-row"></div>
+<div class="related-products"></div>
 
 <style type="text/css">
 .related-products { list-style-type:none }
@@ -43,9 +43,14 @@
   {% endfor %}
   if (recommendations.length) {
     var list = jQuery('.related-products');
+    //for (var i=0; i<recommendations.length; i++) {
+    //  jQuery.getJSON(recommendations[i] + '.js', function(product) {
+    //    list.append('<div class="collection-grid--item fs-cell fs-lg-4 fs-md-2 fs-sm-half equal"><a class="coverlink" href="' + product.url | within: collection +'"></a><div class="image"><a href="' + //product.url +'"><img src="' + product.images[0].replace(/(\.jpg|\.png|\.jpeg|\.gif)/, '_{{ image_size }}$1') + '" /></a></div><h4><a href="' + product.url + '">' + product.title + '</a></h4><//span class="money">' + Shopify.formatMoney(product.price, "{{ shop.money_format }}") + '</span></div>');
+    //  });
+    //}
     for (var i=0; i<recommendations.length; i++) {
       jQuery.getJSON(recommendations[i] + '.js', function(product) {
-        list.append('<div class="collection-grid--item fs-cell fs-lg-4 fs-md-2 fs-sm-half equal"><a class="coverlink" href="' + product.url | within: collection +'"></a><div class="image"><a href="' + product.url +'"><img src="' + product.images[0].replace(/(\.jpg|\.png|\.jpeg|\.gif)/, '_{{ image_size }}$1') + '" /></a></div><h4><a href="' + product.url + '">' + product.title + '</a></h4><span class="money">' + Shopify.formatMoney(product.price, "{{ shop.money_format }}") + '</span></div>');
+        list.append('<div class="collection-grid--item fs-cell fs-lg-4 fs-md-2 fs-sm-half equal"><a class="coverlink" href="' + product.url + '"></a><span class="btn btn-collection bg-color bg-color-orange">' + product.title + '</span><div class="collection-grid--item_thumb"><img src="' + product.images[0].replace(/(\.jpg|\.png|\.jpeg|\.gif)/, '_{{ image_size }}$1') + '" class="img-responsive"></div></div>');
       });
     }
   }
@@ -54,14 +59,3 @@
 
 {% endif %}
 
-
-{% comment %}   
-   <span class="btn btn-collection bg-color bg-color-{{ bgColor }}">{{ product.title }}</span>
-   <div class="collection-grid--item_thumb">
-      {% if product.images.size > 0 %}
-      <img src="{{ product.featured_image.src | img_url: 'large' }}" class="img-responsive" alt="{{ product.featured_image.alt | escape }}">
-      {% else %}
-      <img src="{{ 'type-chocolate-chip.jpg' | asset_url }}" class="img-responsive">
-      {% endif %}
-   </div>
-{% endcomment %}   

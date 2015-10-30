@@ -221,9 +221,25 @@
     width: 100%;
     background: @white;
     transform:translateY(-100%);
-    transition:all 300ms ease-in-out;
+    transition: all 300ms ease;
     margin-bottom: 0;
     padding: @spaced/2 0;
+
+    &.fs-swap-active {
+
+      @media @min {
+        transform: translateX(-300px);
+      }
+
+      @media @tablet {
+        transform: translateX(-300px);
+      }
+
+      @media @desktop {
+        transform: translateX(-300px);
+      }
+
+    }
 
     #header--logo {
       margin: 0;

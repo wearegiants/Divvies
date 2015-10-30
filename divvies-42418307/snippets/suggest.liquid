@@ -1,8 +1,31 @@
+<h1>Get your Divvies Locally</h1>
+<hr class="divider compact">
+<br>
+
 {% form 'contact' %}
 
 {% comment %}
 Successful message
 {% endcomment %}
+
+{% assign yourFirst = 'First Name' %}
+{% assign yourLast  = 'Last Name' %}
+{% assign yourCity  = 'Your City' %}
+{% assign yourState = 'Your State' %}
+{% assign yourEmail = 'Your Email' %}
+{% assign yourFaves = 'Your favorite Divvies treats' %}
+
+{% assign purvFood  = 'The food purveyor you would like to carry Divvies' %}
+{% assign purvAddr  = 'Address' %}
+{% assign purvPhone = 'Phone Number' %}
+{% assign purvEmail = 'Email' %}
+{% assign purvCity  = 'City' %}
+{% assign purvState = 'State' %}
+
+{% assign message  = '"Submit" will send this information to Divvies so we can work together to get Divvies in the aisles of your favorite stores.
+It will also bring up a form that you can print out and fill in to bring to your favorite purveyor and show you mean "business". We included a section for you to be able to add your own special reasons for wanting your local stores to carry Divvies' %}
+
+
 {% if form.posted_successfully? %}
 <p class="note form-success">
 {{ 'contact.form.post_success' | t }}
@@ -10,25 +33,72 @@ Successful message
 {% endif %}
 
 {{ form.errors | default_errors }}
-<h2>About You</h2>
-{% assign name_attr = 'contact.form.name' | t | handle %}
-<label for="ContactFormName" class="hidden-label">{{ 'contact.form.name' | t }}</label>
-<input type="text" id="ContactFormName" class="input-full" name="contact[{{ name_attr }}]" placeholder="{{ 'contact.form.name' | t }}" autocapitalize="words" value="{% if form[name_attr] %}{{ form[name_attr] }}{% elsif customer %}{{ customer.name }}{% endif %}">
+<h3 class="color-orange">About You</h3>
 
-<label for="ContactFormEmail" class="hidden-label">{{ 'contact.form.email' | t }}</label>
-<input type="email" id="ContactFormEmail" class="input-full" name="contact[email]" placeholder="{{ 'contact.form.email' | t }}" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
+<div class="fs-row">
+<div class="fs-cell fs-lg-half fs-md-half fs-sm-3">
+<label for="ContactFormEmail" class="hidden-label">{{ yourFirst }}</label>
+<input type="email" id="ContactFormEmail" class="input-full" name="contact[email]" placeholder="{{ yourFirst }}" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
+</div>
+<div class="fs-cell fs-lg-half fs-md-half fs-sm-3">
+<label for="ContactFormEmail" class="hidden-label">{{ yourLast }}</label>
+<input type="email" id="ContactFormEmail" class="input-full" name="contact[email]" placeholder="{{ yourLast }}" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
+</div>
+</div>
 
-{% assign name_attr = 'contact.form.phone' | t | handle %}
-<label for="ContactFormPhone" class="hidden-label">{{ 'contact.form.phone' | t }}</label>
-<input type="tel" id="ContactFormPhone" class="input-full" name="contact[{{ name_attr }}]" placeholder="{{ 'contact.form.phone' | t }}" pattern="[0-9\-]*" value="{% if form[name_attr] %}{{ form[name_attr] }}{% elsif customer %}{{ customer.phone }}{% endif %}">
+<div class="fs-row">
+<div class="fs-cell fs-lg-half fs-md-half fs-sm-3">
+<label for="ContactFormEmail" class="hidden-label">{{ yourCity }}</label>
+<input type="email" id="ContactFormEmail" class="input-full" name="contact[email]" placeholder="{{ yourCity }}" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
+</div>
+<div class="fs-cell fs-lg-half fs-md-half fs-sm-3">
+<label for="ContactFormEmail" class="hidden-label">{{ yourState }}</label>
+<input type="email" id="ContactFormEmail" class="input-full" name="contact[email]" placeholder="{{ yourState }}" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
+</div>
+</div>
 
-<label for="ContactFormMessage" class="hidden-label">{{ 'contact.form.message' | t }}</label>
-<textarea rows="10" id="ContactFormMessage" class="input-full" name="contact[body]" placeholder="{{ 'contact.form.message' | t }}">{% if form.body %}{{ form.body }}{% endif %}</textarea>
+<label for="ContactFormEmail" class="hidden-label">{{ yourEmail }}</label>
+<input type="email" id="ContactFormEmail" class="input-full" name="contact[email]" placeholder="{{ yourEmail }}" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
 
-<h2>About Your Food Purveyor</h2>
-<input type="submit" class="btn right" value="{{ 'contact.form.send' | t }}">
+<label for="ContactFormMessage" class="hidden-label">{{ yourFaves }}</label>
+<input type="email" id="ContactFormEmail" class="input-full" name="contact[email]" placeholder="{{ yourFaves }}" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
 
-<label for="PurveyorFormMessage" class="hidden-label">{{ 'contact.form.message' | t }}</label>
-<textarea rows="10" id="PurveyorFormMessage" class="input-full" name="purveyor[body]" placeholder="{{ 'contact.form.message' | t }}">{% if form.body %}{{ form.body }}{% endif %}</textarea>
+<hr class="divider">
+
+<h3 class="color-orange">About Your Food Purveyor</h3>
+<label for="PurveyorFormMessage" class="hidden-label">The food purveyor you would like to carry Divvies</label>
+<textarea rows="2" id="PurveyorFormMessage" class="input-full" name="purveyor[body]" placeholder="{{ 'contact.form.message' | t }}">{% if form.body %}{{ form.body }}{% endif %}</textarea>
+
+<label for="ContactFormEmail" class="hidden-label">{{ purvAddr }}</label>
+<input type="email" id="ContactFormEmail" class="input-full" name="contact[email]" placeholder="{{ purvAddr }}" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
+
+<div class="fs-row">
+<div class="fs-cell fs-lg-half fs-md-half fs-sm-3">
+<label for="ContactFormEmail" class="hidden-label">{{ purvPhone }}</label>
+<input type="email" id="ContactFormEmail" class="input-full" name="contact[email]" placeholder="{{ purvPhone }}" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
+</div>
+<div class="fs-cell fs-lg-half fs-md-half fs-sm-3">
+<label for="ContactFormEmail" class="hidden-label">{{ purvEmail }}</label>
+<input type="email" id="ContactFormEmail" class="input-full" name="contact[email]" placeholder="{{ purvEmail }}" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
+</div>
+</div>
+
+<div class="fs-row">
+<div class="fs-cell fs-lg-half fs-md-half fs-sm-3">
+<label for="ContactFormEmail" class="hidden-label">{{ purvCity }}</label>
+<input type="email" id="ContactFormEmail" class="input-full" name="contact[email]" placeholder="{{ purvCity }}" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
+</div>
+<div class="fs-cell fs-lg-half fs-md-half fs-sm-3">
+<label for="ContactFormEmail" class="hidden-label">{{ purvState }}</label>
+<input type="email" id="ContactFormEmail" class="input-full" name="contact[email]" placeholder="{{ purvState }}" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
+</div>
+</div>
+
+<hr class="divider">
+
+<input type="submit" class="btn right bg-color-orange btn-primary" value="{{ 'contact.form.send' | t }}">
+
+<hr class="divider compact">
+<small>{{ message }}</small>
 
 {% endform %}

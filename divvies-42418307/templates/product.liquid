@@ -44,13 +44,13 @@
       <div id="product--purchase" class="fs-row">
 
         {% assign hide_default_title = false %}
-        {% if product.variants.size== 1 and product.variants.first.title contains 'Default' %}
+        {% if product.variants.size== 1 and product.variants.first.title contains '1+' %}
         {% assign hide_default_title = true %}
         {% endif %} 
 
         <div id="product--variants" class="fs-cell fs-all-full {% if hide_default_title %} hidden{% endif %}">
           <div class="select-wrappers{% if hide_default_title %} hidden{% endif %}">
-            <select id="product-select" name="id" class="hidden">
+            <select id="product-select" name="id" class="">
               {% for variant in product.variants %}
               {% if variant.metafields.shappify_qb.qb_hide == "1" %}{% continue %}{% endif %}
               <option{% if variant == product.selected_or_first_available_variant %} selected{% endif %} data-sku="{{ variant.sku }}" value="{{ variant.id }}">{{ variant.title }} - {{ variant.price | money }}</option>
@@ -63,7 +63,7 @@
           <input min="1" type="number" id="quantity" name="quantity" value="1" />
         </div>
 
-        <div id="product--thing" class="fs-cell fs-all-full text-center">
+        <div id="product--thing" class="fs-cell fs-all-full text-center hidden">
           <div id="shappify-qty-msg"></div>
         </div>
 
@@ -96,7 +96,7 @@
           {% assign variant = product.selected_or_first_available_variant %}
           {% if product.compare_at_price > product.price %}
           <span class="product-price on-sale" itemprop="price">{{ variant.price | money }}</span>
-          <s class="product-compare-price">{{ variant.compare_at_price | money }}</s>
+          <span class="product-compare-price">{{ variant.compare_at_price | money }}</s>
           {% else %}
           <span class="product-price" itemprop="price">{{ variant.price | money }}</span>
           {% endif %}

@@ -82,9 +82,17 @@
           </div>
         </div>
         <p class="text-center">{% endraw %}{{ 'cart.general.shipping_at_checkout' | t }}{% raw %}</p>
+        
+        <!--
         <button type="submit" class="btn btn-primary btn-full btn--full cart__checkout bg-color bg-color-orange" name="checkout">
           {% endraw %}{{ 'cart.general.checkout' | t }}{% raw %} &rarr;
         </button>
+        -->
+
+        <a href="/cart" class="btn btn-primary btn-full btn--full cart__checkout bg-color bg-color-orange" name="checkout">
+          {% endraw %}{{ 'cart.general.checkout' | t }}{% raw %} &rarr;
+        </a>
+
         {% endraw %}{% if additional_checkout_buttons %}
           <div class="additional_checkout_buttons">{{ content_for_additional_checkout_buttons }}</div>
         {% endif %}{% raw %}

@@ -3,7 +3,7 @@ function header(){
   var options = {
       offset: '#content',
       classes: {
-          clone:   'banner--clone fs-grid',
+          clone:   'banner--clone fs-grid toggle',
           stick:   'banner--stick',
           unstick: 'banner--unstick'
       },
@@ -23,7 +23,7 @@ function cartMenu(){
 
   $('#wrapper').click(function(event){
     if ( $('#wrapper').hasClass('fs-swap-active')){
-      $('.target').swap('disable');
+      $('.target').swap('deactivate');
     }
   });
 
@@ -65,7 +65,7 @@ function productHover(){
 $(document).ready(function(){
 
   cartMenu();
-  //header();
+  header();
   addtoCart();
   productHover();
   bannerSlider();
@@ -78,9 +78,10 @@ $(document).ready(function(){
   $(".cart-toggle").swap();
   $('.accordion').accordion();
   //$("#account select").dropdown();
-  $(".cart-item").equalize({
-    target: ".cart-item-cell"
+  $('.cart').imagesLoaded( function() {
+    $(".cart-item").equalize({
+      target: ".cart-item-cell"
+    });
   });
-
 
 });
