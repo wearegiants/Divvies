@@ -77,7 +77,55 @@
     background-size: 100% 100%;
 
     @media @min {
-      text-align: center;
+      //text-align: center;
+      padding: @spaced;
+    }
+
+    @media @tablet {
+      padding: @spaced @spaced*2;
+    }
+
+    @media @desktop {
+      padding:@spaced @spaced*3;
+    }
+
+  }
+
+  &--top {
+
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    background: url('slider-bg.png') center center;
+    background-size: 100% 100%;
+
+    @media @min {
+      //text-align: center;
+      padding: @spaced;
+    }
+
+    @media @tablet {
+      padding: @spaced @spaced*2;
+    }
+
+    @media @desktop {
+      padding:@spaced @spaced*3;
+    }
+
+  }
+
+  &--bottom {
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+    background: url('slider-bg.png') center center;
+    background-size: 100% 100%;
+
+    @media @min {
+      //text-align: center;
       padding: @spaced;
     }
 

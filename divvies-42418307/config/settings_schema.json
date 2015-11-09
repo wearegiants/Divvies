@@ -34,6 +34,44 @@
         ]
       },
       {
+        "type": "select",
+        "id": "hero_slide_1_text_align_h",
+        "label": "Text Align (Horizontal)",
+        "options": [
+          {
+            "value": "text-center",
+            "label": "Align Center"
+          },
+          {
+            "value": "text-right",
+            "label": "Align Right"
+          },
+          {
+            "value": "text-left",
+            "label": "Align Left"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "hero_slide_1_text_align_v",
+        "label": "Text Align (Vertical)",
+        "options": [
+          {
+            "value": "centered",
+            "label": "Align Center"
+          },
+          {
+            "value": "top",
+            "label": "Align Top"
+          },
+          {
+            "value": "bottom",
+            "label": "Align Bottom"
+          }
+        ]
+      },
+      {
         "type": "text",
         "id": "hero_slide_1_subheading",
         "label": "Subheading text"
@@ -77,6 +115,44 @@
           {
             "value": "is-dark",
             "label": "Dark"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "hero_slide_2_text_align_h",
+        "label": "Text Align (Horizontal)",
+        "options": [
+          {
+            "value": "text-center",
+            "label": "Align Center"
+          },
+          {
+            "value": "text-right",
+            "label": "Align Right"
+          },
+          {
+            "value": "text-left",
+            "label": "Align Left"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "hero_slide_2_text_align_v",
+        "label": "Text Align (Vertical)",
+        "options": [
+          {
+            "value": "centered",
+            "label": "Align Center"
+          },
+          {
+            "value": "top",
+            "label": "Align Top"
+          },
+          {
+            "value": "bottom",
+            "label": "Align Bottom"
           }
         ]
       },
@@ -127,6 +203,44 @@
         ]
       },
       {
+        "type": "select",
+        "id": "hero_slide_3_text_align_h",
+        "label": "Text Align (Horizontal)",
+        "options": [
+          {
+            "value": "text-center",
+            "label": "Align Center"
+          },
+          {
+            "value": "text-right",
+            "label": "Align Right"
+          },
+          {
+            "value": "text-left",
+            "label": "Align Left"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "hero_slide_3_text_align_v",
+        "label": "Text Align (Vertical)",
+        "options": [
+          {
+            "value": "centered",
+            "label": "Align Center"
+          },
+          {
+            "value": "top",
+            "label": "Align Top"
+          },
+          {
+            "value": "bottom",
+            "label": "Align Bottom"
+          }
+        ]
+      },
+      {
         "type": "text",
         "id": "hero_slide_3_subheading",
         "label": "Subheading text"
@@ -173,6 +287,44 @@
         ]
       },
       {
+        "type": "select",
+        "id": "hero_slide_4_text_align_h",
+        "label": "Text Align (Horizontal)",
+        "options": [
+          {
+            "value": "text-center",
+            "label": "Align Center"
+          },
+          {
+            "value": "text-right",
+            "label": "Align Right"
+          },
+          {
+            "value": "text-left",
+            "label": "Align Left"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "hero_slide_4_text_align_v",
+        "label": "Text Align (Vertical)",
+        "options": [
+          {
+            "value": "centered",
+            "label": "Align Center"
+          },
+          {
+            "value": "top",
+            "label": "Align Top"
+          },
+          {
+            "value": "bottom",
+            "label": "Align Bottom"
+          }
+        ]
+      },
+      {
         "type": "text",
         "id": "hero_slide_4_subheading",
         "label": "Subheading text"
@@ -215,6 +367,44 @@
           {
             "value": "is-dark",
             "label": "Dark"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "hero_slide_5_text_align_h",
+        "label": "Text Align (Horizontal)",
+        "options": [
+          {
+            "value": "text-center",
+            "label": "Align Center"
+          },
+          {
+            "value": "text-right",
+            "label": "Align Right"
+          },
+          {
+            "value": "text-left",
+            "label": "Align Left"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "hero_slide_5_text_align_v",
+        "label": "Text Align (Vertical)",
+        "options": [
+          {
+            "value": "centered",
+            "label": "Align Center"
+          },
+          {
+            "value": "top",
+            "label": "Align Top"
+          },
+          {
+            "value": "bottom",
+            "label": "Align Bottom"
           }
         ]
       },
@@ -274,6 +464,44 @@
         ]
       },
       {
+        "type": "select",
+        "id": "collection_slide_1_text_align_h",
+        "label": "Text Align (Horizontal)",
+        "options": [
+          {
+            "value": "text-center",
+            "label": "Align Center"
+          },
+          {
+            "value": "text-right",
+            "label": "Align Right"
+          },
+          {
+            "value": "text-left",
+            "label": "Align Left"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "collection_slide_1_text_align_v",
+        "label": "Text Align (Vertical)",
+        "options": [
+          {
+            "value": "centered",
+            "label": "Align Center"
+          },
+          {
+            "value": "top",
+            "label": "Align Top"
+          },
+          {
+            "value": "bottom",
+            "label": "Align Bottom"
+          }
+        ]
+      },
+      {
         "type": "text",
         "id": "collection_slide_1_subheading",
         "label": "Subheading text"
@@ -317,6 +545,44 @@
           {
             "value": "is-dark",
             "label": "Dark"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "collection_slide_2_text_align_h",
+        "label": "Text Align (Horizontal)",
+        "options": [
+          {
+            "value": "text-center",
+            "label": "Align Center"
+          },
+          {
+            "value": "text-right",
+            "label": "Align Right"
+          },
+          {
+            "value": "text-left",
+            "label": "Align Left"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "collection_slide_2_text_align_v",
+        "label": "Text Align (Vertical)",
+        "options": [
+          {
+            "value": "centered",
+            "label": "Align Center"
+          },
+          {
+            "value": "top",
+            "label": "Align Top"
+          },
+          {
+            "value": "bottom",
+            "label": "Align Bottom"
           }
         ]
       },
@@ -367,6 +633,44 @@
         ]
       },
       {
+        "type": "select",
+        "id": "collection_slide_3_text_align_h",
+        "label": "Text Align (Horizontal)",
+        "options": [
+          {
+            "value": "text-center",
+            "label": "Align Center"
+          },
+          {
+            "value": "text-right",
+            "label": "Align Right"
+          },
+          {
+            "value": "text-left",
+            "label": "Align Left"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "collection_slide_3_text_align_v",
+        "label": "Text Align (Vertical)",
+        "options": [
+          {
+            "value": "centered",
+            "label": "Align Center"
+          },
+          {
+            "value": "top",
+            "label": "Align Top"
+          },
+          {
+            "value": "bottom",
+            "label": "Align Bottom"
+          }
+        ]
+      },
+      {
         "type": "text",
         "id": "collection_slide_3_subheading",
         "label": "Subheading text"
@@ -413,6 +717,44 @@
         ]
       },
       {
+        "type": "select",
+        "id": "collection_slide_4_text_align_h",
+        "label": "Text Align (Horizontal)",
+        "options": [
+          {
+            "value": "text-center",
+            "label": "Align Center"
+          },
+          {
+            "value": "text-right",
+            "label": "Align Right"
+          },
+          {
+            "value": "text-left",
+            "label": "Align Left"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "collection_slide_4_text_align_v",
+        "label": "Text Align (Vertical)",
+        "options": [
+          {
+            "value": "centered",
+            "label": "Align Center"
+          },
+          {
+            "value": "top",
+            "label": "Align Top"
+          },
+          {
+            "value": "bottom",
+            "label": "Align Bottom"
+          }
+        ]
+      },
+      {
         "type": "text",
         "id": "collection_slide_4_subheading",
         "label": "Subheading text"
@@ -455,6 +797,44 @@
           {
             "value": "is-dark",
             "label": "Dark"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "collection_slide_5_text_align_h",
+        "label": "Text Align (Horizontal)",
+        "options": [
+          {
+            "value": "text-center",
+            "label": "Align Center"
+          },
+          {
+            "value": "text-right",
+            "label": "Align Right"
+          },
+          {
+            "value": "text-left",
+            "label": "Align Left"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "collection_slide_5_text_align_v",
+        "label": "Text Align (Vertical)",
+        "options": [
+          {
+            "value": "centered",
+            "label": "Align Center"
+          },
+          {
+            "value": "top",
+            "label": "Align Top"
+          },
+          {
+            "value": "bottom",
+            "label": "Align Bottom"
           }
         ]
       },
