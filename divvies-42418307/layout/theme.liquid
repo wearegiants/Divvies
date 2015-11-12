@@ -19,13 +19,12 @@
 <link rel="stylesheet" href="{{ 'site.min.css' | asset_url }}">
 <link rel="stylesheet" href="{{ 'reviews.css' | asset_url }}">
 <script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js?ver=1.11.1'></script>
-
-<meta property="og:title" content="" />
+<meta property="og:title" content="Divvies | {{ page_title }}{% if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif %}{% if current_page != 1 %} &ndash; Page {{ current_page }}{% endif %}{% unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless %}" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="" />
-<meta property="og:description" content="" />
+<meta property="og:description" content="{{ page_description | escape }}" />
 <meta property="og:locale" content="en_US" />
-<meta property="og:site_name" content="" />
+<meta property="og:site_name" content="Divvies" />
 
 <!--[if lt IE 9]>
 <script src="{{ 'respond.min.js' | asset_url }}"></script>

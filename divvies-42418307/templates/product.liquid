@@ -49,11 +49,16 @@
         {% endif %} 
 
         <div id="product--variants" class="fs-cell fs-all-full {% if hide_default_title %} hidden{% endif %}">
+
+          {% if product.type == "Cupcake" or product.type == "Cupcakes" %}
+          <h4>Choose Your Frosting</h4>
+          {% endif %}
+
           <div class="select-wrappers{% if hide_default_title %} hidden{% endif %}">
             <select id="product-select" name="id" class="">
               {% for variant in product.variants %}
               {% if variant.metafields.shappify_qb.qb_hide == "1" %}{% continue %}{% endif %}
-              <option{% if variant == product.selected_or_first_available_variant %} selected{% endif %} data-sku="{{ variant.sku }}" value="{{ variant.id }}">{{ variant.title }} - {{ variant.price | money }}</option>
+              <option{% if variant == product.selected_or_first_available_variant %} selected{% endif %} data-sku="{{ variant.sku }}" value="{{ variant.id }}">{{ variant.title }}</option>
               {% endfor %}
             </select>
           </div>
@@ -145,16 +150,18 @@
     <div id="product--tabs" class="fs-cell fs-all-full">
       <nav class="tabs text-center">
         <a href="#tab-1" class="tab btn btn-tab" data-tabs-group="tab-1">Ingredients</a>
-        <a href="#tab-2" class="tab btn btn-tab" data-tabs-group="tab-1">Nutrition</a>
+        <!--<a href="#tab-2" class="tab btn btn-tab" data-tabs-group="tab-1">Nutrition</a>-->
         <a href="#tab-3" class="tab btn btn-tab" data-tabs-group="tab-1">Fan Mail</a>
       </nav>
 
       <div class="tab_content" id="tab-1">  
         {{ tabs['ingredients'] }}
       </div>
+      <!--
       <div class="tab_content" id="tab-2">
         {{ tabs['nutrition'] }}
       </div>
+      -->
       <div class="tab_content" id="tab-3">
         <div id="shopify-product-reviews" data-id="{{product.id}}">{{ product.metafields.spr.reviews }}</div>
       </div>
