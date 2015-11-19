@@ -1,5 +1,5 @@
 <!--<div class="fs-cell fs-lg-7 fs-md-6 fs-sm-3 fs-contained">-->
-  <div class="cart-item clearfix">
+  <div class="cart-item clearfix {% for p in item.properties %}{% if p.first == "group_id" %}recurring {% endif %}{% endfor %}">
     <div class="cart-item-cell fs-cell fs-lg-2 fs-md-1 fs-sm-fourth text-left"><img src="{{ item | img_url: 'medium' }}" class="img-responsive"/></div>
     <div class="cart-item-cell fs-cell fs-lg-4 fs-md-2 fs-sm-fourth text-left">
       <span class="info">

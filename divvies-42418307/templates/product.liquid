@@ -25,7 +25,16 @@
 
     <hr class="fs-cell fs-lg-hide fs-md-hide fs-sm-full spaced">
 
-    <div id="product--images" class="fs-cell fs-lg-7 fs-md-3 fs-sm-3">{% include 'product-images' %}</div>
+    <div id="product--images" class="fs-cell fs-lg-7 fs-md-3 fs-sm-3">
+      {% include 'product-images' %}
+      <div id="product--specs" class="fs-row">
+        <span class="spec-icon contains fs-cell fs-lg-fifth fs-md-fifth fs-sm-fifth"><img src="{{ 'icon-v.svg' | asset_url }}" class="img-responsive" /></span>
+        <span class="spec-icon fs-cell fs-lg-fifth fs-md-fifth fs-sm-fifth"><img src="{{ 'icon-nuts.svg' | asset_url }}"  class="img-responsive" /></span>
+        <span class="spec-icon fs-cell fs-lg-fifth fs-md-fifth fs-sm-fifth"><img src="{{ 'icon-acorn.svg' | asset_url }}" class="img-responsive" /></span>
+        <span class="spec-icon fs-cell fs-lg-fifth fs-md-fifth fs-sm-fifth"><img src="{{ 'icon-egg.svg' | asset_url }}"   class="img-responsive" /></span>
+        <span class="spec-icon fs-cell fs-lg-fifth fs-md-fifth fs-sm-fifth"><img src="{{ 'icon-milk.svg' | asset_url }}"  class="img-responsive" /></span>
+      </div>
+    </div>
 
     <hr class="fs-cell fs-lg-hide fs-md-hide fs-sm-full spaced">
 
@@ -33,13 +42,6 @@
       <form action="/cart/add" method="post" id="AddToCartForm" enctype="multipart/form-data">
       <div id="product--description" itemprop="description">
         {{ product.description }}
-      </div>
-      <div id="product--specs" class="fs-row">
-        <span class="spec-icon contains fs-cell fs-lg-fifth fs-md-fifth fs-sm-fifth"><img src="{{ 'icon-v.svg' | asset_url }}" class="img-responsive" /></span>
-        <span class="spec-icon fs-cell fs-lg-fifth fs-md-fifth fs-sm-fifth"><img src="{{ 'icon-nuts.svg' | asset_url }}"  class="img-responsive" /></span>
-        <span class="spec-icon fs-cell fs-lg-fifth fs-md-fifth fs-sm-fifth"><img src="{{ 'icon-acorn.svg' | asset_url }}" class="img-responsive" /></span>
-        <span class="spec-icon fs-cell fs-lg-fifth fs-md-fifth fs-sm-fifth"><img src="{{ 'icon-egg.svg' | asset_url }}"   class="img-responsive" /></span>
-        <span class="spec-icon fs-cell fs-lg-fifth fs-md-fifth fs-sm-fifth"><img src="{{ 'icon-milk.svg' | asset_url }}"  class="img-responsive" /></span>
       </div>
       <div id="product--purchase" class="fs-row">
 
@@ -72,42 +74,6 @@
           <div id="shappify-qty-msg"></div>
         </div>
 
-
-
-        {% if product.compare_at_price > product.price %}
-        
-        <!-- Display this string if we're comparing prices --> 
-        <!-- This will make the #product-price div a bit more than half width --> 
-        <div id="product--price" class="fs-cell fs-lg-7 fs-md-6 fs-sm-half compared">
-        
-        {% else %}
-
-          {% if shop.metafields.bold_rp.recurring_type != 0 %}
-
-          <!-- Display this string if a product is a subscription --> 
-          <!-- This will make the #product-price div full width --> 
-          <div id="product--price" class="recurring fs-cell fs-lg-12 fs-md-6 fs-sm-3">
-
-          {% else %}
-
-          <!-- Display this string as default (no 'comapre at price' or subscrption) --> 
-          <!-- This will make the #product-price div a bit less than half width --> 
-          <div id="product--price" class="fs-cell fs-lg-5 fs-md-6 fs-sm-1">
-
-          {% endif %}
-
-        {% endif %}
-
-          {% assign variant = product.selected_or_first_available_variant %}
-          {% if product.compare_at_price > product.price %}
-          <span class="product-price on-sale" itemprop="price">{{ variant.price | money }}</span>
-          <span class="product-compare-price">{{ variant.compare_at_price | money }}</s>
-          {% else %}
-          <span class="product-price" itemprop="price">{{ variant.price | money }}</span>
-          {% endif %}
-
-        </div>
-
         <!--
         <div id="product--add" class="fs-cell fs-lg-5 fs-md-6 fs-sm-half">
         <div id="product--add" class="fs-cell fs-lg-7 fs-md-6 fs-sm-2">
@@ -120,25 +86,42 @@
         {% endif %}
 
           <!-- Recurring Step: 1 -->
+          <div class="fs-row">
 
-          <input name="shopify_customer_id" type="hidden" value="{{ customer.id }}" > 
-          <input name="email" type="hidden" value="{{ customer.email }}" > 
-          <input name="address1" type="hidden" value="{{ customer.default_address.address1 }}" > 
-          <input name="address2" type="hidden" value="{{ customer.default_address.address2 }}" > 
-          <input name="city" type="hidden" value="{{ customer.default_address.city }}" > 
-          <input name="company" type="hidden" value="{{ customer.default_address.company }}" > 
-          <input name="country" type="hidden" value="{{ customer.default_address.country }}" > 
-          <input name="first_name" type="hidden" value="{{ customer.default_address.first_name }}" > 
-          <input name="last_name" type="hidden" value="{{ customer.default_address.last_name }}" > 
-          <input name="phone" type="hidden" value="{{ customer.default_address.phone }}" > 
-          <input name="province" type="hidden" value="{{ customer.default_address.province }}" > 
-          <input name="zip" type="hidden" value="{{ customer.default_address.zip }}" >
-          {% include 'bold-ro' with product %}
+            <input name="shopify_customer_id" type="hidden" value="{{ customer.id }}" > 
+            <input name="email" type="hidden" value="{{ customer.email }}" > 
+            <input name="address1" type="hidden" value="{{ customer.default_address.address1 }}" > 
+            <input name="address2" type="hidden" value="{{ customer.default_address.address2 }}" > 
+            <input name="city" type="hidden" value="{{ customer.default_address.city }}" > 
+            <input name="company" type="hidden" value="{{ customer.default_address.company }}" > 
+            <input name="country" type="hidden" value="{{ customer.default_address.country }}" > 
+            <input name="first_name" type="hidden" value="{{ customer.default_address.first_name }}" > 
+            <input name="last_name" type="hidden" value="{{ customer.default_address.last_name }}" > 
+            <input name="phone" type="hidden" value="{{ customer.default_address.phone }}" > 
+            <input name="province" type="hidden" value="{{ customer.default_address.province }}" > 
+            <input name="zip" type="hidden" value="{{ customer.default_address.zip }}" >
+            {% include 'bold-ro' with product %}
 
-          <input type="submit" name="add" id="add" class="btn btn-primary addtocart" value="Add to Cart" style="width:100%;">
-          <!-- bold-ro-liquid --> 
-          <div class="bold_add_to_orders" style="display: inline-block;"> </div> 
-          <!-- bold-ro-liquid -->
+            
+              <input type="submit" name="add" id="add" class="fs-cell fs-lg-8 fs-md-4 fs-sm-2 btn btn-primary addtocart fs-right" value="Add to Cart">
+              <!-- bold-ro-liquid --> 
+              <div class="bold_add_to_orders" style="display: inline-block;"> </div> 
+              <!-- bold-ro-liquid -->
+
+             <div id="product--price" class="fs-cell fs-lg-4 fs-md-2 fs-sm-1 compared">
+
+              {% assign variant = product.selected_or_first_available_variant %}
+              {% if product.compare_at_price > product.price %}
+              <span class="product-price on-sale" itemprop="price">{{ variant.price | money }}</span>
+              <span class="product-compare-price">{{ variant.compare_at_price | money }}</s>
+              {% else %}
+              <span class="product-price" itemprop="price">{{ variant.price | money }}</span>
+              {% endif %}
+
+            </div>
+
+          </div>
+          
         </div>
       </div>
       </form>
@@ -149,14 +132,20 @@
 
     <div id="product--tabs" class="fs-cell fs-all-full">
       <nav class="tabs text-center">
+        <a href="#tab-4" class="tab btn btn-tab" data-tabs-group="tab-1" style="display:none;">Ingredients</a>
+        {% unless tabs == empty %}
         <a href="#tab-1" class="tab btn btn-tab" data-tabs-group="tab-1">Ingredients</a>
+        {% endunless %}
         <!--<a href="#tab-2" class="tab btn btn-tab" data-tabs-group="tab-1">Nutrition</a>-->
         <a href="#tab-3" class="tab btn btn-tab" data-tabs-group="tab-1">Fan Mail</a>
       </nav>
 
+
+      {% unless tabs == empty %}
       <div class="tab_content" id="tab-1">  
         {{ tabs['ingredients'] }}
       </div>
+      {% endunless %}
       <!--
       <div class="tab_content" id="tab-2">
         {{ tabs['nutrition'] }}
@@ -180,7 +169,8 @@
         someone know you are always thinking of them.  Need to cancel your Automatic Divvies? Just 
         call us and we'll be happy to take care of this for you.
       </p>
-      
+      <!--<a type="submit" name="add" id="add" class="btn btn-primary auto-click">Subscribe to Automatic Divvies</a>-->
+
     </div>
    
   </div>
@@ -203,4 +193,11 @@
 <hr class="invisible">
 {% comment %}
 {% include 'product-scripts' %}
-  {% endcomment %}
+{% endcomment %}
+
+<script>
+$(".auto-click").on('click', function(){
+  $('#customButton').click();
+  //setTimeout(function(){});
+});
+</script>

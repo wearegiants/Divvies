@@ -3686,6 +3686,17 @@ img.rounded {
 .fl-right {
   float: right;
 }
+.pinned {
+  position: absolute;
+  width: 100%;
+  padding: 8px 0;
+}
+.pinned_bottom {
+  bottom: 0;
+}
+.pinned_top {
+  top: 0;
+}
 *,
 *:link,
 *:visited,
@@ -4953,6 +4964,10 @@ h6 {
   font-size: 1rem;
   -webkit-font-smoothing: antialiased;
 }
+.cart-item.recurring .cart-item-qty {
+  visibility: hidden;
+  pointer-events: none;
+}
 .cart-item-cell {
   position: relative;
 }
@@ -5700,7 +5715,6 @@ h6 {
 #product--specs {
   margin-top: 25px;
   padding: 16.66666667px 0;
-  border-top: 2px solid #B4B4B4;
 }
 #product--specs .spec-icon {
   border-radius: 50%;
@@ -5923,10 +5937,10 @@ h6 {
   line-height: 45px;
   text-transform: uppercase;
   display: block;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   background: #EF6343;
   position: relative;
-  width: 100%;
   color: #fff !important;
   -webkit-font-smoothing: antialiased;
 }
