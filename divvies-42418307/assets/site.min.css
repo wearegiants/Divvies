@@ -6502,6 +6502,18 @@ h6 {
   font-size: 14px;
   font-size: 0.875rem;
 }
+@media screen and (min-width: 300px) {
+  #storemapper-list li.tier,
+  #storemapper-list .item {
+    min-height: auto;
+  }
+}
+@media screen and (min-width: 500px) {
+  #storemapper-list li.tier,
+  #storemapper-list .item {
+    min-height: 180px;
+  }
+}
 #storemapper-list li.tier h4,
 #storemapper-list .item h4 {
   color: #EF6343;
