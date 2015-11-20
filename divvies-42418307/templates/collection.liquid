@@ -12,7 +12,7 @@
       <div class="fs-cell fs-all-full">
         {% include 'mailchimp' %}
         <div id="collection--hero" style="background-image:url('{{ collection.image.src | img_url: '1024x1024' }}');">
-          <div class="wrapper fs-cell fs-all-full fs-contained">
+          <div class="wrapper fs-cell fs-all-full fs-contained {% if collection.handle == 'popcorn' %}light{% endif %}">
             <a href="/collections" class="ss-gizmo ss-navigateleft">Back to Treats</a>
             <h1>{{ collection.title }}</h1>
           </div>
