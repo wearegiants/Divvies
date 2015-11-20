@@ -219,10 +219,10 @@ var ajaxCart = (function(module, $) {
       // Add class to be styled if desired
       $addToCart.removeClass('is-added').addClass('is-adding');
 
-      $('.target').swap('activate');
+      $('.cart-toggle').swap('activate');
 
       setTimeout(function(){
-        $('.target').swap('deactivate');
+        $('.cart-toggle').swap('deactivate');
       },2000);
 
       // Remove any previous quantity errors

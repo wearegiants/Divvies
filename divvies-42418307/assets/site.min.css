@@ -6633,3 +6633,38 @@ h6 {
   margin-top: 20px;
   margin-bottom: 0;
 }
+#notification-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  background: rgba(239, 99, 67, 0.92);
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Proxima Nova';
+  height: 50px;
+  line-height: 50px;
+  -webkit-transition: 200ms ease;
+          transition: 200ms ease;
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+@media screen and (min-width: 300px) {
+  #notification-wrapper {
+    font-size: 17px;
+    font-size: 1.0625rem;
+  }
+}
+@media screen and (min-width: 500px) {
+  #notification-wrapper {
+    font-size: 24px;
+    font-size: 1.5rem;
+  }
+}
+#notification-wrapper.fs-swap-active {
+  -webkit-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+          transform: translateY(0%);
+}
