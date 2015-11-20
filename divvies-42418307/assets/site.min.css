@@ -6014,7 +6014,7 @@ h6 {
 }
 #collection--hero {
   height: 200px;
-  background: url('//cdn.shopify.com/s/files/1/0865/5610/t/3/assets/hero_slide_1.jpg') center center no-repeat;
+  background: #f5f5f5 url('//cdn.shopify.com/s/files/1/0865/5610/t/3/assets/hero_slide_1.jpg') center center no-repeat;
   position: relative;
   background-size: cover;
 }
@@ -6025,9 +6025,21 @@ h6 {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  z-index: 5;
+}
+#collection--hero:before {
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 4;
+  background: rgba(0, 0, 0, 0.05);
 }
 #collection--hero a {
-  color: #fff;
+  color: #EF6343;
   font-family: 'Proxima Nova';
 }
 #collection--hero a:before {
@@ -6037,7 +6049,7 @@ h6 {
 }
 #collection--hero h1 {
   margin: 0;
-  color: #fff;
+  color: #EF6343;
   text-transform: capitalize;
   font-size: 64px;
   font-size: 4rem;
@@ -6056,6 +6068,9 @@ h6 {
 .collection-grid--item_thumb {
   background: #B4B4B4;
   position: relative;
+}
+.collection-grid--item_thumb img {
+  opacity: .90;
 }
 .collection-grid--item_children {
   height: 100%;
