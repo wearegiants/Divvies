@@ -25,8 +25,16 @@
         </div>
         <div class="cart-info fs-row">
           <div class="fs-cell fs-lg-7 fs-md-3 fs-sm-3">
-            <label for="CartSpecialInstructions">{{ 'cart.general.note' | t }}</label>
-            <textarea name="note" class="input-full" id="CartSpecialInstructions">{{ cart.note }}</textarea>
+            <div class="fs-row">
+              <div class="fs-cell fs-lg-half fs-md-half fs-sm-3">
+                <label for="CartSpecialInstructions">{{ 'cart.general.note' | t }}</label>
+                <textarea name="note" class="input-full" id="CartSpecialInstructions">{{ cart.note }}</textarea>
+              </div>
+              <div id="is-a-gift" class="fs-cell fs-lg-half fs-md-half fs-sm-3">
+                <label for="gift-note">Gift message (free and optional):</label>
+                <textarea name="attributes[gift-note]" id="gift-note">{{ cart.attributes.gift-note }}</textarea>
+              </div>
+            </div>
           </div>
           <div class="cart-total fs-cell fs-lg-4 fs-md-3 fs-sm-3 fs-right text-right">
             <span class="cart-total-price"><small>SUBTOTAL</small> <strong>{% include 'bold-ro-price-fix' %}{{ cart.total_price | money }}</strong></span><br>

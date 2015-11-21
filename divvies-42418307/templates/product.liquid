@@ -52,10 +52,6 @@
 
         <div id="product--variants" class="fs-cell fs-all-full {% if hide_default_title %} hidden{% endif %}">
 
-          {% if product.type == "Cupcake" or product.type == "Cupcakes" %}
-          <h4>Choose Your Frosting</h4>
-          {% endif %}
-
           <div class="select-wrappers{% if hide_default_title %} hidden{% endif %}">
             <select id="product-select" name="id" class="">
               {% for variant in product.variants %}
@@ -191,9 +187,9 @@
 
 </section>
 <hr class="invisible">
-{% comment %}
+
 {% include 'product-scripts' %}
-{% endcomment %}
+
 
 <script>
 $(".auto-click").on('click', function(){
