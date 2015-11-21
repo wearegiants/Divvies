@@ -19,6 +19,11 @@
         "info": "1200px wide required"
       },
       {
+        "type": "text",
+        "id": "hero_slide_1_imgurl",
+        "label": "Altenative Image Url"
+      },
+      {
         "type": "select",
         "id": "hero_slide_1_text_color",
         "label": "Text color",
@@ -102,6 +107,11 @@
         "label": "Image",
         "max-width": 1200,
         "info": "1200px wide required"
+      },
+      {
+        "type": "text",
+        "id": "hero_slide_2_imgurl",
+        "label": "Altenative Image Url"
       },
       {
         "type": "select",
@@ -188,6 +198,11 @@
         "info": "1200px wide required"
       },
       {
+        "type": "text",
+        "id": "hero_slide_3_imgurl",
+        "label": "Altenative Image Url"
+      },
+      {
         "type": "select",
         "id": "hero_slide_3_text_color",
         "label": "Text color",
@@ -272,6 +287,11 @@
         "info": "1200px wide required"
       },
       {
+        "type": "text",
+        "id": "hero_slide_4_imgurl",
+        "label": "Altenative Image Url"
+      },
+      {
         "type": "select",
         "id": "hero_slide_4_text_color",
         "label": "Text color",
@@ -354,6 +374,11 @@
         "label": "Image",
         "max-width": 1200,
         "info": "1200px wide required"
+      },
+      {
+        "type": "text",
+        "id": "hero_slide_5_imgurl",
+        "label": "Altenative Image Url"
       },
       {
         "type": "select",
@@ -449,6 +474,11 @@
         "info": "1200px wide required"
       },
       {
+        "type": "text",
+        "id": "collection_slide_1_imgurl",
+        "label": "Altenative Image Url"
+      },
+      {
         "type": "select",
         "id": "collection_slide_1_text_color",
         "label": "Text color",
@@ -532,6 +562,11 @@
         "label": "Image",
         "max-width": 1200,
         "info": "1200px wide required"
+      },
+      {
+        "type": "text",
+        "id": "collection_slide_2_imgurl",
+        "label": "Altenative Image Url"
       },
       {
         "type": "select",
@@ -618,6 +653,11 @@
         "info": "1200px wide required"
       },
       {
+        "type": "text",
+        "id": "collection_slide_3_imgurl",
+        "label": "Altenative Image Url"
+      },
+      {
         "type": "select",
         "id": "collection_slide_3_text_color",
         "label": "Text color",
@@ -702,6 +742,11 @@
         "info": "1200px wide required"
       },
       {
+        "type": "text",
+        "id": "collection_slide_4_imgurl",
+        "label": "Altenative Image Url"
+      },
+      {
         "type": "select",
         "id": "collection_slide_4_text_color",
         "label": "Text color",
@@ -784,6 +829,11 @@
         "label": "Image",
         "max-width": 1200,
         "info": "1200px wide required"
+      },
+      {
+        "type": "text",
+        "id": "collection_slide_5_imgurl",
+        "label": "Altenative Image Url"
       },
       {
         "type": "select",

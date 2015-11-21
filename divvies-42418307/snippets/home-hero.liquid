@@ -9,6 +9,7 @@
       {% capture slide_link %}hero_slide_{{ i }}_link{% endcapture %}
       {% capture slide_align_v %}hero_slide_{{ i }}_text_align_v{% endcapture %}
       {% capture slide_align_h %}hero_slide_{{ i }}_text_align_h{% endcapture %}
+      {% capture alt_url %}hero_slide_{{ i }}_imgurl{% endcapture %}
       {% if settings[slide] %}
 
         <div class="slider--slide">
@@ -16,7 +17,12 @@
           <div class="slider--content banner--{{ settings[slide_align_v] }} {{ settings[slide_align_h] }}">
             <h1 data-color="{{ settings[slide_text_color] }}">{{ settings[slide_heading] }}</h1>
           </div>
+          {% if settings[alt_url] == '' %}
           <div class="slider--background" style="background-image:url('{{ slide_img | asset_url }}');"></div>
+          {% endif %}
+          {% unless settings[alt_url] == '' %}
+          <div class="slider--background" style="background-image:url('{{ settings[alt_url] }}');"></div>
+          {% endunless %}
         </div>
 
       {% endif %}
