@@ -2,10 +2,24 @@
 
   &--thing {
 
+    background: @white;
+    padding: @spaced;
+    border-radius: 3px;
+    box-shadow: 0 0 100px @black25;
+
+    h3 {
+      color: @orange;
+      a {
+        color: @orange;
+      }
+    }
+
     > div {
+
+      background: @white;
       
       table {
-        margin-bottom: @spaced;
+        margin-bottom:0;
         border: 1px solid #ddd;
         width: 100%;
         .font_size(13);
@@ -171,6 +185,14 @@
     @media @tablet {
       //text-align: left;
       padding-left: 20px;
+    }
+
+    a {
+      color: @white;
+      text-decoration: underline;
+      &:hover {
+        color: @white;
+      }
     }
 
     .js-qty {
@@ -377,4 +399,26 @@
 
   }
 
+}
+
+#qty {
+  &_modal {
+    .cover();
+    position: fixed;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: 300ms ease;
+
+    &.fs-swap-active {
+      opacity: 1;
+      pointer-events: auto;
+      .pie();
+    }
+
+    &--content {
+      .center();
+      width: 100%;
+    }
+  }
 }

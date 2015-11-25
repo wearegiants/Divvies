@@ -66,9 +66,6 @@
           <input min="1" type="number" id="quantity" name="quantity" value="1" />
         </div>
 
-        <div id="product--thing" class="fs-cell fs-all-full text-center hidden">
-          <div id="shappify-qty-msg"></div>
-        </div>
 
         <!--
         <div id="product--add" class="fs-cell fs-lg-5 fs-md-6 fs-sm-half">
@@ -160,7 +157,7 @@
       <h1>Automatic Divvies</h2>
       <p>
         Divvies delivered to your door every month? What a great idea!  Just sign up for Automatic 
-        Divvies and you'll recieve 15% off your monthly shipment. Convenience , savings, and one 
+        Divvies and you'll receive 15% off your monthly shipment. Convenience , savings, and one 
         thing off of your "to do" list.  Automatic Divvies also makes a wonderful gift and lets 
         someone know you are always thinking of them.  Need to cancel your Automatic Divvies? Just 
         call us and we'll be happy to take care of this for you.
@@ -190,10 +187,44 @@
 
 {% include 'product-scripts' %}
 
+<div id="qty_modal">
+  <div id="qty_modal--content">
+    <div class="fs-row">
+      <div class="fs-cell fs-lg-7 fs-md-4 fs-sm-3 fs-centered">
+        <div id="product--thing">
+          <h3>Quantity Breaks <a href="#" data-swap-target="#qty_modal" class="qty-toggle qty-linked fl-right ss-gizmo ss-delete" data-swap-linked=".qty-linked"></a></h3>
+          <div id="shappify-qty-msg"></div>
+          <div class="text-right">
+            <br>
+            <a id="addThree" class="btn bg-color-orange" data-swap-target="#qty_modal" data-swap-linked=".qty-linked">Buy 3 and Save</a>
+            <a id="addFive" class="btn bg-color-orange" data-swap-target="#qty_modal" data-swap-linked=".qty-linked">Buy 5 and Save</a>
+            <a href="#" class="btn bg-color-gray qty-toggle qty-linked" data-swap-target="#qty_modal" data-swap-linked=".qty-linked">Continue Shopping</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script>
 $(".auto-click").on('click', function(){
   $('#customButton').click();
+  //setTimeout(function(){});
+});
+$("#addThree").on('click', function(){
+  $('.js-qty__adjust--plus').click();
+  $('.js-qty__adjust--plus').click();
+  $('#add').click();
+  $('.qty-toggle').swap('deactivate');
+  //setTimeout(function(){});
+});
+$("#addFive").on('click', function(){
+  $('.js-qty__adjust--plus').click();
+  $('.js-qty__adjust--plus').click();
+  $('.js-qty__adjust--plus').click();
+  $('.js-qty__adjust--plus').click();
+  $('#add').click();
+  $('.qty-toggle').swap('deactivate');
   //setTimeout(function(){});
 });
 </script>

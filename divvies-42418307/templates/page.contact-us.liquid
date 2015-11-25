@@ -4,24 +4,37 @@
 		<div class="fs-row">
 			<div class="fs-cell fs-lg-6 fs-md--3 fs-sm-3">
 				<header class="page-header page-header-banner">
-					<h1><span>Keep in Touch</span></h1>
+					<h1><span>Sign up for special offers</span></h1>
 				</header>
 				<br><br>
-				<div class="text-center">
+				<div class="text-center wrapper">
 					{% include 'mailchimp-form' %}
 				</div>
 			</div>
 			<div class="fs-cell fs-lg-6 fs-md--3 fs-sm-3">
-				<header class="page-header">
-					<h1>Tell a Friend</h1>
-				</header>
-				<p>
-					Divvies are too good not to share. Tell a friend, a relative or a colleague, and we'll send an email letting them know about our company and products. 
-				</p>
-				<form id="create-email" class="text-center">
-					<input type="text" placeholder="friendsemail@gmail.com" id="emailInput" />
-					<a href="mailto:emailaddress?&subject=Divvies is great!&body=Hey,%20give%20this%20a%20look.%20" class="btn btn-lg bg-color-orange" id="emailSubmit">Submit</a>
-				</form>
+				<div class="wrapper">
+					<header class="page-header">
+						<h1>Tell a Friend</h1>
+					</header>
+					<p>
+						Divvies are too good not to share.  If you have a friend that you would like to tell about Divvies, please use the email below to send them a quick note.  We appreciate you helping to spread the word about our delicious Vegan and Nut Free Treats and we know your friends will thank you for thinking of them.
+					</p>
+
+					<script>
+						var formattedBody = "Hey, give this a look. \n \nThought you'd like to know about these fantastic Vegan and Nut Free Treats. \n \n Check out the website when you have a minute!! divvies.com";
+						var mailToLink = "mailto:?subject=Divvies Vegan and Nut Free Treats&body=" + encodeURIComponent(formattedBody);
+						
+						$(document).ready(function(){
+							$("#emailSubmit").click(function(){
+								window.location.href = mailToLink;	
+							});
+						});
+					</script>
+
+					<form id="create-email" class="text-center">
+						<a href="#" class="btn btn-lg bg-color-orange" id="emailSubmit">Recommend to a Friend</a>
+					</form>
+				</div>
 				<script>
 					//$(document).ready(function(){
 						$("#emailSubmit").on('click', function(){

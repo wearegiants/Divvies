@@ -75,6 +75,9 @@ $(document).ready(function(){
   });
   $(".mailchimp-toggle").swap();
   $(".menu-toggle").swap();
+  setTimeout(function(){
+    $(".qty-toggle").swap();  
+  },1500);
   $(".cart-toggle").swap();
   $('.accordion').accordion();
   //$("#account select").dropdown();
