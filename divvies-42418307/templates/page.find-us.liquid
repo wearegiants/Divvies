@@ -30,10 +30,19 @@
          });
       }
       yolo();
-      $(document).on("change", "#storemapper-list", function(){
-        
+      
+      function boom(){
+      $(".storemapper-storelink").click(function(){
+         $("#storemapper-right").addClass('visible');
+         $("#storemapper-form_wrap").addClass('visible');
+         $("html, body").animate({ scrollTop: 0 }, 300);
+          //return false;
+      });
+      }
+      boom();
+      $(document).change(function(){
          yolo(); 
-        
+         boom();
       });
    });
 </script>

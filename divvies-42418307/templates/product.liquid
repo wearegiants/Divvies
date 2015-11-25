@@ -62,6 +62,12 @@
           </div>
         </div>  
 
+        <div id="product--thing" class="fs-cell fs-all-full">
+        <br>
+        <div id="shappify-qty-msg"></div>
+        <br>
+        </div>
+
         <div id="product--quantity" class="fs-cell fs-all-full text-center">
           <input min="1" type="number" id="quantity" name="quantity" value="1" />
         </div>
@@ -187,6 +193,7 @@
 
 {% include 'product-scripts' %}
 
+{% comment %}
 <div id="qty_modal">
   <div id="qty_modal--content">
     <div class="fs-row">
@@ -205,6 +212,7 @@
     </div>
   </div>
 </div>
+{% endcomment %}
 
 <script>
 $(".auto-click").on('click', function(){
