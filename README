@@ -1,8 +1,0 @@
-Building this in PHP during the templating process -- will migrate to Shopify once everything starts feeling pretty good.
-
-Check out the staging site here: http://wearegiants.net/divvies/shopify-theme/layout/theme.php
-
-Todo:
-- Clean up the navigation so there aren't any link-gaps as you hover over each
-- Clean up the FAQ fresh/freeze section on mobile
-- Add alternate theme.php(liquid) file for sections that go all the way to the edge.
