@@ -84,24 +84,29 @@
         <div id="product--add" class="fs-cell fs-all-full">
         {% endif %}
 
-          <!-- Recurring Step: 1 -->
-          <div class="fs-row">
+        <!-- Recurring Step: 1 -->
+        <div class="fs-row">
+          <div class="fs-cell fs-all-full qty-toggle_wrapper">
 
-            <input name="shopify_customer_id" type="hidden" value="{{ customer.id }}" > 
-            <input name="email" type="hidden" value="{{ customer.email }}" > 
-            <input name="address1" type="hidden" value="{{ customer.default_address.address1 }}" > 
-            <input name="address2" type="hidden" value="{{ customer.default_address.address2 }}" > 
-            <input name="city" type="hidden" value="{{ customer.default_address.city }}" > 
-            <input name="company" type="hidden" value="{{ customer.default_address.company }}" > 
-            <input name="country" type="hidden" value="{{ customer.default_address.country }}" > 
-            <input name="first_name" type="hidden" value="{{ customer.default_address.first_name }}" > 
-            <input name="last_name" type="hidden" value="{{ customer.default_address.last_name }}" > 
-            <input name="phone" type="hidden" value="{{ customer.default_address.phone }}" > 
-            <input name="province" type="hidden" value="{{ customer.default_address.province }}" > 
-            <input name="zip" type="hidden" value="{{ customer.default_address.zip }}" >
-            {% include 'bold-ro' with product %}
+          <a href="#" data-swap-target="#qty_modal" class="qty-toggle qty-linked" data-swap-linked=".qty-linked"><small>(Buy More and Save)</small></a>
 
-            
+          <input name="shopify_customer_id" type="hidden" value="{{ customer.id }}" > 
+          <input name="email" type="hidden" value="{{ customer.email }}" > 
+          <input name="address1" type="hidden" value="{{ customer.default_address.address1 }}" > 
+          <input name="address2" type="hidden" value="{{ customer.default_address.address2 }}" > 
+          <input name="city" type="hidden" value="{{ customer.default_address.city }}" > 
+          <input name="company" type="hidden" value="{{ customer.default_address.company }}" > 
+          <input name="country" type="hidden" value="{{ customer.default_address.country }}" > 
+          <input name="first_name" type="hidden" value="{{ customer.default_address.first_name }}" > 
+          <input name="last_name" type="hidden" value="{{ customer.default_address.last_name }}" > 
+          <input name="phone" type="hidden" value="{{ customer.default_address.phone }}" > 
+          <input name="province" type="hidden" value="{{ customer.default_address.province }}" > 
+          <input name="zip" type="hidden" value="{{ customer.default_address.zip }}" >
+          {% include 'bold-ro' with product %}
+        </div>
+
+  
+
               <input type="submit" name="add" id="add" class="fs-cell fs-lg-8 fs-md-4 fs-sm-2 btn btn-primary addtocart fs-right" value="Add to Cart">
               <!-- bold-ro-liquid --> 
               <div class="bold_add_to_orders" style="display: inline-block;"> </div> 
@@ -114,7 +119,7 @@
               <span class="product-price on-sale" itemprop="price">{{ variant.price | money }}</span>
               <span class="product-compare-price">{{ variant.compare_at_price | money }}</s>
               {% else %}
-              <span class="product-price" itemprop="price">{{ variant.price | money }}</span>
+              <span class="product-price" itemprop="price">{% include 'shappify-qb-min-price' with product %}</span>
               {% endif %}
 
             </div>

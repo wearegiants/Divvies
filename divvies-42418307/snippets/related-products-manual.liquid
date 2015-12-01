@@ -50,7 +50,7 @@
     //}
     for (var i=0; i<recommendations.length; i++) {
       jQuery.getJSON(recommendations[i] + '.js', function(product) {
-        list.append('<div class="collection-grid--item fs-cell fs-lg-4 fs-md-2 fs-sm-half equal"><a class="coverlink" href="' + product.url + '"></a><span class="btn btn-collection bg-color bg-color-orange">' + product.title + '</span><div class="collection-grid--item_thumb"><img src="' + product.images[0].replace(/(\.jpg|\.png|\.jpeg|\.gif)/, '_{{ image_size }}$1') + '" class="img-responsive"></div></div>');
+        list.append('<div class="collection-grid--item fs-cell fs-lg-4 fs-md-2 fs-sm-3 equal"><a class="coverlink" href="' + product.url + '"></a><span class="btn btn-collection bg-color bg-color-orange">' + product.title + '</span><div class="collection-grid--item_thumb"><img src="' + product.images[0].replace(/(\.jpg|\.png|\.jpeg|\.gif)/, '_{{ image_size }}$1') + '" class="img-responsive"></div></div>');
       });
     }
   }

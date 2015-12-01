@@ -1,5 +1,14 @@
 #product {
 
+  &--images {
+    .product-photo-container {
+      background: @gray;
+      img {
+        opacity: .95
+      }
+    }
+  }
+
   &--thing {
 
     //background: @white;
@@ -358,6 +367,20 @@
 
   &--add {
 
+    .qty-toggle {
+      position: absolute;
+      height: 36px;
+      line-height: 36px;
+      right: 10px;
+      top: 10px;
+      color: @orange;
+      z-index: 88;
+      display: none;
+      &_wrapper {
+        position: relative;
+      }
+    }
+
     .btn {
 
       .proxima();
@@ -388,6 +411,10 @@
 
     .recurring_title {
       display: none;
+    }
+
+    .one_time_div a {
+      float: right;
     }
 
     .product_rp_div {
