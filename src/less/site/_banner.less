@@ -6,6 +6,18 @@
   border-radius: 3px;
   overflow: hidden;
 
+  &.text-left, .text-left {
+    @media @min {
+      text-align: left;
+    }
+  }
+
+  &.text-right, .text-right {
+    @media @min {
+      text-align: right;
+    }
+  }
+
   h1,h2,h3,h4,h5,h6 {
     color: inherit;
     .proxima();
@@ -22,7 +34,7 @@
 
   h1 {
     @media @min {
-      .font_size(26);
+      .font_size(36);
       line-height: 1;
     }
     @media @tablet {
@@ -51,7 +63,7 @@
     position: relative;
 
     @media @min {
-      min-height: 240px;
+      min-height: 260px;
     }
     @media @tablet {
       min-height: 360px;
