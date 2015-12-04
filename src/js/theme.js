@@ -86,5 +86,5 @@ $(document).ready(function(){
       target: ".cart-item-cell"
     });
   });
-
+  PointerEventsPolyfill.initialize({});
 });
