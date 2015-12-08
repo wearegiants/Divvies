@@ -16,6 +16,7 @@
           <!--<a href="{{ settings[slide_link] }}" class="coverlink"></a>-->
           <div class="slider--content banner--{{ settings[slide_align_v] }} {{ settings[slide_align_h] }}">
             <h1 data-color="{{ settings[slide_text_color] }}">{{ settings[slide_heading] }}</h1>
+            <h2 data-color="{{ settings[slide_text_color] }}">{{ settings[slide_subheading] }}</h2>
           </div>
           {% if settings[alt_url] == '' %}
           <div class="slider--background" style="background-image:url('{{ slide_img | asset_url }}');"></div>
