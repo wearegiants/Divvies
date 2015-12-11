@@ -155,6 +155,14 @@
   {{ 'handlebars.min.js' | asset_url | script_tag }}
   {{ 'ajax-cart.js'  | asset_url | script_tag }}
   {% include 'ajax-cart-template' %}
+  
+  <script>
+    window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+    ga('create','UA-12338362-1','auto');ga('send','pageview')
+  </script>
+
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
    <script>
     {% if newHash %}
       $(function() {
@@ -167,6 +175,7 @@
       });
     {% endif %}
   </script>
+
   <script>
     jQuery(function($) {
       ajaxCart.init({
@@ -189,6 +198,7 @@
     //alert('added!');
   });
 </script>
+
 <script>
   !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
   n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
