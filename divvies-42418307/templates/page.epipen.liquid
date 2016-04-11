@@ -2,6 +2,14 @@
 
   <div class="fs-cell fs-all-full">
 
+  <div class="bordered-color-orange" style="border-radius: 3px;">
+    <div class="wrapper text-center">
+      <h2 class="color-orange" style="margin:0">Welcome EpiPen® users! Please enter coupon code 'epipen' at<br> checkout for 20% off our entire store!</h2>
+    </div>
+  </div>
+
+  <hr class="invisible">
+
   {% include 'mailchimp' %}
   {% include 'home-hero' %}
 
@@ -11,7 +19,7 @@
       <a class="coverlink" href="/collections"></a>
       <span class="btn btn-collection bg-color bg-color-coral">Shop Treats</span>
       <div class="collection-grid--item_thumb">
-        <img src="https://cdn.shopify.com/s/files/1/0865/5610/files/shop-treats.jpg" class="img-responsive" alt="" />
+        <img src="{{ 'shop-treats.jpg' | asset_url }}" class="img-responsive" alt="" />
       </div>
     </div>
 
