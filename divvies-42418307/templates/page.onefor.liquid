@@ -1,23 +1,14 @@
-<section id="page" class="oneforme">
-
-   <header id="page--header" class="header">
+<div class="fs-row">
+  <div class="fs-cell fs-all-full">
+    <section id="page" class="oneforme">
+      <h1 class="header--title"><img alt="One For Me, One For You" src="{{ 'Divvies_CookieDisplayShelvingStickers_OUTPUT_02v3.jpg' | asset_url }}" class="img-responsive" /></h1>
       <div class="fs-row">
-         <div class="fs-cell fs-all-full">
-            <h1 class="header--title"><img alt="One For Me, One For You" src="{{ 'Divvies_CookieDisplayShelvingStickers_bottom_web_OUTPUT.png' | asset_url }}" class="img-responsive" /></h1>
-         </div>
+        <div class="fs-cell fs-lg-7 fs-md-3 fs-sm-3"><div class="wrapper oneforme__content">{{ page.content }}</div></div>      
+        <div class="fs-cell fs-lg-5 fs-md-3 fs-sm-3"><div class="wrapper oneforme__form">{% include 'mailchimp-form-onefor' %}</div></div>      
       </div>
-   </header>
-
-   <div class="page--content">
-      <div class="fs-row">
-         <div class="fs-cell fs-lg-8 fs-md-3 fs-sm-3">{{ page.content }}</div>
-         <div class="fs-cell fs-lg-4 fs-md-3 fs-sm-3">
-           {% include 'mailchimp-form-onefor' %}
-         </div>
-      </div>
-   </div>
-
-</section>
+    </section>
+  </div>
+</div>
 
 <script>
   $(document).ready(function(){

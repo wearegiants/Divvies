@@ -1,0 +1,36 @@
+.oneforme {
+  border: 3px solid @lightblue;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 80px;
+  background-color: @white;
+  box-shadow: 0 10px @spaced rgba(0,0,0,.1);
+
+  .header--title {
+    margin-bottom: 0;
+    border-bottom: 1px solid @lightblue;
+  }
+
+  .wrapper {
+    padding: 30px;
+  }
+
+  &__content {
+    h2 {
+      color: @orange;
+      .font_size(48);
+    }
+    .font_size(28)
+  }
+
+  &__form {
+    @media @tablet {
+      border-left: 1px solid @lightblue;
+    }
+    #mc-embedded-subscribe.button {
+      background-color: @orange;
+    }
+    //background-color: @bgGray;
+  }
+
+}
