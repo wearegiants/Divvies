@@ -1,0 +1,26 @@
+<section id="page" class="oneforme">
+
+   <header id="page--header" class="header">
+      <div class="fs-row">
+         <div class="fs-cell fs-all-full">
+            <h1 class="header--title"><img alt="One For Me, One For You" src="{{ 'Divvies_CookieDisplayShelvingStickers_bottom_web_OUTPUT.png' | asset_url }}" class="img-responsive" /></h1>
+         </div>
+      </div>
+   </header>
+
+   <div class="page--content">
+      <div class="fs-row">
+         <div class="fs-cell fs-lg-8 fs-md-3 fs-sm-3">{{ page.content }}</div>
+         <div class="fs-cell fs-lg-4 fs-md-3 fs-sm-3">
+           {% include 'mailchimp-form-onefor' %}
+         </div>
+      </div>
+   </div>
+
+</section>
+
+<script>
+  $(document).ready(function(){
+    fbq('track', 'ViewContent');
+  });
+</script>
