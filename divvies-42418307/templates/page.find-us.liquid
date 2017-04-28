@@ -11,41 +11,14 @@
    <div class="page--content" style="overflow: hidden;">
       <div class="fs-row">
          <div class="fs-cell fs-all-full">
-            {{ page.content }}
+            <div id='storemapper' style='width:100%;'><p>Store Locator is loading from <a href='https://www.storemapper.co'>Storemapper store locator app</a>...</p></div><script data-storemapper-start='2015,08,17' data-storemapper-id='2220'>(function() {var script = document.createElement('script');script.type  = 'text/javascript';script.async = true;script.src = document.location.protocol + '//www.storemapper.co/js/widget.js'; var entry = document.getElementsByTagName('script')[0];entry.parentNode.insertBefore(script, entry);}());</script>
          </div>
       </div>
    </div>
 
-</section>
+   <hr class="invisible">
 
-<script>
-   $(window).load(function(){
-      $('#storemapper-list').addClass('fs-row');
-      $('#storemapper-form').wrap( "<div id='storemapper-form_wrap'></div>" );
-      $('#storemapper-form_wrap').wrapInner( "<div class='fs-row'></div>" );
-      $('#storemapper-form_wrap .fs-row').wrapInner( "<div class='fs-cell fs-lg-8 fs-md-5 fs-sm-3 fs-centered'></div>" );
-      function yolo(){
-         $("#storemapper-list").equalize({
-            target: ".tier"
-         });
-      }
-      yolo();
-      
-      function boom(){
-      $(".storemapper-storelink").click(function(){
-         $("#storemapper-right").addClass('visible');
-         $("#storemapper-form_wrap").addClass('visible');
-         $("html, body").animate({ scrollTop: 0 }, 300);
-          //return false;
-      });
-      }
-      boom();
-      $(document).change(function(){
-         yolo(); 
-         boom();
-      });
-   });
-</script>
+</section>
 
 <script>
   $(document).ready(function(){
