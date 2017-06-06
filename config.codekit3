@@ -7,2091 +7,12 @@
 		"uuidString": "9ACEFBDE-8EA7-4875-849B-AD4FCDAE112A"
 		}
 	],
-"creatorBuild": "25504",
+"creatorBuild": "25813",
 "files": {
 	"\/.gitignore": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/.gitignore",
-		"oF": 0
-		},
-	"\/customers.bak\/account.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/customers.bak\/account.liquid",
-		"oF": 0
-		},
-	"\/customers.bak\/activate_account.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/customers.bak\/activate_account.liquid",
-		"oF": 0
-		},
-	"\/customers.bak\/addresses.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/customers.bak\/addresses.liquid",
-		"oF": 0
-		},
-	"\/customers.bak\/login.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/customers.bak\/login.liquid",
-		"oF": 0
-		},
-	"\/customers.bak\/order.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/customers.bak\/order.liquid",
-		"oF": 0
-		},
-	"\/customers.bak\/register.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/customers.bak\/register.liquid",
-		"oF": 0
-		},
-	"\/customers.bak\/reset_password.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/customers.bak\/reset_password.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/.sass-cache\/b46a48978df65c550dd34018c51e8c0d8e44d3f6\/checkout.scssc": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/.sass-cache\/b46a48978df65c550dd34018c51e8c0d8e44d3f6\/checkout.scssc",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/account-cookie.jpg": {
-		"ft": 16384,
-		"iS": 102985,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/account-cookie.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/divvies-42418307\/assets\/ajax-cart.js.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/ajax-cart.js.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/ajaxify-cart.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/divvies-42418307\/assets\/min\/ajaxify-cart-min.js",
-		"oF": 1,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/divvies-42418307\/assets\/arrowdown-grey.png": {
-		"ft": 32768,
-		"iS": 1385,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/arrowdown-grey.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/divvies-42418307\/assets\/arrowdown.png": {
-		"ft": 32768,
-		"iS": 1808,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/arrowdown.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/divvies-42418307\/assets\/background.contact.new.jpg": {
-		"ft": 16384,
-		"iS": 359918,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/background.contact.new.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/divvies-42418307\/assets\/checkout.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/divvies-42418307\/css\/checkout.css",
-		"oF": 1,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/divvies-42418307\/assets\/checkout.scss.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/checkout.scss.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/collection-bg.jpg": {
-		"ft": 16384,
-		"iS": 165326,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/collection-bg.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/divvies-42418307\/assets\/collection-default.jpg": {
-		"ft": 16384,
-		"iS": 25831,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/collection-default.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/divvies-42418307\/assets\/divvies-logo.png": {
-		"ft": 32768,
-		"iS": 31148,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/divvies-logo.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/divvies-42418307\/assets\/divvies.min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/divvies-42418307\/assets\/min\/divvies.min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/divvies-42418307\/assets\/Divvies_CookieDisplayShelvingStickers_OUTPUT_02v3.jpg": {
-		"ft": 16384,
-		"iS": 185854,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/Divvies_CookieDisplayShelvingStickers_OUTPUT_02v3.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/divvies-42418307\/assets\/Divvies_request.pdf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/Divvies_request.pdf",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/error_img.png": {
-		"ft": 32768,
-		"iS": 61162,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/error_img.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/divvies-42418307\/assets\/faq--shipping_1.png": {
-		"ft": 32768,
-		"iS": 7771,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/faq--shipping_1.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/divvies-42418307\/assets\/faq--shipping_2.png": {
-		"ft": 32768,
-		"iS": 7908,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/faq--shipping_2.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/divvies-42418307\/assets\/handlebars.min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/min\/handlebars.min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/divvies-42418307\/assets\/hero_slide_1.jpg": {
-		"ft": 16384,
-		"iS": 214839,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/hero_slide_1.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/divvies-42418307\/assets\/hero_slide_2.jpg": {
-		"ft": 16384,
-		"iS": 90199,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/hero_slide_2.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/divvies-42418307\/assets\/hero_slide_3.jpg": {
-		"ft": 16384,
-		"iS": 126927,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/hero_slide_3.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/divvies-42418307\/assets\/ico-select.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/ico-select.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/icon-acorn.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/icon-acorn.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/icon-bg.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/icon-bg.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/icon-candy.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/icon-candy.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/icon-care.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/icon-care.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/icon-cart-sprite.png": {
-		"ft": 32768,
-		"iS": 2344,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/icon-cart-sprite.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/divvies-42418307\/assets\/icon-cart-sprite.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/icon-cart-sprite.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/icon-cart.png": {
-		"ft": 32768,
-		"iS": 739,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/icon-cart.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/divvies-42418307\/assets\/icon-cart_full.png": {
-		"ft": 32768,
-		"iS": 1194,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/icon-cart_full.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/divvies-42418307\/assets\/icon-chocolate.png": {
-		"ft": 32768,
-		"iS": 6584,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/icon-chocolate.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/divvies-42418307\/assets\/icon-cookie-off copy.png": {
-		"ft": 32768,
-		"iS": 3128,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/icon-cookie-off copy.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/divvies-42418307\/assets\/icon-cookie-off-copy.png": {
-		"ft": 32768,
-		"iS": 3128,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/icon-cookie-off-copy.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/divvies-42418307\/assets\/icon-cookie-off.png": {
-		"ft": 32768,
-		"iS": 3128,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/icon-cookie-off.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/divvies-42418307\/assets\/icon-cookie-on.png": {
-		"ft": 32768,
-		"iS": 486,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/icon-cookie-on.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/divvies-42418307\/assets\/icon-cookies.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/icon-cookies.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/icon-cooking.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/icon-cooking.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/icon-cooking2.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/icon-cooking2.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/icon-cupcakes.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/icon-cupcakes.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/icon-egg.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/icon-egg.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/icon-milk.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/icon-milk.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/icon-nuts.png": {
-		"ft": 32768,
-		"iS": 5850,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/icon-nuts.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/divvies-42418307\/assets\/icon-nuts.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/icon-nuts.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/icon-popcorn.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/icon-popcorn.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/icon-shipping.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/icon-shipping.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/icon-specs-1.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/icon-specs-1.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/icon-specs-2.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/icon-specs-2.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/icon-specs-3.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/icon-specs-3.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/icon-specs-4.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/icon-specs-4.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/icon-specs-5.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/icon-specs-5.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/icon-v.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/icon-v.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/jquery.pick.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/min\/jquery.pick-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/divvies-42418307\/assets\/lato-bol-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/lato-bol-webfont.eot",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/lato-bol-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/lato-bol-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/lato-bol-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/lato-bol-webfont.ttf",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/lato-bol-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/lato-bol-webfont.woff",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/lato-bolita-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/lato-bolita-webfont.eot",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/lato-bolita-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/lato-bolita-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/lato-bolita-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/lato-bolita-webfont.ttf",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/lato-bolita-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/lato-bolita-webfont.woff",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/lato-lig-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/lato-lig-webfont.eot",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/lato-lig-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/lato-lig-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/lato-lig-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/lato-lig-webfont.ttf",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/lato-lig-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/lato-lig-webfont.woff",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/lato-ligita-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/lato-ligita-webfont.eot",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/lato-ligita-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/lato-ligita-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/lato-ligita-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/lato-ligita-webfont.ttf",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/lato-ligita-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/lato-ligita-webfont.woff",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/lato-reg-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/lato-reg-webfont.eot",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/lato-reg-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/lato-reg-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/lato-reg-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/lato-reg-webfont.ttf",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/lato-reg-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/lato-reg-webfont.woff",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/lato-regita-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/lato-regita-webfont.eot",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/lato-regita-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/lato-regita-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/lato-regita-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/lato-regita-webfont.ttf",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/lato-regita-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/lato-regita-webfont.woff",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/logo-desktop.png": {
-		"ft": 32768,
-		"iS": 3983,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/logo-desktop.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/divvies-42418307\/assets\/logo.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/logo.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/min\/storemapper-min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/divvies-42418307\/assets\/min\/min\/storemapper-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/divvies-42418307\/assets\/plugins.min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/plugins.min-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/divvies-42418307\/assets\/plugins.min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/min\/plugins.min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/divvies-42418307\/assets\/proximanova-black-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanova-black-webfont.eot",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/proximanova-black-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanova-black-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/proximanova-black-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanova-black-webfont.ttf",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/proximanova-black-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanova-black-webfont.woff",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/proximanova-bold-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanova-bold-webfont.eot",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/proximanova-bold-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanova-bold-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/proximanova-bold-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanova-bold-webfont.ttf",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/proximanova-bold-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanova-bold-webfont.woff",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/proximanova-boldit-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanova-boldit-webfont.eot",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/proximanova-boldit-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanova-boldit-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/proximanova-boldit-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanova-boldit-webfont.ttf",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/proximanova-boldit-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanova-boldit-webfont.woff",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/proximanova-extrabold-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanova-extrabold-webfont.eot",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/proximanova-extrabold-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanova-extrabold-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/proximanova-extrabold-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanova-extrabold-webfont.ttf",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/proximanova-extrabold-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanova-extrabold-webfont.woff",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/proximanova-light-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanova-light-webfont.eot",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/proximanova-light-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanova-light-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/proximanova-light-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanova-light-webfont.ttf",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/proximanova-light-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanova-light-webfont.woff",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/proximanova-lightitalic-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanova-lightitalic-webfont.eot",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/proximanova-lightitalic-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanova-lightitalic-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/proximanova-lightitalic-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanova-lightitalic-webfont.ttf",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/proximanova-lightitalic-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanova-lightitalic-webfont.woff",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/proximanova-regitalic-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanova-regitalic-webfont.eot",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/proximanova-regitalic-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanova-regitalic-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/proximanova-regitalic-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanova-regitalic-webfont.ttf",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/proximanova-regitalic-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanova-regitalic-webfont.woff",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/proximanova-regular-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanova-regular-webfont.eot",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/proximanova-regular-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanova-regular-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/proximanova-regular-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanova-regular-webfont.ttf",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/proximanova-regular-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanova-regular-webfont.woff",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/proximanova-semibold-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanova-semibold-webfont.eot",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/proximanova-semibold-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanova-semibold-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/proximanova-semibold-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanova-semibold-webfont.ttf",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/proximanova-semibold-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanova-semibold-webfont.woff",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/proximanova-semibolditalic-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanova-semibolditalic-webfont.eot",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/proximanova-semibolditalic-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanova-semibolditalic-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/proximanova-semibolditalic-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanova-semibolditalic-webfont.ttf",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/proximanova-semibolditalic-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanova-semibolditalic-webfont.woff",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/proximanovacond-light-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanovacond-light-webfont.eot",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/proximanovacond-light-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanovacond-light-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/proximanovacond-light-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanovacond-light-webfont.ttf",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/proximanovacond-light-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanovacond-light-webfont.woff",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/proximanovacond-lightit-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanovacond-lightit-webfont.eot",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/proximanovacond-lightit-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanovacond-lightit-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/proximanovacond-lightit-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanovacond-lightit-webfont.ttf",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/proximanovacond-lightit-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanovacond-lightit-webfont.woff",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/proximanovacond-regular-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanovacond-regular-webfont.eot",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/proximanovacond-regular-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanovacond-regular-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/proximanovacond-regular-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanovacond-regular-webfont.ttf",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/proximanovacond-regular-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanovacond-regular-webfont.woff",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/proximanovacond-regularit-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanovacond-regularit-webfont.eot",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/proximanovacond-regularit-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanovacond-regularit-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/proximanovacond-regularit-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanovacond-regularit-webfont.ttf",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/proximanovacond-regularit-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanovacond-regularit-webfont.woff",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/proximanovacond-semibold-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanovacond-semibold-webfont.eot",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/proximanovacond-semibold-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanovacond-semibold-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/proximanovacond-semibold-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanovacond-semibold-webfont.ttf",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/proximanovacond-semibold-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanovacond-semibold-webfont.woff",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/proximanovacond-semiboldit-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanovacond-semiboldit-webfont.eot",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/proximanovacond-semiboldit-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanovacond-semiboldit-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/proximanovacond-semiboldit-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanovacond-semiboldit-webfont.ttf",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/proximanovacond-semiboldit-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/proximanovacond-semiboldit-webfont.woff",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/PTM55FT-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/PTM55FT-webfont.eot",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/PTM55FT-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/PTM55FT-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/PTM55FT-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/PTM55FT-webfont.ttf",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/PTM55FT-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/PTM55FT-webfont.woff",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/reviews.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/reviews-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/divvies-42418307\/assets\/shop-faq.jpg": {
-		"ft": 16384,
-		"iS": 302137,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/shop-faq.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/divvies-42418307\/assets\/shop-locate.jpg": {
-		"ft": 16384,
-		"iS": 493499,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/shop-locate.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/divvies-42418307\/assets\/shop-treats.jpg": {
-		"ft": 16384,
-		"iS": 549431,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/shop-treats.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/divvies-42418307\/assets\/shop.js.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/shop.js.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/shopify_common.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/min\/shopify_common-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/divvies-42418307\/assets\/site.min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/divvies-42418307\/assets\/site.min-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/divvies-42418307\/assets\/slider-bg.png": {
-		"ft": 32768,
-		"iS": 30050,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/slider-bg.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/divvies-42418307\/assets\/ss-gizmo.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/ss-gizmo.eot",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/ss-gizmo.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/min\/ss-gizmo-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/divvies-42418307\/assets\/ss-gizmo.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/ss-gizmo.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/ss-gizmo.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/ss-gizmo.ttf",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/ss-gizmo.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/ss-gizmo.woff",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/ss-glyphish-outlined.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/ss-glyphish-outlined.eot",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/ss-glyphish-outlined.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/min\/ss-glyphish-outlined-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/divvies-42418307\/assets\/ss-glyphish-outlined.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/ss-glyphish-outlined.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/ss-glyphish-outlined.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/ss-glyphish-outlined.ttf",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/ss-glyphish-outlined.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/ss-glyphish-outlined.woff",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/ss-social-circle-.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/ss-social-circle-.eot",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/ss-social-circle.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/ss-social-circle.eot",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/ss-social-circle.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/ss-social-circle.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/ss-social-circle.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/ss-social-circle.ttf",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/ss-social-circle.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/ss-social-circle.woff",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/ss-social-regular-.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/ss-social-regular-.eot",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/ss-social-regular.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/ss-social-regular.eot",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/ss-social-regular.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/ss-social-regular.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/divvies-42418307\/assets\/ss-social-regular.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/ss-social-regular.ttf",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/ss-social-regular.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/ss-social-regular.woff",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/storemapper.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/min\/storemapper-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/divvies-42418307\/assets\/theme.min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/theme.min-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/divvies-42418307\/assets\/theme.min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/min\/theme.min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/divvies-42418307\/assets\/timber.js.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/assets\/timber.js.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/assets\/type-brownie-cookie-sandwich.jpg": {
-		"ft": 16384,
-		"iS": 52416,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/type-brownie-cookie-sandwich.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/divvies-42418307\/assets\/type-brownie-cookie-sanwich.jpg": {
-		"ft": 16384,
-		"iS": 52416,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/type-brownie-cookie-sanwich.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/divvies-42418307\/assets\/type-brownie-cookie.jpg": {
-		"ft": 16384,
-		"iS": 52416,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/type-brownie-cookie.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/divvies-42418307\/assets\/type-choco-lot-brownie-cookie.jpg": {
-		"ft": 16384,
-		"iS": 60927,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/type-choco-lot-brownie-cookie.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/divvies-42418307\/assets\/type-chocolate-chip-cookie.jpg": {
-		"ft": 16384,
-		"iS": 52416,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/type-chocolate-chip-cookie.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/divvies-42418307\/assets\/type-chocolate-chip.jpg": {
-		"ft": 16384,
-		"iS": 60927,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/type-chocolate-chip.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/divvies-42418307\/assets\/type-cookie-sandwiches.jpg": {
-		"ft": 16384,
-		"iS": 60927,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/type-cookie-sandwiches.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/divvies-42418307\/assets\/type-ginger-molasses-cookie.jpg": {
-		"ft": 16384,
-		"iS": 52416,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/type-ginger-molasses-cookie.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/divvies-42418307\/assets\/type-molasses-ginger.jpg": {
-		"ft": 16384,
-		"iS": 60927,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/type-molasses-ginger.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/divvies-42418307\/assets\/type-oatmeal-raisin-cookie copy.jpg": {
-		"ft": 16384,
-		"iS": 52416,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/type-oatmeal-raisin-cookie copy.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/divvies-42418307\/assets\/type-oatmeal-raisin-cookie.jpg": {
-		"ft": 16384,
-		"iS": 52416,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/type-oatmeal-raisin-cookie.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/divvies-42418307\/assets\/type-oatmeal-raisin.jpg": {
-		"ft": 16384,
-		"iS": 60927,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/type-oatmeal-raisin.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/divvies-42418307\/assets\/type-sugar-cookie.jpg": {
-		"ft": 16384,
-		"iS": 52416,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/type-sugar-cookie.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/divvies-42418307\/assets\/type-sugar-cookies.jpg": {
-		"ft": 16384,
-		"iS": 60927,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/type-sugar-cookies.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/divvies-42418307\/config\/settings.html": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/config\/settings.html",
-		"oF": 0
-		},
-	"\/divvies-42418307\/config\/settings_data.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/divvies-42418307\/config\/settings_data-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/divvies-42418307\/config\/settings_schema.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/divvies-42418307\/config\/settings_schema-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/divvies-42418307\/css\/checkout.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/divvies-42418307\/css\/checkout-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/divvies-42418307\/layout\/theme.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/layout\/theme.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/locales\/de.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/divvies-42418307\/locales\/de-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/divvies-42418307\/locales\/en.default.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/divvies-42418307\/locales\/en.default-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/divvies-42418307\/locales\/es.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/divvies-42418307\/locales\/es-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/divvies-42418307\/locales\/fr.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/divvies-42418307\/locales\/fr-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/divvies-42418307\/locales\/pt-BR.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/divvies-42418307\/locales\/pt-BR-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/divvies-42418307\/locales\/pt-PT.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/divvies-42418307\/locales\/pt-PT-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/divvies-42418307\/snippets\/accordion-item.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/snippets\/accordion-item.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/snippets\/account-cookie.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/snippets\/account-cookie.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/snippets\/account-footer.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/snippets\/account-footer.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/snippets\/account-header.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/snippets\/account-header.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/snippets\/account-history.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/snippets\/account-history.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/snippets\/ajax-cart-template.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/snippets\/ajax-cart-template.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/snippets\/ajaxify-cart-2.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/snippets\/ajaxify-cart-2.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/snippets\/ajaxify-cart.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/divvies-42418307\/snippets\/min\/ajaxify-cart-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/divvies-42418307\/snippets\/ajaxify-cart.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/snippets\/ajaxify-cart.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/snippets\/article-grid-item.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/snippets\/article-grid-item.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/snippets\/bold-ro-price-fix.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/snippets\/bold-ro-price-fix.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/snippets\/breadcrumbs.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/snippets\/breadcrumbs.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/snippets\/cart-item.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/snippets\/cart-item.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/snippets\/cart-slideout.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/snippets\/cart-slideout.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/snippets\/collection-grid-item.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/snippets\/collection-grid-item.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/snippets\/collection-hero.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/snippets\/collection-hero.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/snippets\/collection-listing.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/snippets\/collection-listing.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/snippets\/collections-all.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/snippets\/collections-all.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/snippets\/contact-us.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/snippets\/contact-us.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/snippets\/faq.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/snippets\/faq.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/snippets\/home-hero.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/snippets\/home-hero.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/snippets\/list-collections.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/snippets\/list-collections.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/snippets\/mailchimp-form-onefor.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/snippets\/mailchimp-form-onefor.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/snippets\/mailchimp-form.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/snippets\/mailchimp-form.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/snippets\/mailchimp.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/snippets\/mailchimp.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/snippets\/product-grid-item.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/snippets\/product-grid-item.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/snippets\/product-images.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/snippets\/product-images.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/snippets\/product-scripts.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/snippets\/product-scripts.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/snippets\/related-products-manual.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/snippets\/related-products-manual.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/snippets\/related-products.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/snippets\/related-products.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/snippets\/shappify-qb-no-select.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/snippets\/shappify-qb-no-select.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/snippets\/site-nav.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/snippets\/site-nav.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/snippets\/social-links.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/snippets\/social-links.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/snippets\/suggest.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/snippets\/suggest.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/templates\/404.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/templates\/404.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/templates\/article.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/templates\/article.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/templates\/blog.grid.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/templates\/blog.grid.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/templates\/blog.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/templates\/blog.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/templates\/cart.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/templates\/cart.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/templates\/collection-listing.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/templates\/collection-listing.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/templates\/collection.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/templates\/collection.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/templates\/customers\/account.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/templates\/customers\/account.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/templates\/customers\/activate_account.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/templates\/customers\/activate_account.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/templates\/customers\/addresses.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/templates\/customers\/addresses.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/templates\/customers\/login.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/templates\/customers\/login.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/templates\/customers\/order.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/templates\/customers\/order.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/templates\/customers\/register.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/templates\/customers\/register.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/templates\/customers\/reset_password.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/templates\/customers\/reset_password.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/templates\/index.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/templates\/index.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/templates\/list-collections.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/templates\/list-collections.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/templates\/page.about.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/templates\/page.about.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/templates\/page.contact-us.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/templates\/page.contact-us.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/templates\/page.default.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/templates\/page.default.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/templates\/page.epipen.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/templates\/page.epipen.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/templates\/page.faq.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/templates\/page.faq.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/templates\/page.find-us.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/templates\/page.find-us.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/templates\/page.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/templates\/page.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/templates\/page.onefor.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/templates\/page.onefor.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/templates\/product-grid-item.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/templates\/product-grid-item.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/templates\/product.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/templates\/product.liquid",
-		"oF": 0
-		},
-	"\/divvies-42418307\/templates\/search.liquid": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/divvies-42418307\/templates\/search.liquid",
-		"oF": 0
-		},
-	"\/Divvies_Web_OUTPUT\/Divvies_CookieDisplayShelvingStickers_bottom_web_OUTPUT.jpg": {
-		"ft": 16384,
-		"iS": 881071,
-		"oA": 0,
-		"oAP": "\/Divvies_Web_OUTPUT\/Divvies_CookieDisplayShelvingStickers_bottom_web_OUTPUT.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/Divvies_Web_OUTPUT\/Divvies_CookieDisplayShelvingStickers_bottom_web_OUTPUT.png": {
-		"ft": 32768,
-		"iS": 194088,
-		"oA": 0,
-		"oAP": "\/Divvies_Web_OUTPUT\/Divvies_CookieDisplayShelvingStickers_bottom_web_OUTPUT.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/Divvies_Web_OUTPUT\/Divvies_CookieDisplayShelvingStickers_top_web_OUTPUT.jpg": {
-		"ft": 16384,
-		"iS": 717745,
-		"oA": 0,
-		"oAP": "\/Divvies_Web_OUTPUT\/Divvies_CookieDisplayShelvingStickers_top_web_OUTPUT.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/Divvies_Web_OUTPUT\/Divvies_CookieDisplayShelvingStickers_top_web_OUTPUT.png": {
-		"ft": 32768,
-		"iS": 27041,
-		"oA": 0,
-		"oAP": "\/Divvies_Web_OUTPUT\/Divvies_CookieDisplayShelvingStickers_top_web_OUTPUT.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/Divvies_Web_OUTPUT\/Divvies_CookieDisplayShelvingStickers_top_web_OUTPUTv2.jpg": {
-		"ft": 16384,
-		"iS": 680135,
-		"oA": 0,
-		"oAP": "\/Divvies_Web_OUTPUT\/Divvies_CookieDisplayShelvingStickers_top_web_OUTPUTv2.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/Divvies_Web_OUTPUT\/Divvies_CookieDisplayShelvingStickers_top_web_OUTPUTv2.png": {
-		"ft": 32768,
-		"iS": 20044,
-		"oA": 0,
-		"oAP": "\/Divvies_Web_OUTPUT\/Divvies_CookieDisplayShelvingStickers_top_web_OUTPUTv2.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/Divvies_Web_OUTPUT\/Divvies_CookiWebsiteLandingPage_OUTPUT-01.jpg": {
-		"ft": 16384,
-		"iS": 305003,
-		"oA": 0,
-		"oAP": "\/Divvies_Web_OUTPUT\/Divvies_CookiWebsiteLandingPage_OUTPUT-01.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/Divvies_Web_OUTPUT\/Divvies_CookiWebsiteLandingPage_OUTPUT-01.png": {
-		"ft": 32768,
-		"iS": 264986,
-		"oA": 0,
-		"oAP": "\/Divvies_Web_OUTPUT\/Divvies_CookiWebsiteLandingPage_OUTPUT-01.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/index.html": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/index.html",
 		"oF": 0
 		},
 	"\/README": {
@@ -2100,1318 +21,985 @@
 		"oAP": "\/README",
 		"oF": 0
 		},
-	"\/shopify-theme\/assets\/collection-bg.jpg": {
+	"\/shopify\/assets\/Divvies_CookieDisplayShelvingStickers_bottom_web_OUTPUT.png": {
+		"ft": 32768,
+		"iS": 194088,
+		"oA": 0,
+		"oAP": "\/shopify\/assets\/Divvies_CookieDisplayShelvingStickers_bottom_web_OUTPUT.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/shopify\/assets\/Divvies_CookieDisplayShelvingStickers_OUTPUT_02v3.jpg": {
 		"ft": 16384,
-		"iS": 165326,
+		"iS": 185854,
 		"oA": 0,
-		"oAP": "\/shopify-theme\/assets\/collection-bg.jpg",
+		"oAP": "\/shopify\/assets\/Divvies_CookieDisplayShelvingStickers_OUTPUT_02v3.jpg",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
-	"\/shopify-theme\/assets\/collection-default.jpg": {
-		"ft": 16384,
-		"iS": 25831,
-		"oA": 0,
-		"oAP": "\/shopify-theme\/assets\/collection-default.jpg",
-		"oF": 0,
-		"opt": 0
+	"\/shopify\/assets\/Divvies_request.pdf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/Divvies_request.pdf",
+		"oF": 0
 		},
-	"\/shopify-theme\/assets\/divvies-logo.png": {
-		"ft": 32768,
-		"iS": 31148,
-		"oA": 0,
-		"oAP": "\/shopify-theme\/assets\/divvies-logo.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/shopify-theme\/assets\/faq--shipping_1.png": {
-		"ft": 32768,
-		"iS": 7771,
-		"oA": 0,
-		"oAP": "\/shopify-theme\/assets\/faq--shipping_1.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/shopify-theme\/assets\/faq--shipping_2.png": {
-		"ft": 32768,
-		"iS": 7908,
-		"oA": 0,
-		"oAP": "\/shopify-theme\/assets\/faq--shipping_2.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/shopify-theme\/assets\/icon-acorn.svg": {
+	"\/shopify\/assets\/icon-candy.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/icon-acorn.svg",
+		"oAP": "\/shopify\/assets\/icon-candy.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/shopify-theme\/assets\/icon-bg.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/icon-bg.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/shopify-theme\/assets\/icon-candy.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/icon-candy.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/shopify-theme\/assets\/icon-care.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/icon-care.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/shopify-theme\/assets\/icon-cart-sprite.png": {
-		"ft": 32768,
-		"iS": 2344,
-		"oA": 0,
-		"oAP": "\/shopify-theme\/assets\/icon-cart-sprite.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/shopify-theme\/assets\/icon-cart-sprite.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/icon-cart-sprite.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/shopify-theme\/assets\/icon-cart.png": {
-		"ft": 32768,
-		"iS": 739,
-		"oA": 0,
-		"oAP": "\/shopify-theme\/assets\/icon-cart.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/shopify-theme\/assets\/icon-cart_full.png": {
+	"\/shopify\/assets\/icon-cart_full.png": {
 		"ft": 32768,
 		"iS": 1194,
 		"oA": 0,
-		"oAP": "\/shopify-theme\/assets\/icon-cart_full.png",
+		"oAP": "\/shopify\/assets\/icon-cart_full.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
-	"\/shopify-theme\/assets\/icon-chocolate.png": {
+	"\/shopify\/assets\/icon-chocolate.png": {
 		"ft": 32768,
 		"iS": 6584,
 		"oA": 0,
-		"oAP": "\/shopify-theme\/assets\/icon-chocolate.png",
+		"oAP": "\/shopify\/assets\/icon-chocolate.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
-	"\/shopify-theme\/assets\/icon-cookie-off.png": {
+	"\/shopify\/assets\/icon-cookie-off copy.png": {
+		"ft": 32768,
+		"iS": 3128,
+		"oA": 0,
+		"oAP": "\/shopify\/assets\/icon-cookie-off copy.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/shopify\/assets\/icon-cookie-off-copy.png": {
+		"ft": 32768,
+		"iS": 3128,
+		"oA": 0,
+		"oAP": "\/shopify\/assets\/icon-cookie-off-copy.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/shopify\/assets\/icon-cookie-off.png": {
+		"ft": 32768,
+		"iS": 3128,
+		"oA": 0,
+		"oAP": "\/shopify\/assets\/icon-cookie-off.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/shopify\/assets\/icon-cookie-on.png": {
 		"ft": 32768,
 		"iS": 486,
 		"oA": 0,
-		"oAP": "\/shopify-theme\/assets\/icon-cookie-off.png",
+		"oAP": "\/shopify\/assets\/icon-cookie-on.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
-	"\/shopify-theme\/assets\/icon-cookie-on.png": {
+	"\/shopify\/assets\/icon-cookies.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/icon-cookies.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/shopify\/assets\/icon-cooking.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/icon-cooking.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/shopify\/assets\/icon-cooking2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/icon-cooking2.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/shopify\/assets\/icon-cupcakes.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/icon-cupcakes.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/shopify\/assets\/icon-egg.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/icon-egg.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/shopify\/assets\/icon-milk.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/icon-milk.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/shopify\/assets\/icon-nuts.png": {
 		"ft": 32768,
-		"iS": 486,
+		"iS": 5850,
 		"oA": 0,
-		"oAP": "\/shopify-theme\/assets\/icon-cookie-on.png",
+		"oAP": "\/shopify\/assets\/icon-nuts.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
-	"\/shopify-theme\/assets\/icon-cookies.svg": {
+	"\/shopify\/assets\/icon-nuts.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/icon-cookies.svg",
+		"oAP": "\/shopify\/assets\/icon-nuts.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/shopify-theme\/assets\/icon-cooking.svg": {
+	"\/shopify\/assets\/icon-popcorn.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/icon-cooking.svg",
+		"oAP": "\/shopify\/assets\/icon-popcorn.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/shopify-theme\/assets\/icon-cupcakes.svg": {
+	"\/shopify\/assets\/icon-shipping.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/icon-cupcakes.svg",
+		"oAP": "\/shopify\/assets\/icon-shipping.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/shopify-theme\/assets\/icon-egg.svg": {
+	"\/shopify\/assets\/icon-specs-1.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/icon-egg.svg",
+		"oAP": "\/shopify\/assets\/icon-specs-1.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/shopify-theme\/assets\/icon-milk.svg": {
+	"\/shopify\/assets\/icon-specs-2.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/icon-milk.svg",
+		"oAP": "\/shopify\/assets\/icon-specs-2.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/shopify-theme\/assets\/icon-nuts.png": {
-		"ft": 32768,
-		"iS": 8597,
-		"oA": 0,
-		"oAP": "\/shopify-theme\/assets\/icon-nuts.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/shopify-theme\/assets\/icon-nuts.svg": {
+	"\/shopify\/assets\/icon-specs-3.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/icon-nuts.svg",
+		"oAP": "\/shopify\/assets\/icon-specs-3.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/shopify-theme\/assets\/icon-popcorn.svg": {
+	"\/shopify\/assets\/icon-specs-4.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/icon-popcorn.svg",
+		"oAP": "\/shopify\/assets\/icon-specs-4.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/shopify-theme\/assets\/icon-shipping.svg": {
+	"\/shopify\/assets\/lato-lig-webfont.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/lato-lig-webfont.ttf",
+		"oF": 0
+		},
+	"\/shopify\/assets\/lato-reg-webfont.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/icon-shipping.svg",
+		"oAP": "\/shopify\/assets\/lato-reg-webfont.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/shopify-theme\/assets\/icon-v.svg": {
+	"\/shopify\/assets\/lato-reg-webfont.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/lato-reg-webfont.ttf",
+		"oF": 0
+		},
+	"\/shopify\/assets\/lato-reg-webfont.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/lato-reg-webfont.woff",
+		"oF": 0
+		},
+	"\/shopify\/assets\/lato-regita-webfont.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/lato-regita-webfont.eot",
+		"oF": 0
+		},
+	"\/shopify\/assets\/lato-regita-webfont.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/icon-v.svg",
+		"oAP": "\/shopify\/assets\/lato-regita-webfont.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/shopify-theme\/assets\/lato-bol-webfont.eot": {
+	"\/shopify\/assets\/lato-regita-webfont.ttf": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/lato-bol-webfont.eot",
+		"oAP": "\/shopify\/assets\/lato-regita-webfont.ttf",
 		"oF": 0
 		},
-	"\/shopify-theme\/assets\/lato-bol-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/lato-bol-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/shopify-theme\/assets\/lato-bol-webfont.ttf": {
+	"\/shopify\/assets\/lato-regita-webfont.woff": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/lato-bol-webfont.ttf",
+		"oAP": "\/shopify\/assets\/lato-regita-webfont.woff",
 		"oF": 0
 		},
-	"\/shopify-theme\/assets\/lato-bol-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/lato-bol-webfont.woff",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/lato-bolita-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/lato-bolita-webfont.eot",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/lato-bolita-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/lato-bolita-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/shopify-theme\/assets\/lato-bolita-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/lato-bolita-webfont.ttf",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/lato-bolita-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/lato-bolita-webfont.woff",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/lato-lig-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/lato-lig-webfont.eot",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/lato-lig-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/lato-lig-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/shopify-theme\/assets\/lato-lig-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/lato-lig-webfont.ttf",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/lato-lig-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/lato-lig-webfont.woff",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/lato-ligita-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/lato-ligita-webfont.eot",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/lato-ligita-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/lato-ligita-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/shopify-theme\/assets\/lato-ligita-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/lato-ligita-webfont.ttf",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/lato-ligita-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/lato-ligita-webfont.woff",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/lato-reg-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/lato-reg-webfont.eot",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/lato-reg-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/lato-reg-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/shopify-theme\/assets\/lato-reg-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/lato-reg-webfont.ttf",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/lato-reg-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/lato-reg-webfont.woff",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/lato-regita-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/lato-regita-webfont.eot",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/lato-regita-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/lato-regita-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/shopify-theme\/assets\/lato-regita-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/lato-regita-webfont.ttf",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/lato-regita-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/lato-regita-webfont.woff",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/logo-desktop.png": {
+	"\/shopify\/assets\/logo-desktop.png": {
 		"ft": 32768,
 		"iS": 3983,
 		"oA": 0,
-		"oAP": "\/shopify-theme\/assets\/logo-desktop.png",
+		"oAP": "\/shopify\/assets\/logo-desktop.png",
 		"oF": 0,
-		"opt": 0
-		},
-	"\/shopify-theme\/assets\/logo.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/logo.svg",
-		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
+		"oT": 1,
+		"q": 100
 		},
-	"\/shopify-theme\/assets\/plugins.min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/shopify-theme\/assets\/plugins.min-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/shopify-theme\/assets\/plugins.min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/shopify-theme\/assets\/min\/plugins.min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/shopify-theme\/assets\/proximanova-black-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanova-black-webfont.eot",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/proximanova-black-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanova-black-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/shopify-theme\/assets\/proximanova-black-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanova-black-webfont.ttf",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/proximanova-black-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanova-black-webfont.woff",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/proximanova-bold-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanova-bold-webfont.eot",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/proximanova-bold-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanova-bold-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/shopify-theme\/assets\/proximanova-bold-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanova-bold-webfont.ttf",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/proximanova-bold-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanova-bold-webfont.woff",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/proximanova-boldit-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanova-boldit-webfont.eot",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/proximanova-boldit-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanova-boldit-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/shopify-theme\/assets\/proximanova-boldit-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanova-boldit-webfont.ttf",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/proximanova-boldit-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanova-boldit-webfont.woff",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/proximanova-extrabold-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanova-extrabold-webfont.eot",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/proximanova-extrabold-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanova-extrabold-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/shopify-theme\/assets\/proximanova-extrabold-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanova-extrabold-webfont.ttf",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/proximanova-extrabold-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanova-extrabold-webfont.woff",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/proximanova-light-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanova-light-webfont.eot",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/proximanova-light-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanova-light-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/shopify-theme\/assets\/proximanova-light-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanova-light-webfont.ttf",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/proximanova-light-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanova-light-webfont.woff",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/proximanova-lightitalic-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanova-lightitalic-webfont.eot",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/proximanova-lightitalic-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanova-lightitalic-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/shopify-theme\/assets\/proximanova-lightitalic-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanova-lightitalic-webfont.ttf",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/proximanova-lightitalic-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanova-lightitalic-webfont.woff",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/proximanova-regitalic-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanova-regitalic-webfont.eot",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/proximanova-regitalic-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanova-regitalic-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/shopify-theme\/assets\/proximanova-regitalic-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanova-regitalic-webfont.ttf",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/proximanova-regitalic-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanova-regitalic-webfont.woff",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/proximanova-regular-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanova-regular-webfont.eot",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/proximanova-regular-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanova-regular-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/shopify-theme\/assets\/proximanova-regular-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanova-regular-webfont.ttf",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/proximanova-regular-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanova-regular-webfont.woff",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/proximanova-semibold-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanova-semibold-webfont.eot",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/proximanova-semibold-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanova-semibold-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/shopify-theme\/assets\/proximanova-semibold-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanova-semibold-webfont.ttf",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/proximanova-semibold-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanova-semibold-webfont.woff",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/proximanova-semibolditalic-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanova-semibolditalic-webfont.eot",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/proximanova-semibolditalic-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanova-semibolditalic-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/shopify-theme\/assets\/proximanova-semibolditalic-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanova-semibolditalic-webfont.ttf",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/proximanova-semibolditalic-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanova-semibolditalic-webfont.woff",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/proximanovacond-light-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanovacond-light-webfont.eot",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/proximanovacond-light-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanovacond-light-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/shopify-theme\/assets\/proximanovacond-light-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanovacond-light-webfont.ttf",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/proximanovacond-light-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanovacond-light-webfont.woff",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/proximanovacond-lightit-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanovacond-lightit-webfont.eot",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/proximanovacond-lightit-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanovacond-lightit-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/shopify-theme\/assets\/proximanovacond-lightit-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanovacond-lightit-webfont.ttf",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/proximanovacond-lightit-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanovacond-lightit-webfont.woff",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/proximanovacond-regular-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanovacond-regular-webfont.eot",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/proximanovacond-regular-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanovacond-regular-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/shopify-theme\/assets\/proximanovacond-regular-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanovacond-regular-webfont.ttf",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/proximanovacond-regular-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanovacond-regular-webfont.woff",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/proximanovacond-regularit-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanovacond-regularit-webfont.eot",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/proximanovacond-regularit-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanovacond-regularit-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/shopify-theme\/assets\/proximanovacond-regularit-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanovacond-regularit-webfont.ttf",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/proximanovacond-regularit-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanovacond-regularit-webfont.woff",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/proximanovacond-semibold-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanovacond-semibold-webfont.eot",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/proximanovacond-semibold-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanovacond-semibold-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/shopify-theme\/assets\/proximanovacond-semibold-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanovacond-semibold-webfont.ttf",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/proximanovacond-semibold-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanovacond-semibold-webfont.woff",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/proximanovacond-semiboldit-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanovacond-semiboldit-webfont.eot",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/proximanovacond-semiboldit-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanovacond-semiboldit-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/shopify-theme\/assets\/proximanovacond-semiboldit-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanovacond-semiboldit-webfont.ttf",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/proximanovacond-semiboldit-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/proximanovacond-semiboldit-webfont.woff",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/PTM55FT-webfont.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/PTM55FT-webfont.eot",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/PTM55FT-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/PTM55FT-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/shopify-theme\/assets\/PTM55FT-webfont.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/PTM55FT-webfont.ttf",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/PTM55FT-webfont.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/PTM55FT-webfont.woff",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/slider-bg.png": {
+	"\/shopify\/assets\/logo.png": {
 		"ft": 32768,
-		"iS": 45447,
+		"iS": 10603,
 		"oA": 0,
-		"oAP": "\/shopify-theme\/assets\/slider-bg.png",
+		"oAP": "\/shopify\/assets\/logo.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
-	"\/shopify-theme\/assets\/ss-gizmo.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/ss-gizmo.eot",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/ss-gizmo.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/shopify-theme\/assets\/min\/ss-gizmo-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/shopify-theme\/assets\/ss-gizmo.svg": {
+	"\/shopify\/assets\/logo.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/ss-gizmo.svg",
+		"oAP": "\/shopify\/assets\/logo.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/shopify-theme\/assets\/ss-gizmo.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/ss-gizmo.ttf",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/ss-gizmo.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/ss-gizmo.woff",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/ss-glyphish-outlined.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/ss-glyphish-outlined.eot",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/ss-glyphish-outlined.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/shopify-theme\/assets\/min\/ss-glyphish-outlined-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/shopify-theme\/assets\/ss-glyphish-outlined.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/ss-glyphish-outlined.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/shopify-theme\/assets\/ss-glyphish-outlined.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/ss-glyphish-outlined.ttf",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/ss-glyphish-outlined.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/ss-glyphish-outlined.woff",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/ss-social-circle-.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/ss-social-circle-.eot",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/ss-social-circle.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/ss-social-circle.eot",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/ss-social-circle.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/ss-social-circle.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/shopify-theme\/assets\/ss-social-circle.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/ss-social-circle.ttf",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/ss-social-circle.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/ss-social-circle.woff",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/ss-social-regular-.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/ss-social-regular-.eot",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/ss-social-regular.eot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/ss-social-regular.eot",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/ss-social-regular.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/ss-social-regular.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/shopify-theme\/assets\/ss-social-regular.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/ss-social-regular.ttf",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/ss-social-regular.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/shopify-theme\/assets\/ss-social-regular.woff",
-		"oF": 0
-		},
-	"\/shopify-theme\/assets\/theme.min.css": {
+	"\/shopify\/assets\/plugins.min.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 1,
-		"oAP": "\/shopify-theme\/assets\/theme.min-min.css",
+		"oA": 0,
+		"oAP": "\/shopify\/assets\/plugins.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/shopify-theme\/assets\/theme.min.js": {
+	"\/shopify\/assets\/plugins.min.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 1,
-		"oAP": "\/shopify-theme\/assets\/min\/theme.min-min.js",
+		"oA": 0,
+		"oAP": "\/shopify\/assets\/min\/plugins.min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
 		},
-	"\/shopify-theme\/layout\/theme.php": {
+	"\/shopify\/assets\/proximanova-black-webfont.eot": {
 		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify-theme\/layout\/theme.php",
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/proximanova-black-webfont.eot",
 		"oF": 0
 		},
-	"\/shopify-theme\/snippets\/article-grid-item.php": {
+	"\/shopify\/assets\/proximanova-black-webfont.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/proximanova-black-webfont.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/shopify\/assets\/proximanova-black-webfont.ttf": {
 		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify-theme\/snippets\/article-grid-item.php",
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/proximanova-black-webfont.ttf",
 		"oF": 0
 		},
-	"\/shopify-theme\/snippets\/cart-slideout.php": {
+	"\/shopify\/assets\/proximanova-black-webfont.woff": {
 		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify-theme\/snippets\/cart-slideout.php",
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/proximanova-black-webfont.woff",
 		"oF": 0
 		},
-	"\/shopify-theme\/snippets\/collection-grid-item.php": {
+	"\/shopify\/assets\/proximanova-bold-webfont.eot": {
 		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify-theme\/snippets\/collection-grid-item.php",
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/proximanova-bold-webfont.eot",
 		"oF": 0
 		},
-	"\/shopify-theme\/snippets\/collection-listing.php": {
+	"\/shopify\/assets\/proximanova-bold-webfont.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/proximanova-bold-webfont.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/shopify\/assets\/proximanova-bold-webfont.ttf": {
 		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify-theme\/snippets\/collection-listing.php",
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/proximanova-bold-webfont.ttf",
 		"oF": 0
 		},
-	"\/shopify-theme\/snippets\/mailchimp.php": {
+	"\/shopify\/assets\/proximanova-bold-webfont.woff": {
 		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify-theme\/snippets\/mailchimp.php",
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/proximanova-bold-webfont.woff",
 		"oF": 0
 		},
-	"\/shopify-theme\/snippets\/map.php": {
+	"\/shopify\/assets\/proximanova-boldit-webfont.eot": {
 		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify-theme\/snippets\/map.php",
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/proximanova-boldit-webfont.eot",
 		"oF": 0
 		},
-	"\/shopify-theme\/snippets\/product-grid-item.php": {
+	"\/shopify\/assets\/proximanova-boldit-webfont.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/proximanova-boldit-webfont.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/shopify\/assets\/proximanova-boldit-webfont.ttf": {
 		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify-theme\/snippets\/product-grid-item.php",
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/proximanova-boldit-webfont.ttf",
 		"oF": 0
 		},
-	"\/shopify-theme\/snippets\/product.add.php": {
+	"\/shopify\/assets\/proximanova-boldit-webfont.woff": {
 		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify-theme\/snippets\/product.add.php",
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/proximanova-boldit-webfont.woff",
 		"oF": 0
 		},
-	"\/shopify-theme\/snippets\/quantity.php": {
+	"\/shopify\/assets\/proximanova-extrabold-webfont.eot": {
 		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify-theme\/snippets\/quantity.php",
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/proximanova-extrabold-webfont.eot",
 		"oF": 0
 		},
-	"\/shopify-theme\/snippets\/sidebar.cart.php": {
+	"\/shopify\/assets\/proximanova-extrabold-webfont.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/proximanova-extrabold-webfont.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/shopify\/assets\/proximanova-extrabold-webfont.ttf": {
 		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify-theme\/snippets\/sidebar.cart.php",
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/proximanova-extrabold-webfont.ttf",
 		"oF": 0
 		},
-	"\/shopify-theme\/snippets\/site-nav.php": {
+	"\/shopify\/assets\/proximanova-extrabold-webfont.woff": {
 		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify-theme\/snippets\/site-nav.php",
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/proximanova-extrabold-webfont.woff",
 		"oF": 0
 		},
-	"\/shopify-theme\/snippets\/social-links.php": {
+	"\/shopify\/assets\/proximanova-light-webfont.eot": {
 		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify-theme\/snippets\/social-links.php",
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/proximanova-light-webfont.eot",
 		"oF": 0
 		},
-	"\/shopify-theme\/templates\/404.php": {
+	"\/shopify\/assets\/proximanova-light-webfont.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/proximanova-light-webfont.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/shopify\/assets\/proximanova-light-webfont.ttf": {
 		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify-theme\/templates\/404.php",
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/proximanova-light-webfont.ttf",
 		"oF": 0
 		},
-	"\/shopify-theme\/templates\/about.php": {
+	"\/shopify\/assets\/proximanova-light-webfont.woff": {
 		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify-theme\/templates\/about.php",
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/proximanova-light-webfont.woff",
 		"oF": 0
 		},
-	"\/shopify-theme\/templates\/account.address.php": {
+	"\/shopify\/assets\/proximanova-lightitalic-webfont.eot": {
 		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify-theme\/templates\/account.address.php",
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/proximanova-lightitalic-webfont.eot",
 		"oF": 0
 		},
-	"\/shopify-theme\/templates\/account.create.php": {
+	"\/shopify\/assets\/proximanova-semibolditalic-webfont.ttf": {
 		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify-theme\/templates\/account.create.php",
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/proximanova-semibolditalic-webfont.ttf",
 		"oF": 0
 		},
-	"\/shopify-theme\/templates\/account.login.php": {
+	"\/shopify\/assets\/proximanovacond-regular-webfont.ttf": {
 		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify-theme\/templates\/account.login.php",
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/proximanovacond-regular-webfont.ttf",
 		"oF": 0
 		},
-	"\/shopify-theme\/templates\/account.myaccount.php": {
+	"\/shopify\/assets\/proximanovacond-regular-webfont.woff": {
 		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify-theme\/templates\/account.myaccount.php",
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/proximanovacond-regular-webfont.woff",
 		"oF": 0
 		},
-	"\/shopify-theme\/templates\/account.php": {
+	"\/shopify\/assets\/proximanovacond-regularit-webfont.eot": {
 		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify-theme\/templates\/account.php",
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/proximanovacond-regularit-webfont.eot",
 		"oF": 0
 		},
-	"\/shopify-theme\/templates\/article.php": {
+	"\/shopify\/assets\/proximanovacond-regularit-webfont.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/proximanovacond-regularit-webfont.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/shopify\/assets\/proximanovacond-regularit-webfont.ttf": {
 		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify-theme\/templates\/article.php",
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/proximanovacond-regularit-webfont.ttf",
 		"oF": 0
 		},
-	"\/shopify-theme\/templates\/blog.grid.php": {
+	"\/shopify\/assets\/proximanovacond-regularit-webfont.woff": {
 		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify-theme\/templates\/blog.grid.php",
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/proximanovacond-regularit-webfont.woff",
 		"oF": 0
 		},
-	"\/shopify-theme\/templates\/blog.php": {
+	"\/shopify\/assets\/proximanovacond-semibold-webfont.eot": {
 		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify-theme\/templates\/blog.php",
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/proximanovacond-semibold-webfont.eot",
 		"oF": 0
 		},
-	"\/shopify-theme\/templates\/cart.php": {
+	"\/shopify\/assets\/proximanovacond-semibold-webfont.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/proximanovacond-semibold-webfont.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/shopify\/assets\/proximanovacond-semibold-webfont.ttf": {
 		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify-theme\/templates\/cart.php",
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/proximanovacond-semibold-webfont.ttf",
 		"oF": 0
 		},
-	"\/shopify-theme\/templates\/collection.php": {
+	"\/shopify\/assets\/proximanovacond-semibold-webfont.woff": {
 		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify-theme\/templates\/collection.php",
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/proximanovacond-semibold-webfont.woff",
 		"oF": 0
 		},
-	"\/shopify-theme\/templates\/error.php": {
+	"\/shopify\/assets\/proximanovacond-semiboldit-webfont.eot": {
 		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify-theme\/templates\/error.php",
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/proximanovacond-semiboldit-webfont.eot",
 		"oF": 0
 		},
-	"\/shopify-theme\/templates\/index.php": {
+	"\/shopify\/assets\/proximanovacond-semiboldit-webfont.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/proximanovacond-semiboldit-webfont.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/shopify\/assets\/proximanovacond-semiboldit-webfont.ttf": {
 		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify-theme\/templates\/index.php",
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/proximanovacond-semiboldit-webfont.ttf",
 		"oF": 0
 		},
-	"\/shopify-theme\/templates\/list-collections.php": {
+	"\/shopify\/assets\/proximanovacond-semiboldit-webfont.woff": {
 		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify-theme\/templates\/list-collections.php",
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/proximanovacond-semiboldit-webfont.woff",
 		"oF": 0
 		},
-	"\/shopify-theme\/templates\/page.about-us.php": {
+	"\/shopify\/assets\/PTM55FT-webfont.eot": {
 		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify-theme\/templates\/page.about-us.php",
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/PTM55FT-webfont.eot",
 		"oF": 0
 		},
-	"\/shopify-theme\/templates\/page.cart.php": {
+	"\/shopify\/assets\/PTM55FT-webfont.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/PTM55FT-webfont.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/shopify\/assets\/PTM55FT-webfont.ttf": {
 		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify-theme\/templates\/page.cart.php",
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/PTM55FT-webfont.ttf",
 		"oF": 0
 		},
-	"\/shopify-theme\/templates\/page.contact-us.php": {
+	"\/shopify\/assets\/PTM55FT-webfont.woff": {
 		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify-theme\/templates\/page.contact-us.php",
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/PTM55FT-webfont.woff",
 		"oF": 0
 		},
-	"\/shopify-theme\/templates\/page.default.php": {
-		"ft": 8192,
+	"\/shopify\/assets\/reviews.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
 		"oA": 0,
-		"oAP": "\/shopify-theme\/templates\/page.default.php",
+		"oAP": "\/shopify\/assets\/reviews-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/shopify\/assets\/shop-faq.jpg": {
+		"ft": 16384,
+		"iS": 302137,
+		"oA": 0,
+		"oAP": "\/shopify\/assets\/shop-faq.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/shopify\/assets\/shop-locate.jpg": {
+		"ft": 16384,
+		"iS": 493499,
+		"oA": 0,
+		"oAP": "\/shopify\/assets\/shop-locate.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/shopify\/assets\/shop-treats.jpg": {
+		"ft": 16384,
+		"iS": 549431,
+		"oA": 0,
+		"oAP": "\/shopify\/assets\/shop-treats.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/shopify\/assets\/shop.js.liquid": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/shop.js.liquid",
 		"oF": 0
 		},
-	"\/shopify-theme\/templates\/page.error.php": {
-		"ft": 8192,
+	"\/shopify\/assets\/shopify_common.js": {
+		"ft": 64,
+		"mi": 1,
 		"oA": 0,
-		"oAP": "\/shopify-theme\/templates\/page.error.php",
+		"oAP": "\/shopify\/assets\/min\/shopify_common-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/shopify\/assets\/site.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/shopify\/assets\/site.min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/shopify\/assets\/slider-bg.png": {
+		"ft": 32768,
+		"iS": 30050,
+		"oA": 0,
+		"oAP": "\/shopify\/assets\/slider-bg.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/shopify\/assets\/ss-gizmo.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/ss-gizmo.eot",
 		"oF": 0
 		},
-	"\/shopify-theme\/templates\/page.faq.php": {
-		"ft": 8192,
+	"\/shopify\/assets\/ss-gizmo.js": {
+		"ft": 64,
+		"mi": 1,
 		"oA": 0,
-		"oAP": "\/shopify-theme\/templates\/page.faq.php",
+		"oAP": "\/shopify\/assets\/min\/ss-gizmo-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/shopify\/assets\/ss-gizmo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/ss-gizmo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/shopify\/assets\/ss-gizmo.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/ss-gizmo.ttf",
 		"oF": 0
 		},
-	"\/shopify-theme\/templates\/page.find-us.php": {
+	"\/shopify\/assets\/ss-gizmo.woff": {
 		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify-theme\/templates\/page.find-us.php",
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/ss-gizmo.woff",
 		"oF": 0
 		},
-	"\/shopify-theme\/templates\/page.php": {
+	"\/shopify\/assets\/ss-glyphish-outlined.eot": {
 		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify-theme\/templates\/page.php",
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/ss-glyphish-outlined.eot",
 		"oF": 0
 		},
-	"\/shopify-theme\/templates\/product.php": {
-		"ft": 8192,
+	"\/shopify\/assets\/ss-glyphish-outlined.js": {
+		"ft": 64,
+		"mi": 1,
 		"oA": 0,
-		"oAP": "\/shopify-theme\/templates\/product.php",
+		"oAP": "\/shopify\/assets\/min\/ss-glyphish-outlined-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/shopify\/assets\/ss-glyphish-outlined.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/ss-glyphish-outlined.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/shopify\/assets\/ss-glyphish-outlined.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/ss-glyphish-outlined.ttf",
 		"oF": 0
 		},
-	"\/shopify-theme\/templates\/search.php": {
+	"\/shopify\/assets\/ss-glyphish-outlined.woff": {
 		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/ss-glyphish-outlined.woff",
+		"oF": 0
+		},
+	"\/shopify\/assets\/ss-social-circle-.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/ss-social-circle-.eot",
+		"oF": 0
+		},
+	"\/shopify\/assets\/ss-social-circle.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/ss-social-circle.eot",
+		"oF": 0
+		},
+	"\/shopify\/assets\/ss-social-circle.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/ss-social-circle.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/shopify\/assets\/ss-social-circle.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/ss-social-circle.ttf",
+		"oF": 0
+		},
+	"\/shopify\/assets\/ss-social-circle.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/ss-social-circle.woff",
+		"oF": 0
+		},
+	"\/shopify\/assets\/ss-social-regular-.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/ss-social-regular-.eot",
+		"oF": 0
+		},
+	"\/shopify\/assets\/ss-social-regular.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/ss-social-regular.eot",
+		"oF": 0
+		},
+	"\/shopify\/assets\/ss-social-regular.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/ss-social-regular.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/shopify\/assets\/ss-social-regular.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/ss-social-regular.ttf",
+		"oF": 0
+		},
+	"\/shopify\/assets\/ss-social-regular.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/ss-social-regular.woff",
+		"oF": 0
+		},
+	"\/shopify\/assets\/storemapper.js": {
+		"ft": 64,
+		"mi": 1,
 		"oA": 0,
-		"oAP": "\/shopify-theme\/templates\/search.php",
+		"oAP": "\/shopify\/assets\/min\/storemapper-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/shopify\/assets\/theme.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/shopify\/assets\/theme.min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/shopify\/assets\/theme.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/shopify\/assets\/min\/theme.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/shopify\/assets\/timber.js.liquid": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/timber.js.liquid",
+		"oF": 0
+		},
+	"\/shopify\/assets\/type-brownie-cookie-sandwich.jpg": {
+		"ft": 16384,
+		"iS": 52416,
+		"oA": 0,
+		"oAP": "\/shopify\/assets\/type-brownie-cookie-sandwich.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/shopify\/assets\/type-brownie-cookie-sanwich.jpg": {
+		"ft": 16384,
+		"iS": 52416,
+		"oA": 0,
+		"oAP": "\/shopify\/assets\/type-brownie-cookie-sanwich.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/shopify\/assets\/type-brownie-cookie.jpg": {
+		"ft": 16384,
+		"iS": 52416,
+		"oA": 0,
+		"oAP": "\/shopify\/assets\/type-brownie-cookie.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/shopify\/assets\/type-choco-lot-brownie-cookie.jpg": {
+		"ft": 16384,
+		"iS": 60927,
+		"oA": 0,
+		"oAP": "\/shopify\/assets\/type-choco-lot-brownie-cookie.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/shopify\/assets\/type-chocolate-chip-cookie.jpg": {
+		"ft": 16384,
+		"iS": 52416,
+		"oA": 0,
+		"oAP": "\/shopify\/assets\/type-chocolate-chip-cookie.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/shopify\/assets\/type-chocolate-chip.jpg": {
+		"ft": 16384,
+		"iS": 60927,
+		"oA": 0,
+		"oAP": "\/shopify\/assets\/type-chocolate-chip.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/shopify\/assets\/type-cookie-sandwiches.jpg": {
+		"ft": 16384,
+		"iS": 60927,
+		"oA": 0,
+		"oAP": "\/shopify\/assets\/type-cookie-sandwiches.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/shopify\/assets\/type-ginger-molasses-cookie.jpg": {
+		"ft": 16384,
+		"iS": 52416,
+		"oA": 0,
+		"oAP": "\/shopify\/assets\/type-ginger-molasses-cookie.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/shopify\/assets\/type-molasses-ginger.jpg": {
+		"ft": 16384,
+		"iS": 60927,
+		"oA": 0,
+		"oAP": "\/shopify\/assets\/type-molasses-ginger.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/shopify\/config.yml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/shopify\/config.yml",
+		"oF": 0
+		},
+	"\/shopify\/templates\/search.liquid": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/shopify\/templates\/search.liquid",
 		"oF": 0
 		},
 	"\/src\/bower_components\/eventEmitter\/.bower.json": {
@@ -6841,7 +4429,10 @@
 		"oA": 2,
 		"oAP": "\/src\/bower_components\/shopify-cartjs\/docs\/images\/icon-500x500.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/src\/bower_components\/shopify-cartjs\/docs\/images\/icon-64x64.png": {
 		"ft": 32768,
@@ -6849,7 +4440,10 @@
 		"oA": 2,
 		"oAP": "\/src\/bower_components\/shopify-cartjs\/docs\/images\/icon-64x64.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/src\/bower_components\/shopify-cartjs\/docs\/index\/index.jade": {
 		"cOD": 1,
@@ -9037,7 +6631,10 @@
 		"oA": 2,
 		"oAP": "\/src\/bower_components\/shopify-cartjs\/docs\/theme\/assets\/author-disco.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/src\/bower_components\/shopify-cartjs\/docs\/theme\/assets\/author-gavin.png": {
 		"ft": 32768,
@@ -9045,7 +6642,10 @@
 		"oA": 2,
 		"oAP": "\/src\/bower_components\/shopify-cartjs\/docs\/theme\/assets\/author-gavin.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/src\/bower_components\/shopify-cartjs\/docs\/theme\/assets\/bootstrap.min.js": {
 		"ft": 64,
@@ -9078,7 +6678,10 @@
 		"oA": 2,
 		"oAP": "\/src\/bower_components\/shopify-cartjs\/docs\/theme\/assets\/core-api-cart-state.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/src\/bower_components\/shopify-cartjs\/docs\/theme\/assets\/favicon.ico": {
 		"ft": 8192,
@@ -9458,7 +7061,7 @@
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/divvies.min.js",
+		"oAP": "\/shopify\/assets\/divvies.min.js",
 		"oF": 2,
 		"sC": 1,
 		"tS": 0
@@ -9475,7 +7078,7 @@
 	"\/src\/js\/storemapper.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "\/src\/js\/min\/storemapper-min.js",
 		"oF": 0,
 		"sC": 1,
@@ -9652,7 +7255,7 @@
 		"iI": 0,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/divvies-42418307\/assets\/site.min.css",
+		"oAP": "\/shopify\/assets\/site.min.css",
 		"oF": 2,
 		"oS": 1,
 		"rU": 0,
@@ -10060,48 +7663,6 @@
 		"sI": 0,
 		"sM": 0,
 		"sU": 0
-		},
-	"\/stage\/content.account.php": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/stage\/content.account.php",
-		"oF": 0
-		},
-	"\/stage\/content.account.sidebar.php": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/stage\/content.account.sidebar.php",
-		"oF": 0
-		},
-	"\/stage\/content.error.php": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/stage\/content.error.php",
-		"oF": 0
-		},
-	"\/stage\/content.page.php": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/stage\/content.page.php",
-		"oF": 0
-		},
-	"\/stage\/content.php": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/stage\/content.php",
-		"oF": 0
-		},
-	"\/stage\/globals.php": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/stage\/globals.php",
-		"oF": 0
-		},
-	"\/stage\/lipsum.php": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/stage\/lipsum.php",
-		"oF": 0
 		}
 	},
 "hooks": [
@@ -10784,6 +8345,10 @@
 			"active": 1,
 			"optionString": ""
 			},
+		"no-compare-neg-zero": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-cond-assign": {
 			"active": 1,
 			"optionString": "'except-parens'"
@@ -10984,6 +8549,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-multi-assign": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-multi-spaces": {
 			"active": 0,
 			"optionString": "{'exceptions': {'Property': true, 'BinaryExpression': false, 'VariableDeclarator': false, 'ImportDeclaration': false}}"
@@ -11061,6 +8630,10 @@
 			"optionString": ""
 			},
 		"no-proto": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-prototype-builtins": {
 			"active": 0,
 			"optionString": ""
 			},
@@ -11260,6 +8833,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"nonblock-statement-body-position": {
+			"active": 0,
+			"optionString": "'beside'"
+			},
 		"object-curly-newline": {
 			"active": 0,
 			"optionString": "{'ObjectExpression': {'multiline': true}, 'ObjectPattern': {'multiline': true}}"
@@ -11311,6 +8888,10 @@
 		"prefer-numeric-literals": {
 			"active": 0,
 			"optionString": ""
+			},
+		"prefer-promise-reject-errors": {
+			"active": 0,
+			"optionString": "{'allowEmptyReject': false}"
 			},
 		"prefer-rest-params": {
 			"active": 0,
@@ -11405,6 +8986,10 @@
 			"optionString": ""
 			},
 		"template-curly-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"template-tag-spacing": {
 			"active": 0,
 			"optionString": "'never'"
 			},
@@ -11851,7 +9436,8 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"quality": 100
 		},
 	"languageDefaultsJS": {
 		"autoOutputAction": 0,
@@ -11874,14 +9460,6 @@
 		"autoOutputPathStyle": 0,
 		"orderOutput": 0,
 		"outputStyle": 1
-		},
-	"languageDefaultsJSX": {
-		"autoOutputAction": 0,
-		"autoOutputPathFilenamePattern": "*.js",
-		"autoOutputPathRelativePath": "",
-		"autoOutputPathReplace1": "jsx",
-		"autoOutputPathReplace2": "js",
-		"autoOutputPathStyle": 0
 		},
 	"languageDefaultsKIT": {
 		"autoOutputAction": 0,
@@ -11944,7 +9522,9 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"optimizerType": 1,
+		"quality": 100
 		},
 	"languageDefaultsPUG": {
 		"autoOutputAction": 0,
