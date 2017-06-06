@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>
+    {{ page_title }}{% if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif %}{% if current_page != 1 %} &ndash; Page {{ current_page }}{% endif %}{% unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless %}
+</title>
+<meta name="description" content="{{ page_description | escape }}">
+<link rel="shortcut icon" href="{{ 'favicon.ico' | asset_url }}">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<link rel="stylesheet" href="{{ 'site.min.css' | asset_url }}">
+<link rel="stylesheet" href="{{ 'reviews.css' | asset_url }}">
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js?ver=1.11.1'></script>
+<meta property="og:title" content="Divvies | {{ page_title }}{% if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif %}{% if current_page != 1 %} &ndash; Page {{ current_page }}{% endif %}{% unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless %}" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="" />
+<meta property="og:description" content="{{ page_description | escape }}" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:site_name" content="Divvies" />
+<meta name="google-site-verification" content="xH9YKbpgRcDi5rHuKcAs6L-XcrhLkyV4ZsFN9YC3ozQ" />
+
+<!--[if lt IE 9]>
+<script src="{{ 'respond.min.js' | asset_url }}"></script>
+<script src="{{ 'pie.js' | asset_url }}"></script>
+<![endif]-->
+
+{{ content_for_header }}
+
+{{ 'shopify_common.js' | shopify_asset_url | script_tag }}
+{% if template contains 'customers' %}  
+{{ 'customer_area.js'  | shopify_asset_url | script_tag }}
+{% endif %}
+{{ 'shopify_common.js'  | asset_url | script_tag }}
+{{ 'option_selection.js' | shopify_asset_url | script_tag }}
+
+</head>
+<body class="fs-grid fs-grid-sm-fluid">
+
+  <div id="wrapper-wrapper">
+    <div id="wrapper" class="toggle">
+      <header id="header">
+        <div class="fs-row">
+          <div class="fs-cell fs-lg-4 fs-md-2 fs-sm-half">
+            <a href="/"><span id="header--logo">Divvies</span></a>
+          </div>
+          <div id="header--mobile" class="fs-cell fs-lg-hide fs-md-3 fs-sm-half text-right">
+            <div class="upper">
+              {% comment %}<a href="#" class="target-mobile cart-toggle" data-swap-target=".toggle" data-swap-linked='.cart-toggle' data-swap-group="toggle_group_3">{% endcomment %}
+              <a href="/cart" class="cart-wrapper">
+                <span class="cart-icon {% unless cart.item_count == 0 %}full{% endunless %}">&nbsp;</span>
+                <span id="cart-count" class="item-count">{{ cart.item_count }}</span>
+              </a>
+              <div class="menu-wrapper">
+                <a href="#" class="target-mobile menu-toggle" data-swap-target=".menu-wrapper">Menu</a>
+              </div>
+            </div>
+          </div>
+          <div class="fs-cell fs-lg-8 fs-md-hide fs-sm-hide text-right">
+            <div class="upper">
+
+              {% if shop.customer_accounts_enabled %}
+              {% if customer %}
+              Logged in as <a id="customer_login_link" href="/account">{{ customer.first_name }}</a> · {{ 'Log out' | customer_logout_link }}
+              {% else %}
+              {{ 'Log in' | customer_login_link }}
+              {% if shop.customer_accounts_optional %}
+              or {{ 'Create an account' | customer_register_link }}
+              {% endif %}
+              {% endif %}
+              {% endif %}
+              
+              <a href="/cart" class="cart-wrapper">
+                <span class="cart-icon {% unless cart.item_count == 0 %}full{% endunless %}">&nbsp;</span>
+                <span id="cart-count" class="item-count">{{ cart.item_count }}</span>
+              </a>
+            </div>
+            <nav class="lower">
+              {% for link in linklists.main-menu.links %}
+              <a class="btn btn-link {% if link.active %}current{% endif %} {% if template == 'collection' and link.title == 'Shop Treats' %}current{% endif %} {% if template == 'product' and link.title == 'Shop Treats' %}current{% endif %}" href="{{ link.url }}">{{ link.title }}</a>
+              {% endfor %}
+            </nav>
+          </div>
+        </div>
+      </header>
+      <div id="content">
+        {{ content_for_layout }}
+      </div>
+      <div id="mailchimp-popup" class="email-popup">
+        <div class="fs-row">
+          <div id="mailchimp-popup-wrapper" class="fs-cell fs-xl-5 fs-lg-6 fs-md-4 fs-sm-3">
+            <a href="#" id="mailchimp-close" class="mailchimp-toggle mailchimp_linked ss-gizmo ss-plus rotate-45"  data-swap-linked=".mailchimp_linked" data-swap-target=".email-popup"></a>
+            <div id="mc_embed_signup">
+               <form action="//divvies.us1.list-manage.com/subscribe/post?u=9526e58f22c750b09cd234943&amp;id=467716618f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                  <div id="mc_embed_signup_scroll">
+                     <label for="mce-EMAIL">Subscribe to our mailing list</label>
+                     <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                     <div style="position: absolute; left: -5000px;"><input type="text" name="b_9526e58f22c750b09cd234943_467716618f" tabindex="-1" value=""></div>
+                     <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn bg-color-orange toggle toggle_linkage" data-swap-target=".email-popup" data-swap-linked="toggle_linkage">
+                  </div>
+               </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer id="footer" class="text-center">
+        <div id="footer--social">
+          <div class="fs-row">
+            <div class="fs-cell fs-all-full">
+              <a href="https://www.facebook.com/divvies" target="_blank" class="btn ss-social ss-facebook" title="facebook"></a>
+              <a href="https://twitter.com/divvies" target="_blank" class="btn ss-social ss-twitter" title="twitter"></a>
+              <a href="https://instagram.com/divvies/" target="_blank" class="btn ss-social ss-instagram" title="instagram"></a>
+              <a href="https://www.pinterest.com/loriatdivvies/divvies/" target="_blank" class="btn ss-social ss-pinterest" title="pinterest"></a>
+            </div>
+          </div>
+        </div>
+        <div id="footer--tagline">
+          <div class="fs-row">
+            <div class='fs-cell fs-xl-10 fs-lg-11 fs-md-6 fs-sm-3 fs-centered'>
+              <p class="emphasized">Divvies are made in small batches in our dedicated peanut, tree nut, egg, and dairy free bakery.</p>
+              <a class="btn btn-link btn-first" href="/pages/privacy">Privacy Policy</a>
+              <a class="btn btn-link btn-last" href="/pages/terms-and-conditions">Terms and Conditions</a>
+            </div>
+          </div>
+        </div>
+        <div id="footer--legal">
+          <div class="fs-row">
+            <div class='fs-cell fs-xl-10 fs-lg-11 fs-md-6 fs-sm-3 fs-centered'>
+              <p>Divvies LLC © 2004-{{ 'now' | date: "%Y" }}</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <div id="notification-wrapper" class="toggle cart-toggle">
+    <div class="fs-row">
+      <div class="fs-cell fs-full-all text-center">
+        <span>Item Succesfully added to your cart.</span>
+      </div>
+    </div>
+  </div>
+  {% comment %}
+  {% include 'cart-slideout' %}
+  {% endcomment %}
+  {{ 'timber.js' | asset_url | script_tag }}
+  {{ 'shop.js'  | asset_url | script_tag }}
+  <script type='text/javascript' src='{{ 'divvies.min.js' | asset_url }}'></script>
+  {{ 'handlebars.min.js' | asset_url | script_tag }}
+  {{ 'ajax-cart.js'  | asset_url | script_tag }}
+  {% include 'ajax-cart-template' %}
+  
+  <script>
+    window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+    ga('create','UA-12338362-1','auto');ga('send','pageview')
+  </script>
+
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+   <script>
+    {% if newHash %}
+      $(function() {
+        timber.updateHash('{{ newHash }}');
+      });
+    {% endif %}
+    {% if resetPassword %}
+      $(function() {
+        timber.resetPasswordSuccess();
+      });
+    {% endif %}
+  </script>
+
+  <script>
+    jQuery(function($) {
+      ajaxCart.init({
+        formSelector: '#AddToCartForm',
+        cartContainer: '#CartContainer',
+        addToCartSelector: '#add',
+        cartCountSelector: '.item-count',
+        //cartCostSelector: '#CartCost',
+        moneyFormat: {{ shop.money_format | json }}
+      });
+      ajaxCart.load();
+      $('.cart-toggle').on('click', function(){
+        //alert('yolo');
+        //ajaxCart.load();
+      });
+    });
+  jQuery('body').on('ajaxCart.afterCartLoad', function(evt, cart) {
+    // Bind to 'ajaxCart.afterCartLoad' to run any javascript after the cart has loaded in the DOM
+    //timber.RightDrawer.open();
+    //alert('added!');
+  });
+</script>
+
+<script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+  fbq('init', '416518241850451');
+  fbq('track', "PageView");
+
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=416518241850451&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+</body>
+</html>

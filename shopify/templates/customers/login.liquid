@@ -1,0 +1,51 @@
+{% include 'account-header' %}
+
+<header class="page-header page-header-banner">
+<h1><span>{{ 'customer.login.title' | t }}</span></h1>
+</header>
+<hr class="invisible">
+
+<div id="CustomerLoginForm">
+<div id="account-login" class="text-center">
+{% form 'customer_login' %}
+<input type="hidden" name="checkout_url" value="/" /> 
+{{ form.errors | default_errors }}
+<!--<label for="CustomerEmail" class="hidden-label">{{ 'customer.login.email' | t }}</label>-->
+<input type="email" name="customer[email]" id="CustomerEmail" class="form-entry text-center simple bg-color bg-color-gray input-full{% if form.errors contains 'email' %} error{% endif %}" placeholder="{{ 'customer.login.email' | t }}" autocorrect="off" autocapitalize="off" autofocus>
+{% if form.password_needed %}
+<!--<label for="CustomerPassword" class="hidden-label">{{ 'customer.login.password' | t }}</label>-->
+<input type="password" value="" name="customer[password]" id="CustomerPassword" class="form-entry text-center simple bg-color bg-color-gray input-full{% if form.errors contains 'password' %} error{% endif %}" placeholder="{{ 'customer.login.password' | t }}">
+{% endif %}
+<p>
+<input type="submit" class="form-btn btn btn-lg bg-color bg-color-lightblue" value="{{ 'customer.login.sign_in' | t }}">
+</p>
+<p><a href="{{ shop.url }}">{{ 'customer.login.cancel' | t }}</a></p>
+{% if form.password_needed %}
+<p><a href="#recover" id="RecoverPassword">{{ 'customer.login.forgot_password' | t }}</a></p>
+{% endif %}
+{% endform %}
+</div>
+</div>
+
+<div id="RecoverPasswordForm" style="display: none;" class="text-center">
+
+{% form 'recover_customer_password' %}
+{{ form.errors | default_errors }}
+
+{% comment %}
+Assign variable to be used after timber.init() is run in theme.liquid
+{% endcomment %}
+{% if form.posted_successfully? %}
+{% assign resetPassword = true %}
+{% endif %}
+
+<input type="email" value="" name="email" id="RecoverEmail" class="form-entry text-center simple bg-color bg-color-gray input-full" placeholder="{{ 'customer.recover_password.email' | t }}" autocorrect="off" autocapitalize="off">
+
+<p>
+<input type="submit" class="form-btn btn btn-lg bg-color bg-color-lightblue" value="{{ 'customer.recover_password.submit' | t }}">
+</p>
+<button type="button" id="HideRecoverPasswordLink" class="text-link">{{ 'customer.recover_password.cancel' | t }}</button>
+{% endform %}
+</div>
+
+{% include 'account-footer' %}

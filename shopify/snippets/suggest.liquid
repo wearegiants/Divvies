@@ -1,0 +1,128 @@
+<h1>Get your Divvies Locally</h1>
+<hr class="divider compact">
+<br>
+
+<div class="form-vertical">
+{% form 'contact' %}
+
+{% comment %}
+Successful message
+{% endcomment %}
+{% if form.posted_successfully? %}
+<p class="note form-success">
+{{ 'contact.form.post_success' | t }}
+</p>
+{% endif %}
+
+{{ form.errors | default_errors }}
+
+{% assign yourFirst = 'First Name' %}
+{% assign yourLast  = 'Last Name' %}
+{% assign yourCity  = 'Your City' %}
+{% assign yourState = 'Your State' %}
+{% assign yourEmail = 'Your Email' %}
+{% assign yourFaves = 'Your favorite Divvies treats' %}
+
+{% assign purvFood  = 'The food purveyor you would like to carry Divvies' %}
+{% assign purvAddr  = 'Address' %}
+{% assign purvPhone = 'Phone Number' %}
+{% assign purvEmail = 'Email' %}
+{% assign purvCity  = 'City' %}
+{% assign purvState = 'State' %}
+
+{% assign message  = '"Submit" will send this information to Divvies so we can work together to get Divvies in the aisles of your favorite stores.
+It will also bring up a form that you can print out and fill in to bring to your favorite purveyor and show you mean "business". We included a section for you to be able to add your own special reasons for wanting your local stores to carry Divvies' %}
+
+<div class="fs-row">
+
+<!-- Your Info -->
+
+<div class="fs-cell fs-all-full">
+<h3 class="color-orange">About You</h3>
+</div>
+
+<div class="fs-cell fs-all-half">
+{% assign name_attr = 'contact.form.name' | t | handle %}
+<label for="ContactFormName" class="hidden-label">{{ 'contact.form.name' | t }}</label>
+<input type="text" id="ContactFormName" class="input-full" name="contact[{{ name_attr }}]" placeholder="{{ 'contact.form.name' | t }}" autocapitalize="words" value="{% if form[name_attr] %}{{ form[name_attr] }}{% elsif customer %}{{ customer.name }}{% endif %}">
+</div>
+
+<div class="fs-cell fs-all-half">
+{% assign name_attr = 'contact.form.phone' | t | handle %}
+<label for="ContactFormPhone" class="hidden-label">{{ 'contact.form.phone' | t }}</label>
+<input type="tel" id="ContactFormPhone" class="input-full" name="contact[{{ name_attr }}]" placeholder="{{ 'contact.form.phone' | t }}" pattern="[0-9\-]*" value="{% if form[name_attr] %}{{ form[name_attr] }}{% elsif customer %}{{ customer.phone }}{% endif %}">
+</div>
+
+<div class="fs-cell fs-all-half">
+<label for="ContactFormPhone" class="hidden-label">{{ yourCity }}</label>
+<input type="text" id="ContactFormCity" class="input-full" name="contact[{{ yourCity }}]" placeholder="{{ yourCity }}" autocapitalize="words" value="{% if form[name_attr] %}{{ form[name_attr] }}{% elsif customer %}{% endif %}">
+</div>
+
+<div class="fs-cell fs-all-half">
+<label for="ContactFormEmail" class="hidden-label">{{ yourState }}</label>
+<input type="text" id="ContactFormState" class="input-full" name="contact[{{ yourState }}]" placeholder="{{ yourState }}" autocapitalize="words" value="{% if form[name_attr] %}{{ form[name_attr] }}{% elsif customer %}{% endif %}">
+</div>
+
+<div class="fs-cell fs-all-full">
+<label for="ContactFormEmail" class="hidden-label">{{ 'contact.form.email' | t }}</label>
+<input type="email" id="ContactFormEmail" class="input-full" name="contact[email]" placeholder="{{ 'contact.form.email' | t }}" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
+</div>
+
+<!-- Their Info -->
+<hr class="invisible">
+
+<div class="fs-cell fs-all-full">
+<h3 class="color-orange">About Your Food Purveyor</h3>
+</div>
+
+<div class="fs-cell fs-all-full">
+<label for="ContactFormEmail" class="hidden-label">{{ purvFood }}</label>
+<input type="text" id="ContactFormNamePurv" class="input-full" name="contact[{{ purvFood }}]" placeholder="{{ purvFood }}" autocapitalize="words" value="{% if form[name_attr] %}{{ form[name_attr] }}{% elsif customer %}{% endif %}">
+</div>
+
+<div class="fs-cell fs-all-full">
+<label for="ContactFormAddrPurv" class="hidden-label">{{ purvAddr }}</label>
+<input type="text" id="ContactFormAddrPurv" class="input-full" name="contact[{{ purvAddr }}]" placeholder="{{ purvAddr }}" autocapitalize="words" value="{% if form[name_attr] %}{{ form[name_attr] }}{% elsif customer %}{% endif %}">
+</div>
+
+<div class="fs-cell fs-all-half">
+<label for="ContactFormPhonePurv" class="hidden-label">{{ purvPhone }}</label>
+<input type="tel" id="ContactFormPhonePurv" class="input-full" name="contact[{{ purvPhone }}]" placeholder="{{ purvPhone }}" pattern="[0-9\-]*" value="{% if form[name_attr] %}{{ form[name_attr] }}{% elsif customer %}{{ customer.phone }}{% endif %}">
+</div>
+
+<div class="fs-cell fs-all-half">
+<label for="ContactFormEmailPurv" class="hidden-label">{{ purvEmail }}</label>
+<input type="email" id="ContactFormEmailPurv" class="input-full" name="contact[{{ purvEmail }}]" placeholder="{{ purvEmail }}" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
+</div>
+
+<div class="fs-cell fs-all-half">
+<label for="ContactFormCityPurv" class="hidden-label">{{ purvCity }}</label>
+<input type="text" id="ContactFormCityPurv" class="input-full" name="contact[{{ purvCity }}]" placeholder="{{ purvCity }}" autocapitalize="words" value="{% if form[name_attr] %}{{ form[name_attr] }}{% elsif customer %}{% endif %}">
+</div>
+
+<div class="fs-cell fs-all-half">
+<label for="ContactFormStatePurv" class="hidden-label">{{ purvState }}</label>
+<input type="text" id="ContactFormStatePurv" class="input-full" name="contact[{{ purvState }}]" placeholder="{{ purvState }}" autocapitalize="words" value="{% if form[name_attr] %}{{ form[name_attr] }}{% elsif customer %}{% endif %}">
+</div>
+
+<hr class="invisible">
+
+<div class="fs-cell fs-all-full">
+<h3 class="color-orange">Special Notes</h3>
+</div>
+
+<div class="fs-cell fs-all-full">
+<label for="ContactFormMessage" class="hidden-label">{{ 'contact.form.message' | t }}</label>
+<textarea rows="10" id="ContactFormMessage" class="input-full" name="contact[body]" placeholder="{{ 'contact.form.message' | t }}">{% if form.body %}{{ form.body }}{% endif %}</textarea>
+</div>
+
+<div class="fs-cell fs-all-full">
+<input type="submit" class="btn right bg-color-orange btn-primary" value="Submit">
+<hr class="divider compact">
+<small>{{ message }}</small>
+</div>
+
+</div>
+
+{% endform %}
+</div>

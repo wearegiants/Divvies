@@ -1,0 +1,6 @@
+<li class="accordion-items">
+	<a href="#{{ article.title | handleize }}">{{ article.title }}</a>
+	<div id="{{ article.title | handleize }}">
+		{{ article.content }}
+	</div>
+</li>

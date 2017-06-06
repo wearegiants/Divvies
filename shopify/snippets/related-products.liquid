@@ -1,0 +1,54 @@
+{% if settings.products_per_row == "3" or settings.products_per_row == "3" %}
+  {% assign number_of_related_products_to_show = settings.products_per_row | times: 1 %}
+{% else %}
+  {% assign number_of_related_products_to_show = 2 %}
+{% endif %}
+
+{% assign current_product = product %}
+{% assign current_product_tags = product.tags %}
+{% assign found_first_match = false %}
+{% assign found_second_match = false %}
+{% assign first_related_product = true %}
+
+{% paginate collections.all.products by 1000 %}
+{% for product in collections.all.products %}
+  {% unless product.handle == current_product.handle %}
+    {% for tag in product.tags %}
+      {% if current_product_tags contains tag and tag != 'manual' %}
+        {% if found_first_match == false %}
+          {% assign found_first_match = true %}
+          {% assign first_match = tag %}
+        {% elsif found_second_match == false %}
+          {% assign found_second_match = true %}
+          {% assign second_match = tag %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+
+    {% if found_first_match == true %}
+      {% if first_related_product == true %}
+        {% assign first_related_product == false %}
+
+        <div class="row products">
+
+      {% endif %}
+      {% if product.tags contains first_match or product.tags contains second_match %}
+        
+        {% include 'product-grid-item' %}
+        
+      {% endif %}
+    {% endif %}
+  {% endunless %}
+{% endfor %}
+{% if first_related_product == false %} </div> {% endif %}
+{% endpaginate %}
+
+{{ 'jquery.pick.js' | asset_url | script_tag }}
+<script type="text/javascript" charset="utf-8">
+//<![CDATA[
+  var howMany = {{ number_of_related_products_to_show }};
+  jQuery(function() {
+    jQuery('.products .collection-grid--item').pick(howMany);
+  });
+//]]>
+</script>
